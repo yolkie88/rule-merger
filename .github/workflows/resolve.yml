@@ -1,68 +1,115 @@
-name: rule merger
+name: build and publish rules
 
 on:
   schedule:
     - cron: '0 */12 * * *'
   workflow_dispatch:
 
+permissions:
+  contents: write
+
+concurrency:
+  group: rule-merger-release
+  cancel-in-progress: false
 
 jobs:
-  run:
+  build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v6
-
-      - name: Set up Python 3.10
-        uses: actions/setup-python@v6
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
         with:
-          python-version: "3.13"
-          cache: 'pip'
+          fetch-depth: 0
 
-      - name: Install dependencies
-        run: |
-          pip install -r requirements.txt
+      - name: Set up Python
+        uses: actions/setup-python@42375524e23c412d93fb67b49958b491fce71c38 # v5.4.0
+        with:
+          python-version: '3.13'
+          cache: pip
 
-      - name: Set up Mihomo latest
+      - name: Install locked dependencies
+        run: python -m pip install --require-hashes -r requirements.lock
+
+      - name: Install pinned Mihomo
+        env:
+          MIHOMO_TAG: v1.19.27
+          MIHOMO_SHA256: fb3e34c55844f389ff54679e5a3aec331d5ec38006c20f8dcc476fb47768a58f
         run: |
-          LATEST_TAG=$(curl -fsSL https://github.com/MetaCubeX/mihomo/releases/latest/download/version.txt)
-          curl -fsSL -o mihomo.gz https://github.com/MetaCubeX/mihomo/releases/download/${LATEST_TAG}/mihomo-linux-amd64-${LATEST_TAG}.gz
+          set -euo pipefail
+          asset="mihomo-linux-amd64-${MIHOMO_TAG}.gz"
+          curl -fsSL -o mihomo.gz "https://github.com/MetaCubeX/mihomo/releases/download/${MIHOMO_TAG}/${asset}"
+          printf '%s  %s\n' "$MIHOMO_SHA256" mihomo.gz | sha256sum -c -
           gunzip mihomo.gz
-          sudo mv mihomo /usr/local/bin/
-          sudo chmod +x /usr/local/bin/mihomo
+          sudo install -m 0755 mihomo /usr/local/bin/mihomo
           mihomo -v
 
-      - name: Set up sing-box v1.13.13
+      - name: Install pinned sing-box
+        env:
+          SING_BOX_VERSION: 1.13.14
+          SING_BOX_SHA256: f48703461a15476951ac4967cdad339d986f4b8096b4eb3ff0829a500502d697
         run: |
-          VERSION=1.13.13
-          curl -fsSL -o sing-box.tar.gz https://github.com/SagerNet/sing-box/releases/download/v${VERSION}/sing-box-${VERSION}-linux-amd64.tar.gz
+          set -euo pipefail
+          asset="sing-box-${SING_BOX_VERSION}-linux-amd64.tar.gz"
+          curl -fsSL -o sing-box.tar.gz "https://github.com/SagerNet/sing-box/releases/download/v${SING_BOX_VERSION}/${asset}"
+          printf '%s  %s\n' "$SING_BOX_SHA256" sing-box.tar.gz | sha256sum -c -
           tar -xzf sing-box.tar.gz
-          sudo mv sing-box-${VERSION}-linux-amd64/sing-box /usr/local/bin/
-          sudo chmod +x /usr/local/bin/sing-box
+          sudo install -m 0755 "sing-box-${SING_BOX_VERSION}-linux-amd64/sing-box" /usr/local/bin/sing-box
           sing-box version
 
-      - name: Run script
-        run: python rule_merger.py
-
-      - name: Clean up
+      - name: Test and build
         run: |
-          find . -maxdepth 1 ! -name 'output' ! -name '.' ! -name '.git' -exec rm -rf {} +
-          mv output/* .
-          rm -rf output
+          set -euo pipefail
+          python -m unittest discover -s tests -v
+          git fetch origin release:refs/remotes/origin/release || true
+          baseline_args=()
+          legacy_args=()
+          if git show origin/release:manifest.json > baseline.json 2>/dev/null; then
+            baseline_args=(--baseline baseline.json)
+          else
+            legacy_args=(--include-legacy)
+          fi
+          set +e
+          python -m rulemerger build \
+            --config config.yaml \
+            --output release-build \
+            --report build-report.json \
+            "${baseline_args[@]}" \
+            "${legacy_args[@]}"
+          status=$?
+          set -e
+          if [ "$status" -ne 0 ]; then
+            cat build-report.json
+            exit "$status"
+          fi
 
-      - name: Get current time
-        id: time
-        run: echo "TIME=$(date +'%Y-%m-%d %H:%M:%S')" >> $GITHUB_OUTPUT
-
-      - name: Commit Changes
-        id: commit
-        uses: stefanzweifel/git-auto-commit-action@v7
+      - name: Upload build report
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
         with:
-          commit_message: 🚀 Update at ${{ steps.time.outputs.TIME }}
-          branch: release
-          skip_dirty_check: true
-          push_options: '--force'
-          create_branch: true
-          skip_fetch: true
-          skip_checkout: true
-          commit_options: '--allow-empty'
+          name: build-report
+          path: build-report.json
+          if-no-files-found: ignore
+          retention-days: 14
 
+      - name: Publish release branch
+        run: |
+          set -euo pipefail
+          release_dir="$(mktemp -d)"
+          cp -a release-build/. "$release_dir"/
+          cp README.md SOURCES.md "$release_dir"/
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          if git show-ref --verify --quiet refs/remotes/origin/release; then
+            git switch --create release --track origin/release
+          else
+            git switch --orphan release
+          fi
+          git rm -r --cached . >/dev/null 2>&1 || true
+          git clean -fdx
+          cp -a "$release_dir"/. .
+          git add -A
+          if git diff --cached --quiet; then
+            echo 'No release changes.'
+            exit 0
+          fi
+          git commit -m "chore: update generated rules"
+          git push origin release

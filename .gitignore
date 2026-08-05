@@ -1,1 +1,6 @@
 .idea
+release-build/
+build-report.json
+baseline.json
+__pycache__/
+*.py[cod]

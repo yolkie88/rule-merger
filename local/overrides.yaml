@@ -1,0 +1,7 @@
+schema_version: 1
+
+# Only list deliberate exceptions here. The more specific rule is removed from
+# ordinary profile sets and emitted as an early override artifact.
+force_direct: []
+force_reject: []
+force_proxy: []
