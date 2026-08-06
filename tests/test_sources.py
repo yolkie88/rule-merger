@@ -4,6 +4,8 @@ import tempfile
 import unittest
 from pathlib import Path
 
+import requests
+
 from rulemerger.models import SourceSpec
 from rulemerger.sources import SourceAdapter
 
@@ -23,7 +25,7 @@ class SourceAdapterTests(unittest.TestCase):
         def request_get(url: str, *, timeout: tuple[int, int]) -> Response:
             calls.append((url, timeout))
             if len(calls) < 3:
-                raise TimeoutError("temporary failure")
+                raise requests.Timeout("temporary failure")
             return Response()
 
         with tempfile.TemporaryDirectory() as directory:
@@ -50,6 +52,34 @@ class SourceAdapterTests(unittest.TestCase):
         self.assertEqual(result.etag, '"v1"')
         self.assertEqual(result.last_modified, "today")
         self.assertEqual(len(result.rules), 1)
+
+    def test_unexpected_http_adapter_error_is_not_retried(self) -> None:
+        calls: list[str] = []
+
+        def request_get(url: str, *, timeout: tuple[int, int]) -> object:
+            calls.append(url)
+            raise RuntimeError("adapter programming bug")
+
+        with tempfile.TemporaryDirectory() as directory:
+            adapter = SourceAdapter(
+                Path(directory),
+                object(),
+                request_get=request_get,
+                sleep=lambda _: None,
+            )
+
+            with self.assertRaisesRegex(RuntimeError, "adapter programming bug"):
+                adapter.load(
+                    SourceSpec(
+                        id="remote",
+                        type="http",
+                        format="text",
+                        behavior="classical",
+                        url="https://example.com/rules.txt",
+                    )
+                )
+
+        self.assertEqual(calls, ["https://example.com/rules.txt"])
 
 
 if __name__ == "__main__":

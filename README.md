@@ -28,7 +28,10 @@ python -m rulemerger build --config config.yaml --output <staging-dir> \
   --baseline <previous-manifest> --report <report.json>
 ```
 
-构建失败不会替换已有输出目录。`BuildReport` 和 `manifest.json` 会记录上游 URL、SHA256、ETag / Last-Modified、规则数量、输出 hash、冲突、波动和工具版本。
+构建失败不会替换已有输出目录。已有目录在 Windows 上采用备份、替换和回滚事务；若需要并发读者在替换期间也保持零空窗，需要另行引入版本目录加指针协议。`BuildReport` 和 `manifest.json` 会记录上游 URL、SHA256、ETag / Last-Modified、规则数量、输出 hash、冲突、波动和工具版本。
+
+source 默认 `redistributable: false`；只有完成许可证/再分发审查并显式设为 `true` 的来源才会进入公开构建。
+少于 `quality.small_output_limit` 条的产物必须在 `quality.critical_rules` 中列出关键规则；缺少清单时构建会 fail closed。
 
 输出格式：
 

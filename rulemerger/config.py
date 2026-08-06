@@ -121,7 +121,15 @@ def load_config(path: str | Path) -> Config:
         item = _mapping(value, f"sources.{source_id}")
         _allowed(
             item,
-            {"type", "format", "behavior", "url", "path", "required"},
+            {
+                "type",
+                "format",
+                "behavior",
+                "url",
+                "path",
+                "required",
+                "redistributable",
+            },
             f"sources.{source_id}",
         )
         source_type = item.get("type")
@@ -136,6 +144,9 @@ def load_config(path: str | Path) -> Config:
         required = item.get("required", True)
         if not isinstance(required, bool):
             raise ConfigError(f"sources.{source_id}.required must be boolean")
+        redistributable = item.get("redistributable", False)
+        if not isinstance(redistributable, bool):
+            raise ConfigError(f"sources.{source_id}.redistributable must be boolean")
         if source_type == "http":
             if "path" in item:
                 raise ConfigError(
@@ -178,6 +189,7 @@ def load_config(path: str | Path) -> Config:
             url=url,
             path=source_path,
             required=required,
+            redistributable=redistributable,
         )
 
     category_values = _mapping(root["categories"], "categories")
@@ -329,6 +341,7 @@ def _validate_quality(value: Any) -> dict[str, Any]:
                 if (
                     not isinstance(output_name, str)
                     or not isinstance(values, list)
+                    or not values
                     or not all(isinstance(value, str) and value for value in values)
                 ):
                     raise ConfigError(

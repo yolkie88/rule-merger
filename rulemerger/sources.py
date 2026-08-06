@@ -107,9 +107,7 @@ class SourceAdapter:
                     response.headers.get("ETag"),
                     response.headers.get("Last-Modified"),
                 )
-            except (
-                Exception
-            ) as exc:  # requests exposes several concrete transport exceptions
+            except requests.RequestException as exc:
                 last_error = exc
                 if attempt < 3:
                     self.sleep(float(attempt))

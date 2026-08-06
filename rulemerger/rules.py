@@ -68,7 +68,10 @@ def parse_payload(payload: Any, source_format: str, behavior: str) -> list[Rule]
 def _safe_yaml(value: str) -> Any:
     import yaml
 
-    return yaml.safe_load(value)
+    try:
+        return yaml.safe_load(value)
+    except yaml.YAMLError as exc:
+        raise RuleError(f"invalid YAML: {exc}") from exc
 
 
 def _extract_values(payload: Any, label: str) -> list[Any]:

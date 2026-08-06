@@ -1,4 +1,4 @@
-"""The single public build seam: load, validate, render, and publish atomically."""
+"""The single public build seam: load, validate, render, and publish on success."""
 
 from __future__ import annotations
 
@@ -6,7 +6,6 @@ import json
 import shutil
 import tempfile
 import uuid
-from datetime import datetime, timezone
 from pathlib import Path
 from typing import Mapping
 
@@ -36,6 +35,8 @@ def build(request: BuildRequest) -> BuildReport:
     staging: Path | None = None
     try:
         config = load_config(request.config_path)
+        if not _check_redistributable_sources(config, report):
+            raise BuildError("source redistribution gate failed")
         tools = request.tool_adapter or ExternalTools(
             request.mihomo_path, request.sing_box_path
         )
@@ -96,6 +97,30 @@ def build(request: BuildRequest) -> BuildReport:
     return report
 
 
+def _check_redistributable_sources(config: Config, report: BuildReport) -> bool:
+    blocked = False
+    for source_id, spec in config.sources.items():
+        if spec.redistributable:
+            continue
+        blocked = True
+        report.sources[source_id] = {
+            "status": "blocked",
+            "required": spec.required,
+            "redistributable": False,
+            "type": spec.type,
+            "format": spec.format,
+            "behavior": spec.behavior,
+            "url": spec.url,
+            "path": spec.path,
+            "error": "redistributable: true is required after license review",
+        }
+        report.errors.append(
+            f"{source_id}: source is not approved for redistribution; "
+            "set redistributable: true only after license review"
+        )
+    return not blocked
+
+
 def _load_sources(
     config: Config, adapter: object, report: BuildReport
 ) -> dict[str, SourceResult]:
@@ -111,17 +136,19 @@ def _load_sources(
             report.sources[source_id] = {
                 **result.metadata(),
                 "required": spec.required,
+                "redistributable": spec.redistributable,
                 "type": spec.type,
                 "format": spec.format,
                 "behavior": spec.behavior,
                 "url": spec.url,
                 "path": spec.path,
             }
-        except Exception as exc:
+        except SourceError as exc:
             message = f"{source_id}: {exc}"
             report.sources[source_id] = {
                 "status": "failed",
                 "required": spec.required,
+                "redistributable": spec.redistributable,
                 "type": spec.type,
                 "format": spec.format,
                 "behavior": spec.behavior,
@@ -476,9 +503,23 @@ def _apply_minimums(
     report.errors.extend(
         critical_rule_errors(logical_rules, config.quality.get("critical_rules", {}))
     )
+    critical_rules = config.quality.get("critical_rules", {})
+    small_output_limit = int(config.quality["small_output_limit"])
     for output_name, rules in logical_rules.items():
         if not rules:
             report.errors.append(f"{output_name} is empty")
+            continue
+        metadata = report.outputs.get(output_name, {})
+        if (
+            len(rules) < small_output_limit
+            and not (
+                isinstance(metadata, dict) and metadata.get("skipped") == "lossy_format"
+            )
+            and not critical_rules.get(output_name)
+        ):
+            report.errors.append(
+                f"{output_name} is below {small_output_limit} rules and requires a non-empty critical rule list"
+            )
 
 
 def _apply_baseline(
@@ -576,7 +617,6 @@ def _apply_baseline(
 def _manifest(report: BuildReport) -> dict[str, object]:
     return {
         "schema_version": 2,
-        "generated_at": datetime.now(timezone.utc).isoformat(),
         "status": report.status,
         "publishable": report.publishable,
         "tools": report.tools,

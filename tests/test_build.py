@@ -8,7 +8,8 @@ from pathlib import Path
 import yaml
 
 from rulemerger.build import build
-from rulemerger.models import BuildRequest
+from rulemerger.models import BuildRequest, Rule
+from rulemerger.sources import SourceResult
 
 
 def write_project(
@@ -35,9 +36,16 @@ def write_project(
         ),
         encoding="utf-8",
     )
+    normalized_sources = {
+        source_id: {
+            **source,
+            "redistributable": source.get("redistributable", True),
+        }
+        for source_id, source in sources.items()
+    }
     config = {
         "schema_version": 2,
-        "sources": sources,
+        "sources": normalized_sources,
         "categories": categories,
         "profiles": {
             "default": {"actions": actions, "formats": formats or ["yaml", "json"]}
@@ -47,7 +55,8 @@ def write_project(
         or {
             "max_drop_ratio": 0.15,
             "max_growth_ratio": 0.50,
-            "small_output_limit": 100,
+            "small_output_limit": 0,
+            "critical_rules": {},
         },
         "legacy": {"enabled": False, "aliases": {}},
     }
@@ -237,6 +246,175 @@ class BuildBehaviorTests(unittest.TestCase):
             self.assertEqual(report.status, "degraded")
             self.assertTrue(any("extension" in warning for warning in report.warnings))
             self.assertTrue((root / "published" / "manifest.json").exists())
+
+    def test_optional_source_parse_failure_is_degraded_but_publishable(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            (root / "bad.yaml").write_text("payload: [\n", encoding="utf-8")
+            config = write_project(
+                root,
+                source_text="DOMAIN,example.com\n",
+                sources={
+                    "required": {
+                        "type": "file",
+                        "path": "source.txt",
+                        "format": "text",
+                        "behavior": "classical",
+                    },
+                    "optional": {
+                        "type": "file",
+                        "path": "bad.yaml",
+                        "format": "yaml",
+                        "behavior": "domain",
+                        "required": False,
+                    },
+                },
+                categories={
+                    "direct": {
+                        "family": "domain",
+                        "sources": ["required", "optional"],
+                        "formats": ["yaml"],
+                    }
+                },
+                actions={"direct-domain": ["direct"]},
+            )
+
+            report = build(BuildRequest(config, root / "published"))
+
+            self.assertTrue(report.publishable, report.errors)
+            self.assertEqual(report.status, "degraded")
+            self.assertTrue(any("optional" in warning for warning in report.warnings))
+
+    def test_optional_adapter_programming_error_fails_build(self) -> None:
+        class BuggyAdapter:
+            def load(self, spec):
+                if spec.id == "optional":
+                    raise RuntimeError("adapter programming bug")
+                return SourceResult(
+                    spec.id,
+                    (Rule("domain", "example.com"),),
+                    "0" * 64,
+                    1,
+                    1,
+                )
+
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            config = write_project(
+                root,
+                source_text="DOMAIN,example.com\n",
+                sources={
+                    "required": {
+                        "type": "file",
+                        "path": "source.txt",
+                        "format": "text",
+                        "behavior": "classical",
+                    },
+                    "optional": {
+                        "type": "file",
+                        "path": "source.txt",
+                        "format": "text",
+                        "behavior": "classical",
+                        "required": False,
+                    },
+                },
+                categories={
+                    "direct": {
+                        "family": "domain",
+                        "sources": ["required", "optional"],
+                        "formats": ["yaml"],
+                    }
+                },
+                actions={"direct-domain": ["direct"]},
+            )
+
+            report = build(
+                BuildRequest(config, root / "published", source_adapter=BuggyAdapter())
+            )
+
+            self.assertFalse(report.publishable)
+            self.assertEqual(report.status, "failed")
+            self.assertTrue(
+                any("adapter programming bug" in error for error in report.errors)
+            )
+
+    def test_unapproved_source_is_blocked_before_fetch(self) -> None:
+        class UnexpectedAdapter:
+            def load(self, spec):
+                raise AssertionError("unapproved source must not be fetched")
+
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            config = write_project(
+                root,
+                source_text="DOMAIN,example.com\n",
+                sources={
+                    "source": {
+                        "type": "file",
+                        "path": "source.txt",
+                        "format": "text",
+                        "behavior": "classical",
+                        "redistributable": False,
+                    }
+                },
+                categories={
+                    "direct": {
+                        "family": "domain",
+                        "sources": ["source"],
+                        "formats": ["yaml"],
+                    }
+                },
+                actions={"direct-domain": ["direct"]},
+            )
+
+            report = build(
+                BuildRequest(
+                    config,
+                    root / "published",
+                    source_adapter=UnexpectedAdapter(),
+                )
+            )
+
+            self.assertFalse(report.publishable)
+            self.assertEqual(report.sources["source"]["status"], "blocked")
+            self.assertTrue(any("redistributable" in error for error in report.errors))
+
+    def test_small_output_requires_critical_rule_list(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            config = write_project(
+                root,
+                source_text="DOMAIN,example.com\n",
+                sources={
+                    "source": {
+                        "type": "file",
+                        "path": "source.txt",
+                        "format": "text",
+                        "behavior": "classical",
+                    }
+                },
+                categories={
+                    "direct": {
+                        "family": "domain",
+                        "sources": ["source"],
+                        "formats": ["yaml"],
+                    }
+                },
+                actions={"direct-domain": ["direct"]},
+                quality={
+                    "max_drop_ratio": 0.15,
+                    "max_growth_ratio": 0.50,
+                    "small_output_limit": 100,
+                    "critical_rules": {},
+                },
+            )
+
+            report = build(BuildRequest(config, root / "published"))
+
+            self.assertFalse(report.publishable)
+            self.assertTrue(
+                any("critical rule list" in error for error in report.errors)
+            )
 
     def test_same_action_exact_conflict_fails(self) -> None:
         with tempfile.TemporaryDirectory() as directory:
@@ -468,6 +646,40 @@ class BuildBehaviorTests(unittest.TestCase):
                 len(manifest["outputs"]["categories/direct.yaml"]["sha256"]), 64
             )
             self.assertEqual(manifest["sources"]["source"]["path"], "source.txt")
+
+    def test_identical_builds_have_stable_manifests(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            config = write_project(
+                root,
+                source_text="DOMAIN,example.com\n",
+                sources={
+                    "source": {
+                        "type": "file",
+                        "path": "source.txt",
+                        "format": "text",
+                        "behavior": "classical",
+                    }
+                },
+                categories={
+                    "direct": {
+                        "family": "domain",
+                        "sources": ["source"],
+                        "formats": ["yaml"],
+                    }
+                },
+                actions={"direct-domain": ["direct"]},
+            )
+            output = root / "published"
+
+            first = build(BuildRequest(config, output))
+            first_manifest = (output / "manifest.json").read_bytes()
+            second = build(BuildRequest(config, output))
+            second_manifest = (output / "manifest.json").read_bytes()
+
+            self.assertTrue(first.publishable, first.errors)
+            self.assertTrue(second.publishable, second.errors)
+            self.assertEqual(first_manifest, second_manifest)
 
     def test_binary_formats_are_round_tripped_at_the_tool_seam(self) -> None:
         with tempfile.TemporaryDirectory() as directory:

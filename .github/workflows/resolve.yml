@@ -59,13 +59,24 @@ jobs:
         run: |
           set -euo pipefail
           python -m unittest discover -s tests -v
-          git fetch origin release:refs/remotes/origin/release || true
           baseline_args=()
           legacy_args=()
-          if git show origin/release:manifest.json > baseline.json 2>/dev/null; then
-            baseline_args=(--baseline baseline.json)
-          else
+          set +e
+          git ls-remote --exit-code --heads origin release >/dev/null 2>&1
+          remote_status=$?
+          set -e
+          if [ "$remote_status" -eq 0 ]; then
+            git fetch origin release:refs/remotes/origin/release
+            if git show origin/release:manifest.json > baseline.json 2>/dev/null; then
+              baseline_args=(--baseline baseline.json)
+            else
+              legacy_args=(--include-legacy)
+            fi
+          elif [ "$remote_status" -eq 2 ]; then
             legacy_args=(--include-legacy)
+          else
+            echo "Unable to inspect origin/release; refusing to bypass baseline."
+            exit "$remote_status"
           fi
           set +e
           python -m rulemerger build \

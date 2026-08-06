@@ -27,6 +27,7 @@ class SourceSpec:
     url: str | None = None
     path: str | None = None
     required: bool = True
+    redistributable: bool = False
 
 
 @dataclass(frozen=True)

@@ -1,6 +1,7 @@
 schema_version: 2
 
 sources:
+  # Sources stay blocked until their license and redistribution status is reviewed.
   skk_lan:
     type: http
     url: https://ruleset.skk.moe/Clash/non_ip/lan.txt
@@ -328,6 +329,7 @@ quality:
   max_growth_ratio: 0.50
   small_output_limit: 100
   min_rules: {}
+  # Every emitted output below small_output_limit must be listed here.
   critical_rules: {}
 
 legacy:

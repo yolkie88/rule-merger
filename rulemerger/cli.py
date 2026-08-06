@@ -14,7 +14,7 @@ def make_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(prog="python -m rulemerger")
     subparsers = parser.add_subparsers(dest="command", required=True)
     build_parser = subparsers.add_parser(
-        "build", help="build and atomically publish rule outputs"
+        "build", help="build and publish rule outputs after validation"
     )
     build_parser.add_argument("--config", type=Path, required=True)
     build_parser.add_argument("--output", type=Path, required=True)

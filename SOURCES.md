@@ -12,4 +12,4 @@
 | ACL4SSR | [ACL4SSR/ACL4SSR](https://github.com/ACL4SSR/ACL4SSR) | supplemental AI category | 发布前必须核对上游当前声明 |
 | Local files | `local/*.yaml` | owner-maintained direct, proxy, AI and Microsoft exceptions | Maintained with this fork; review before redistribution |
 
-在许可证不明确、未授权再分发或来源用途发生变化时，应先将 source 移出公开 profile，不能通过 `legacy` 或格式转换绕过审查。
+在许可证不明确、未授权再分发或来源用途发生变化时，配置中的 source 必须保持 `redistributable: false`，不能通过 `legacy` 或格式转换绕过审查。构建器默认拒绝未显式批准的来源。

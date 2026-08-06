@@ -37,6 +37,7 @@ class CliTests(unittest.TestCase):
                                 "path": "source.txt",
                                 "format": "text",
                                 "behavior": "classical",
+                                "redistributable": True,
                             }
                         },
                         "categories": {
@@ -53,7 +54,7 @@ class CliTests(unittest.TestCase):
                             }
                         },
                         "overrides": "overrides.yaml",
-                        "quality": {},
+                        "quality": {"small_output_limit": 0},
                         "legacy": {"enabled": False, "aliases": {}},
                     },
                     sort_keys=False,
