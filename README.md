@@ -32,12 +32,14 @@ python -m rulemerger build --config config.yaml --output <staging-dir> \
 
 source 默认 `redistributable: false`；只有完成许可证/再分发审查并显式设为 `true` 的来源才会进入公开构建。
 少于 `quality.small_output_limit` 条的产物必须在 `quality.critical_rules` 中列出关键规则；缺少清单时构建会 fail closed。
+`critical_rules` 可使用无扩展名规则集路径（如 `categories/private-ip`），一次覆盖 YAML、JSON、SRS、MRS 的同一规则集。
 
 输出格式：
 
-- YAML：Mihomo classical `payload`。
-- JSON / SRS：sing-box rule-set。
-- MRS：仅在集合能够无损表达为 domain / ipcidr 时生成；包含 `DOMAIN-KEYWORD` 或 `DOMAIN-REGEX` 时明确跳过，不生成缩水文件。
+- YAML：Mihomo classical `payload`，保留 `PROCESS-NAME`、`DOMAIN-WILDCARD`、`IP-ASN` 等 Mihomo 原生规则。
+- JSON / SRS：sing-box rule-set；`PROCESS-NAME` 会映射为 `process_name`，域通配符会映射为等价 `domain_regex`。
+- MRS：仅生成可由 Mihomo domain/ipcidr 规则集表达的规则；进程、ASN、关键词和正则规则不会写入 MRS。
+- 规则无法在目标格式无损表达时，构建继续发布可兼容的产物，并在 `BuildReport.warnings` 和对应 output 的 `omitted_kinds` 中明确记录；例如 `IP-ASN` 是 Mihomo-only，不会伪造为 sing-box CIDR。
 - sing-box `logical` 规则暂不接受；因统一模型无法保留其 AND/OR 语义，构建会显式失败而不会静默展平。
 
 ## 引用生成物

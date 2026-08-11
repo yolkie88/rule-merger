@@ -416,7 +416,44 @@ class BuildBehaviorTests(unittest.TestCase):
                 any("critical rule list" in error for error in report.errors)
             )
 
-    def test_same_action_exact_conflict_fails(self) -> None:
+    def test_extension_free_critical_rule_list_covers_all_formats(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            config = write_project(
+                root,
+                source_text="DOMAIN,example.com\n",
+                sources={
+                    "source": {
+                        "type": "file",
+                        "path": "source.txt",
+                        "format": "text",
+                        "behavior": "classical",
+                    }
+                },
+                categories={
+                    "direct": {
+                        "family": "domain",
+                        "sources": ["source"],
+                        "formats": ["yaml", "json"],
+                    }
+                },
+                actions={"direct-domain": ["direct"]},
+                quality={
+                    "max_drop_ratio": 0.15,
+                    "max_growth_ratio": 0.50,
+                    "small_output_limit": 100,
+                    "critical_rules": {
+                        "categories/direct": ["DOMAIN,example.com"],
+                        "profiles/default/direct-domain": ["DOMAIN,example.com"],
+                    },
+                },
+            )
+
+            report = build(BuildRequest(config, root / "published"))
+
+            self.assertTrue(report.publishable, report.errors)
+
+    def test_same_action_exact_overlap_is_deduped(self) -> None:
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)
             (root / "a.txt").write_text("DOMAIN,example.com\n", encoding="utf-8")
@@ -455,9 +492,13 @@ class BuildBehaviorTests(unittest.TestCase):
 
             report = build(BuildRequest(config, root / "published"))
 
-            self.assertFalse(report.publishable)
-            self.assertTrue(any("exact" in error for error in report.errors))
-            self.assertFalse((root / "published").exists())
+            self.assertTrue(report.publishable, report.errors)
+            payload = yaml.safe_load(
+                (root / "published" / "profiles" / "default" / "direct-domain.yaml").read_text(
+                    encoding="utf-8"
+                )
+            )
+            self.assertEqual(payload["payload"], ["DOMAIN,example.com"])
 
     def test_explicit_override_allows_parent_child_and_writes_override_output(
         self,
@@ -527,7 +568,7 @@ class BuildBehaviorTests(unittest.TestCase):
             )
             self.assertEqual(direct["payload"], ["DOMAIN-SUFFIX,example.com"])
 
-    def test_parent_child_without_override_fails(self) -> None:
+    def test_same_action_parent_child_overlap_is_preserved(self) -> None:
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)
             (root / "parent.txt").write_text(
@@ -570,8 +611,7 @@ class BuildBehaviorTests(unittest.TestCase):
 
             report = build(BuildRequest(config, root / "published"))
 
-            self.assertFalse(report.publishable)
-            self.assertTrue(any("parent-child" in error for error in report.errors))
+            self.assertTrue(report.publishable, report.errors)
 
     def test_keyword_category_does_not_emit_lossy_mrs(self) -> None:
         with tempfile.TemporaryDirectory() as directory:
@@ -604,10 +644,72 @@ class BuildBehaviorTests(unittest.TestCase):
             self.assertFalse((root / "published" / "categories" / "ai.mrs").exists())
             self.assertTrue(
                 any(
-                    item.get("skipped") == "lossy_format"
+                    item.get("skipped") == "no_compatible_rules"
                     for item in report.outputs.values()
                     if isinstance(item, dict)
                 )
+            )
+
+    def test_target_aware_outputs_preserve_native_rules(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            (root / "process.txt").write_text(
+                "PROCESS-NAME,curl\n", encoding="utf-8"
+            )
+            (root / "asn.txt").write_text("IP-ASN,13335\n", encoding="utf-8")
+            config = write_project(
+                root,
+                source_text="DOMAIN,unused.example\n",
+                sources={
+                    "process": {
+                        "type": "file",
+                        "path": "process.txt",
+                        "format": "text",
+                        "behavior": "classical",
+                    },
+                    "asn": {
+                        "type": "file",
+                        "path": "asn.txt",
+                        "format": "text",
+                        "behavior": "classical",
+                    },
+                },
+                categories={
+                    "process": {
+                        "family": "domain",
+                        "sources": ["process"],
+                        "formats": ["yaml", "json", "mrs"],
+                    },
+                    "asn": {
+                        "family": "ipcidr",
+                        "sources": ["asn"],
+                        "formats": ["yaml", "json", "mrs"],
+                    },
+                },
+                actions={"direct-domain": ["process"], "direct-ip": ["asn"]},
+                formats=["yaml", "json", "mrs"],
+            )
+
+            report = build(
+                BuildRequest(config, root / "published", tool_adapter=self.FakeTools())
+            )
+
+            self.assertTrue(report.publishable, report.errors)
+            payload = yaml.safe_load(
+                (root / "published" / "categories" / "process.yaml").read_text(
+                    encoding="utf-8"
+                )
+            )
+            self.assertEqual(payload["payload"], ["PROCESS-NAME,curl"])
+            sing_box = json.loads(
+                (root / "published" / "categories" / "process.json").read_text(
+                    encoding="utf-8"
+                )
+            )
+            self.assertEqual(sing_box["rules"], [{"process_name": ["curl"]}])
+            self.assertFalse((root / "published" / "categories" / "asn.json").exists())
+            self.assertEqual(
+                report.outputs["categories/asn.json"]["omitted_kinds"], ["ip_asn"]
             )
 
     def test_manifest_records_rule_counts_and_hashes(self) -> None:

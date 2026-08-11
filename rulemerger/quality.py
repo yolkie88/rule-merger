@@ -276,8 +276,11 @@ def critical_rule_errors(
     errors: list[str] = []
     from .rules import parse_rule
 
-    for output_name, expected_values in critical_rules.items():
-        actual = {rule.key() for rule in outputs.get(output_name, ())}
+    for output_name, rules in outputs.items():
+        expected_values = critical_rules_for(output_name, critical_rules)
+        if not expected_values:
+            continue
+        actual = {rule.key() for rule in rules}
         for value in expected_values:
             try:
                 expected = parse_rule(value, "classical")
@@ -287,3 +290,17 @@ def critical_rule_errors(
             if any(rule.key() not in actual for rule in expected):
                 errors.append(f"{output_name} is missing critical rule: {value}")
     return errors
+
+
+def critical_rules_for(
+    output_name: str, critical_rules: Mapping[str, Iterable[str]]
+) -> tuple[str, ...]:
+    """Resolve an exact output key or its extension-free rule-set key."""
+
+    configured = critical_rules.get(output_name)
+    if configured is None:
+        base, dot, _extension = output_name.rpartition(".")
+        configured = critical_rules.get(base if dot else output_name)
+    if not isinstance(configured, (list, tuple)):
+        return ()
+    return tuple(value for value in configured if isinstance(value, str))

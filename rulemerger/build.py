@@ -15,6 +15,7 @@ from .quality import (
     Conflict,
     compare_count,
     critical_rule_errors,
+    critical_rules_for,
     duplicate_category_conflicts,
     find_segment_conflicts,
 )
@@ -252,12 +253,9 @@ def _build_profiles(
             conflicts = exact_conflicts + [
                 item for item in containment_conflicts if item.relation != "exact"
             ]
-            if conflicts:
-                report.errors.extend(
-                    f"{profile_id}/{action} unauthorized {item.relation} conflict: {item.rule} vs {item.other}"
-                    for item in conflicts
-                    if not item.authorized
-                )
+            # Categories routed to the same action are intentionally composable.
+            # Their exact and parent/child overlaps are recorded and then deduped
+            # below; only cross-action conflicts are policy violations.
             profile_conflicts[action] = {
                 "total": len(conflicts),
                 "items": [item.as_dict() for item in conflicts[:100]],
@@ -439,6 +437,11 @@ def _render_one(
         metadata = result.metadata()
         metadata.update({"format": output_format, "family": family})
         report.outputs[relative] = metadata
+        if result.omitted_kinds:
+            report.warnings.append(
+                f"{relative}: omitted target-incompatible rule kinds: "
+                + ", ".join(result.omitted_kinds)
+            )
         if result.content is None:
             return
         path = staging / relative
@@ -513,9 +516,10 @@ def _apply_minimums(
         if (
             len(rules) < small_output_limit
             and not (
-                isinstance(metadata, dict) and metadata.get("skipped") == "lossy_format"
+                isinstance(metadata, dict)
+                and metadata.get("skipped") in {"lossy_format", "no_compatible_rules"}
             )
-            and not critical_rules.get(output_name)
+            and not critical_rules_for(output_name, critical_rules)
         ):
             report.errors.append(
                 f"{output_name} is below {small_output_limit} rules and requires a non-empty critical rule list"

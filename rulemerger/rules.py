@@ -11,7 +11,13 @@ from .models import Rule
 
 
 DOMAIN_LABEL = re.compile(r"^[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?$")
-DOMAIN_KINDS = {"domain", "domain_suffix", "domain_keyword", "domain_regex"}
+DOMAIN_KINDS = {
+    "domain",
+    "domain_suffix",
+    "domain_keyword",
+    "domain_regex",
+    "domain_wildcard",
+}
 
 
 class RuleError(ValueError):
@@ -116,16 +122,23 @@ def parse_rule(value: str, behavior: str = "classical") -> tuple[Rule, ...]:
             "DOMAIN",
             "DOMAIN-SUFFIX",
             "DOMAIN-KEYWORD",
+            "DOMAIN-WILDCARD",
             "IP-CIDR",
             "IP-CIDR6",
+            "IP-ASN",
+            "PROCESS-NAME",
         }:
             raw_value = raw_value.split(",", 1)[0].strip()
         else:
             raw_value = raw_value.strip()
         if rule_type == "DOMAIN":
-            return (_domain_rule("domain", raw_value),)
+            if _is_source_marker(raw_value):
+                return ()
+            if "*" in raw_value or "?" in raw_value:
+                return (_domain_wildcard_rule(raw_value),)
+            return (_domain_or_regex(raw_value),)
         if rule_type == "DOMAIN-SUFFIX":
-            return (_domain_rule("domain_suffix", raw_value),)
+            return (_domain_suffix_or_regex(raw_value),)
         if rule_type == "DOMAIN-KEYWORD":
             if not raw_value:
                 raise RuleError("DOMAIN-KEYWORD value is empty")
@@ -138,18 +151,34 @@ def parse_rule(value: str, behavior: str = "classical") -> tuple[Rule, ...]:
             except re.error as exc:
                 raise RuleError(f"invalid DOMAIN-REGEX: {exc}") from exc
             return (Rule("domain_regex", raw_value),)
+        if rule_type == "DOMAIN-WILDCARD":
+            return (_domain_wildcard_rule(raw_value),)
         if rule_type in {"IP-CIDR", "IP-CIDR6"}:
             rule = _ip_rule(raw_value)
             expected_version = 6 if rule_type == "IP-CIDR6" else 4
             if ipaddress.ip_network(rule.value).version != expected_version:
                 raise RuleError(f"{rule_type} has the wrong IP version")
             return (rule,)
+        if rule_type == "IP-ASN":
+            if not raw_value.isdecimal():
+                raise RuleError(f"invalid IP-ASN: {raw_value!r}")
+            return (Rule("ip_asn", raw_value),)
+        if rule_type == "PROCESS-NAME":
+            if not raw_value:
+                raise RuleError("PROCESS-NAME value is empty")
+            return (Rule("process_name", raw_value),)
         raise RuleError(f"unsupported classical rule type: {rule_type}")
 
     if behavior == "domain":
+        if _is_source_marker(cleaned):
+            return ()
         if cleaned.startswith("+."):
-            return (_domain_rule("domain_suffix", cleaned[2:]),)
-        return (_domain_rule("domain", cleaned),)
+            if "*" in cleaned[2:] or "?" in cleaned[2:]:
+                return (Rule("domain_regex", _suffix_wildcard_regex(cleaned[2:])),)
+            return (_domain_suffix_or_regex(cleaned[2:]),)
+        if "*" in cleaned or "?" in cleaned:
+            return (_domain_wildcard_rule(cleaned),)
+        return (_domain_or_regex(cleaned),)
     if behavior == "ipcidr":
         return (_ip_rule(cleaned),)
     if behavior == "classical":
@@ -183,6 +212,7 @@ def _parse_sing_box_item(item: dict[str, Any]) -> list[Rule]:
         ("domain_suffix", "domain_suffix"),
         ("domain_keyword", "domain_keyword"),
         ("domain_regex", "domain_regex"),
+        ("process_name", "process_name"),
     ):
         for value in _as_list(item.get(key)):
             if not isinstance(value, str):
@@ -198,11 +228,16 @@ def _parse_sing_box_item(item: dict[str, Any]) -> list[Rule]:
                     raise RuleError("sing-box domain_keyword value is empty")
                 result.append(Rule(kind, value.lower()))
             else:
-                try:
-                    re.compile(value)
-                except re.error as exc:
-                    raise RuleError(f"invalid sing-box domain_regex: {exc}") from exc
-                result.append(Rule(kind, value))
+                if kind == "process_name":
+                    if not value:
+                        raise RuleError("sing-box process_name value is empty")
+                    result.append(Rule(kind, value))
+                else:
+                    try:
+                        re.compile(value)
+                    except re.error as exc:
+                        raise RuleError(f"invalid sing-box domain_regex: {exc}") from exc
+                    result.append(Rule(kind, value))
     for value in _as_list(item.get("ip_cidr")):
         if not isinstance(value, str):
             raise RuleError("sing-box ip_cidr values must be strings")
@@ -225,11 +260,59 @@ def _clean_line(value: str) -> str:
     return re.split(r"\s+#", value, maxsplit=1)[0].strip()
 
 
+def _is_source_marker(value: str) -> bool:
+    """Recognise the non-rule marker embedded in current Sukka domain lists."""
+
+    normalized = value.lower()
+    return normalized.startswith("this_ruleset_is_made_by_") or normalized == (
+        "7h15.ru1353t.1s.m4d3.by.5ukk4w.skk.moe"
+    )
+
+
 def _domain_rule(kind: str, value: str) -> Rule:
-    value = value.strip().lower().lstrip(".")
+    value = value.strip().lower().lstrip(".").rstrip(".")
     if not value or not _valid_domain(value):
         raise RuleError(f"invalid domain: {value!r}")
     return Rule(kind, value)
+
+
+def _domain_wildcard_rule(value: str) -> Rule:
+    value = value.strip().lower().rstrip(".")
+    if not value or not any(token in value for token in "*?"):
+        raise RuleError(f"invalid domain wildcard: {value!r}")
+    if any(token in value for token in ", \t/"):
+        raise RuleError(f"invalid domain wildcard: {value!r}")
+    return Rule("domain_wildcard", value)
+
+
+def _domain_or_regex(value: str) -> Rule:
+    try:
+        return _domain_rule("domain", value)
+    except RuleError:
+        return Rule("domain_regex", _literal_domain_regex(value, suffix=False))
+
+
+def _domain_suffix_or_regex(value: str) -> Rule:
+    try:
+        return _domain_rule("domain_suffix", value)
+    except RuleError:
+        return Rule("domain_regex", _literal_domain_regex(value, suffix=True))
+
+
+def _literal_domain_regex(value: str, *, suffix: bool) -> str:
+    normalized = value.strip().lower().lstrip(".").rstrip(".")
+    if not normalized or not re.fullmatch(r"[a-z0-9_.-]+", normalized):
+        raise RuleError(f"invalid domain: {value!r}")
+    prefix = r"^(?:.*\.)?" if suffix else "^"
+    return prefix + re.escape(normalized) + "$"
+
+
+def _suffix_wildcard_regex(value: str) -> str:
+    """Preserve Mihomo `+.` suffix semantics when a source adds a glob."""
+
+    escaped = re.escape(value.strip().lower())
+    glob = escaped.replace(r"\*", ".*").replace(r"\?", ".")
+    return rf"^(?:.*\.)?{glob}$"
 
 
 def _valid_domain(value: str) -> bool:
@@ -266,6 +349,9 @@ def rule_to_classical(rule: Rule) -> str:
         "domain_suffix": "DOMAIN-SUFFIX",
         "domain_keyword": "DOMAIN-KEYWORD",
         "domain_regex": "DOMAIN-REGEX",
+        "domain_wildcard": "DOMAIN-WILDCARD",
+        "process_name": "PROCESS-NAME",
+        "ip_asn": "IP-ASN",
     }
     if rule.kind in prefixes:
         return f"{prefixes[rule.kind]},{rule.value}"
@@ -281,6 +367,7 @@ def rule_to_sing_box(rule: Rule) -> dict[str, list[str]]:
         "domain_suffix": "domain_suffix",
         "domain_keyword": "domain_keyword",
         "domain_regex": "domain_regex",
+        "process_name": "process_name",
         "ip_cidr": "ip_cidr",
     }
     try:
@@ -299,6 +386,25 @@ def to_sing_box_rules(rules: Iterable[Rule]) -> list[dict[str, list[str]]]:
     return [{field: values} for field, values in grouped.items()]
 
 
+def project_rule_for_sing_box(rule: Rule) -> Rule | None:
+    """Return an equivalent sing-box rule, or None when no safe mapping exists."""
+
+    if rule.kind == "ip_asn":
+        return None
+    if rule.kind == "domain_wildcard":
+        escaped = re.escape(rule.value)
+        return Rule(
+            "domain_regex", "^" + escaped.replace(r"\*", ".*").replace(r"\?", ".") + "$"
+        )
+    return rule
+
+
+def supports_mrs(rule: Rule) -> bool:
+    """MRS can preserve only domain/IP set matchers, including domain wildcards."""
+
+    return rule.kind in {"domain", "domain_suffix", "domain_wildcard", "ip_cidr"}
+
+
 def rule_to_domain_or_ip_text(rule: Rule) -> str:
     if rule.kind == "domain_suffix":
         return f"+.{rule.value}"
@@ -306,12 +412,14 @@ def rule_to_domain_or_ip_text(rule: Rule) -> str:
         return rule.value
     if rule.kind == "ip_cidr":
         return rule.value
+    if rule.kind == "domain_wildcard":
+        return rule.value
     raise RuleError(f"{rule.kind} cannot be represented losslessly by MRS")
 
 
 def family_of(rule: Rule) -> str:
-    if rule.kind == "ip_cidr":
+    if rule.kind in {"ip_cidr", "ip_asn"}:
         return "ipcidr"
-    if rule.kind in DOMAIN_KINDS:
+    if rule.kind in DOMAIN_KINDS or rule.kind == "process_name":
         return "domain"
     raise RuleError(f"unknown rule family: {rule.kind}")

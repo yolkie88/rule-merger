@@ -16,6 +16,8 @@ from .rules import (
     parse_payload,
     rule_to_classical,
     rule_to_domain_or_ip_text,
+    project_rule_for_sing_box,
+    supports_mrs,
     to_sing_box_rules,
 )
 from .tools import ExternalTools
@@ -30,16 +32,23 @@ class RenderResult:
     content: bytes | None
     rules: int
     skipped: str | None = None
+    omitted_kinds: tuple[str, ...] = ()
 
     def metadata(self) -> dict[str, object]:
+        metadata: dict[str, object] = {"rules": self.rules}
+        if self.omitted_kinds:
+            metadata["omitted_kinds"] = list(self.omitted_kinds)
         if self.skipped:
-            return {"rules": self.rules, "skipped": self.skipped}
+            metadata["skipped"] = self.skipped
+            return metadata
         assert self.content is not None
-        return {
-            "rules": self.rules,
-            "bytes": len(self.content),
-            "sha256": hashlib.sha256(self.content).hexdigest(),
-        }
+        metadata.update(
+            {
+                "bytes": len(self.content),
+                "sha256": hashlib.sha256(self.content).hexdigest(),
+            }
+        )
+        return metadata
 
 
 def render_rules(
@@ -48,10 +57,6 @@ def render_rules(
     rules_list = dedupe(rules)
     if not rules_list:
         raise ValueError("output rule set is empty")
-    if output_format == "mrs" and any(
-        rule.kind in {"domain_keyword", "domain_regex"} for rule in rules_list
-    ):
-        return RenderResult(None, len(rules_list), skipped="lossy_format")
 
     if output_format == "yaml":
         content = (
@@ -67,41 +72,85 @@ def render_rules(
         return RenderResult(content, len(rules_list))
 
     if output_format == "json":
+        rendered, omitted = _sing_box_projection(rules_list)
+        if not rendered:
+            return RenderResult(
+                None,
+                0,
+                skipped="no_compatible_rules",
+                omitted_kinds=omitted,
+            )
         content = (
             json.dumps(
-                {"version": 4, "rules": to_sing_box_rules(rules_list)},
+                {"version": 4, "rules": to_sing_box_rules(rendered)},
                 ensure_ascii=False,
                 indent=2,
             )
             + "\n"
         ).encode("utf-8")
-        _verify(content, rules_list, family, "json", tools)
-        return RenderResult(content, len(rules_list))
+        _verify(content, rendered, family, "json", tools)
+        return RenderResult(content, len(rendered), omitted_kinds=omitted)
 
     if output_format == "srs":
+        rendered, omitted = _sing_box_projection(rules_list)
+        if not rendered:
+            return RenderResult(
+                None,
+                0,
+                skipped="no_compatible_rules",
+                omitted_kinds=omitted,
+            )
         source = (
             json.dumps(
-                {"version": 4, "rules": to_sing_box_rules(rules_list)},
+                {"version": 4, "rules": to_sing_box_rules(rendered)},
                 ensure_ascii=False,
                 indent=2,
             )
             + "\n"
         ).encode("utf-8")
         content = tools.compile_srs(source)
-        _verify(content, rules_list, family, "srs", tools)
-        return RenderResult(content, len(rules_list))
+        _verify(content, rendered, family, "srs", tools)
+        return RenderResult(content, len(rendered), omitted_kinds=omitted)
 
     if output_format == "mrs":
+        rendered = [rule for rule in rules_list if supports_mrs(rule)]
+        omitted = _omitted_kinds(rules_list, rendered)
+        if not rendered:
+            return RenderResult(
+                None,
+                0,
+                skipped="no_compatible_rules",
+                omitted_kinds=omitted,
+            )
         try:
-            lines = [rule_to_domain_or_ip_text(rule) for rule in rules_list]
+            lines = [rule_to_domain_or_ip_text(rule) for rule in rendered]
         except RuleError as exc:
             raise LossyFormatError(str(exc)) from exc
         source = ("\n".join(lines) + "\n").encode("utf-8")
         content = tools.compile_mrs(source, family)
-        _verify(content, rules_list, family, "mrs", tools)
-        return RenderResult(content, len(rules_list))
+        _verify(content, rendered, family, "mrs", tools)
+        return RenderResult(content, len(rendered), omitted_kinds=omitted)
 
     raise ValueError(f"unsupported output format: {output_format}")
+
+
+def _sing_box_projection(rules: Iterable[Rule]) -> tuple[list[Rule], tuple[str, ...]]:
+    rendered: list[Rule] = []
+    omitted: list[str] = []
+    for rule in rules:
+        projected = project_rule_for_sing_box(rule)
+        if projected is None:
+            omitted.append(rule.kind)
+        else:
+            rendered.append(projected)
+    return dedupe(rendered), tuple(sorted(set(omitted)))
+
+
+def _omitted_kinds(original: Iterable[Rule], rendered: Iterable[Rule]) -> tuple[str, ...]:
+    rendered_keys = {rule.key() for rule in rendered}
+    return tuple(
+        sorted({rule.kind for rule in original if rule.key() not in rendered_keys})
+    )
 
 
 def _verify(
