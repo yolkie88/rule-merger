@@ -8,6 +8,7 @@ from rulemerger.rules import (
     project_rule_for_sing_box,
     rule_to_classical,
     rule_to_sing_box,
+    supports_mrs,
 )
 
 
@@ -59,6 +60,10 @@ class RuleTests(unittest.TestCase):
         )[0]
         self.assertEqual(rule.kind, "domain")
         self.assertEqual(rule.value, "video-thumbnail2.fc2.com")
+
+    def test_mrs_omits_wildcards_that_it_cannot_preserve(self) -> None:
+        wildcard = parse_payload("DOMAIN-WILDCARD,*.example.com\n", "text", "classical")[0]
+        self.assertFalse(supports_mrs(wildcard))
 
     def test_sukka_marker_is_not_treated_as_a_domain_rule(self) -> None:
         self.assertEqual(

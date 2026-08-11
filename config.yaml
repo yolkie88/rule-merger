@@ -373,17 +373,17 @@ quality:
   # Every emitted output below small_output_limit must be listed here.
   # One extension-free path covers its YAML, JSON, SRS, and MRS variants.
   critical_rules:
-    categories/private-domain: [DOMAIN-SUFFIX,lan]
-    categories/private-ip: [IP-CIDR,10.0.0.0/8]
-    categories/steam-cn-domain: [DOMAIN,csgo.wmsj.cn]
-    categories/streaming-ip: [IP-CIDR,23.246.18.0/23]
-    categories/telegram-domain: [DOMAIN-SUFFIX,t.me]
-    categories/telegram-ip: [IP-CIDR,91.105.192.0/23]
-    categories/bytedance-non-cn-domain: [DOMAIN-SUFFIX,byteglb.com]
-    categories/custom-proxy-domain: [DOMAIN-SUFFIX,steam-chat.com]
-    categories/cdn-ip: [IP-CIDR,162.159.200.1/32]
-    categories/fakeip-filter-domain: [DOMAIN-SUFFIX,lan]
-    profiles/default/proxy-ip: [IP-CIDR,23.246.18.0/23]
+    categories/private-domain: ["DOMAIN-SUFFIX,lan"]
+    categories/private-ip: ["IP-CIDR,10.0.0.0/8"]
+    categories/steam-cn-domain: ["DOMAIN,csgo.wmsj.cn"]
+    categories/streaming-ip: ["IP-CIDR,23.246.18.0/23"]
+    categories/telegram-domain: ["DOMAIN-SUFFIX,t.me"]
+    categories/telegram-ip: ["IP-CIDR,91.105.192.0/23"]
+    categories/bytedance-non-cn-domain: ["DOMAIN-SUFFIX,byteglb.com"]
+    categories/custom-proxy-domain: ["DOMAIN-SUFFIX,steam-chat.com"]
+    categories/cdn-ip: ["IP-CIDR,162.159.200.1/32"]
+    categories/fakeip-filter-domain: ["DOMAIN-SUFFIX,lan"]
+    profiles/default/proxy-ip: ["IP-CIDR,23.246.18.0/23"]
 
 legacy:
   enabled: true

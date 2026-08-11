@@ -847,6 +847,41 @@ class BuildBehaviorTests(unittest.TestCase):
             self.assertTrue((root / "published" / "categories" / "direct.mrs").exists())
             self.assertEqual(report.tools["mihomo"], "fake-mihomo")
 
+    def test_ip_cidr_compiler_aggregation_is_semantically_accepted(self) -> None:
+        class AggregatingTools(self.FakeTools):
+            def decompile_srs(self, source: bytes) -> bytes:
+                return b'{"version":4,"rules":[{"ip_cidr":["10.0.0.0/24"]}]}'
+
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            config = write_project(
+                root,
+                source_text="IP-CIDR,10.0.0.0/25\nIP-CIDR,10.0.0.128/25\n",
+                sources={
+                    "source": {
+                        "type": "file",
+                        "path": "source.txt",
+                        "format": "text",
+                        "behavior": "classical",
+                    }
+                },
+                categories={
+                    "direct": {
+                        "family": "ipcidr",
+                        "sources": ["source"],
+                        "formats": ["srs"],
+                    }
+                },
+                actions={"direct-ip": ["direct"]},
+                formats=["srs"],
+            )
+
+            report = build(
+                BuildRequest(config, root / "published", tool_adapter=AggregatingTools())
+            )
+
+            self.assertTrue(report.publishable, report.errors)
+
     def test_baseline_drop_gate_fails_before_replacing_publish(self) -> None:
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)

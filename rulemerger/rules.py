@@ -405,9 +405,11 @@ def project_rule_for_sing_box(rule: Rule) -> Rule | None:
 
 
 def supports_mrs(rule: Rule) -> bool:
-    """MRS can preserve only domain/IP set matchers, including domain wildcards."""
+    """MRS can preserve Mihomo domain/IP set matchers."""
 
-    return rule.kind in {"domain", "domain_suffix", "domain_wildcard", "ip_cidr"}
+    # Mihomo's binary domain set expands wildcard values when it recompiles
+    # them, so emitting one would not preserve the source matcher.
+    return rule.kind in {"domain", "domain_suffix", "ip_cidr"}
 
 
 def rule_to_domain_or_ip_text(rule: Rule) -> str:

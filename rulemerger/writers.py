@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import hashlib
+import ipaddress
 import json
 from dataclasses import dataclass
 from typing import Iterable
@@ -173,11 +174,34 @@ def _verify(
         actual = parse_payload(tools.decompile_mrs(content, behavior), "text", behavior)
     else:
         raise ValueError(f"cannot verify output format: {output_format}")
-    expected_keys = {rule.key() for rule in expected}
-    actual_keys = {rule.key() for rule in actual}
+    expected_rules = tuple(expected)
+    actual_rules = tuple(actual)
+    if output_format == "mrs" and family == "domain":
+        # Mihomo's domain behavior has suffix matching semantics; its
+        # decompiler makes that explicit with `+.`.  Validate against the
+        # target representation rather than mistaking this canonical form for
+        # a failed conversion.
+        expected_rules = tuple(
+            Rule("domain_suffix", rule.value) if rule.kind == "domain" else rule
+            for rule in expected_rules
+        )
+    normalize_cidrs = family == "ipcidr" and output_format in {"srs", "mrs"}
+    expected_keys = _semantic_keys(expected_rules, normalize_cidrs)
+    actual_keys = _semantic_keys(actual_rules, normalize_cidrs)
     if expected_keys != actual_keys:
         missing = sorted(expected_keys - actual_keys)
         extra = sorted(actual_keys - expected_keys)
         raise ValueError(
             f"{output_format} semantic round-trip mismatch; missing={missing[:5]}, extra={extra[:5]}"
         )
+
+
+def _semantic_keys(
+    rules: Iterable[Rule], normalize_cidrs: bool
+) -> set[tuple[str, str]]:
+    """Normalize tool canonicalisation while retaining matching semantics."""
+
+    if not normalize_cidrs:
+        return {rule.key() for rule in rules}
+    networks = [ipaddress.ip_network(rule.value) for rule in rules]
+    return {("ip_cidr", network.with_prefixlen) for network in ipaddress.collapse_addresses(networks)}
