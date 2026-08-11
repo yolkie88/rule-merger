@@ -38,7 +38,7 @@ source 默认 `redistributable: false`；只有完成许可证/再分发审查�
 
 - YAML：Mihomo classical `payload`，保留 `PROCESS-NAME`、`DOMAIN-WILDCARD`、`IP-ASN` 等 Mihomo 原生规则。
 - JSON / SRS：sing-box rule-set；`PROCESS-NAME` 会映射为 `process_name`，域通配符会映射为等价 `domain_regex`。
-- MRS：仅生成可由 Mihomo domain/ipcidr 规则集表达的规则；进程、ASN、关键词、通配符和正则规则不会写入 MRS。Mihomo 会将普通域名规范化为 suffix 匹配，并可能合并相邻 CIDR；构建会按等价匹配集合校验这些规范化结果。
+- MRS：仅生成可由 Mihomo domain/ipcidr 规则集表达的规则；进程、ASN、关键词、通配符和正则规则不会写入 MRS。Mihomo 可能删除已被同一 `DOMAIN-SUFFIX` 覆盖的精确域名，并合并相邻 CIDR；构建会按等价匹配集合校验这些规范化结果。
 - 规则无法在目标格式无损表达时，构建继续发布可兼容的产物，并在 `BuildReport.warnings` 和对应 output 的 `omitted_kinds` 中明确记录；例如 `IP-ASN` 是 Mihomo-only，不会伪造为 sing-box CIDR。
 - sing-box `logical` 规则暂不接受；因统一模型无法保留其 AND/OR 语义，构建会显式失败而不会静默展平。
 

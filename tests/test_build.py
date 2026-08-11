@@ -882,6 +882,41 @@ class BuildBehaviorTests(unittest.TestCase):
 
             self.assertTrue(report.publishable, report.errors)
 
+    def test_domain_covered_by_suffix_is_semantically_accepted(self) -> None:
+        class PruningTools(self.FakeTools):
+            def decompile_mrs(self, source: bytes, behavior: str) -> bytes:
+                return b"+.example.com\n"
+
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            config = write_project(
+                root,
+                source_text="DOMAIN,api.example.com\nDOMAIN-SUFFIX,example.com\n",
+                sources={
+                    "source": {
+                        "type": "file",
+                        "path": "source.txt",
+                        "format": "text",
+                        "behavior": "classical",
+                    }
+                },
+                categories={
+                    "direct": {
+                        "family": "domain",
+                        "sources": ["source"],
+                        "formats": ["mrs"],
+                    }
+                },
+                actions={"direct-domain": ["direct"]},
+                formats=["mrs"],
+            )
+
+            report = build(
+                BuildRequest(config, root / "published", tool_adapter=PruningTools())
+            )
+
+            self.assertTrue(report.publishable, report.errors)
+
     def test_baseline_drop_gate_fails_before_replacing_publish(self) -> None:
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)
