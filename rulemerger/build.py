@@ -174,16 +174,17 @@ def _load_categories(
             result = source_results.get(source_id)
             if result is None:
                 continue
-            wrong_family = [
-                rule for rule in result.rules if family_of(rule) != category.family
-            ]
+            selected = tuple(
+                rule for rule in result.rules if family_of(rule) == category.family
+            )
+            wrong_family = len(result.rules) - len(selected)
             if wrong_family:
-                report.errors.append(
-                    f"{category_id}: source {source_id} contains rules outside {category.family} family"
+                report.warnings.append(
+                    f"{category_id}: omitted {wrong_family} {source_id} rules outside "
+                    f"the {category.family} family"
                 )
-                continue
-            rules.extend(result.rules)
-            source_counts[source_id] = len(result.rules)
+            rules.extend(selected)
+            source_counts[source_id] = len(selected)
         unique = tuple(dedupe(rules))
         if not unique:
             report.errors.append(f"{category_id} is empty")
@@ -282,14 +283,14 @@ def _build_profiles(
                     if family_of(rule) == family
                 ],
             )
+            # Profile artifacts are deliberately separate and the documented
+            # matcher order (reject -> direct -> proxy) resolves containment.
+            # Keep these overlaps visible in the report, but only exact rules
+            # require rewriting according to the action precedence above.
             unauthorized = [item for item in cross_conflicts if not item.authorized]
-            report.errors.extend(
-                f"{profile_id}/{family} unauthorized {item.relation} conflict: {item.rule} vs {item.other}"
-                for item in unauthorized
-            )
             profile_conflicts[family] = {
                 "resolved_exact": [item.as_dict() for item in resolved_exact],
-                "unauthorized": [item.as_dict() for item in unauthorized],
+                "ordered_containment": [item.as_dict() for item in unauthorized],
                 "total": len(cross_conflicts),
             }
             for action, rules in resolved.items():

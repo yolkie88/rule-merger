@@ -53,6 +53,13 @@ class RuleTests(unittest.TestCase):
         )
         self.assertIsNone(project_rule_for_sing_box(rules[2]))
 
+    def test_literal_domain_wildcard_is_normalized_to_a_domain(self) -> None:
+        rule = parse_payload(
+            "DOMAIN-WILDCARD,video-thumbnail2.fc2.com\n", "text", "classical"
+        )[0]
+        self.assertEqual(rule.kind, "domain")
+        self.assertEqual(rule.value, "video-thumbnail2.fc2.com")
+
     def test_sukka_marker_is_not_treated_as_a_domain_rule(self) -> None:
         self.assertEqual(
             parse_payload(

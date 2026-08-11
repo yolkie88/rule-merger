@@ -613,6 +613,36 @@ class BuildBehaviorTests(unittest.TestCase):
 
             self.assertTrue(report.publishable, report.errors)
 
+    def test_cross_action_containment_is_recorded_not_rejected(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            (root / "parent.txt").write_text(
+                "DOMAIN-SUFFIX,example.com\n", encoding="utf-8"
+            )
+            (root / "child.txt").write_text(
+                "DOMAIN,ads.example.com\n", encoding="utf-8"
+            )
+            config = write_project(
+                root,
+                source_text="DOMAIN,unused.example\n",
+                sources={
+                    "parent": {"type": "file", "path": "parent.txt", "format": "text", "behavior": "classical"},
+                    "child": {"type": "file", "path": "child.txt", "format": "text", "behavior": "classical"},
+                },
+                categories={
+                    "parent": {"family": "domain", "sources": ["parent"], "formats": ["yaml"]},
+                    "child": {"family": "domain", "sources": ["child"], "formats": ["yaml"]},
+                },
+                actions={"direct-domain": ["parent"], "reject-domain": ["child"]},
+            )
+
+            report = build(BuildRequest(config, root / "published"))
+
+            self.assertTrue(report.publishable, report.errors)
+            containment = report.conflicts["default"]["domain"]["ordered_containment"]
+            self.assertEqual(len(containment), 1)
+            self.assertEqual(containment[0]["relation"], "parent-child")
+
     def test_keyword_category_does_not_emit_lossy_mrs(self) -> None:
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)

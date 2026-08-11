@@ -278,10 +278,15 @@ def _domain_rule(kind: str, value: str) -> Rule:
 
 def _domain_wildcard_rule(value: str) -> Rule:
     value = value.strip().lower().rstrip(".")
-    if not value or not any(token in value for token in "*?"):
+    if not value:
         raise RuleError(f"invalid domain wildcard: {value!r}")
     if any(token in value for token in ", \t/"):
         raise RuleError(f"invalid domain wildcard: {value!r}")
+    # Some upstream lists label literal hosts as DOMAIN-WILDCARD.  Preserve
+    # their actual matching meaning instead of rejecting an otherwise valid
+    # host merely because the label is broader than necessary.
+    if not any(token in value for token in "*?"):
+        return _domain_or_regex(value)
     return Rule("domain_wildcard", value)
 
 

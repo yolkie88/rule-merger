@@ -19,7 +19,7 @@ private → override-direct / override-reject / override-proxy
 → reject → direct → proxy → final
 ```
 
-父子域名和 CIDR 包含关系必须写入 [`local/overrides.yaml`](local/overrides.yaml)；没有显式授权的关系会阻止发布。精确规则在 `reject > direct > proxy` 的动作优先级下解析，并写入构建报告。
+父子域名和 CIDR 包含关系可同时存在于不同动作产物中，并由上述匹配顺序决定：较具体的 `reject` 规则会先于包含它的 `direct` / `proxy` 规则匹配。这些关系会写入构建报告的 `ordered_containment`，但不会阻止发布。精确重复规则则按 `reject > direct > proxy` 的动作优先级解析。[`local/overrides.yaml`](local/overrides.yaml) 仅用于把本地例外提前输出为 `override-*` 产物。
 
 ## 使用
 
