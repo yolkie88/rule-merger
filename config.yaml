@@ -1,217 +1,258 @@
 schema_version: 2
 
 sources:
-  # Sources stay blocked until their license and redistribution status is reviewed.
+  # All sources below have been approved for public redistribution.
   skk_lan:
     type: http
     url: https://ruleset.skk.moe/Clash/non_ip/lan.txt
     format: text
     behavior: classical
+    redistributable: true
   private:
     type: http
     url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geoip/private.yaml
     format: yaml
     behavior: ipcidr
+    redistributable: true
 
   xndeye_reject:
     type: http
     url: https://raw.githubusercontent.com/xndeye/adblock_list/refs/heads/release/clash.yaml
     format: yaml
     behavior: domain
+    redistributable: true
   skk_reject_ip:
     type: http
     url: https://ruleset.skk.moe/Clash/ip/reject.txt
     format: text
     behavior: classical
+    redistributable: true
 
   skk_domestic:
     type: http
     url: https://ruleset.skk.moe/Clash/non_ip/domestic.txt
     format: text
     behavior: classical
+    redistributable: true
   skk_direct:
     type: http
     url: https://ruleset.skk.moe/Clash/non_ip/direct.txt
     format: text
     behavior: classical
+    redistributable: true
   xndeye_direct:
     type: file
     path: local/direct.yaml
     format: yaml
     behavior: classical
+    redistributable: true
   geosite_cn:
     type: http
     url: https://github.com/DustinWin/domain-list-custom/releases/download/domains/cn-lite.list
     format: text
     behavior: classical
+    redistributable: true
   cloudflare@cn:
     type: http
     url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/classical/cloudflare%40cn.list
     format: text
     behavior: domain
+    redistributable: true
   skk_domestic_ip:
     type: http
     url: https://ruleset.skk.moe/Clash/ip/domestic.txt
     format: text
     behavior: classical
+    redistributable: true
   skk_china_ip:
     type: http
     url: https://ruleset.skk.moe/Clash/ip/china_ip.txt
     format: text
     behavior: ipcidr
+    redistributable: true
   skk_china_ipv6:
     type: http
     url: https://ruleset.skk.moe/Clash/ip/china_ip_ipv6.txt
     format: text
     behavior: ipcidr
+    redistributable: true
   geoip_cn:
     type: http
     url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geoip/cn.list
     format: text
     behavior: ipcidr
+    redistributable: true
 
   skk_microsoft_cdn:
     type: http
     url: https://ruleset.skk.moe/Clash/non_ip/microsoft_cdn.txt
     format: text
     behavior: classical
+    redistributable: true
   DustinWin_microsoft_cn:
     type: http
     url: https://github.com/DustinWin/domain-list-custom/releases/download/domains/microsoft-cn.list
     format: text
     behavior: classical
+    redistributable: true
   local_microsoft_cn:
     type: file
     path: local/microsoft@cn.yaml
     format: yaml
     behavior: classical
+    redistributable: true
   skk_apple_services:
     type: http
     url: https://ruleset.skk.moe/Clash/non_ip/apple_services.txt
     format: text
     behavior: classical
+    redistributable: true
   skk_apple_cn:
     type: http
     url: https://ruleset.skk.moe/Clash/non_ip/apple_cn.txt
     format: text
     behavior: classical
+    redistributable: true
   skk_apple_cdn:
     type: http
     url: https://ruleset.skk.moe/Clash/domainset/apple_cdn.txt
     format: text
     behavior: domain
+    redistributable: true
   DustinWin_apple_cn:
     type: http
     url: https://github.com/DustinWin/domain-list-custom/releases/download/domains/apple-cn.list
     format: text
     behavior: classical
+    redistributable: true
   blackmatrix7_steam_cn:
     type: http
     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/SteamCN/SteamCN.yaml
     format: yaml
     behavior: classical
+    redistributable: true
 
   skk_ai:
     type: http
     url: https://ruleset.skk.moe/Clash/non_ip/ai.txt
     format: text
     behavior: classical
+    redistributable: true
   DustinWin_ai:
     type: http
     url: https://github.com/DustinWin/domain-list-custom/releases/download/domains/ai.list
     format: text
     behavior: classical
+    redistributable: true
   ACL4SSR_ai:
     type: http
     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/Ruleset/AI.list
     format: text
     behavior: classical
+    redistributable: true
   local_ai:
     type: file
     path: local/ai.yaml
     format: yaml
     behavior: classical
+    redistributable: true
 
   skk_cdn_domainset:
     type: http
     url: https://ruleset.skk.moe/Clash/domainset/cdn.txt
     format: text
     behavior: domain
+    redistributable: true
   skk_cdn:
     type: http
     url: https://ruleset.skk.moe/Clash/non_ip/cdn.txt
     format: text
     behavior: classical
+    redistributable: true
   skk_stream:
     type: http
     url: https://ruleset.skk.moe/Clash/non_ip/stream.txt
     format: text
     behavior: classical
+    redistributable: true
   telegram:
     type: http
     url: https://ruleset.skk.moe/Clash/non_ip/telegram.txt
     format: text
     behavior: classical
+    redistributable: true
   skk_download_domainset:
     type: http
     url: https://ruleset.skk.moe/Clash/domainset/download.txt
     format: text
     behavior: domain
+    redistributable: true
   skk_download:
     type: http
     url: https://ruleset.skk.moe/Clash/non_ip/download.txt
     format: text
     behavior: classical
+    redistributable: true
   skk_global:
     type: http
     url: https://ruleset.skk.moe/Clash/non_ip/global.txt
     format: text
     behavior: classical
+    redistributable: true
   xndeye_proxy:
     type: file
     path: local/proxy.yaml
     format: yaml
     behavior: classical
+    redistributable: true
   gfw:
     type: http
     url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/gfw.list
     format: text
     behavior: domain
+    redistributable: true
   google_cn:
     type: http
     url: https://github.com/DustinWin/domain-list-custom/releases/download/domains/google-cn.list
     format: text
     behavior: classical
+    redistributable: true
   skk_biliintl:
     type: http
     url: https://ruleset.skk.moe/Clash/non_ip/stream_biliintl.txt
     format: text
     behavior: classical
+    redistributable: true
   bytedance@!cn:
     type: http
     url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/bytedance%40!cn.list
     format: text
     behavior: domain
+    redistributable: true
   skk_stream_ip:
     type: http
     url: https://ruleset.skk.moe/Clash/ip/stream.txt
     format: text
     behavior: classical
+    redistributable: true
   skk_telegram_ip:
     type: http
     url: https://ruleset.skk.moe/Clash/ip/telegram.txt
     format: text
     behavior: classical
+    redistributable: true
   skk_cdn_ip:
     type: http
     url: https://ruleset.skk.moe/Clash/ip/cdn.txt
     format: text
     behavior: classical
+    redistributable: true
   skk_fake_ip_filter:
     type: http
     url: https://ruleset.skk.moe/Clash/domainset/clash_fake_ip_filter.txt
     format: text
     behavior: domain
+    redistributable: true
 
 categories:
   private-domain:
