@@ -160,6 +160,16 @@ categories:
     family: domain
     sources: [local_proxy]
     formats: [yaml, json, srs, mrs]
+  # Compatibility categories: preserve existing release URLs while the default
+  # profile uses the more explicit direct/local-* categories above.
+  custom-direct-domain:
+    family: domain
+    sources: [skk_direct, local_direct]
+    formats: [yaml, json, srs, mrs]
+  custom-proxy-domain:
+    family: domain
+    sources: [local_proxy]
+    formats: [yaml, json, srs, mrs]
 profiles:
   default:
     actions:
@@ -189,6 +199,7 @@ quality:
     categories/bytedance-non-cn-domain: ['DOMAIN-SUFFIX,byteglb.com']
     categories/local-direct-domain: ['DOMAIN,www.cycani.org']
     categories/local-proxy-domain: ['DOMAIN-SUFFIX,steam-chat.com']
+    categories/custom-proxy-domain: ['DOMAIN-SUFFIX,steam-chat.com']
     categories/cdn-ip: ['IP-CIDR,162.159.200.1/32']
     categories/fakeip-filter-domain: ['DOMAIN-SUFFIX,lan']
     profiles/default/proxy-ip: ['IP-CIDR,23.246.18.0/23']
