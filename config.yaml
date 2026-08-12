@@ -1,259 +1,48 @@
 schema_version: 2
-
 sources:
-  # All sources below have been approved for public redistribution.
-  skk_lan:
-    type: http
-    url: https://ruleset.skk.moe/Clash/non_ip/lan.txt
-    format: text
-    behavior: classical
-    redistributable: true
-  private:
-    type: http
-    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geoip/private.yaml
-    format: yaml
-    behavior: ipcidr
-    redistributable: true
-
-  xndeye_reject:
-    type: http
-    url: https://raw.githubusercontent.com/xndeye/adblock_list/refs/heads/release/clash.yaml
-    format: yaml
-    behavior: domain
-    redistributable: true
-  skk_reject_ip:
-    type: http
-    url: https://ruleset.skk.moe/Clash/ip/reject.txt
-    format: text
-    behavior: classical
-    redistributable: true
-
-  skk_domestic:
-    type: http
-    url: https://ruleset.skk.moe/Clash/non_ip/domestic.txt
-    format: text
-    behavior: classical
-    redistributable: true
-  skk_direct:
-    type: http
-    url: https://ruleset.skk.moe/Clash/non_ip/direct.txt
-    format: text
-    behavior: classical
-    redistributable: true
-  xndeye_direct:
-    type: file
-    path: local/direct.yaml
-    format: yaml
-    behavior: classical
-    redistributable: true
-  geosite_cn:
-    type: http
-    url: https://github.com/DustinWin/domain-list-custom/releases/download/domains/cn-lite.list
-    format: text
-    behavior: classical
-    redistributable: true
-  cloudflare@cn:
-    type: http
-    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/classical/cloudflare%40cn.list
-    format: text
-    behavior: domain
-    redistributable: true
-  skk_domestic_ip:
-    type: http
-    url: https://ruleset.skk.moe/Clash/ip/domestic.txt
-    format: text
-    behavior: classical
-    redistributable: true
-  skk_china_ip:
-    type: http
-    url: https://ruleset.skk.moe/Clash/ip/china_ip.txt
-    format: text
-    behavior: ipcidr
-    redistributable: true
-  skk_china_ipv6:
-    type: http
-    url: https://ruleset.skk.moe/Clash/ip/china_ip_ipv6.txt
-    format: text
-    behavior: ipcidr
-    redistributable: true
-  geoip_cn:
-    type: http
-    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geoip/cn.list
-    format: text
-    behavior: ipcidr
-    redistributable: true
-
-  skk_microsoft_cdn:
-    type: http
-    url: https://ruleset.skk.moe/Clash/non_ip/microsoft_cdn.txt
-    format: text
-    behavior: classical
-    redistributable: true
-  DustinWin_microsoft_cn:
-    type: http
-    url: https://github.com/DustinWin/domain-list-custom/releases/download/domains/microsoft-cn.list
-    format: text
-    behavior: classical
-    redistributable: true
-  local_microsoft_cn:
-    type: file
-    path: local/microsoft@cn.yaml
-    format: yaml
-    behavior: classical
-    redistributable: true
-  skk_apple_services:
-    type: http
-    url: https://ruleset.skk.moe/Clash/non_ip/apple_services.txt
-    format: text
-    behavior: classical
-    redistributable: true
-  skk_apple_cn:
-    type: http
-    url: https://ruleset.skk.moe/Clash/non_ip/apple_cn.txt
-    format: text
-    behavior: classical
-    redistributable: true
-  skk_apple_cdn:
-    type: http
-    url: https://ruleset.skk.moe/Clash/domainset/apple_cdn.txt
-    format: text
-    behavior: domain
-    redistributable: true
-  DustinWin_apple_cn:
-    type: http
-    url: https://github.com/DustinWin/domain-list-custom/releases/download/domains/apple-cn.list
-    format: text
-    behavior: classical
-    redistributable: true
-  blackmatrix7_steam_cn:
-    type: http
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/SteamCN/SteamCN.yaml
-    format: yaml
-    behavior: classical
-    redistributable: true
-
-  skk_ai:
-    type: http
-    url: https://ruleset.skk.moe/Clash/non_ip/ai.txt
-    format: text
-    behavior: classical
-    redistributable: true
-  DustinWin_ai:
-    type: http
-    url: https://github.com/DustinWin/domain-list-custom/releases/download/domains/ai.list
-    format: text
-    behavior: classical
-    redistributable: true
-  ACL4SSR_ai:
-    type: http
-    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/Ruleset/AI.list
-    format: text
-    behavior: classical
-    redistributable: true
-  local_ai:
-    type: file
-    path: local/ai.yaml
-    format: yaml
-    behavior: classical
-    redistributable: true
-
-  skk_cdn_domainset:
-    type: http
-    url: https://ruleset.skk.moe/Clash/domainset/cdn.txt
-    format: text
-    behavior: domain
-    redistributable: true
-  skk_cdn:
-    type: http
-    url: https://ruleset.skk.moe/Clash/non_ip/cdn.txt
-    format: text
-    behavior: classical
-    redistributable: true
-  skk_stream:
-    type: http
-    url: https://ruleset.skk.moe/Clash/non_ip/stream.txt
-    format: text
-    behavior: classical
-    redistributable: true
-  telegram:
-    type: http
-    url: https://ruleset.skk.moe/Clash/non_ip/telegram.txt
-    format: text
-    behavior: classical
-    redistributable: true
-  skk_download_domainset:
-    type: http
-    url: https://ruleset.skk.moe/Clash/domainset/download.txt
-    format: text
-    behavior: domain
-    redistributable: true
-  skk_download:
-    type: http
-    url: https://ruleset.skk.moe/Clash/non_ip/download.txt
-    format: text
-    behavior: classical
-    redistributable: true
-  skk_global:
-    type: http
-    url: https://ruleset.skk.moe/Clash/non_ip/global.txt
-    format: text
-    behavior: classical
-    redistributable: true
-  xndeye_proxy:
-    type: file
-    path: local/proxy.yaml
-    format: yaml
-    behavior: classical
-    redistributable: true
-  gfw:
-    type: http
-    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/gfw.list
-    format: text
-    behavior: domain
-    redistributable: true
-  google_cn:
-    type: http
-    url: https://github.com/DustinWin/domain-list-custom/releases/download/domains/google-cn.list
-    format: text
-    behavior: classical
-    redistributable: true
-  skk_biliintl:
-    type: http
-    url: https://ruleset.skk.moe/Clash/non_ip/stream_biliintl.txt
-    format: text
-    behavior: classical
-    redistributable: true
-  bytedance@!cn:
-    type: http
-    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/bytedance%40!cn.list
-    format: text
-    behavior: domain
-    redistributable: true
-  skk_stream_ip:
-    type: http
-    url: https://ruleset.skk.moe/Clash/ip/stream.txt
-    format: text
-    behavior: classical
-    redistributable: true
-  skk_telegram_ip:
-    type: http
-    url: https://ruleset.skk.moe/Clash/ip/telegram.txt
-    format: text
-    behavior: classical
-    redistributable: true
-  skk_cdn_ip:
-    type: http
-    url: https://ruleset.skk.moe/Clash/ip/cdn.txt
-    format: text
-    behavior: classical
-    redistributable: true
-  skk_fake_ip_filter:
-    type: http
-    url: https://ruleset.skk.moe/Clash/domainset/clash_fake_ip_filter.txt
-    format: text
-    behavior: domain
-    redistributable: true
-
+  skk_lan: {type: http, url: 'https://ruleset.skk.moe/Clash/non_ip/lan.txt', format: text, behavior: classical, redistributable: true}
+  private: {type: http, url: 'https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geoip/private.yaml', format: yaml, behavior: ipcidr, redistributable: true}
+  xndeye_reject: {type: http, url: 'https://raw.githubusercontent.com/xndeye/adblock_list/refs/heads/release/clash.yaml', format: yaml, behavior: domain, redistributable: true}
+  skk_reject_ip: {type: http, url: 'https://ruleset.skk.moe/Clash/ip/reject.txt', format: text, behavior: classical, redistributable: true}
+  skk_domestic: {type: http, url: 'https://ruleset.skk.moe/Clash/non_ip/domestic.txt', format: text, behavior: classical, redistributable: true}
+  skk_direct: {type: http, url: 'https://ruleset.skk.moe/Clash/non_ip/direct.txt', format: text, behavior: classical, redistributable: true}
+  local_direct: {type: file, path: local/direct.yaml, format: yaml, behavior: classical, redistributable: true}
+  geosite_cn: {type: http, url: 'https://github.com/DustinWin/domain-list-custom/releases/download/domains/cn-lite.list', format: text, behavior: classical, redistributable: true}
+  cloudflare@cn: {type: http, url: 'https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/classical/cloudflare%40cn.list', format: text, behavior: domain, redistributable: true}
+  skk_domestic_ip: {type: http, url: 'https://ruleset.skk.moe/Clash/ip/domestic.txt', format: text, behavior: classical, redistributable: true}
+  skk_china_ip: {type: http, url: 'https://ruleset.skk.moe/Clash/ip/china_ip.txt', format: text, behavior: ipcidr, redistributable: true}
+  skk_china_ipv6: {type: http, url: 'https://ruleset.skk.moe/Clash/ip/china_ip_ipv6.txt', format: text, behavior: ipcidr, redistributable: true}
+  geoip_cn: {type: http, url: 'https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geoip/cn.list', format: text, behavior: ipcidr, redistributable: true}
+  skk_microsoft_cdn: {type: http, url: 'https://ruleset.skk.moe/Clash/non_ip/microsoft_cdn.txt', format: text, behavior: classical, redistributable: true}
+  DustinWin_microsoft_cn: {type: http, url: 'https://github.com/DustinWin/domain-list-custom/releases/download/domains/microsoft-cn.list', format: text, behavior: classical, redistributable: true}
+  local_microsoft_cn: {type: file, path: local/microsoft@cn.yaml, format: yaml, behavior: classical, redistributable: true}
+  skk_apple_services: {type: http, url: 'https://ruleset.skk.moe/Clash/non_ip/apple_services.txt', format: text, behavior: classical, redistributable: true}
+  skk_apple_cn: {type: http, url: 'https://ruleset.skk.moe/Clash/non_ip/apple_cn.txt', format: text, behavior: classical, redistributable: true}
+  skk_apple_cdn: {type: http, url: 'https://ruleset.skk.moe/Clash/domainset/apple_cdn.txt', format: text, behavior: domain, redistributable: true}
+  DustinWin_apple_cn: {type: http, url: 'https://github.com/DustinWin/domain-list-custom/releases/download/domains/apple-cn.list', format: text, behavior: classical, redistributable: true}
+  blackmatrix7_steam_cn: {type: http, url: 'https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/SteamCN/SteamCN.yaml', format: yaml, behavior: classical, redistributable: true}
+  google_cn: {type: http, url: 'https://github.com/DustinWin/domain-list-custom/releases/download/domains/google-cn.list', format: text, behavior: classical, redistributable: true}
+  meta_ai_cn: {type: http, url: 'https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/classical/category-ai-cn.list', format: text, behavior: classical, redistributable: true}
+  skk_ai: {type: http, url: 'https://ruleset.skk.moe/Clash/non_ip/ai.txt', format: text, behavior: classical, redistributable: true}
+  DustinWin_ai: {type: http, url: 'https://github.com/DustinWin/domain-list-custom/releases/download/domains/ai.list', format: text, behavior: classical, redistributable: true}
+  ACL4SSR_ai: {type: http, url: 'https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/Ruleset/AI.list', format: text, behavior: classical, redistributable: true}
+  local_ai_coding: {type: file, path: local/ai-coding.yaml, format: yaml, behavior: classical, redistributable: true}
+  local_ai_gateway: {type: file, path: local/ai-gateway.yaml, format: yaml, behavior: classical, redistributable: true}
+  skk_cdn_domainset: {type: http, url: 'https://ruleset.skk.moe/Clash/domainset/cdn.txt', format: text, behavior: domain, redistributable: true}
+  skk_cdn: {type: http, url: 'https://ruleset.skk.moe/Clash/non_ip/cdn.txt', format: text, behavior: classical, redistributable: true}
+  skk_stream: {type: http, url: 'https://ruleset.skk.moe/Clash/non_ip/stream.txt', format: text, behavior: classical, redistributable: true}
+  telegram: {type: http, url: 'https://ruleset.skk.moe/Clash/non_ip/telegram.txt', format: text, behavior: classical, redistributable: true}
+  skk_download_domainset: {type: http, url: 'https://ruleset.skk.moe/Clash/domainset/download.txt', format: text, behavior: domain, redistributable: true}
+  skk_download: {type: http, url: 'https://ruleset.skk.moe/Clash/non_ip/download.txt', format: text, behavior: classical, redistributable: true}
+  skk_global: {type: http, url: 'https://ruleset.skk.moe/Clash/non_ip/global.txt', format: text, behavior: classical, redistributable: true}
+  local_proxy: {type: file, path: local/proxy.yaml, format: yaml, behavior: classical, redistributable: true}
+  gfw: {type: http, url: 'https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/gfw.list', format: text, behavior: domain, redistributable: true}
+  skk_biliintl: {type: http, url: 'https://ruleset.skk.moe/Clash/non_ip/stream_biliintl.txt', format: text, behavior: classical, redistributable: true}
+  bytedance@!cn: {type: http, url: 'https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/bytedance%40!cn.list', format: text, behavior: domain, redistributable: true}
+  skk_stream_ip: {type: http, url: 'https://ruleset.skk.moe/Clash/ip/stream.txt', format: text, behavior: classical, redistributable: true}
+  skk_telegram_ip: {type: http, url: 'https://ruleset.skk.moe/Clash/ip/telegram.txt', format: text, behavior: classical, redistributable: true}
+  skk_cdn_ip: {type: http, url: 'https://ruleset.skk.moe/Clash/ip/cdn.txt', format: text, behavior: classical, redistributable: true}
+  skk_fake_ip_filter: {type: http, url: 'https://ruleset.skk.moe/Clash/domainset/clash_fake_ip_filter.txt', format: text, behavior: domain, redistributable: true}
 categories:
   private-domain:
     family: domain
@@ -279,6 +68,10 @@ categories:
     family: ipcidr
     sources: [skk_domestic_ip, skk_china_ip, skk_china_ipv6, geoip_cn]
     formats: [yaml, json, srs, mrs]
+  fakeip-filter-domain:
+    family: domain
+    sources: [skk_fake_ip_filter]
+    formats: [yaml, json, srs, mrs]
   microsoft-cn-domain:
     family: domain
     sources: [skk_microsoft_cdn, DustinWin_microsoft_cn, local_microsoft_cn]
@@ -291,9 +84,29 @@ categories:
     family: domain
     sources: [blackmatrix7_steam_cn]
     formats: [yaml, json, srs, mrs]
+  google-cn-domain:
+    family: domain
+    sources: [google_cn]
+    formats: [yaml, json, srs, mrs]
+  ai-cn-domain:
+    family: domain
+    sources: [meta_ai_cn]
+    formats: [yaml, json, srs, mrs]
+  ai-provider-domain:
+    family: domain
+    sources: [skk_ai, DustinWin_ai, ACL4SSR_ai]
+    formats: [yaml, json, srs, mrs]
+  ai-coding-domain:
+    family: domain
+    sources: [local_ai_coding]
+    formats: [yaml, json, srs, mrs]
+  ai-gateway-domain:
+    family: domain
+    sources: [local_ai_gateway]
+    formats: [yaml, json, srs, mrs]
   ai-domain:
     family: domain
-    sources: [skk_ai, DustinWin_ai, ACL4SSR_ai, local_ai]
+    sources: [skk_ai, DustinWin_ai, ACL4SSR_ai, local_ai_coding, local_ai_gateway]
     formats: [yaml, json, srs, mrs]
   streaming-domain:
     family: domain
@@ -311,25 +124,9 @@ categories:
     family: ipcidr
     sources: [skk_telegram_ip]
     formats: [yaml, json, srs, mrs]
-  gfw-domain:
-    family: domain
-    sources: [gfw]
-    formats: [yaml, json, srs, mrs]
-  global-domain:
-    family: domain
-    sources: [skk_global]
-    formats: [yaml, json, srs, mrs]
   bytedance-non-cn-domain:
     family: domain
     sources: [bytedance@!cn]
-    formats: [yaml, json, srs, mrs]
-  custom-direct-domain:
-    family: domain
-    sources: [skk_direct, xndeye_direct]
-    formats: [yaml, json, srs, mrs]
-  custom-proxy-domain:
-    family: domain
-    sources: [xndeye_proxy]
     formats: [yaml, json, srs, mrs]
   cdn-domain:
     family: domain
@@ -343,61 +140,58 @@ categories:
     family: domain
     sources: [skk_download_domainset, skk_download]
     formats: [yaml, json, srs, mrs]
-  google-cn-domain:
+  gfw-domain:
     family: domain
-    sources: [google_cn]
+    sources: [gfw]
     formats: [yaml, json, srs, mrs]
-  fakeip-filter-domain:
+  global-domain:
     family: domain
-    sources: [skk_fake_ip_filter]
+    sources: [skk_global]
     formats: [yaml, json, srs, mrs]
-
+  direct-domain:
+    family: domain
+    sources: [skk_direct]
+    formats: [yaml, json, srs, mrs]
+  local-direct-domain:
+    family: domain
+    sources: [local_direct]
+    formats: [yaml, json, srs, mrs]
+  local-proxy-domain:
+    family: domain
+    sources: [local_proxy]
+    formats: [yaml, json, srs, mrs]
 profiles:
   default:
     actions:
-      direct-domain: [private-domain, cn-domain, microsoft-cn-domain, apple-cn-domain, steam-cn-domain, custom-direct-domain]
+      direct-domain: [private-domain, cn-domain, microsoft-cn-domain, apple-cn-domain, steam-cn-domain, google-cn-domain, ai-cn-domain, direct-domain, local-direct-domain]
       direct-ip: [private-ip, cn-ip]
       reject-domain: [reject-domain]
       reject-ip: [reject-ip]
-      proxy-domain: [gfw-domain, global-domain, ai-domain, streaming-domain, telegram-domain, bytedance-non-cn-domain, custom-proxy-domain]
+      proxy-domain: [ai-domain, streaming-domain, telegram-domain, bytedance-non-cn-domain, gfw-domain, global-domain, local-proxy-domain]
       proxy-ip: [streaming-ip, telegram-ip]
     formats: [yaml, json, srs, mrs]
-
 overrides: local/overrides.yaml
-
 quality:
   max_drop_ratio: 0.15
-  max_growth_ratio: 0.50
+  max_growth_ratio: 0.5
   small_output_limit: 100
   min_rules: {}
-  # Every emitted output below small_output_limit must be listed here.
-  # One extension-free path covers its YAML, JSON, SRS, and MRS variants.
   critical_rules:
-    categories/private-domain: ["DOMAIN-SUFFIX,lan"]
-    categories/private-ip: ["IP-CIDR,10.0.0.0/8"]
-    categories/steam-cn-domain: ["DOMAIN,csgo.wmsj.cn"]
-    categories/streaming-ip: ["IP-CIDR,23.246.18.0/23"]
-    categories/telegram-domain: ["DOMAIN-SUFFIX,t.me"]
-    categories/telegram-ip: ["IP-CIDR,91.105.192.0/23"]
-    categories/bytedance-non-cn-domain: ["DOMAIN-SUFFIX,byteglb.com"]
-    categories/custom-proxy-domain: ["DOMAIN-SUFFIX,steam-chat.com"]
-    categories/cdn-ip: ["IP-CIDR,162.159.200.1/32"]
-    categories/fakeip-filter-domain: ["DOMAIN-SUFFIX,lan"]
-    profiles/default/proxy-ip: ["IP-CIDR,23.246.18.0/23"]
-
+    categories/private-domain: ['DOMAIN-SUFFIX,lan']
+    categories/private-ip: ['IP-CIDR,10.0.0.0/8']
+    categories/steam-cn-domain: ['DOMAIN,csgo.wmsj.cn']
+    categories/ai-cn-domain: ['DOMAIN-SUFFIX,deepseek.com']
+    categories/ai-coding-domain: ['DOMAIN-SUFFIX,pi.dev']
+    categories/ai-gateway-domain: ['DOMAIN-SUFFIX,ai-gateway.vercel.sh']
+    categories/streaming-ip: ['IP-CIDR,23.246.18.0/23']
+    categories/telegram-domain: ['DOMAIN-SUFFIX,t.me']
+    categories/telegram-ip: ['IP-CIDR,91.105.192.0/23']
+    categories/bytedance-non-cn-domain: ['DOMAIN-SUFFIX,byteglb.com']
+    categories/local-direct-domain: ['DOMAIN,www.cycani.org']
+    categories/local-proxy-domain: ['DOMAIN-SUFFIX,steam-chat.com']
+    categories/cdn-ip: ['IP-CIDR,162.159.200.1/32']
+    categories/fakeip-filter-domain: ['DOMAIN-SUFFIX,lan']
+    profiles/default/proxy-ip: ['IP-CIDR,23.246.18.0/23']
 legacy:
   enabled: true
-  aliases:
-    reject: profiles/default/reject-domain
-    reject@ip: profiles/default/reject-ip
-    direct: profiles/default/direct-domain
-    direct@ip: profiles/default/direct-ip
-    microsoft@cn: categories/microsoft-cn-domain
-    apple@cn: categories/apple-cn-domain
-    steam@cn: categories/steam-cn-domain
-    ai: categories/ai-domain
-    proxy: profiles/default/proxy-domain
-    proxy@ip: profiles/default/proxy-ip
-    lan: categories/private-domain
-    lan@ip: categories/private-ip
-    fakeip-filter: categories/fakeip-filter-domain
+  aliases: {reject: profiles/default/reject-domain, reject@ip: profiles/default/reject-ip, direct: profiles/default/direct-domain, direct@ip: profiles/default/direct-ip, microsoft@cn: categories/microsoft-cn-domain, apple@cn: categories/apple-cn-domain, steam@cn: categories/steam-cn-domain, ai: categories/ai-domain, proxy: profiles/default/proxy-domain, proxy@ip: profiles/default/proxy-ip, lan: categories/private-domain, lan@ip: categories/private-ip, fakeip-filter: categories/fakeip-filter-domain}
