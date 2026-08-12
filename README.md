@@ -6,11 +6,71 @@
 
 ## v2 结构
 
-规则先进入中性分类，再由 profile 决定动作：
+规则先进入中性分类，再由 profile 决定动作。当前分类按职责分成三层：
 
-- `categories/`：`private`、`reject`、`cn`、平台、AI、流媒体、Telegram、GFW、global、CDN、download、Google-CN 等分类。
-- `profiles/default/`：可直接绑定动作的 `direct-*`、`reject-*`、`proxy-*`，以及显式 `override-*`。
-- CDN、download、Google-CN 只作为分类发布，不自动决定出口。
+```text
+L1 基础网络属性
+├── private-domain / private-ip
+├── reject-domain / reject-ip
+├── cn-domain / cn-ip
+└── fakeip-filter-domain
+
+L2 服务语义
+├── microsoft-cn-domain
+├── apple-cn-domain
+├── steam-cn-domain
+├── google-cn-domain
+├── ai-cn-domain
+├── AI
+│   ├── ai-provider-domain
+│   ├── ai-coding-domain
+│   ├── ai-gateway-domain
+│   └── ai-domain          # 海外 AI 聚合，兼容旧引用
+├── streaming-domain / streaming-ip
+├── telegram-domain / telegram-ip
+└── bytedance-non-cn-domain
+
+L2 辅助流量分类
+├── cdn-domain / cdn-ip
+└── download-domain
+
+L3 通用策略 / 兜底
+├── gfw-domain
+├── global-domain
+├── direct-domain
+├── local-direct-domain
+└── local-proxy-domain
+```
+
+`ai-domain` 是完整海外 AI 聚合规则，默认 profile 和 legacy `ai` 继续引用它，因此现有配置无需迁移。`ai-provider-domain`、`ai-coding-domain`、`ai-gateway-domain` 用于需要更细策略的客户端。上游 SKK / DustinWin / ACL4SSR 的 AI 列表本身属于宽口径集合，因此这些 AI 子分类是语义视图，不保证互斥；聚合规则以不漏流量为优先。
+
+`ai-cn-domain` 使用独立中国 AI 分类并进入默认直连集合；海外 AI 仍进入代理集合。
+
+`gfw-domain` 与 `global-domain` 都保留：前者偏向已知需要代理的域名，后者是更宽的海外服务集合。默认 profile 同时使用两者，以维持当前覆盖策略；如果以后需要精准分流，可以在自定义 profile 中只选择其中之一。
+
+`direct-domain` 只保存上游通用直连规则；`local-direct-domain` / `local-proxy-domain` 只保存本 fork 的人工例外，方便审计和排错。
+
+默认 profile 的动作组合为：
+
+```text
+DIRECT
+├── private / cn
+├── Microsoft-CN / Apple-CN / Steam-CN / Google-CN
+├── AI-CN
+├── direct-domain
+└── local-direct-domain
+
+PROXY
+├── ai-domain
+├── streaming
+├── Telegram
+├── ByteDance non-CN
+├── GFW
+├── global
+└── local-proxy-domain
+```
+
+CDN、download 等只作为分类发布，不自动决定出口；这体现“分类是数据，profile 才是策略”。
 
 推荐的匹配顺序是：
 
@@ -50,7 +110,7 @@ source 默认 `redistributable: false`；只有完成许可证/再分发审查�
 https://raw.githubusercontent.com/yolkie88/rule-merger/refs/heads/release/<name>
 ```
 
-第一次 v2 发布可通过 `--include-legacy` 同时生成旧根目录名称；下一次成功发布不再带该参数，旧名称随之删除。新配置和路径应优先迁移到 `categories/` / `profiles/default/`。
+兼容旧配置的根目录名称由 `legacy.aliases` 生成；新配置和路径应优先使用 `categories/` / `profiles/default/`。
 
 ## 自动更新
 

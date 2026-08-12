@@ -1,0 +1,18 @@
+{
+  "version": 4,
+  "rules": [
+    {
+      "domain_suffix": [
+        "vercel.ai",
+        "ai-gateway.vercel.sh",
+        "openrouter.ai",
+        "gateway.ai.cloudflare.com"
+      ]
+    },
+    {
+      "domain": [
+        "api.together.xyz"
+      ]
+    }
+  ]
+}

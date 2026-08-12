@@ -1,0 +1,41 @@
+{
+  "version": 4,
+  "rules": [
+    {
+      "domain_suffix": [
+        "pi.dev",
+        "ampcode.com",
+        "ampworkers.com",
+        "opencode.ai",
+        "cline.bot",
+        "cursor-cdn.com",
+        "cursor.com",
+        "cursor.sh",
+        "cursorapi.com",
+        "codeium.com",
+        "codeiumdata.com",
+        "windsurf.build",
+        "windsurf.com",
+        "githubcopilot.com",
+        "copilot-stg.com",
+        "copilot.cloud.microsoft",
+        "copilot.com",
+        "copilot.microsoft.com",
+        "devin.ai",
+        "kiro.dev",
+        "jetbrains.ai",
+        "grazie.ai",
+        "grazie.aws.intellij.net",
+        "coderabbit.ai",
+        "coderabbit.gallery.vsassets.io",
+        "jules.google",
+        "jules.google.com",
+        "deepwiki.com",
+        "deepwiki.org",
+        "qoder.com",
+        "trae.ai",
+        "marscode.com"
+      ]
+    }
+  ]
+}
