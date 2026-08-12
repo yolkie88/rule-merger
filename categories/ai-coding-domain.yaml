@@ -15,8 +15,6 @@ payload:
 - DOMAIN-SUFFIX,githubcopilot.com
 - DOMAIN-SUFFIX,copilot-stg.com
 - DOMAIN-SUFFIX,copilot.cloud.microsoft
-- DOMAIN-SUFFIX,copilot.com
-- DOMAIN-SUFFIX,copilot.microsoft.com
 - DOMAIN-SUFFIX,devin.ai
 - DOMAIN-SUFFIX,kiro.dev
 - DOMAIN-SUFFIX,jetbrains.ai

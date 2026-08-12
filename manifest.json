@@ -2,28 +2,52 @@
   "baseline": {
     "changes": {
       "categories/ai-cn-domain.json": {
-        "current": 113
+        "baseline": 113,
+        "current": 113,
+        "delta": 0,
+        "ratio": 0.0
       },
       "categories/ai-cn-domain.mrs": {
-        "current": 113
+        "baseline": 113,
+        "current": 113,
+        "delta": 0,
+        "ratio": 0.0
       },
       "categories/ai-cn-domain.srs": {
-        "current": 113
+        "baseline": 113,
+        "current": 113,
+        "delta": 0,
+        "ratio": 0.0
       },
       "categories/ai-cn-domain.yaml": {
-        "current": 113
+        "baseline": 113,
+        "current": 113,
+        "delta": 0,
+        "ratio": 0.0
       },
       "categories/ai-coding-domain.json": {
-        "current": 32
+        "baseline": 32,
+        "current": 30,
+        "delta": -2,
+        "ratio": -0.0625
       },
       "categories/ai-coding-domain.mrs": {
-        "current": 32
+        "baseline": 32,
+        "current": 30,
+        "delta": -2,
+        "ratio": -0.0625
       },
       "categories/ai-coding-domain.srs": {
-        "current": 32
+        "baseline": 32,
+        "current": 30,
+        "delta": -2,
+        "ratio": -0.0625
       },
       "categories/ai-coding-domain.yaml": {
-        "current": 32
+        "baseline": 32,
+        "current": 30,
+        "delta": -2,
+        "ratio": -0.0625
       },
       "categories/ai-domain.json": {
         "baseline": 210,
@@ -50,28 +74,52 @@
         "ratio": 0.0
       },
       "categories/ai-gateway-domain.json": {
-        "current": 5
+        "baseline": 5,
+        "current": 5,
+        "delta": 0,
+        "ratio": 0.0
       },
       "categories/ai-gateway-domain.mrs": {
-        "current": 5
+        "baseline": 5,
+        "current": 5,
+        "delta": 0,
+        "ratio": 0.0
       },
       "categories/ai-gateway-domain.srs": {
-        "current": 5
+        "baseline": 5,
+        "current": 5,
+        "delta": 0,
+        "ratio": 0.0
       },
       "categories/ai-gateway-domain.yaml": {
-        "current": 5
+        "baseline": 5,
+        "current": 5,
+        "delta": 0,
+        "ratio": 0.0
       },
       "categories/ai-provider-domain.json": {
-        "current": 203
+        "baseline": 203,
+        "current": 203,
+        "delta": 0,
+        "ratio": 0.0
       },
       "categories/ai-provider-domain.mrs": {
-        "current": 203
+        "baseline": 199,
+        "current": 203,
+        "delta": 4,
+        "ratio": 0.020100502512562814
       },
       "categories/ai-provider-domain.srs": {
-        "current": 203
+        "baseline": 203,
+        "current": 203,
+        "delta": 0,
+        "ratio": 0.0
       },
       "categories/ai-provider-domain.yaml": {
-        "current": 203
+        "baseline": 203,
+        "current": 203,
+        "delta": 0,
+        "ratio": 0.0
       },
       "categories/apple-cn-domain.json": {
         "baseline": 275,
@@ -194,88 +242,108 @@
         "ratio": 0.0
       },
       "categories/cn-ip.json": {
-        "baseline": 6278,
+        "baseline": 6280,
         "current": 6280,
-        "delta": 2,
-        "ratio": 0.00031857279388340236
+        "delta": 0,
+        "ratio": 0.0
       },
       "categories/cn-ip.mrs": {
-        "baseline": 6278,
+        "baseline": 6280,
         "current": 6280,
-        "delta": 2,
-        "ratio": 0.00031857279388340236
+        "delta": 0,
+        "ratio": 0.0
       },
       "categories/cn-ip.srs": {
-        "baseline": 6278,
+        "baseline": 6280,
         "current": 6280,
-        "delta": 2,
-        "ratio": 0.00031857279388340236
+        "delta": 0,
+        "ratio": 0.0
       },
       "categories/cn-ip.yaml": {
-        "baseline": 6278,
+        "baseline": 6280,
         "current": 6280,
-        "delta": 2,
-        "ratio": 0.00031857279388340236
+        "delta": 0,
+        "ratio": 0.0
       },
       "categories/custom-direct-domain.json": {
         "baseline": 217,
-        "current": 217,
-        "delta": 0,
-        "ratio": 0.0
+        "current": 0,
+        "delta": -217,
+        "ratio": -1.0,
+        "status": "allowed-removed"
       },
       "categories/custom-direct-domain.mrs": {
         "baseline": 172,
-        "current": 217,
-        "delta": 45,
-        "ratio": 0.2616279069767442
+        "current": 0,
+        "delta": -172,
+        "ratio": -1.0,
+        "status": "allowed-removed"
       },
       "categories/custom-direct-domain.srs": {
         "baseline": 217,
-        "current": 217,
-        "delta": 0,
-        "ratio": 0.0
+        "current": 0,
+        "delta": -217,
+        "ratio": -1.0,
+        "status": "allowed-removed"
       },
       "categories/custom-direct-domain.yaml": {
         "baseline": 217,
-        "current": 217,
-        "delta": 0,
-        "ratio": 0.0
+        "current": 0,
+        "delta": -217,
+        "ratio": -1.0,
+        "status": "allowed-removed"
       },
       "categories/custom-proxy-domain.json": {
         "baseline": 1,
-        "current": 1,
-        "delta": 0,
-        "ratio": 0.0
+        "current": 0,
+        "delta": -1,
+        "ratio": -1.0,
+        "status": "allowed-removed"
       },
       "categories/custom-proxy-domain.mrs": {
         "baseline": 1,
-        "current": 1,
-        "delta": 0,
-        "ratio": 0.0
+        "current": 0,
+        "delta": -1,
+        "ratio": -1.0,
+        "status": "allowed-removed"
       },
       "categories/custom-proxy-domain.srs": {
         "baseline": 1,
-        "current": 1,
-        "delta": 0,
-        "ratio": 0.0
+        "current": 0,
+        "delta": -1,
+        "ratio": -1.0,
+        "status": "allowed-removed"
       },
       "categories/custom-proxy-domain.yaml": {
         "baseline": 1,
-        "current": 1,
+        "current": 0,
+        "delta": -1,
+        "ratio": -1.0,
+        "status": "allowed-removed"
+      },
+      "categories/direct-domain.json": {
+        "baseline": 216,
+        "current": 216,
         "delta": 0,
         "ratio": 0.0
       },
-      "categories/direct-domain.json": {
-        "current": 216
-      },
       "categories/direct-domain.mrs": {
-        "current": 216
+        "baseline": 171,
+        "current": 216,
+        "delta": 45,
+        "ratio": 0.2631578947368421
       },
       "categories/direct-domain.srs": {
-        "current": 216
+        "baseline": 216,
+        "current": 216,
+        "delta": 0,
+        "ratio": 0.0
       },
       "categories/direct-domain.yaml": {
-        "current": 216
+        "baseline": 216,
+        "current": 216,
+        "delta": 0,
+        "ratio": 0.0
       },
       "categories/download-domain.json": {
         "baseline": 1973,
@@ -398,28 +466,52 @@
         "ratio": 0.0
       },
       "categories/local-direct-domain.json": {
-        "current": 1
+        "baseline": 1,
+        "current": 1,
+        "delta": 0,
+        "ratio": 0.0
       },
       "categories/local-direct-domain.mrs": {
-        "current": 1
+        "baseline": 1,
+        "current": 1,
+        "delta": 0,
+        "ratio": 0.0
       },
       "categories/local-direct-domain.srs": {
-        "current": 1
+        "baseline": 1,
+        "current": 1,
+        "delta": 0,
+        "ratio": 0.0
       },
       "categories/local-direct-domain.yaml": {
-        "current": 1
+        "baseline": 1,
+        "current": 1,
+        "delta": 0,
+        "ratio": 0.0
       },
       "categories/local-proxy-domain.json": {
-        "current": 1
+        "baseline": 1,
+        "current": 1,
+        "delta": 0,
+        "ratio": 0.0
       },
       "categories/local-proxy-domain.mrs": {
-        "current": 1
+        "baseline": 1,
+        "current": 1,
+        "delta": 0,
+        "ratio": 0.0
       },
       "categories/local-proxy-domain.srs": {
-        "current": 1
+        "baseline": 1,
+        "current": 1,
+        "delta": 0,
+        "ratio": 0.0
       },
       "categories/local-proxy-domain.yaml": {
-        "current": 1
+        "baseline": 1,
+        "current": 1,
+        "delta": 0,
+        "ratio": 0.0
       },
       "categories/microsoft-cn-domain.json": {
         "baseline": 241,
@@ -662,76 +754,76 @@
         "ratio": 0.0
       },
       "profiles/default/direct-domain.json": {
-        "baseline": 6372,
+        "baseline": 6520,
         "current": 6520,
-        "delta": 148,
-        "ratio": 0.02322661644695543
+        "delta": 0,
+        "ratio": 0.0
       },
       "profiles/default/direct-domain.mrs": {
-        "baseline": 6309,
+        "baseline": 6457,
         "current": 6520,
-        "delta": 211,
-        "ratio": 0.033444285940719604
+        "delta": 63,
+        "ratio": 0.009756853027721852
       },
       "profiles/default/direct-domain.srs": {
-        "baseline": 6372,
+        "baseline": 6520,
         "current": 6520,
-        "delta": 148,
-        "ratio": 0.02322661644695543
+        "delta": 0,
+        "ratio": 0.0
       },
       "profiles/default/direct-domain.yaml": {
-        "baseline": 6372,
+        "baseline": 6520,
         "current": 6520,
-        "delta": 148,
-        "ratio": 0.02322661644695543
+        "delta": 0,
+        "ratio": 0.0
       },
       "profiles/default/direct-ip.json": {
-        "baseline": 6296,
+        "baseline": 6298,
         "current": 6298,
-        "delta": 2,
-        "ratio": 0.0003176620076238882
+        "delta": 0,
+        "ratio": 0.0
       },
       "profiles/default/direct-ip.mrs": {
-        "baseline": 6296,
+        "baseline": 6298,
         "current": 6298,
-        "delta": 2,
-        "ratio": 0.0003176620076238882
+        "delta": 0,
+        "ratio": 0.0
       },
       "profiles/default/direct-ip.srs": {
-        "baseline": 6296,
+        "baseline": 6298,
         "current": 6298,
-        "delta": 2,
-        "ratio": 0.0003176620076238882
+        "delta": 0,
+        "ratio": 0.0
       },
       "profiles/default/direct-ip.yaml": {
-        "baseline": 6296,
+        "baseline": 6298,
         "current": 6298,
-        "delta": 2,
-        "ratio": 0.0003176620076238882
+        "delta": 0,
+        "ratio": 0.0
       },
       "profiles/default/proxy-domain.json": {
-        "baseline": 5571,
+        "baseline": 5569,
         "current": 5569,
-        "delta": -2,
-        "ratio": -0.0003590019745108598
+        "delta": 0,
+        "ratio": 0.0
       },
       "profiles/default/proxy-domain.mrs": {
-        "baseline": 5530,
+        "baseline": 5528,
         "current": 5569,
-        "delta": 39,
-        "ratio": 0.007052441229656419
+        "delta": 41,
+        "ratio": 0.0074167872648335745
       },
       "profiles/default/proxy-domain.srs": {
-        "baseline": 5571,
+        "baseline": 5569,
         "current": 5569,
-        "delta": -2,
-        "ratio": -0.0003590019745108598
+        "delta": 0,
+        "ratio": 0.0
       },
       "profiles/default/proxy-domain.yaml": {
-        "baseline": 5571,
+        "baseline": 5569,
         "current": 5569,
-        "delta": -2,
-        "ratio": -0.0003590019745108598
+        "delta": 0,
+        "ratio": 0.0
       },
       "profiles/default/proxy-ip.json": {
         "baseline": 34,
@@ -822,9 +914,9 @@
     "ai-coding-domain": {
       "duplicates": 0,
       "family": "domain",
-      "rules": 32,
+      "rules": 30,
       "sources": {
-        "local_ai_coding": 32
+        "local_ai_coding": 30
       }
     },
     "ai-domain": {
@@ -834,8 +926,9 @@
       "sources": {
         "ACL4SSR_ai": 49,
         "DustinWin_ai": 181,
-        "local_ai_coding": 32,
+        "local_ai_coding": 30,
         "local_ai_gateway": 5,
+        "local_ai_general": 2,
         "skk_ai": 49
       }
     },
@@ -912,23 +1005,6 @@
         "skk_china_ip": 3912,
         "skk_china_ipv6": 1235,
         "skk_domestic_ip": 2
-      }
-    },
-    "custom-direct-domain": {
-      "duplicates": 0,
-      "family": "domain",
-      "rules": 217,
-      "sources": {
-        "local_direct": 1,
-        "skk_direct": 216
-      }
-    },
-    "custom-proxy-domain": {
-      "duplicates": 0,
-      "family": "domain",
-      "rules": 1,
-      "sources": {
-        "local_proxy": 1
       }
     },
     "direct-domain": {
@@ -1215,22 +1291,6 @@
           {
             "authorized": false,
             "left": "ai-coding-domain",
-            "other": "domain_suffix:copilot.com",
-            "relation": "exact",
-            "right": "ai-domain",
-            "rule": "domain_suffix:copilot.com"
-          },
-          {
-            "authorized": false,
-            "left": "ai-coding-domain",
-            "other": "domain_suffix:copilot.microsoft.com",
-            "relation": "exact",
-            "right": "ai-domain",
-            "rule": "domain_suffix:copilot.microsoft.com"
-          },
-          {
-            "authorized": false,
-            "left": "ai-coding-domain",
             "other": "domain_suffix:devin.ai",
             "relation": "exact",
             "right": "ai-domain",
@@ -1365,7 +1425,7 @@
             "rule": "domain:api.githubcopilot.com"
           }
         ],
-        "total": 35
+        "total": 33
       },
       "ai-coding-domain:bytedance-non-cn-domain": {
         "items": [
@@ -1467,21 +1527,13 @@
           {
             "authorized": false,
             "left": "ai-coding-domain",
-            "other": "domain_suffix:copilot.microsoft.com",
-            "relation": "exact",
-            "right": "gfw-domain",
-            "rule": "domain_suffix:copilot.microsoft.com"
-          },
-          {
-            "authorized": false,
-            "left": "ai-coding-domain",
             "other": "domain_suffix:google.com",
             "relation": "parent-child",
             "right": "gfw-domain",
             "rule": "domain_suffix:jules.google.com"
           }
         ],
-        "total": 3
+        "total": 2
       },
       "ai-coding-domain:global-domain": {
         "items": [
@@ -2880,22 +2932,6 @@
           {
             "authorized": false,
             "left": "ai-provider-domain",
-            "other": "domain_suffix:copilot.com",
-            "relation": "exact",
-            "right": "ai-coding-domain",
-            "rule": "domain_suffix:copilot.com"
-          },
-          {
-            "authorized": false,
-            "left": "ai-provider-domain",
-            "other": "domain_suffix:copilot.microsoft.com",
-            "relation": "exact",
-            "right": "ai-coding-domain",
-            "rule": "domain_suffix:copilot.microsoft.com"
-          },
-          {
-            "authorized": false,
-            "left": "ai-provider-domain",
             "other": "domain_suffix:cursor-cdn.com",
             "relation": "exact",
             "right": "ai-coding-domain",
@@ -3054,7 +3090,7 @@
             "rule": "domain:api.githubcopilot.com"
           }
         ],
-        "total": 30
+        "total": 28
       },
       "ai-provider-domain:ai-domain": {
         "items": [
@@ -5223,27 +5259,6 @@
           }
         ],
         "total": 10
-      },
-      "apple-cn-domain:custom-direct-domain": {
-        "items": [
-          {
-            "authorized": false,
-            "left": "custom-direct-domain",
-            "other": "domain_suffix:apple.com",
-            "relation": "parent-child",
-            "right": "apple-cn-domain",
-            "rule": "domain:captive.apple.com"
-          },
-          {
-            "authorized": false,
-            "left": "custom-direct-domain",
-            "other": "domain_suffix:apple.com",
-            "relation": "parent-child",
-            "right": "apple-cn-domain",
-            "rule": "domain_suffix:lcdn-locator.apple.com"
-          }
-        ],
-        "total": 2
       },
       "apple-cn-domain:direct-domain": {
         "items": [
@@ -8489,259 +8504,6 @@
         ],
         "total": 32
       },
-      "cn-domain:custom-direct-domain": {
-        "items": [
-          {
-            "authorized": false,
-            "left": "cn-domain",
-            "other": "domain_suffix:xunlei.com",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:xunlei.com"
-          },
-          {
-            "authorized": false,
-            "left": "cn-domain",
-            "other": "domain_suffix:animebytes.tv",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:animebytes.tv"
-          },
-          {
-            "authorized": false,
-            "left": "cn-domain",
-            "other": "domain_suffix:awesome-hd.me",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:awesome-hd.me"
-          },
-          {
-            "authorized": false,
-            "left": "cn-domain",
-            "other": "domain_suffix:broadcasthe.net",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:broadcasthe.net"
-          },
-          {
-            "authorized": false,
-            "left": "cn-domain",
-            "other": "domain_suffix:classix-unlimited.co.uk",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:classix-unlimited.co.uk"
-          },
-          {
-            "authorized": false,
-            "left": "cn-domain",
-            "other": "domain_suffix:empornium.me",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:empornium.me"
-          },
-          {
-            "authorized": false,
-            "left": "cn-domain",
-            "other": "domain_suffix:gazellegames.net",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:gazellegames.net"
-          },
-          {
-            "authorized": false,
-            "left": "cn-domain",
-            "other": "domain_suffix:hdbits.org",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:hdbits.org"
-          },
-          {
-            "authorized": false,
-            "left": "cn-domain",
-            "other": "domain_suffix:hdchina.org",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:hdchina.org"
-          },
-          {
-            "authorized": false,
-            "left": "cn-domain",
-            "other": "domain_suffix:hddolby.com",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:hddolby.com"
-          },
-          {
-            "authorized": false,
-            "left": "cn-domain",
-            "other": "domain_suffix:hdhome.org",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:hdhome.org"
-          },
-          {
-            "authorized": false,
-            "left": "cn-domain",
-            "other": "domain_suffix:icetorrent.org",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:icetorrent.org"
-          },
-          {
-            "authorized": false,
-            "left": "cn-domain",
-            "other": "domain_suffix:jpopsuki.eu",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:jpopsuki.eu"
-          },
-          {
-            "authorized": false,
-            "left": "cn-domain",
-            "other": "domain_suffix:keepfrds.com",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:keepfrds.com"
-          },
-          {
-            "authorized": false,
-            "left": "cn-domain",
-            "other": "domain_suffix:m-team.cc",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:m-team.cc"
-          },
-          {
-            "authorized": false,
-            "left": "cn-domain",
-            "other": "domain_suffix:madsrevolution.net",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:madsrevolution.net"
-          },
-          {
-            "authorized": false,
-            "left": "cn-domain",
-            "other": "domain_suffix:myanonamouse.net",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:myanonamouse.net"
-          },
-          {
-            "authorized": false,
-            "left": "cn-domain",
-            "other": "domain_suffix:nanyangpt.com",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:nanyangpt.com"
-          },
-          {
-            "authorized": false,
-            "left": "cn-domain",
-            "other": "domain_suffix:ncore.cc",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:ncore.cc"
-          },
-          {
-            "authorized": false,
-            "left": "cn-domain",
-            "other": "domain_suffix:open.cd",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:open.cd"
-          },
-          {
-            "authorized": false,
-            "left": "cn-domain",
-            "other": "domain_suffix:ourbits.club",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:ourbits.club"
-          },
-          {
-            "authorized": false,
-            "left": "cn-domain",
-            "other": "domain_suffix:passthepopcorn.me",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:passthepopcorn.me"
-          },
-          {
-            "authorized": false,
-            "left": "cn-domain",
-            "other": "domain_suffix:privatehd.to",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:privatehd.to"
-          },
-          {
-            "authorized": false,
-            "left": "cn-domain",
-            "other": "domain_suffix:pterclub.com",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:pterclub.com"
-          },
-          {
-            "authorized": false,
-            "left": "cn-domain",
-            "other": "domain_suffix:redacted.ch",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:redacted.ch"
-          },
-          {
-            "authorized": false,
-            "left": "cn-domain",
-            "other": "domain_suffix:springsunday.net",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:springsunday.net"
-          },
-          {
-            "authorized": false,
-            "left": "cn-domain",
-            "other": "domain_suffix:tjupt.org",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:tjupt.org"
-          },
-          {
-            "authorized": false,
-            "left": "cn-domain",
-            "other": "domain_suffix:totheglory.im",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:totheglory.im"
-          },
-          {
-            "authorized": false,
-            "left": "custom-direct-domain",
-            "other": "domain_suffix:edu.cn",
-            "relation": "parent-child",
-            "right": "cn-domain",
-            "rule": "domain_suffix:bt.neu6.edu.cn"
-          },
-          {
-            "authorized": false,
-            "left": "custom-direct-domain",
-            "other": "domain_suffix:edu.cn",
-            "relation": "parent-child",
-            "right": "cn-domain",
-            "rule": "domain_suffix:hudbt.hust.edu.cn"
-          },
-          {
-            "authorized": false,
-            "left": "custom-direct-domain",
-            "other": "domain_suffix:com.cn",
-            "relation": "parent-child",
-            "right": "cn-domain",
-            "rule": "domain_suffix:securelogin.com.cn"
-          }
-        ],
-        "total": 31
-      },
       "cn-domain:direct-domain": {
         "items": [
           {
@@ -9864,811 +9626,6 @@
           }
         ],
         "total": 10
-      },
-      "direct-domain:custom-direct-domain": {
-        "items": [
-          {
-            "authorized": false,
-            "left": "direct-domain",
-            "other": "domain_suffix:lan",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:lan"
-          },
-          {
-            "authorized": false,
-            "left": "direct-domain",
-            "other": "domain_suffix:m2m",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:m2m"
-          },
-          {
-            "authorized": false,
-            "left": "direct-domain",
-            "other": "domain_suffix:home",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:home"
-          },
-          {
-            "authorized": false,
-            "left": "direct-domain",
-            "other": "domain_suffix:bogon",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:bogon"
-          },
-          {
-            "authorized": false,
-            "left": "direct-domain",
-            "other": "domain_suffix:local",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:local"
-          },
-          {
-            "authorized": false,
-            "left": "direct-domain",
-            "other": "domain:unifi",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain:unifi"
-          },
-          {
-            "authorized": false,
-            "left": "direct-domain",
-            "other": "domain_suffix:msg.vg",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:msg.vg"
-          },
-          {
-            "authorized": false,
-            "left": "direct-domain",
-            "other": "domain_suffix:router",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:router"
-          },
-          {
-            "authorized": false,
-            "left": "direct-domain",
-            "other": "domain_suffix:acm.org",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:acm.org"
-          },
-          {
-            "authorized": false,
-            "left": "direct-domain",
-            "other": "domain_suffix:avgv.cc",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:avgv.cc"
-          },
-          {
-            "authorized": false,
-            "left": "direct-domain",
-            "other": "domain_suffix:doi.org",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:doi.org"
-          },
-          {
-            "authorized": false,
-            "left": "direct-domain",
-            "other": "domain_suffix:et8.org",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:et8.org"
-          },
-          {
-            "authorized": false,
-            "left": "direct-domain",
-            "other": "domain_suffix:hd4.xyz",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:hd4.xyz"
-          },
-          {
-            "authorized": false,
-            "left": "direct-domain",
-            "other": "domain_suffix:hdbd.us",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:hdbd.us"
-          },
-          {
-            "authorized": false,
-            "left": "direct-domain",
-            "other": "domain_suffix:lztr.me",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:lztr.me"
-          },
-          {
-            "authorized": false,
-            "left": "direct-domain",
-            "other": "domain_suffix:open.cd",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:open.cd"
-          },
-          {
-            "authorized": false,
-            "left": "direct-domain",
-            "other": "domain_suffix:oup.com",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:oup.com"
-          },
-          {
-            "authorized": false,
-            "left": "direct-domain",
-            "other": "domain:pi.hole",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain:pi.hole"
-          },
-          {
-            "authorized": false,
-            "left": "direct-domain",
-            "other": "domain:aterm.me",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain:aterm.me"
-          },
-          {
-            "authorized": false,
-            "left": "direct-domain",
-            "other": "domain_suffix:hdsky.me",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:hdsky.me"
-          },
-          {
-            "authorized": false,
-            "left": "direct-domain",
-            "other": "domain_suffix:ieee.org",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:ieee.org"
-          },
-          {
-            "authorized": false,
-            "left": "direct-domain",
-            "other": "domain_suffix:internal",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:internal"
-          },
-          {
-            "authorized": false,
-            "left": "direct-domain",
-            "other": "domain_suffix:j99.info",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:j99.info"
-          },
-          {
-            "authorized": false,
-            "left": "direct-domain",
-            "other": "domain_suffix:ncore.cc",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:ncore.cc"
-          },
-          {
-            "authorized": false,
-            "left": "direct-domain",
-            "other": "domain_suffix:52pt.site",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:52pt.site"
-          },
-          {
-            "authorized": false,
-            "left": "direct-domain",
-            "other": "domain_suffix:beitai.pt",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:beitai.pt"
-          },
-          {
-            "authorized": false,
-            "left": "direct-domain",
-            "other": "domain_suffix:bt.byr.cn",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:bt.byr.cn"
-          },
-          {
-            "authorized": false,
-            "left": "direct-domain",
-            "other": "domain_suffix:dxdhd.com",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:dxdhd.com"
-          },
-          {
-            "authorized": false,
-            "left": "direct-domain",
-            "other": "domain_suffix:hdarea.co",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:hdarea.co"
-          },
-          {
-            "authorized": false,
-            "left": "direct-domain",
-            "other": "domain_suffix:hdupt.com",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:hdupt.com"
-          },
-          {
-            "authorized": false,
-            "left": "direct-domain",
-            "other": "domain_suffix:hdzone.me",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:hdzone.me"
-          },
-          {
-            "authorized": false,
-            "left": "direct-domain",
-            "other": "domain_suffix:hitpt.com",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:hitpt.com"
-          },
-          {
-            "authorized": false,
-            "left": "direct-domain",
-            "other": "domain_suffix:home.arpa",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:home.arpa"
-          },
-          {
-            "authorized": false,
-            "left": "direct-domain",
-            "other": "domain_suffix:joyhd.net",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:joyhd.net"
-          },
-          {
-            "authorized": false,
-            "left": "direct-domain",
-            "other": "domain_suffix:jstor.org",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:jstor.org"
-          },
-          {
-            "authorized": false,
-            "left": "direct-domain",
-            "other": "domain_suffix:m-team.cc",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:m-team.cc"
-          },
-          {
-            "authorized": false,
-            "left": "direct-domain",
-            "other": "domain_suffix:npupt.com",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:npupt.com"
-          },
-          {
-            "authorized": false,
-            "left": "direct-domain",
-            "other": "domain:ntt.setup",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain:ntt.setup"
-          },
-          {
-            "authorized": false,
-            "left": "direct-domain",
-            "other": "domain_suffix:tjupt.org",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:tjupt.org"
-          },
-          {
-            "authorized": false,
-            "left": "direct-domain",
-            "other": "domain_suffix:ui.direct",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:ui.direct"
-          },
-          {
-            "authorized": false,
-            "left": "direct-domain",
-            "other": "domain_suffix:wiley.com",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:wiley.com"
-          },
-          {
-            "authorized": false,
-            "left": "direct-domain",
-            "other": "domain_suffix:avistaz.to",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:avistaz.to"
-          },
-          {
-            "authorized": false,
-            "left": "direct-domain",
-            "other": "domain_suffix:chdbits.co",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:chdbits.co"
-          },
-          {
-            "authorized": false,
-            "left": "direct-domain",
-            "other": "domain_suffix:cinemaz.to",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:cinemaz.to"
-          },
-          {
-            "authorized": false,
-            "left": "direct-domain",
-            "other": "domain_suffix:hdbits.org",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:hdbits.org"
-          },
-          {
-            "authorized": false,
-            "left": "direct-domain",
-            "other": "domain_suffix:hdfans.org",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:hdfans.org"
-          },
-          {
-            "authorized": false,
-            "left": "direct-domain",
-            "other": "domain_suffix:hdhome.org",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:hdhome.org"
-          },
-          {
-            "authorized": false,
-            "left": "direct-domain",
-            "other": "domain_suffix:hdpost.top",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:hdpost.top"
-          },
-          {
-            "authorized": false,
-            "left": "direct-domain",
-            "other": "domain_suffix:hdtime.org",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:hdtime.org"
-          },
-          {
-            "authorized": false,
-            "left": "direct-domain",
-            "other": "domain_suffix:nature.com",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:nature.com"
-          },
-          {
-            "authorized": false,
-            "left": "direct-domain",
-            "other": "domain_suffix:nicept.net",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:nicept.net"
-          },
-          {
-            "authorized": false,
-            "left": "direct-domain",
-            "other": "domain_suffix:oppaiti.me",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:oppaiti.me"
-          },
-          {
-            "authorized": false,
-            "left": "direct-domain",
-            "other": "domain_suffix:pthome.net",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:pthome.net"
-          },
-          {
-            "authorized": false,
-            "left": "direct-domain",
-            "other": "domain_suffix:scopus.com",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:scopus.com"
-          },
-          {
-            "authorized": false,
-            "left": "direct-domain",
-            "other": "domain_suffix:sdbits.org",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:sdbits.org"
-          },
-          {
-            "authorized": false,
-            "left": "direct-domain",
-            "other": "domain_suffix:skyey2.com",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:skyey2.com"
-          },
-          {
-            "authorized": false,
-            "left": "direct-domain",
-            "other": "domain_suffix:tplogin.cn",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:tplogin.cn"
-          },
-          {
-            "authorized": false,
-            "left": "direct-domain",
-            "other": "domain_suffix:trontv.com",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:trontv.com"
-          },
-          {
-            "authorized": false,
-            "left": "direct-domain",
-            "other": "domain_suffix:xunlei.com",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:xunlei.com"
-          },
-          {
-            "authorized": false,
-            "left": "direct-domain",
-            "other": "domain:127.skk.moe",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain:127.skk.moe"
-          },
-          {
-            "authorized": false,
-            "left": "direct-domain",
-            "other": "domain_suffix:ccfbits.org",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:ccfbits.org"
-          },
-          {
-            "authorized": false,
-            "left": "direct-domain",
-            "other": "domain_suffix:cgpeers.com",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:cgpeers.com"
-          },
-          {
-            "authorized": false,
-            "left": "direct-domain",
-            "other": "domain_suffix:comicat.org",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:comicat.org"
-          },
-          {
-            "authorized": false,
-            "left": "direct-domain",
-            "other": "domain_suffix:discfan.net",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:discfan.net"
-          },
-          {
-            "authorized": false,
-            "left": "direct-domain",
-            "other": "domain_suffix:exoticaz.to",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:exoticaz.to"
-          },
-          {
-            "authorized": false,
-            "left": "direct-domain",
-            "other": "domain_suffix:filelist.io",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:filelist.io"
-          },
-          {
-            "authorized": false,
-            "left": "direct-domain",
-            "other": "domain_suffix:hd4fans.org",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:hd4fans.org"
-          },
-          {
-            "authorized": false,
-            "left": "direct-domain",
-            "other": "domain_suffix:hdchina.org",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:hdchina.org"
-          },
-          {
-            "authorized": false,
-            "left": "direct-domain",
-            "other": "domain_suffix:hdcity.city",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:hdcity.city"
-          },
-          {
-            "authorized": false,
-            "left": "direct-domain",
-            "other": "domain_suffix:hddolby.com",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:hddolby.com"
-          },
-          {
-            "authorized": false,
-            "left": "direct-domain",
-            "other": "domain_suffix:hdroute.org",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:hdroute.org"
-          },
-          {
-            "authorized": false,
-            "left": "direct-domain",
-            "other": "domain_suffix:jpopsuki.eu",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:jpopsuki.eu"
-          },
-          {
-            "authorized": false,
-            "left": "direct-domain",
-            "other": "domain_suffix:localdomain",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:localdomain"
-          },
-          {
-            "authorized": false,
-            "left": "direct-domain",
-            "other": "domain_suffix:moecat.best",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:moecat.best"
-          },
-          {
-            "authorized": false,
-            "left": "direct-domain",
-            "other": "domain_suffix:plex.direct",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:plex.direct"
-          },
-          {
-            "authorized": false,
-            "left": "direct-domain",
-            "other": "domain_suffix:ptsbao.club",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:ptsbao.club"
-          },
-          {
-            "authorized": false,
-            "left": "direct-domain",
-            "other": "domain_suffix:redacted.ch",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:redacted.ch"
-          },
-          {
-            "authorized": false,
-            "left": "direct-domain",
-            "other": "domain_suffix:science.org",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:science.org"
-          },
-          {
-            "authorized": false,
-            "left": "direct-domain",
-            "other": "domain_suffix:u2.dmhy.org",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:u2.dmhy.org"
-          },
-          {
-            "authorized": false,
-            "left": "direct-domain",
-            "other": "domain_suffix:uhdbits.org",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:uhdbits.org"
-          },
-          {
-            "authorized": false,
-            "left": "direct-domain",
-            "other": "domain_suffix:anthelion.me",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:anthelion.me"
-          },
-          {
-            "authorized": false,
-            "left": "direct-domain",
-            "other": "domain_suffix:beyond-hd.me",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:beyond-hd.me"
-          },
-          {
-            "authorized": false,
-            "left": "direct-domain",
-            "other": "domain_suffix:bibliotik.me",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:bibliotik.me"
-          },
-          {
-            "authorized": false,
-            "left": "direct-domain",
-            "other": "domain_suffix:blutopia.xyz",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:blutopia.xyz"
-          },
-          {
-            "authorized": false,
-            "left": "direct-domain",
-            "other": "domain_suffix:eastgame.org",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:eastgame.org"
-          },
-          {
-            "authorized": false,
-            "left": "direct-domain",
-            "other": "domain_suffix:empornium.me",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:empornium.me"
-          },
-          {
-            "authorized": false,
-            "left": "direct-domain",
-            "other": "domain_suffix:gfxpeers.net",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:gfxpeers.net"
-          },
-          {
-            "authorized": false,
-            "left": "direct-domain",
-            "other": "domain_suffix:hd-space.org",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:hd-space.org"
-          },
-          {
-            "authorized": false,
-            "left": "direct-domain",
-            "other": "domain_suffix:hdatmos.club",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:hdatmos.club"
-          },
-          {
-            "authorized": false,
-            "left": "direct-domain",
-            "other": "domain_suffix:karagarga.in",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:karagarga.in"
-          },
-          {
-            "authorized": false,
-            "left": "direct-domain",
-            "other": "domain_suffix:keepfrds.com",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:keepfrds.com"
-          },
-          {
-            "authorized": false,
-            "left": "direct-domain",
-            "other": "domain_suffix:leaguehd.com",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:leaguehd.com"
-          },
-          {
-            "authorized": false,
-            "left": "direct-domain",
-            "other": "domain_suffix:nebulance.io",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:nebulance.io"
-          },
-          {
-            "authorized": false,
-            "left": "direct-domain",
-            "other": "domain_suffix:ourbits.club",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:ourbits.club"
-          },
-          {
-            "authorized": false,
-            "left": "direct-domain",
-            "other": "domain_suffix:pornbits.net",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:pornbits.net"
-          },
-          {
-            "authorized": false,
-            "left": "direct-domain",
-            "other": "domain_suffix:privatehd.to",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:privatehd.to"
-          },
-          {
-            "authorized": false,
-            "left": "direct-domain",
-            "other": "domain_suffix:pterclub.com",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:pterclub.com"
-          },
-          {
-            "authorized": false,
-            "left": "direct-domain",
-            "other": "domain_suffix:springer.com",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:springer.com"
-          },
-          {
-            "authorized": false,
-            "left": "direct-domain",
-            "other": "domain_suffix:tplinkap.net",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:tplinkap.net"
-          },
-          {
-            "authorized": false,
-            "left": "direct-domain",
-            "other": "domain_suffix:alpharatio.cc",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:alpharatio.cc"
-          }
-        ],
-        "total": 216
       },
       "download-domain:gfw-domain": {
         "items": [
@@ -12072,219 +11029,6 @@
         ],
         "total": 474
       },
-      "fakeip-filter-domain:custom-direct-domain": {
-        "items": [
-          {
-            "authorized": false,
-            "left": "fakeip-filter-domain",
-            "other": "domain_suffix:lan",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:lan"
-          },
-          {
-            "authorized": false,
-            "left": "fakeip-filter-domain",
-            "other": "domain_suffix:m2m",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:m2m"
-          },
-          {
-            "authorized": false,
-            "left": "fakeip-filter-domain",
-            "other": "domain_suffix:bogon",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:bogon"
-          },
-          {
-            "authorized": false,
-            "left": "fakeip-filter-domain",
-            "other": "domain_suffix:localdomain",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:localdomain"
-          },
-          {
-            "authorized": false,
-            "left": "fakeip-filter-domain",
-            "other": "domain_suffix:home.arpa",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:home.arpa"
-          },
-          {
-            "authorized": false,
-            "left": "fakeip-filter-domain",
-            "other": "domain:local.adguard.org",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain:local.adguard.org"
-          },
-          {
-            "authorized": false,
-            "left": "fakeip-filter-domain",
-            "other": "domain:injections.adguard.org",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain:injections.adguard.org"
-          },
-          {
-            "authorized": false,
-            "left": "fakeip-filter-domain",
-            "other": "domain_suffix:10.in-addr.arpa",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:10.in-addr.arpa"
-          },
-          {
-            "authorized": false,
-            "left": "fakeip-filter-domain",
-            "other": "domain_suffix:254.169.in-addr.arpa",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:254.169.in-addr.arpa"
-          },
-          {
-            "authorized": false,
-            "left": "fakeip-filter-domain",
-            "other": "domain_suffix:16.172.in-addr.arpa",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:16.172.in-addr.arpa"
-          },
-          {
-            "authorized": false,
-            "left": "fakeip-filter-domain",
-            "other": "domain_suffix:17.172.in-addr.arpa",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:17.172.in-addr.arpa"
-          },
-          {
-            "authorized": false,
-            "left": "fakeip-filter-domain",
-            "other": "domain_suffix:18.172.in-addr.arpa",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:18.172.in-addr.arpa"
-          },
-          {
-            "authorized": false,
-            "left": "fakeip-filter-domain",
-            "other": "domain_suffix:19.172.in-addr.arpa",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:19.172.in-addr.arpa"
-          },
-          {
-            "authorized": false,
-            "left": "fakeip-filter-domain",
-            "other": "domain_suffix:20.172.in-addr.arpa",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:20.172.in-addr.arpa"
-          },
-          {
-            "authorized": false,
-            "left": "fakeip-filter-domain",
-            "other": "domain_suffix:21.172.in-addr.arpa",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:21.172.in-addr.arpa"
-          },
-          {
-            "authorized": false,
-            "left": "fakeip-filter-domain",
-            "other": "domain_suffix:22.172.in-addr.arpa",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:22.172.in-addr.arpa"
-          },
-          {
-            "authorized": false,
-            "left": "fakeip-filter-domain",
-            "other": "domain_suffix:23.172.in-addr.arpa",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:23.172.in-addr.arpa"
-          },
-          {
-            "authorized": false,
-            "left": "fakeip-filter-domain",
-            "other": "domain_suffix:24.172.in-addr.arpa",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:24.172.in-addr.arpa"
-          },
-          {
-            "authorized": false,
-            "left": "fakeip-filter-domain",
-            "other": "domain_suffix:25.172.in-addr.arpa",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:25.172.in-addr.arpa"
-          },
-          {
-            "authorized": false,
-            "left": "fakeip-filter-domain",
-            "other": "domain_suffix:26.172.in-addr.arpa",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:26.172.in-addr.arpa"
-          },
-          {
-            "authorized": false,
-            "left": "fakeip-filter-domain",
-            "other": "domain_suffix:27.172.in-addr.arpa",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:27.172.in-addr.arpa"
-          },
-          {
-            "authorized": false,
-            "left": "fakeip-filter-domain",
-            "other": "domain_suffix:28.172.in-addr.arpa",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:28.172.in-addr.arpa"
-          },
-          {
-            "authorized": false,
-            "left": "fakeip-filter-domain",
-            "other": "domain_suffix:29.172.in-addr.arpa",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:29.172.in-addr.arpa"
-          },
-          {
-            "authorized": false,
-            "left": "fakeip-filter-domain",
-            "other": "domain_suffix:30.172.in-addr.arpa",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:30.172.in-addr.arpa"
-          },
-          {
-            "authorized": false,
-            "left": "fakeip-filter-domain",
-            "other": "domain_suffix:31.172.in-addr.arpa",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:31.172.in-addr.arpa"
-          },
-          {
-            "authorized": false,
-            "left": "fakeip-filter-domain",
-            "other": "domain_suffix:168.192.in-addr.arpa",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:168.192.in-addr.arpa"
-          }
-        ],
-        "total": 26
-      },
       "fakeip-filter-domain:direct-domain": {
         "items": [
           {
@@ -12515,27 +11259,6 @@
             "relation": "parent-child",
             "right": "global-domain",
             "rule": "domain:injections.adguard.org"
-          }
-        ],
-        "total": 2
-      },
-      "gfw-domain:custom-direct-domain": {
-        "items": [
-          {
-            "authorized": false,
-            "left": "gfw-domain",
-            "other": "domain_suffix:avistaz.to",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:avistaz.to"
-          },
-          {
-            "authorized": false,
-            "left": "custom-direct-domain",
-            "other": "domain_suffix:dmhy.org",
-            "relation": "parent-child",
-            "right": "gfw-domain",
-            "rule": "domain_suffix:u2.dmhy.org"
           }
         ],
         "total": 2
@@ -13365,35 +12088,6 @@
           }
         ],
         "total": 491
-      },
-      "global-domain:custom-direct-domain": {
-        "items": [
-          {
-            "authorized": false,
-            "left": "custom-direct-domain",
-            "other": "domain_suffix:skk.moe",
-            "relation": "parent-child",
-            "right": "global-domain",
-            "rule": "domain:127.skk.moe"
-          },
-          {
-            "authorized": false,
-            "left": "custom-direct-domain",
-            "other": "domain_suffix:adguard.org",
-            "relation": "parent-child",
-            "right": "global-domain",
-            "rule": "domain:local.adguard.org"
-          },
-          {
-            "authorized": false,
-            "left": "custom-direct-domain",
-            "other": "domain_suffix:adguard.org",
-            "relation": "parent-child",
-            "right": "global-domain",
-            "rule": "domain:injections.adguard.org"
-          }
-        ],
-        "total": 3
       },
       "global-domain:direct-domain": {
         "items": [
@@ -14417,32 +13111,6 @@
         ],
         "total": 1
       },
-      "local-direct-domain:custom-direct-domain": {
-        "items": [
-          {
-            "authorized": false,
-            "left": "local-direct-domain",
-            "other": "domain:www.cycani.org",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain:www.cycani.org"
-          }
-        ],
-        "total": 1
-      },
-      "local-proxy-domain:custom-proxy-domain": {
-        "items": [
-          {
-            "authorized": false,
-            "left": "local-proxy-domain",
-            "other": "domain_suffix:steam-chat.com",
-            "relation": "exact",
-            "right": "custom-proxy-domain",
-            "rule": "domain_suffix:steam-chat.com"
-          }
-        ],
-        "total": 1
-      },
       "microsoft-cn-domain:cdn-domain": {
         "items": [
           {
@@ -15153,403 +13821,6 @@
           }
         ],
         "total": 5
-      },
-      "private-domain:custom-direct-domain": {
-        "items": [
-          {
-            "authorized": false,
-            "left": "private-domain",
-            "other": "domain_suffix:lan",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:lan"
-          },
-          {
-            "authorized": false,
-            "left": "private-domain",
-            "other": "domain_suffix:home",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:home"
-          },
-          {
-            "authorized": false,
-            "left": "private-domain",
-            "other": "domain_suffix:local",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:local"
-          },
-          {
-            "authorized": false,
-            "left": "private-domain",
-            "other": "domain:unifi",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain:unifi"
-          },
-          {
-            "authorized": false,
-            "left": "private-domain",
-            "other": "domain_suffix:router",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:router"
-          },
-          {
-            "authorized": false,
-            "left": "private-domain",
-            "other": "domain:pi.hole",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain:pi.hole"
-          },
-          {
-            "authorized": false,
-            "left": "private-domain",
-            "other": "domain:aterm.me",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain:aterm.me"
-          },
-          {
-            "authorized": false,
-            "left": "private-domain",
-            "other": "domain_suffix:internal",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:internal"
-          },
-          {
-            "authorized": false,
-            "left": "private-domain",
-            "other": "domain_suffix:home.arpa",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:home.arpa"
-          },
-          {
-            "authorized": false,
-            "left": "private-domain",
-            "other": "domain:ntt.setup",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain:ntt.setup"
-          },
-          {
-            "authorized": false,
-            "left": "private-domain",
-            "other": "domain_suffix:ui.direct",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:ui.direct"
-          },
-          {
-            "authorized": false,
-            "left": "private-domain",
-            "other": "domain_suffix:tplogin.cn",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:tplogin.cn"
-          },
-          {
-            "authorized": false,
-            "left": "private-domain",
-            "other": "domain_suffix:localdomain",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:localdomain"
-          },
-          {
-            "authorized": false,
-            "left": "private-domain",
-            "other": "domain_suffix:plex.direct",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:plex.direct"
-          },
-          {
-            "authorized": false,
-            "left": "private-domain",
-            "other": "domain_suffix:tplinkap.net",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:tplinkap.net"
-          },
-          {
-            "authorized": false,
-            "left": "private-domain",
-            "other": "domain_suffix:asusrouter.com",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:asusrouter.com"
-          },
-          {
-            "authorized": false,
-            "left": "private-domain",
-            "other": "domain:homerouter.cpe",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain:homerouter.cpe"
-          },
-          {
-            "authorized": false,
-            "left": "private-domain",
-            "other": "domain:mobile.hotspot",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain:mobile.hotspot"
-          },
-          {
-            "authorized": false,
-            "left": "private-domain",
-            "other": "domain_suffix:tplinkwifi.net",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:tplinkwifi.net"
-          },
-          {
-            "authorized": false,
-            "left": "private-domain",
-            "other": "domain_suffix:10.in-addr.arpa",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:10.in-addr.arpa"
-          },
-          {
-            "authorized": false,
-            "left": "private-domain",
-            "other": "domain:router.asus.com",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain:router.asus.com"
-          },
-          {
-            "authorized": false,
-            "left": "private-domain",
-            "other": "domain_suffix:routerlogin.com",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:routerlogin.com"
-          },
-          {
-            "authorized": false,
-            "left": "private-domain",
-            "other": "domain_suffix:routerlogin.net",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:routerlogin.net"
-          },
-          {
-            "authorized": false,
-            "left": "private-domain",
-            "other": "domain_suffix:tplinkmodem.net",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:tplinkmodem.net"
-          },
-          {
-            "authorized": false,
-            "left": "private-domain",
-            "other": "domain:repeater.asus.com",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain:repeater.asus.com"
-          },
-          {
-            "authorized": false,
-            "left": "private-domain",
-            "other": "domain_suffix:tplinkplclogin.net",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:tplinkplclogin.net"
-          },
-          {
-            "authorized": false,
-            "left": "private-domain",
-            "other": "domain_suffix:tplinkrepeater.net",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:tplinkrepeater.net"
-          },
-          {
-            "authorized": false,
-            "left": "private-domain",
-            "other": "domain_suffix:16.172.in-addr.arpa",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:16.172.in-addr.arpa"
-          },
-          {
-            "authorized": false,
-            "left": "private-domain",
-            "other": "domain_suffix:17.172.in-addr.arpa",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:17.172.in-addr.arpa"
-          },
-          {
-            "authorized": false,
-            "left": "private-domain",
-            "other": "domain_suffix:18.172.in-addr.arpa",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:18.172.in-addr.arpa"
-          },
-          {
-            "authorized": false,
-            "left": "private-domain",
-            "other": "domain_suffix:19.172.in-addr.arpa",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:19.172.in-addr.arpa"
-          },
-          {
-            "authorized": false,
-            "left": "private-domain",
-            "other": "domain_suffix:20.172.in-addr.arpa",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:20.172.in-addr.arpa"
-          },
-          {
-            "authorized": false,
-            "left": "private-domain",
-            "other": "domain_suffix:21.172.in-addr.arpa",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:21.172.in-addr.arpa"
-          },
-          {
-            "authorized": false,
-            "left": "private-domain",
-            "other": "domain_suffix:22.172.in-addr.arpa",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:22.172.in-addr.arpa"
-          },
-          {
-            "authorized": false,
-            "left": "private-domain",
-            "other": "domain_suffix:23.172.in-addr.arpa",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:23.172.in-addr.arpa"
-          },
-          {
-            "authorized": false,
-            "left": "private-domain",
-            "other": "domain_suffix:24.172.in-addr.arpa",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:24.172.in-addr.arpa"
-          },
-          {
-            "authorized": false,
-            "left": "private-domain",
-            "other": "domain_suffix:25.172.in-addr.arpa",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:25.172.in-addr.arpa"
-          },
-          {
-            "authorized": false,
-            "left": "private-domain",
-            "other": "domain_suffix:26.172.in-addr.arpa",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:26.172.in-addr.arpa"
-          },
-          {
-            "authorized": false,
-            "left": "private-domain",
-            "other": "domain_suffix:27.172.in-addr.arpa",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:27.172.in-addr.arpa"
-          },
-          {
-            "authorized": false,
-            "left": "private-domain",
-            "other": "domain_suffix:28.172.in-addr.arpa",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:28.172.in-addr.arpa"
-          },
-          {
-            "authorized": false,
-            "left": "private-domain",
-            "other": "domain_suffix:29.172.in-addr.arpa",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:29.172.in-addr.arpa"
-          },
-          {
-            "authorized": false,
-            "left": "private-domain",
-            "other": "domain_suffix:30.172.in-addr.arpa",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:30.172.in-addr.arpa"
-          },
-          {
-            "authorized": false,
-            "left": "private-domain",
-            "other": "domain_suffix:31.172.in-addr.arpa",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:31.172.in-addr.arpa"
-          },
-          {
-            "authorized": false,
-            "left": "private-domain",
-            "other": "domain:console.gl-inet.com",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain:console.gl-inet.com"
-          },
-          {
-            "authorized": false,
-            "left": "private-domain",
-            "other": "domain_suffix:168.192.in-addr.arpa",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:168.192.in-addr.arpa"
-          },
-          {
-            "authorized": false,
-            "left": "private-domain",
-            "other": "domain_suffix:254.169.in-addr.arpa",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:254.169.in-addr.arpa"
-          },
-          {
-            "authorized": false,
-            "left": "private-domain",
-            "other": "domain_suffix:huaweimobilewifi.com",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:huaweimobilewifi.com"
-          },
-          {
-            "authorized": false,
-            "left": "private-domain",
-            "other": "domain:instant.arubanetworks.com",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain:instant.arubanetworks.com"
-          },
-          {
-            "authorized": false,
-            "left": "private-domain",
-            "other": "domain:setmeup.arubanetworks.com",
-            "relation": "exact",
-            "right": "custom-direct-domain",
-            "rule": "domain:setmeup.arubanetworks.com"
-          }
-        ],
-        "total": 49
       },
       "private-domain:direct-domain": {
         "items": [
@@ -20677,307 +18948,6 @@
           }
         ],
         "total": 3479
-      },
-      "reject-domain:custom-direct-domain": {
-        "items": [
-          {
-            "authorized": false,
-            "left": "reject-domain",
-            "other": "domain_suffix:wiley.com",
-            "relation": "parent-child",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:data.email1.wiley.com"
-          },
-          {
-            "authorized": false,
-            "left": "reject-domain",
-            "other": "domain_suffix:wiley.com",
-            "relation": "parent-child",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:sdata.wiley.com"
-          },
-          {
-            "authorized": false,
-            "left": "reject-domain",
-            "other": "domain_suffix:science.org",
-            "relation": "parent-child",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:smetrics.science.org"
-          },
-          {
-            "authorized": false,
-            "left": "reject-domain",
-            "other": "domain_suffix:sciencemag.org",
-            "relation": "parent-child",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:metrics.sciencemag.org"
-          },
-          {
-            "authorized": false,
-            "left": "reject-domain",
-            "other": "domain_suffix:jstor.org",
-            "relation": "parent-child",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:nsmeasure.jstor.org"
-          },
-          {
-            "authorized": false,
-            "left": "reject-domain",
-            "other": "domain_suffix:ieee.org",
-            "relation": "parent-child",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:smetrics-ieeexplore.ieee.org"
-          },
-          {
-            "authorized": false,
-            "left": "reject-domain",
-            "other": "domain_suffix:springer.com",
-            "relation": "parent-child",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:wklwyt.springer.com"
-          },
-          {
-            "authorized": false,
-            "left": "reject-domain",
-            "other": "domain_suffix:springer.com",
-            "relation": "parent-child",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:www7.springer.com"
-          },
-          {
-            "authorized": false,
-            "left": "reject-domain",
-            "other": "domain_suffix:nature.com",
-            "relation": "parent-child",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:collect.nature.com"
-          },
-          {
-            "authorized": false,
-            "left": "reject-domain",
-            "other": "domain_suffix:xunlei.com",
-            "relation": "parent-child",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:stat.download.xunlei.com"
-          },
-          {
-            "authorized": false,
-            "left": "reject-domain",
-            "other": "domain_suffix:springernature.com",
-            "relation": "parent-child",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:cmp.springernature.com"
-          },
-          {
-            "authorized": false,
-            "left": "reject-domain",
-            "other": "domain_suffix:xunlei.com",
-            "relation": "parent-child",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:adsp.xunlei.com"
-          },
-          {
-            "authorized": false,
-            "left": "reject-domain",
-            "other": "domain_suffix:xunlei.com",
-            "relation": "parent-child",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:kkpgv2.xunlei.com"
-          },
-          {
-            "authorized": false,
-            "left": "reject-domain",
-            "other": "domain_suffix:xunlei.com",
-            "relation": "parent-child",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:analytics-union.xunlei.com"
-          },
-          {
-            "authorized": false,
-            "left": "reject-domain",
-            "other": "domain_suffix:xunlei.com",
-            "relation": "parent-child",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:advertpay-vip-ssl.xunlei.com"
-          },
-          {
-            "authorized": false,
-            "left": "reject-domain",
-            "other": "domain_suffix:xunlei.com",
-            "relation": "parent-child",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:advert-statistic-vip.xunlei.com"
-          },
-          {
-            "authorized": false,
-            "left": "reject-domain",
-            "other": "domain_suffix:xunlei.com",
-            "relation": "parent-child",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:advertpay.vip.xunlei.com"
-          },
-          {
-            "authorized": false,
-            "left": "reject-domain",
-            "other": "domain_suffix:xunlei.com",
-            "relation": "parent-child",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:api-u-ssl.xunlei.com"
-          },
-          {
-            "authorized": false,
-            "left": "reject-domain",
-            "other": "domain_suffix:wiley.com",
-            "relation": "parent-child",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:as.wiley.com"
-          },
-          {
-            "authorized": false,
-            "left": "reject-domain",
-            "other": "domain_suffix:nature.com",
-            "relation": "parent-child",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:cmp.nature.com"
-          },
-          {
-            "authorized": false,
-            "left": "reject-domain",
-            "other": "domain_suffix:springer.com",
-            "relation": "parent-child",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:cmp.springer.com"
-          },
-          {
-            "authorized": false,
-            "left": "reject-domain",
-            "other": "domain_suffix:researchgate.net",
-            "relation": "parent-child",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:glassmoni.researchgate.net"
-          },
-          {
-            "authorized": false,
-            "left": "reject-domain",
-            "other": "domain_suffix:xunlei.com",
-            "relation": "parent-child",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:live.xunlei.com"
-          },
-          {
-            "authorized": false,
-            "left": "reject-domain",
-            "other": "domain_suffix:xunlei.com",
-            "relation": "parent-child",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:log-vip-ssl.xunlei.com"
-          },
-          {
-            "authorized": false,
-            "left": "reject-domain",
-            "other": "domain_suffix:xunlei.com",
-            "relation": "parent-child",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:niu.xunlei.com"
-          },
-          {
-            "authorized": false,
-            "left": "reject-domain",
-            "other": "domain_suffix:xunlei.com",
-            "relation": "parent-child",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:res-etl-ssl.xunlei.com"
-          },
-          {
-            "authorized": false,
-            "left": "reject-domain",
-            "other": "domain_suffix:oup.com",
-            "relation": "parent-child",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:sdc.oup.com"
-          },
-          {
-            "authorized": false,
-            "left": "reject-domain",
-            "other": "domain_suffix:xunlei.com",
-            "relation": "parent-child",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:scene.vip.xunlei.com"
-          },
-          {
-            "authorized": false,
-            "left": "reject-domain",
-            "other": "domain_suffix:xunlei.com",
-            "relation": "parent-child",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:sentry.xunlei.com"
-          },
-          {
-            "authorized": false,
-            "left": "reject-domain",
-            "other": "domain_suffix:springer.com",
-            "relation": "parent-child",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:sgtm.springer.com"
-          },
-          {
-            "authorized": false,
-            "left": "reject-domain",
-            "other": "domain_suffix:nature.com",
-            "relation": "parent-child",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:sgtm.nature.com"
-          },
-          {
-            "authorized": false,
-            "left": "reject-domain",
-            "other": "domain_suffix:springernature.com",
-            "relation": "parent-child",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:sgtm.springernature.com"
-          },
-          {
-            "authorized": false,
-            "left": "reject-domain",
-            "other": "domain_suffix:xunlei.com",
-            "relation": "parent-child",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:soa-vip-ssl.xunlei.com"
-          },
-          {
-            "authorized": false,
-            "left": "reject-domain",
-            "other": "domain_suffix:xunlei.com",
-            "relation": "parent-child",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:stat-download-ssl.xunlei.com"
-          },
-          {
-            "authorized": false,
-            "left": "reject-domain",
-            "other": "domain_suffix:xunlei.com",
-            "relation": "parent-child",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:sys7.msg.xunlei.com"
-          },
-          {
-            "authorized": false,
-            "left": "reject-domain",
-            "other": "domain_suffix:researchgate.net",
-            "relation": "parent-child",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:a.researchgate.net"
-          },
-          {
-            "authorized": false,
-            "left": "reject-domain",
-            "other": "domain_suffix:xunlei.com",
-            "relation": "parent-child",
-            "right": "custom-direct-domain",
-            "rule": "domain_suffix:youxi.xunlei.com"
-          }
-        ],
-        "total": 37
       },
       "reject-domain:direct-domain": {
         "items": [
@@ -119220,32 +117190,32 @@
       "sha256": "5b6e23f24d67744150acaafba0b2141636b2e122f79591d6087cca88f6b7107b"
     },
     "categories/ai-coding-domain.json": {
-      "bytes": 884,
+      "bytes": 828,
       "family": "domain",
       "format": "json",
-      "rules": 32,
-      "sha256": "b7f026e763c01b5fd569bce1e05d0504374173427e01fc9e014867c211c519c6"
+      "rules": 30,
+      "sha256": "355ca01129463390f531ad103170a07b4aae771f37f351433e16197a524522a4"
     },
     "categories/ai-coding-domain.mrs": {
-      "bytes": 430,
+      "bytes": 413,
       "family": "domain",
       "format": "mrs",
-      "rules": 32,
-      "sha256": "4310fbb6efd2a47358651a21a8f6601e545cc8c6ed323b99387e9795f2ff38b2"
+      "rules": 30,
+      "sha256": "226fa1f802a791571ee4401eb4db2e13485cec2d6ac2b6d2e9903abad476e28c"
     },
     "categories/ai-coding-domain.srs": {
-      "bytes": 386,
+      "bytes": 370,
       "family": "domain",
       "format": "srs",
-      "rules": 32,
-      "sha256": "381779f73cd3e52c67d5c1f09f27d96f84e5f48b94c4993865bee259b88d0cb1"
+      "rules": 30,
+      "sha256": "8a5ab07f51a5521e8ddf02c2c5b6d6e4fc52ff2a975809f1ead943ec52720fc6"
     },
     "categories/ai-coding-domain.yaml": {
-      "bytes": 972,
+      "bytes": 906,
       "family": "domain",
       "format": "yaml",
-      "rules": 32,
-      "sha256": "7ab75e21574c0b6a965256c1bd1557a35c8e267a0bb368dd0492691699cac618"
+      "rules": 30,
+      "sha256": "4989eb276fd88ae93108f908fef742cac555611a1b7dfa47478bf0da4abc0f9d"
     },
     "categories/ai-domain.json": {
       "bytes": 6104,
@@ -119515,66 +117485,6 @@
       "format": "yaml",
       "rules": 6280,
       "sha256": "23492650a74b7189493fbc0f9a1af139c763afefffb823bfbaab163647e1e6ff"
-    },
-    "categories/custom-direct-domain.json": {
-      "bytes": 5457,
-      "family": "domain",
-      "format": "json",
-      "rules": 217,
-      "sha256": "993a30539a9db658ba52f26ce16cdda5d43057c586fbcc24e768afe8d7f3629b"
-    },
-    "categories/custom-direct-domain.mrs": {
-      "bytes": 1596,
-      "family": "domain",
-      "format": "mrs",
-      "omitted_kinds": [
-        "domain_keyword",
-        "process_name"
-      ],
-      "rules": 172,
-      "sha256": "3d0c7b713e9e56a12048953fccdc9b36a1489de61444659d751a21f554825d50"
-    },
-    "categories/custom-direct-domain.srs": {
-      "bytes": 1783,
-      "family": "domain",
-      "format": "srs",
-      "rules": 217,
-      "sha256": "6f9638e80236f41888fe1c84eac0dcb3c0ef777ab72c64cc646250cb549ebc96"
-    },
-    "categories/custom-direct-domain.yaml": {
-      "bytes": 6189,
-      "family": "domain",
-      "format": "yaml",
-      "rules": 217,
-      "sha256": "f2ba6ec284b4ffc10e0949c8749c961fa9c245f7b303088c9539959c54385e39"
-    },
-    "categories/custom-proxy-domain.json": {
-      "bytes": 107,
-      "family": "domain",
-      "format": "json",
-      "rules": 1,
-      "sha256": "a15dfed39ee0be21e210acf37b9dfda7e4e124f1679732544d698a48cf4c493a"
-    },
-    "categories/custom-proxy-domain.mrs": {
-      "bytes": 60,
-      "family": "domain",
-      "format": "mrs",
-      "rules": 1,
-      "sha256": "f178a170ce9441c9b2a347031a06552691b7d62c02e6ecf17923d2975d65788c"
-    },
-    "categories/custom-proxy-domain.srs": {
-      "bytes": 49,
-      "family": "domain",
-      "format": "srs",
-      "rules": 1,
-      "sha256": "62a78736eac11f7f13953e46bd0dd33ff99ba82dfd577d9035d647775e248a37"
-    },
-    "categories/custom-proxy-domain.yaml": {
-      "bytes": 40,
-      "family": "domain",
-      "format": "yaml",
-      "rules": 1,
-      "sha256": "e784d73d2c9f1ff0f1c327afddc68d747ba26b4a844f5d984b3f0521d5236c35"
     },
     "categories/direct-domain.json": {
       "bytes": 5431,
@@ -120480,15 +118390,15 @@
     "local_ai_coding": {
       "attempts": 1,
       "behavior": "classical",
-      "bytes": 1036,
+      "bytes": 966,
       "etag": null,
       "format": "yaml",
       "last_modified": null,
       "path": "local/ai-coding.yaml",
       "redistributable": true,
       "required": true,
-      "rules": 32,
-      "sha256": "0de024ece8582c1380f29fd330926bd94c464a20fc98916d7627914e59ce9478",
+      "rules": 30,
+      "sha256": "044d365129e8aaeb51080a99ac9f82cbd28fb7426067aa65b5a5cef576a4d239",
       "status": "ok",
       "type": "file",
       "url": null
@@ -120505,6 +118415,22 @@
       "required": true,
       "rules": 5,
       "sha256": "615bdbf1127f2fd71f9debb0cda1e11f1c3535d55638273415abb41e08d9b834",
+      "status": "ok",
+      "type": "file",
+      "url": null
+    },
+    "local_ai_general": {
+      "attempts": 1,
+      "behavior": "classical",
+      "bytes": 79,
+      "etag": null,
+      "format": "yaml",
+      "last_modified": null,
+      "path": "local/ai-general.yaml",
+      "redistributable": true,
+      "required": true,
+      "rules": 2,
+      "sha256": "982d1eca9521e03bb41837bc4ab90020895c6318486666d22d4f6785957942e4",
       "status": "ok",
       "type": "file",
       "url": null
