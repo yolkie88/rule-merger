@@ -587,11 +587,23 @@ def _apply_baseline(
         )
         if error:
             errors.append(error)
+    allowed_removed = set(config.quality.get("allowed_removed_outputs", ()))
+    removable_extensions = {"yaml", "json", "srs", "mrs"}
+
+    def removal_is_allowed(name: str) -> bool:
+        base, dot, extension = name.rpartition(".")
+        return name in allowed_removed or (
+            bool(dot)
+            and extension in removable_extensions
+            and base in allowed_removed
+        )
+
     removed = sorted(
         name
         for name, metadata in previous.items()
         if name not in logical_rules
         and not (isinstance(metadata, dict) and metadata.get("alias_of"))
+        and not removal_is_allowed(name)
     )
     for name, metadata in previous.items():
         if name in logical_rules or not isinstance(metadata, dict):
@@ -604,7 +616,13 @@ def _apply_baseline(
             "current": 0,
             "delta": -old_count,
             "ratio": -1.0,
-            "status": "legacy-alias-removed" if metadata.get("alias_of") else "removed",
+            "status": (
+                "legacy-alias-removed"
+                if metadata.get("alias_of")
+                else "allowed-removed"
+                if removal_is_allowed(name)
+                else "removed"
+            ),
         }
     errors.extend(
         f"{name} was removed from the current build; baseline output is missing"

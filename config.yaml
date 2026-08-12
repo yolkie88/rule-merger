@@ -26,6 +26,7 @@ sources:
   skk_ai: {type: http, url: 'https://ruleset.skk.moe/Clash/non_ip/ai.txt', format: text, behavior: classical, redistributable: true}
   DustinWin_ai: {type: http, url: 'https://github.com/DustinWin/domain-list-custom/releases/download/domains/ai.list', format: text, behavior: classical, redistributable: true}
   ACL4SSR_ai: {type: http, url: 'https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/Ruleset/AI.list', format: text, behavior: classical, redistributable: true}
+  local_ai_general: {type: file, path: local/ai-general.yaml, format: yaml, behavior: classical, redistributable: true}
   local_ai_coding: {type: file, path: local/ai-coding.yaml, format: yaml, behavior: classical, redistributable: true}
   local_ai_gateway: {type: file, path: local/ai-gateway.yaml, format: yaml, behavior: classical, redistributable: true}
   skk_cdn_domainset: {type: http, url: 'https://ruleset.skk.moe/Clash/domainset/cdn.txt', format: text, behavior: domain, redistributable: true}
@@ -106,7 +107,7 @@ categories:
     formats: [yaml, json, srs, mrs]
   ai-domain:
     family: domain
-    sources: [skk_ai, DustinWin_ai, ACL4SSR_ai, local_ai_coding, local_ai_gateway]
+    sources: [skk_ai, DustinWin_ai, ACL4SSR_ai, local_ai_general, local_ai_coding, local_ai_gateway]
     formats: [yaml, json, srs, mrs]
   streaming-domain:
     family: domain
@@ -160,16 +161,6 @@ categories:
     family: domain
     sources: [local_proxy]
     formats: [yaml, json, srs, mrs]
-  # Compatibility categories: preserve existing release URLs while the default
-  # profile uses the more explicit direct/local-* categories above.
-  custom-direct-domain:
-    family: domain
-    sources: [skk_direct, local_direct]
-    formats: [yaml, json, srs, mrs]
-  custom-proxy-domain:
-    family: domain
-    sources: [local_proxy]
-    formats: [yaml, json, srs, mrs]
 profiles:
   default:
     actions:
@@ -199,10 +190,12 @@ quality:
     categories/bytedance-non-cn-domain: ['DOMAIN-SUFFIX,byteglb.com']
     categories/local-direct-domain: ['DOMAIN,www.cycani.org']
     categories/local-proxy-domain: ['DOMAIN-SUFFIX,steam-chat.com']
-    categories/custom-proxy-domain: ['DOMAIN-SUFFIX,steam-chat.com']
     categories/cdn-ip: ['IP-CIDR,162.159.200.1/32']
     categories/fakeip-filter-domain: ['DOMAIN-SUFFIX,lan']
     profiles/default/proxy-ip: ['IP-CIDR,23.246.18.0/23']
+  allowed_removed_outputs:
+    - categories/custom-direct-domain
+    - categories/custom-proxy-domain
 legacy:
   enabled: true
   aliases: {reject: profiles/default/reject-domain, reject@ip: profiles/default/reject-ip, direct: profiles/default/direct-domain, direct@ip: profiles/default/direct-ip, microsoft@cn: categories/microsoft-cn-domain, apple@cn: categories/apple-cn-domain, steam@cn: categories/steam-cn-domain, ai: categories/ai-domain, proxy: profiles/default/proxy-domain, proxy@ip: profiles/default/proxy-ip, lan: categories/private-domain, lan@ip: categories/private-ip, fakeip-filter: categories/fakeip-filter-domain}

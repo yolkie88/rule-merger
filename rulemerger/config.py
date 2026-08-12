@@ -40,6 +40,7 @@ QUALITY_FIELDS = {
     "small_output_limit",
     "min_rules",
     "critical_rules",
+    "allowed_removed_outputs",
 }
 LEGACY_FIELDS = {"enabled", "aliases"}
 
@@ -300,6 +301,7 @@ def _validate_quality(value: Any) -> dict[str, Any]:
         "small_output_limit": 100,
         "min_rules": {},
         "critical_rules": {},
+        "allowed_removed_outputs": (),
     }
     for key in ("max_drop_ratio", "max_growth_ratio"):
         if key in item:
@@ -348,6 +350,11 @@ def _validate_quality(value: Any) -> dict[str, Any]:
                         "quality.critical_rules must map output names to string lists"
                     )
         result[key] = item[key]
+    if "allowed_removed_outputs" in item:
+        result["allowed_removed_outputs"] = _strings(
+            item["allowed_removed_outputs"],
+            "quality.allowed_removed_outputs",
+        )
     return result
 
 

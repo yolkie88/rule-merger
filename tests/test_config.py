@@ -101,6 +101,34 @@ profiles: {}
             with self.assertRaisesRegex(ConfigError, "duplicate"):
                 load_config(path)
 
+    def test_production_config_retires_compatibility_categories_and_splits_copilot(self) -> None:
+        root = Path(__file__).resolve().parents[1]
+        config = load_config(root / "config.yaml")
+
+        self.assertNotIn("custom-direct-domain", config.categories)
+        self.assertNotIn("custom-proxy-domain", config.categories)
+        self.assertEqual(
+            set(config.quality["allowed_removed_outputs"]),
+            {
+                "categories/custom-direct-domain",
+                "categories/custom-proxy-domain",
+            },
+        )
+        self.assertIn("local_ai_general", config.categories["ai-domain"].sources)
+
+        coding = yaml.safe_load(
+            (root / "local" / "ai-coding.yaml").read_text(encoding="utf-8")
+        )["payload"]
+        general = yaml.safe_load(
+            (root / "local" / "ai-general.yaml").read_text(encoding="utf-8")
+        )["payload"]
+        moved = {
+            "DOMAIN-SUFFIX,copilot.com",
+            "DOMAIN-SUFFIX,copilot.microsoft.com",
+        }
+        self.assertTrue(moved.isdisjoint(coding))
+        self.assertTrue(moved.issubset(general))
+
 
 if __name__ == "__main__":
     unittest.main()

@@ -169,6 +169,69 @@ class BuildBehaviorTests(unittest.TestCase):
                 (output / "sentinel.txt").read_text(encoding="utf-8"), "keep"
             )
 
+    def test_extension_free_output_removal_only_allows_supported_formats(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            config = write_project(
+                root,
+                source_text="DOMAIN,example.com\n",
+                sources={
+                    "source": {
+                        "type": "file",
+                        "path": "source.txt",
+                        "format": "text",
+                        "behavior": "classical",
+                    }
+                },
+                categories={
+                    "direct": {
+                        "family": "domain",
+                        "sources": ["source"],
+                        "formats": ["yaml"],
+                    }
+                },
+                actions={"direct-domain": ["direct"]},
+                quality={
+                    "small_output_limit": 0,
+                    "allowed_removed_outputs": ["categories/retired"],
+                },
+            )
+            baseline = root / "baseline.json"
+            baseline.write_text(
+                json.dumps(
+                    {
+                        "outputs": {
+                            "categories/direct.yaml": {"rules": 1},
+                            "categories/retired.yaml": {"rules": 10},
+                            "categories/retired.json": {"rules": 10},
+                            "categories/retired.txt": {"rules": 10},
+                        }
+                    }
+                ),
+                encoding="utf-8",
+            )
+
+            report = build(
+                BuildRequest(config, root / "published", baseline_manifest=baseline)
+            )
+
+            self.assertFalse(report.publishable)
+            self.assertEqual(
+                report.baseline["errors"],
+                [
+                    "categories/retired.txt was removed from the current build; "
+                    "baseline output is missing"
+                ],
+            )
+            self.assertEqual(
+                report.baseline["changes"]["categories/retired.yaml"]["status"],
+                "allowed-removed",
+            )
+            self.assertEqual(
+                report.baseline["changes"]["categories/retired.txt"]["status"],
+                "removed",
+            )
+
     def test_invalid_baseline_fails_before_replacing_publish(self) -> None:
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)

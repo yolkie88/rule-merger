@@ -42,7 +42,9 @@ L3 通用策略 / 兜底
 └── local-proxy-domain
 ```
 
-`ai-domain` 是完整海外 AI 聚合规则，默认 profile 和 legacy `ai` 继续引用它，因此现有配置无需迁移。`ai-provider-domain`、`ai-coding-domain`、`ai-gateway-domain` 用于需要更细策略的客户端。上游 SKK / DustinWin / ACL4SSR 的 AI 列表本身属于宽口径集合，因此这些 AI 子分类是语义视图，不保证互斥；聚合规则以不漏流量为优先。
+`ai-domain` 是完整海外 AI 聚合规则，包含上游 provider/base、本地通用 AI、coding agent 和 gateway 规则；默认 profile 和 legacy `ai` 继续引用它，因此现有根目录 `ai` 引用无需迁移。`ai-provider-domain`、`ai-coding-domain`、`ai-gateway-domain` 用于需要更细策略的客户端。上游 SKK / DustinWin / ACL4SSR 的 AI 列表本身属于宽口径集合，因此这些 AI 子分类是语义视图，不保证互斥；聚合规则以不漏流量为优先。
+
+细分类不是厂商 firewall allowlist，不能保证单独加载后产品的登录、更新、遥测和模型请求全部可用。需要完整连通性时，应同时加载相应平台的通用规则，或直接使用 `ai-domain`。本地规则的逐项来源与核对方式见 [`LOCAL_RULES.md`](LOCAL_RULES.md)。
 
 `ai-cn-domain` 使用独立中国 AI 分类并进入默认直连集合；海外 AI 仍进入代理集合。
 
@@ -93,6 +95,7 @@ python -m rulemerger build --config config.yaml --output <staging-dir> \
 source 默认 `redistributable: false`；只有完成许可证/再分发审查并显式设为 `true` 的来源才会进入公开构建。
 少于 `quality.small_output_limit` 条的产物必须在 `quality.critical_rules` 中列出关键规则；缺少清单时构建会 fail closed。
 `critical_rules` 可使用无扩展名规则集路径（如 `categories/private-ip`），一次覆盖 YAML、JSON、SRS、MRS 的同一规则集。
+已有产物默认不允许从基线中消失。计划下线时必须在 `quality.allowed_removed_outputs` 中显式列出无扩展名路径；清单只授权对应路径的 YAML、JSON、SRS、MRS 删除，其他意外删除仍会 fail closed。完成一次成功发布后应移除已消费的清单项。
 
 输出格式：
 
@@ -112,10 +115,12 @@ https://raw.githubusercontent.com/yolkie88/rule-merger/refs/heads/release/<name>
 
 兼容旧配置的根目录名称由 `legacy.aliases` 生成；新配置和路径应优先使用 `categories/` / `profiles/default/`。
 
+`categories/custom-direct-domain.*` 和 `categories/custom-proxy-domain.*` 已确认无人使用并停止发布；分别改用 `categories/direct-domain.*` + `categories/local-direct-domain.*`，以及 `categories/local-proxy-domain.*`。
+
 ## 自动更新
 
 GitHub Actions 每 12 小时运行一次，也支持手动触发。必选源获取、解析、转换、冲突、数量波动或格式往返验证失败时，`release` 分支不变；无变化时不提交。工具版本、依赖和 Actions 使用固定版本，发布不使用 force push。
 
 ## 来源与许可证
 
-来源、用途和许可证核对记录见 [`SOURCES.md`](SOURCES.md)。规则源的许可证状态必须在公开再分发前核实；本项目不为上游规则重新声明许可证。
+上游来源、用途、许可证与批准记录见 [`SOURCES.md`](SOURCES.md)，本地人工规则的逐项依据见 [`LOCAL_RULES.md`](LOCAL_RULES.md)。本项目保留上游许可证和归属，不为上游规则重新声明许可证；来源、许可证或用途变化时必须重新审查。
