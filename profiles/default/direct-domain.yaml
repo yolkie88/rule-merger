@@ -264,6 +264,7 @@ payload:
 - DOMAIN-SUFFIX,docin.com
 - DOMAIN-SUFFIX,douban.fm
 - DOMAIN-SUFFIX,douyu.com
+- DOMAIN-SUFFIX,eatuo.com
 - DOMAIN-SUFFIX,eudic.net
 - DOMAIN-SUFFIX,feishu.cn
 - DOMAIN-SUFFIX,flyme.com
@@ -400,6 +401,7 @@ payload:
 - DOMAIN-SUFFIX,feizhu.com
 - DOMAIN-SUFFIX,fliggy.com
 - DOMAIN-SUFFIX,futunn.com
+- DOMAIN-SUFFIX,gdtimg.com
 - DOMAIN-SUFFIX,guancha.cn
 - DOMAIN-SUFFIX,hao123.com
 - DOMAIN-SUFFIX,haosou.com
@@ -819,7 +821,6 @@ payload:
 - DOMAIN-SUFFIX,alicloudccp.com
 - DOMAIN-SUFFIX,aliyundrive.com
 - DOMAIN-SUFFIX,aliyundrive.net
-- DOMAIN-SUFFIX,baidustatic.com
 - DOMAIN-SUFFIX,byteacctimg.com
 - DOMAIN-SUFFIX,chinamobile.com
 - DOMAIN,config.ubnt.com
@@ -4627,7 +4628,6 @@ payload:
 - DOMAIN-SUFFIX,starlakelab.com
 - DOMAIN-SUFFIX,startssl.com
 - DOMAIN-SUFFIX,starworldgames.com
-- DOMAIN-SUFFIX,staticfile.net
 - DOMAIN-SUFFIX,staticfile.org
 - DOMAIN-SUFFIX,statickksmg.com
 - DOMAIN-SUFFIX,stcn.com
@@ -4700,7 +4700,6 @@ payload:
 - DOMAIN-SUFFIX,tajiduo.com
 - DOMAIN-SUFFIX,tal.com
 - DOMAIN-SUFFIX,talk-cloud.net
-- DOMAIN-SUFFIX,talkingdata.com
 - DOMAIN-SUFFIX,talkinggame.com
 - DOMAIN-SUFFIX,tangeche.com
 - DOMAIN-SUFFIX,tanwan.com
@@ -6498,6 +6497,7 @@ payload:
 - DOMAIN-SUFFIX,orpheus.network
 - DOMAIN-SUFFIX,aidoru-online.me
 - DOMAIN-SUFFIX,cinemageddon.net
+- DOMAIN-SUFFIX,collegeboard.org
 - DOMAIN-SUFFIX,researchgate.net
 - DOMAIN-SUFFIX,webofscience.com
 - DOMAIN,captive.apple.com
