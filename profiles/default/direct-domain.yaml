@@ -110,7 +110,6 @@ payload:
 - DOMAIN-SUFFIX,166.net
 - DOMAIN-SUFFIX,178.com
 - DOMAIN-SUFFIX,188.com
-- DOMAIN-SUFFIX,2144.cn
 - DOMAIN-SUFFIX,263.net
 - DOMAIN-SUFFIX,360.com
 - DOMAIN-SUFFIX,360.net
@@ -265,7 +264,6 @@ payload:
 - DOMAIN-SUFFIX,docin.com
 - DOMAIN-SUFFIX,douban.fm
 - DOMAIN-SUFFIX,douyu.com
-- DOMAIN-SUFFIX,duapp.com
 - DOMAIN-SUFFIX,eudic.net
 - DOMAIN-SUFFIX,feishu.cn
 - DOMAIN-SUFFIX,flyme.com
@@ -1545,7 +1543,6 @@ payload:
 - DOMAIN-SUFFIX,biaoda.me
 - DOMAIN-SUFFIX,bibaodao.com
 - DOMAIN-SUFFIX,bidchance.com
-- DOMAIN-SUFFIX,biddingx.com
 - DOMAIN-SUFFIX,bihu.com
 - DOMAIN-SUFFIX,biji.com
 - DOMAIN-SUFFIX,bilibili.cc
@@ -5637,6 +5634,7 @@ payload:
 - DOMAIN-SUFFIX,zhangyuecdn.com
 - DOMAIN-SUFFIX,zhangzishi.cc
 - DOMAIN-SUFFIX,zhanqi.tv
+- DOMAIN-SUFFIX,zhanzhang.net
 - DOMAIN-SUFFIX,zhaodanji.com
 - DOMAIN-SUFFIX,zhaokao.net
 - DOMAIN-SUFFIX,zhaomishijie.com
@@ -6297,7 +6295,6 @@ payload:
 - DOMAIN-SUFFIX,cache-management-prod.google.com
 - DOMAIN-SUFFIX,cache.pack.google.com
 - DOMAIN-SUFFIX,checkin.gstatic.com
-- DOMAIN-SUFFIX,clickserve.cc-dt.com
 - DOMAIN-SUFFIX,clickserver.googleads.com
 - DOMAIN-SUFFIX,clientservices.googleapis.com
 - DOMAIN-SUFFIX,cn.widevine.com
