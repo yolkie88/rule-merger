@@ -110,6 +110,7 @@ payload:
 - DOMAIN-SUFFIX,166.net
 - DOMAIN-SUFFIX,178.com
 - DOMAIN-SUFFIX,188.com
+- DOMAIN-SUFFIX,2144.cn
 - DOMAIN-SUFFIX,263.net
 - DOMAIN-SUFFIX,360.com
 - DOMAIN-SUFFIX,360.net
@@ -220,6 +221,7 @@ payload:
 - DOMAIN-SUFFIX,soso.com
 - DOMAIN-SUFFIX,tanx.com
 - DOMAIN-SUFFIX,tbcdn.cn
+- DOMAIN-SUFFIX,uczzd.cn
 - DOMAIN-SUFFIX,udesk.cn
 - DOMAIN-SUFFIX,v-56.com
 - DOMAIN-SUFFIX,vivo.com
@@ -2307,6 +2309,7 @@ payload:
 - DOMAIN-SUFFIX,douyinact.net
 - DOMAIN-SUFFIX,douyinec.com
 - DOMAIN-SUFFIX,douyinfe.com
+- DOMAIN-SUFFIX,douyinmusicpromotion.com
 - DOMAIN-SUFFIX,downcc.com
 - DOMAIN-SUFFIX,downxia.com
 - DOMAIN-SUFFIX,downyi.com
@@ -2367,7 +2370,6 @@ payload:
 - DOMAIN-SUFFIX,eastday.com
 - DOMAIN-SUFFIX,eastmoneyfutures.com
 - DOMAIN-SUFFIX,eastsoo.com
-- DOMAIN-SUFFIX,easyliao.com
 - DOMAIN-SUFFIX,easytrip.com
 - DOMAIN-SUFFIX,eayyou.com
 - DOMAIN-SUFFIX,eb-ind.com
@@ -2386,6 +2388,7 @@ payload:
 - DOMAIN-SUFFIX,ecitic.com
 - DOMAIN-SUFFIX,ecitic.net
 - DOMAIN-SUFFIX,ecjobhome.com
+- DOMAIN-SUFFIX,eckwai.com
 - DOMAIN-SUFFIX,ecloud-gdu.com
 - DOMAIN-SUFFIX,ecombdapi.com
 - DOMAIN-SUFFIX,ecukwai.com
@@ -3506,7 +3509,6 @@ payload:
 - DOMAIN-SUFFIX,kekeniu.com
 - DOMAIN-SUFFIX,keniu.com
 - DOMAIN-SUFFIX,keruyun.com
-- DOMAIN-SUFFIX,kesong.co
 - DOMAIN-SUFFIX,ketangpai.com
 - DOMAIN-SUFFIX,kexinshe.com
 - DOMAIN-SUFFIX,keyoo.com
@@ -3608,6 +3610,9 @@ payload:
 - DOMAIN-SUFFIX,kuyinyun.com
 - DOMAIN-SUFFIX,kuyiso.com
 - DOMAIN-SUFFIX,kuyunbo.club
+- DOMAIN-SUFFIX,kwaishop.com
+- DOMAIN-SUFFIX,kwaixiaodian.com
+- DOMAIN-SUFFIX,kwaiying.com
 - DOMAIN-SUFFIX,kwaizt.com
 - DOMAIN-SUFFIX,kwimgs.com
 - DOMAIN-SUFFIX,la-north-2.myhuaweicloud.com
@@ -3968,6 +3973,7 @@ payload:
 - DOMAIN-SUFFIX,moji002.com
 - DOMAIN-SUFFIX,mojichina.com
 - DOMAIN-SUFFIX,mojidict.com
+- DOMAIN-SUFFIX,mojidoc.com
 - DOMAIN-SUFFIX,mokahr.com
 - DOMAIN-SUFFIX,moke.com
 - DOMAIN-SUFFIX,moleecel.com
@@ -4288,6 +4294,7 @@ payload:
 - DOMAIN-SUFFIX,qiantucdn.com
 - DOMAIN-SUFFIX,qianuni.com
 - DOMAIN-SUFFIX,qianwen.com
+- DOMAIN-SUFFIX,qianwenai.com
 - DOMAIN-SUFFIX,qianxin.com
 - DOMAIN-SUFFIX,qianxincdn.com
 - DOMAIN-SUFFIX,qianxuecloud.com
@@ -5216,6 +5223,7 @@ payload:
 - DOMAIN-SUFFIX,wsglb.com
 - DOMAIN-SUFFIX,wsglb.net
 - DOMAIN-SUFFIX,wsjqnmmrmv.world
+- DOMAIN-SUFFIX,wskwai.com
 - DOMAIN-SUFFIX,wsoso.com
 - DOMAIN-SUFFIX,wss.cc
 - DOMAIN-SUFFIX,wss.email
@@ -5659,7 +5667,6 @@ payload:
 - DOMAIN-SUFFIX,zhixue.com
 - DOMAIN-SUFFIX,zhiye.com
 - DOMAIN-SUFFIX,zhizhuma.com
-- DOMAIN-SUFFIX,zhiziyun.com
 - DOMAIN-SUFFIX,zhlyen.com
 - DOMAIN-SUFFIX,zhongancloud.com
 - DOMAIN-SUFFIX,zhongkao.com
@@ -6375,6 +6382,8 @@ payload:
 - DOMAIN-SUFFIX,www.pxcc.com
 - DOMAIN,cueme-api.quark.cn
 - DOMAIN,ai.zhaomi.cn
+- DOMAIN-SUFFIX,skillhub.cn
+- DOMAIN-SUFFIX,zhipuai.cn
 - DOMAIN-SUFFIX,rwkv.cn
 - DOMAIN-SUFFIX,aorizon.cn
 - DOMAIN-SUFFIX,happyhorse.cn
@@ -6385,15 +6394,14 @@ payload:
 - DOMAIN-SUFFIX,tiangong.cn
 - DOMAIN-SUFFIX,bigmodel.cn
 - DOMAIN-SUFFIX,chatglm.cn
-- DOMAIN-SUFFIX,zhipuai.cn
 - DOMAIN-SUFFIX,moonshot.cn
-- DOMAIN-SUFFIX,safeskill.cn
-- DOMAIN-SUFFIX,codebuddy.cn
 - DOMAIN-SUFFIX,yoma.cn
+- DOMAIN-SUFFIX,codebuddy.cn
 - DOMAIN-SUFFIX,trae.cn
 - DOMAIN-SUFFIX,cueme.cn
 - DOMAIN-SUFFIX,n.cn
 - DOMAIN-SUFFIX,metaso.cn
+- DOMAIN-SUFFIX,safeskill.cn
 - DOMAIN-SUFFIX,butterfly-static.cn
 - DOMAIN-SUFFIX,butterflyai.cn
 - DOMAIN-SUFFIX,cozebaas.cn
@@ -6403,14 +6411,13 @@ payload:
 - DOMAIN-SUFFIX,cozetest2.cn
 - DOMAIN-SUFFIX,cozetest3.cn
 - DOMAIN-SUFFIX,hi-butterfly.cn
-- DOMAIN-SUFFIX,skillhub.cn
 - DOMAIN-SUFFIX,picpic-ai.cn
 - DOMAIN-SUFFIX,marscode.cn
 - DOMAIN-SUFFIX,mcprev.cn
-- DOMAIN-SUFFIX,xinghuo.xfyun.cn
 - DOMAIN-SUFFIX,yuanqi.tencent.com
 - DOMAIN-SUFFIX,yuanbao.tencent.com
 - DOMAIN-SUFFIX,hunyuan.tencent.com
+- DOMAIN-SUFFIX,xinghuo.xfyun.cn
 - DOMAIN-SUFFIX,marscode.com.cn
 - DOMAIN-SUFFIX,trae.com.cn
 - DOMAIN-SUFFIX,yiyan.baidu.com
