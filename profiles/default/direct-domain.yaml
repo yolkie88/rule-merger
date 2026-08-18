@@ -264,6 +264,7 @@ payload:
 - DOMAIN-SUFFIX,docin.com
 - DOMAIN-SUFFIX,douban.fm
 - DOMAIN-SUFFIX,douyu.com
+- DOMAIN-SUFFIX,eatuo.com
 - DOMAIN-SUFFIX,eudic.net
 - DOMAIN-SUFFIX,feishu.cn
 - DOMAIN-SUFFIX,flyme.com
@@ -800,6 +801,7 @@ payload:
 - DOMAIN,lv.queniujq.cn
 - DOMAIN-SUFFIX,oneplusbbs.com
 - DOMAIN-SUFFIX,onlinedown.com
+- DOMAIN-SUFFIX,openinstall.io
 - DOMAIN-SUFFIX,oppomobile.com
 - DOMAIN-SUFFIX,qyerstatic.com
 - DOMAIN,res.viayoo.com
@@ -2339,6 +2341,7 @@ payload:
 - DOMAIN-SUFFIX,dutenews.com
 - DOMAIN-SUFFIX,dutils.com
 - DOMAIN-SUFFIX,duxiaoman-int.com
+- DOMAIN-SUFFIX,duxiaomanfintech.com
 - DOMAIN-SUFFIX,duxiaomanfund.com
 - DOMAIN-SUFFIX,duxiaomantech.com
 - DOMAIN-SUFFIX,duxiu.com
@@ -4889,6 +4892,7 @@ payload:
 - DOMAIN-SUFFIX,tol.vip
 - DOMAIN-SUFFIX,tom.com
 - DOMAIN-SUFFIX,tongfangpc.com
+- DOMAIN-SUFFIX,tongji.linezing.com
 - DOMAIN-SUFFIX,tongkask.com
 - DOMAIN-SUFFIX,tongtaiamc.com
 - DOMAIN-SUFFIX,tongxianghuicn.com
