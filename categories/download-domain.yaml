@@ -58,6 +58,7 @@ payload:
 - DOMAIN,npm.jsr.io
 - DOMAIN,osl.ugr.es
 - DOMAIN-SUFFIX,archive.org
+- DOMAIN,cdn.dyn.com
 - DOMAIN,cdn.kde.org
 - DOMAIN-SUFFIX,cdn.ubi.com
 - DOMAIN,cdn.zoom.us

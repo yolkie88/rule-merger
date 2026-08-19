@@ -4661,8 +4661,6 @@
         "-thumbs.worldsex.com",
         "99avcdn",
         "-images.disco-api.com",
-        "vdownload.hanime1",
-        "fonts.hanime1",
         "static.grammarly.com"
       ]
     },
@@ -4719,7 +4717,6 @@
         "^.*\\.img\\..*\\.sendibm.\\.com$",
         "^cdn.\\.18girlssex\\.com$",
         "^uploads\\-.*\\.insided\\.com$",
-        "^s.*\\.hanime1$",
         "^img\\-.*\\.now\\.com$",
         "^assets\\..*\\.imaga\\.co$",
         "^cdn.*\\.pigav\\.com$",

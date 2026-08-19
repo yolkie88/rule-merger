@@ -264,7 +264,6 @@ payload:
 - DOMAIN-SUFFIX,docin.com
 - DOMAIN-SUFFIX,douban.fm
 - DOMAIN-SUFFIX,douyu.com
-- DOMAIN-SUFFIX,eatuo.com
 - DOMAIN-SUFFIX,eudic.net
 - DOMAIN-SUFFIX,feishu.cn
 - DOMAIN-SUFFIX,flyme.com
@@ -801,7 +800,6 @@ payload:
 - DOMAIN,lv.queniujq.cn
 - DOMAIN-SUFFIX,oneplusbbs.com
 - DOMAIN-SUFFIX,onlinedown.com
-- DOMAIN-SUFFIX,openinstall.io
 - DOMAIN-SUFFIX,oppomobile.com
 - DOMAIN-SUFFIX,qyerstatic.com
 - DOMAIN,res.viayoo.com
@@ -821,6 +819,7 @@ payload:
 - DOMAIN-SUFFIX,alicloudccp.com
 - DOMAIN-SUFFIX,aliyundrive.com
 - DOMAIN-SUFFIX,aliyundrive.net
+- DOMAIN-SUFFIX,baidustatic.com
 - DOMAIN-SUFFIX,byteacctimg.com
 - DOMAIN-SUFFIX,chinamobile.com
 - DOMAIN,config.ubnt.com
@@ -2341,7 +2340,6 @@ payload:
 - DOMAIN-SUFFIX,dutenews.com
 - DOMAIN-SUFFIX,dutils.com
 - DOMAIN-SUFFIX,duxiaoman-int.com
-- DOMAIN-SUFFIX,duxiaomanfintech.com
 - DOMAIN-SUFFIX,duxiaomanfund.com
 - DOMAIN-SUFFIX,duxiaomantech.com
 - DOMAIN-SUFFIX,duxiu.com
@@ -4892,7 +4890,6 @@ payload:
 - DOMAIN-SUFFIX,tol.vip
 - DOMAIN-SUFFIX,tom.com
 - DOMAIN-SUFFIX,tongfangpc.com
-- DOMAIN-SUFFIX,tongji.linezing.com
 - DOMAIN-SUFFIX,tongkask.com
 - DOMAIN-SUFFIX,tongtaiamc.com
 - DOMAIN-SUFFIX,tongxianghuicn.com
@@ -6398,17 +6395,12 @@ payload:
 - DOMAIN-SUFFIX,bigmodel.cn
 - DOMAIN-SUFFIX,chatglm.cn
 - DOMAIN-SUFFIX,moonshot.cn
-- DOMAIN-SUFFIX,picpic-ai.cn
 - DOMAIN-SUFFIX,codebuddy.cn
+- DOMAIN-SUFFIX,yoma.cn
 - DOMAIN-SUFFIX,cueme.cn
 - DOMAIN-SUFFIX,n.cn
 - DOMAIN-SUFFIX,metaso.cn
 - DOMAIN-SUFFIX,safeskill.cn
-- DOMAIN-SUFFIX,marscode.cn
-- DOMAIN-SUFFIX,mcprev.cn
-- DOMAIN-SUFFIX,trae.cn
-- DOMAIN-SUFFIX,yoma.cn
-- DOMAIN-SUFFIX,hi-butterfly.cn
 - DOMAIN-SUFFIX,butterfly-static.cn
 - DOMAIN-SUFFIX,butterflyai.cn
 - DOMAIN-SUFFIX,cozebaas.cn
@@ -6417,10 +6409,15 @@ payload:
 - DOMAIN-SUFFIX,cozetest.cn
 - DOMAIN-SUFFIX,cozetest2.cn
 - DOMAIN-SUFFIX,cozetest3.cn
-- DOMAIN-SUFFIX,trae.com.cn
-- DOMAIN-SUFFIX,marscode.com.cn
+- DOMAIN-SUFFIX,hi-butterfly.cn
+- DOMAIN-SUFFIX,picpic-ai.cn
+- DOMAIN-SUFFIX,marscode.cn
+- DOMAIN-SUFFIX,mcprev.cn
+- DOMAIN-SUFFIX,trae.cn
 - DOMAIN-SUFFIX,yuanqi.tencent.com
 - DOMAIN-SUFFIX,yuanbao.tencent.com
+- DOMAIN-SUFFIX,marscode.com.cn
+- DOMAIN-SUFFIX,trae.com.cn
 - DOMAIN-SUFFIX,hunyuan.tencent.com
 - DOMAIN-SUFFIX,xinghuo.xfyun.cn
 - DOMAIN-SUFFIX,yiyan.baidu.com
