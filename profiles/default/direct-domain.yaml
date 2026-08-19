@@ -110,6 +110,7 @@ payload:
 - DOMAIN-SUFFIX,166.net
 - DOMAIN-SUFFIX,178.com
 - DOMAIN-SUFFIX,188.com
+- DOMAIN-SUFFIX,2144.cn
 - DOMAIN-SUFFIX,263.net
 - DOMAIN-SUFFIX,360.com
 - DOMAIN-SUFFIX,360.net
@@ -819,7 +820,6 @@ payload:
 - DOMAIN-SUFFIX,alicloudccp.com
 - DOMAIN-SUFFIX,aliyundrive.com
 - DOMAIN-SUFFIX,aliyundrive.net
-- DOMAIN-SUFFIX,baidustatic.com
 - DOMAIN-SUFFIX,byteacctimg.com
 - DOMAIN-SUFFIX,chinamobile.com
 - DOMAIN,config.ubnt.com
@@ -2340,6 +2340,7 @@ payload:
 - DOMAIN-SUFFIX,dutenews.com
 - DOMAIN-SUFFIX,dutils.com
 - DOMAIN-SUFFIX,duxiaoman-int.com
+- DOMAIN-SUFFIX,duxiaomanfintech.com
 - DOMAIN-SUFFIX,duxiaomanfund.com
 - DOMAIN-SUFFIX,duxiaomantech.com
 - DOMAIN-SUFFIX,duxiu.com
