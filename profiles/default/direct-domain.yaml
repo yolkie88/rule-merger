@@ -264,7 +264,6 @@ payload:
 - DOMAIN-SUFFIX,docin.com
 - DOMAIN-SUFFIX,douban.fm
 - DOMAIN-SUFFIX,douyu.com
-- DOMAIN-SUFFIX,duapp.com
 - DOMAIN-SUFFIX,eudic.net
 - DOMAIN-SUFFIX,feishu.cn
 - DOMAIN-SUFFIX,flyme.com
@@ -401,6 +400,7 @@ payload:
 - DOMAIN-SUFFIX,feizhu.com
 - DOMAIN-SUFFIX,fliggy.com
 - DOMAIN-SUFFIX,futunn.com
+- DOMAIN-SUFFIX,gdtimg.com
 - DOMAIN-SUFFIX,guancha.cn
 - DOMAIN-SUFFIX,hao123.com
 - DOMAIN-SUFFIX,haosou.com
@@ -4838,7 +4838,6 @@ payload:
 - DOMAIN-SUFFIX,tiancity.com
 - DOMAIN-SUFFIX,tiancitycdn.com
 - DOMAIN-SUFFIX,tianhw.top
-- DOMAIN-SUFFIX,tianjimedia.com
 - DOMAIN-SUFFIX,tianjin-air.com
 - DOMAIN-SUFFIX,tianlailive.com
 - DOMAIN-SUFFIX,tianlala.com
@@ -5264,6 +5263,7 @@ payload:
 - DOMAIN-SUFFIX,xcz.im
 - DOMAIN-SUFFIX,xczim.com
 - DOMAIN-SUFFIX,xdqtech.com
+- DOMAIN-SUFFIX,xdrig.com
 - DOMAIN-SUFFIX,xdrtc.com
 - DOMAIN-SUFFIX,xdtool.com
 - DOMAIN-SUFFIX,xdwan.com
@@ -5685,6 +5685,7 @@ payload:
 - DOMAIN-SUFFIX,zhubajie.com
 - DOMAIN-SUFFIX,zhuge.com
 - DOMAIN-SUFFIX,zhugeapi.net
+- DOMAIN-SUFFIX,zhugeio.com
 - DOMAIN-SUFFIX,zhuihd.com
 - DOMAIN-SUFFIX,zhulang.com
 - DOMAIN-SUFFIX,zhuoyou.com
