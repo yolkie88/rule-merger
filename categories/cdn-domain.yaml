@@ -904,6 +904,7 @@ payload:
 - DOMAIN-SUFFIX,ensighten.com
 - DOMAIN,eu.cdnbye.com
 - DOMAIN-SUFFIX,fastlycdn.com
+- DOMAIN-SUFFIX,fe.indazn.com
 - DOMAIN-SUFFIX,feedercdn.com
 - DOMAIN-SUFFIX,fiverrcdn.com
 - DOMAIN-SUFFIX,flagpedia.net
@@ -2391,6 +2392,7 @@ payload:
 - DOMAIN,static.cracked.ax
 - DOMAIN,static.cracked.sh
 - DOMAIN,static.crypto.com
+- DOMAIN,static.dazndn.com
 - DOMAIN-SUFFIX,static.flickr.com
 - DOMAIN,static.frame.work
 - DOMAIN,static.garmin.com
@@ -4235,6 +4237,7 @@ payload:
 - DOMAIN-SUFFIX,hubspotusercontent-eu1.net
 - DOMAIN-SUFFIX,hubspotusercontent-na1.net
 - DOMAIN,idportal-cdn-prd.unity.com
+- DOMAIN,image.discovery.indazn.com
 - DOMAIN,images.applegamingwiki.com
 - DOMAIN,images.ecomm.microsoft.com
 - DOMAIN,images.financemagnates.com
@@ -4525,6 +4528,7 @@ payload:
 - DOMAIN,cmtycdn.powerpages.microsoft.com
 - DOMAIN-SUFFIX,commondatastorage.googleapis.com
 - DOMAIN-SUFFIX,crash-reports.browser.yandex.net
+- DOMAIN,dazn-content-proxy.sd.indazn.com
 - DOMAIN,detectportal.brave-http-only.com
 - DOMAIN,edge-mobile-static.azureedge.net
 - DOMAIN,nbcnewsdigital-static.nbcuni.com
@@ -4576,6 +4580,7 @@ payload:
 - DOMAIN,stubdownloader.services.mozilla.com
 - DOMAIN,cf-images.us-east-1.prod.boltdns.net
 - DOMAIN,content-prod-live.cert.starbucks.com
+- DOMAIN,contentful-asset-proxy.sd.indazn.com
 - DOMAIN-SUFFIX,crashlyticsreports-pa.googleapis.com
 - DOMAIN,crossborder-integration.global-e.com
 - DOMAIN,firebaseinstallations.googleapis.com

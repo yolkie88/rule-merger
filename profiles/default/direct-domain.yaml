@@ -264,6 +264,7 @@ payload:
 - DOMAIN-SUFFIX,docin.com
 - DOMAIN-SUFFIX,douban.fm
 - DOMAIN-SUFFIX,douyu.com
+- DOMAIN-SUFFIX,eatuo.com
 - DOMAIN-SUFFIX,eudic.net
 - DOMAIN-SUFFIX,feishu.cn
 - DOMAIN-SUFFIX,flyme.com
@@ -2339,6 +2340,7 @@ payload:
 - DOMAIN-SUFFIX,dutenews.com
 - DOMAIN-SUFFIX,dutils.com
 - DOMAIN-SUFFIX,duxiaoman-int.com
+- DOMAIN-SUFFIX,duxiaomanfintech.com
 - DOMAIN-SUFFIX,duxiaomanfund.com
 - DOMAIN-SUFFIX,duxiaomantech.com
 - DOMAIN-SUFFIX,duxiu.com
@@ -4633,6 +4635,7 @@ payload:
 - DOMAIN-SUFFIX,starlakelab.com
 - DOMAIN-SUFFIX,startssl.com
 - DOMAIN-SUFFIX,starworldgames.com
+- DOMAIN-SUFFIX,staticfile.net
 - DOMAIN-SUFFIX,staticfile.org
 - DOMAIN-SUFFIX,statickksmg.com
 - DOMAIN-SUFFIX,stcn.com
@@ -5641,7 +5644,6 @@ payload:
 - DOMAIN-SUFFIX,zhangyuecdn.com
 - DOMAIN-SUFFIX,zhangzishi.cc
 - DOMAIN-SUFFIX,zhanqi.tv
-- DOMAIN-SUFFIX,zhanzhang.net
 - DOMAIN-SUFFIX,zhaodanji.com
 - DOMAIN-SUFFIX,zhaokao.net
 - DOMAIN-SUFFIX,zhaomishijie.com
@@ -5681,7 +5683,6 @@ payload:
 - DOMAIN-SUFFIX,zhubajie.com
 - DOMAIN-SUFFIX,zhuge.com
 - DOMAIN-SUFFIX,zhugeapi.net
-- DOMAIN-SUFFIX,zhugeio.com
 - DOMAIN-SUFFIX,zhuihd.com
 - DOMAIN-SUFFIX,zhulang.com
 - DOMAIN-SUFFIX,zhuoyou.com
@@ -6396,7 +6397,6 @@ payload:
 - DOMAIN-SUFFIX,safeskill.cn
 - DOMAIN-SUFFIX,codebuddy.cn
 - DOMAIN-SUFFIX,yoma.cn
-- DOMAIN-SUFFIX,trae.cn
 - DOMAIN-SUFFIX,cueme.cn
 - DOMAIN-SUFFIX,n.cn
 - DOMAIN-SUFFIX,metaso.cn
@@ -6413,12 +6413,13 @@ payload:
 - DOMAIN-SUFFIX,picpic-ai.cn
 - DOMAIN-SUFFIX,marscode.cn
 - DOMAIN-SUFFIX,mcprev.cn
+- DOMAIN-SUFFIX,trae.cn
 - DOMAIN-SUFFIX,xinghuo.xfyun.cn
 - DOMAIN-SUFFIX,yuanqi.tencent.com
-- DOMAIN-SUFFIX,yuanbao.tencent.com
-- DOMAIN-SUFFIX,hunyuan.tencent.com
 - DOMAIN-SUFFIX,marscode.com.cn
 - DOMAIN-SUFFIX,trae.com.cn
+- DOMAIN-SUFFIX,yuanbao.tencent.com
+- DOMAIN-SUFFIX,hunyuan.tencent.com
 - DOMAIN-SUFFIX,yiyan.baidu.com
 - DOMAIN-SUFFIX,tongyi.aliyun.com
 - DOMAIN-SUFFIX,qianwen.aliyun.com
