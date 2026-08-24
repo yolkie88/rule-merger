@@ -110,6 +110,7 @@ payload:
 - DOMAIN-SUFFIX,166.net
 - DOMAIN-SUFFIX,178.com
 - DOMAIN-SUFFIX,188.com
+- DOMAIN-SUFFIX,2144.cn
 - DOMAIN-SUFFIX,263.net
 - DOMAIN-SUFFIX,360.com
 - DOMAIN-SUFFIX,360.net
@@ -264,6 +265,7 @@ payload:
 - DOMAIN-SUFFIX,docin.com
 - DOMAIN-SUFFIX,douban.fm
 - DOMAIN-SUFFIX,douyu.com
+- DOMAIN-SUFFIX,duapp.com
 - DOMAIN-SUFFIX,eudic.net
 - DOMAIN-SUFFIX,feishu.cn
 - DOMAIN-SUFFIX,flyme.com
@@ -2339,6 +2341,7 @@ payload:
 - DOMAIN-SUFFIX,dutenews.com
 - DOMAIN-SUFFIX,dutils.com
 - DOMAIN-SUFFIX,duxiaoman-int.com
+- DOMAIN-SUFFIX,duxiaomanfintech.com
 - DOMAIN-SUFFIX,duxiaomanfund.com
 - DOMAIN-SUFFIX,duxiaomantech.com
 - DOMAIN-SUFFIX,duxiu.com
@@ -2492,6 +2495,7 @@ payload:
 - DOMAIN-SUFFIX,fengniao.com
 - DOMAIN-SUFFIX,fengsutb.com
 - DOMAIN-SUFFIX,fengxian110.com
+- DOMAIN-SUFFIX,fenxi.com
 - DOMAIN-SUFFIX,fetion-portal.com
 - DOMAIN-SUFFIX,fetionpic.com
 - DOMAIN-SUFFIX,ffbuddy.com
@@ -2676,6 +2680,7 @@ payload:
 - DOMAIN-SUFFIX,geektool.top
 - DOMAIN-SUFFIX,geely.com
 - DOMAIN-SUFFIX,gelaiyun.net
+- DOMAIN-SUFFIX,getui.net
 - DOMAIN-SUFFIX,gezida.com
 - DOMAIN-SUFFIX,gfan.com
 - DOMAIN-SUFFIX,gfbzb.com
@@ -2688,6 +2693,7 @@ payload:
 - DOMAIN-SUFFIX,gifpay.com
 - DOMAIN-SUFFIX,gijsq.com
 - DOMAIN-SUFFIX,gio.ren
+- DOMAIN-SUFFIX,giocdn.com
 - DOMAIN-SUFFIX,gitcode.net
 - DOMAIN-SUFFIX,gitv.tv
 - DOMAIN-SUFFIX,gk100.com
@@ -4706,6 +4712,7 @@ payload:
 - DOMAIN-SUFFIX,tal.com
 - DOMAIN-SUFFIX,talk-cloud.net
 - DOMAIN-SUFFIX,talkinggame.com
+- DOMAIN-SUFFIX,tamaegis.com
 - DOMAIN-SUFFIX,tangeche.com
 - DOMAIN-SUFFIX,tanwan.com
 - DOMAIN-SUFFIX,tanxlog.istreamsche.com
@@ -5259,6 +5266,7 @@ payload:
 - DOMAIN-SUFFIX,xcz.im
 - DOMAIN-SUFFIX,xczim.com
 - DOMAIN-SUFFIX,xdqtech.com
+- DOMAIN-SUFFIX,xdrig.com
 - DOMAIN-SUFFIX,xdrtc.com
 - DOMAIN-SUFFIX,xdtool.com
 - DOMAIN-SUFFIX,xdwan.com
