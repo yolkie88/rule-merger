@@ -264,7 +264,6 @@ payload:
 - DOMAIN-SUFFIX,docin.com
 - DOMAIN-SUFFIX,douban.fm
 - DOMAIN-SUFFIX,douyu.com
-- DOMAIN-SUFFIX,eatuo.com
 - DOMAIN-SUFFIX,eudic.net
 - DOMAIN-SUFFIX,feishu.cn
 - DOMAIN-SUFFIX,flyme.com
@@ -6395,6 +6394,7 @@ payload:
 - DOMAIN-SUFFIX,safeskill.cn
 - DOMAIN-SUFFIX,codebuddy.cn
 - DOMAIN-SUFFIX,yoma.cn
+- DOMAIN-SUFFIX,trae.cn
 - DOMAIN-SUFFIX,cueme.cn
 - DOMAIN-SUFFIX,n.cn
 - DOMAIN-SUFFIX,metaso.cn
@@ -6411,13 +6411,12 @@ payload:
 - DOMAIN-SUFFIX,picpic-ai.cn
 - DOMAIN-SUFFIX,marscode.cn
 - DOMAIN-SUFFIX,mcprev.cn
-- DOMAIN-SUFFIX,trae.cn
 - DOMAIN-SUFFIX,xinghuo.xfyun.cn
 - DOMAIN-SUFFIX,yuanqi.tencent.com
-- DOMAIN-SUFFIX,marscode.com.cn
-- DOMAIN-SUFFIX,trae.com.cn
 - DOMAIN-SUFFIX,yuanbao.tencent.com
 - DOMAIN-SUFFIX,hunyuan.tencent.com
+- DOMAIN-SUFFIX,marscode.com.cn
+- DOMAIN-SUFFIX,trae.com.cn
 - DOMAIN-SUFFIX,yiyan.baidu.com
 - DOMAIN-SUFFIX,tongyi.aliyun.com
 - DOMAIN-SUFFIX,qianwen.aliyun.com
