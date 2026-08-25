@@ -265,7 +265,7 @@ payload:
 - DOMAIN-SUFFIX,docin.com
 - DOMAIN-SUFFIX,douban.fm
 - DOMAIN-SUFFIX,douyu.com
-- DOMAIN-SUFFIX,duapp.com
+- DOMAIN-SUFFIX,eatuo.com
 - DOMAIN-SUFFIX,eudic.net
 - DOMAIN-SUFFIX,feishu.cn
 - DOMAIN-SUFFIX,flyme.com
@@ -2341,7 +2341,6 @@ payload:
 - DOMAIN-SUFFIX,dutenews.com
 - DOMAIN-SUFFIX,dutils.com
 - DOMAIN-SUFFIX,duxiaoman-int.com
-- DOMAIN-SUFFIX,duxiaomanfintech.com
 - DOMAIN-SUFFIX,duxiaomanfund.com
 - DOMAIN-SUFFIX,duxiaomantech.com
 - DOMAIN-SUFFIX,duxiu.com
@@ -2680,7 +2679,6 @@ payload:
 - DOMAIN-SUFFIX,geektool.top
 - DOMAIN-SUFFIX,geely.com
 - DOMAIN-SUFFIX,gelaiyun.net
-- DOMAIN-SUFFIX,getui.net
 - DOMAIN-SUFFIX,gezida.com
 - DOMAIN-SUFFIX,gfan.com
 - DOMAIN-SUFFIX,gfbzb.com
@@ -2693,7 +2691,6 @@ payload:
 - DOMAIN-SUFFIX,gifpay.com
 - DOMAIN-SUFFIX,gijsq.com
 - DOMAIN-SUFFIX,gio.ren
-- DOMAIN-SUFFIX,giocdn.com
 - DOMAIN-SUFFIX,gitcode.net
 - DOMAIN-SUFFIX,gitv.tv
 - DOMAIN-SUFFIX,gk100.com
@@ -4712,7 +4709,6 @@ payload:
 - DOMAIN-SUFFIX,tal.com
 - DOMAIN-SUFFIX,talk-cloud.net
 - DOMAIN-SUFFIX,talkinggame.com
-- DOMAIN-SUFFIX,tamaegis.com
 - DOMAIN-SUFFIX,tangeche.com
 - DOMAIN-SUFFIX,tanwan.com
 - DOMAIN-SUFFIX,tanxlog.istreamsche.com
@@ -5266,7 +5262,6 @@ payload:
 - DOMAIN-SUFFIX,xcz.im
 - DOMAIN-SUFFIX,xczim.com
 - DOMAIN-SUFFIX,xdqtech.com
-- DOMAIN-SUFFIX,xdrig.com
 - DOMAIN-SUFFIX,xdrtc.com
 - DOMAIN-SUFFIX,xdtool.com
 - DOMAIN-SUFFIX,xdwan.com
@@ -6387,6 +6382,7 @@ payload:
 - DOMAIN-SUFFIX,www.pxcc.com
 - DOMAIN,cueme-api.quark.cn
 - DOMAIN,ai.zhaomi.cn
+- DOMAIN-SUFFIX,picpic-ai.cn
 - DOMAIN-SUFFIX,rwkv.cn
 - DOMAIN-SUFFIX,aorizon.cn
 - DOMAIN-SUFFIX,happyhorse.cn
@@ -6401,11 +6397,10 @@ payload:
 - DOMAIN-SUFFIX,moonshot.cn
 - DOMAIN-SUFFIX,safeskill.cn
 - DOMAIN-SUFFIX,codebuddy.cn
-- DOMAIN-SUFFIX,yoma.cn
-- DOMAIN-SUFFIX,trae.cn
 - DOMAIN-SUFFIX,cueme.cn
 - DOMAIN-SUFFIX,n.cn
 - DOMAIN-SUFFIX,metaso.cn
+- DOMAIN-SUFFIX,yoma.cn
 - DOMAIN-SUFFIX,butterfly-static.cn
 - DOMAIN-SUFFIX,butterflyai.cn
 - DOMAIN-SUFFIX,cozebaas.cn
@@ -6416,15 +6411,15 @@ payload:
 - DOMAIN-SUFFIX,cozetest3.cn
 - DOMAIN-SUFFIX,hi-butterfly.cn
 - DOMAIN-SUFFIX,skillhub.cn
-- DOMAIN-SUFFIX,picpic-ai.cn
 - DOMAIN-SUFFIX,marscode.cn
 - DOMAIN-SUFFIX,mcprev.cn
+- DOMAIN-SUFFIX,trae.cn
 - DOMAIN-SUFFIX,xinghuo.xfyun.cn
+- DOMAIN-SUFFIX,marscode.com.cn
+- DOMAIN-SUFFIX,trae.com.cn
 - DOMAIN-SUFFIX,yuanqi.tencent.com
 - DOMAIN-SUFFIX,yuanbao.tencent.com
 - DOMAIN-SUFFIX,hunyuan.tencent.com
-- DOMAIN-SUFFIX,marscode.com.cn
-- DOMAIN-SUFFIX,trae.com.cn
 - DOMAIN-SUFFIX,yiyan.baidu.com
 - DOMAIN-SUFFIX,tongyi.aliyun.com
 - DOMAIN-SUFFIX,qianwen.aliyun.com
