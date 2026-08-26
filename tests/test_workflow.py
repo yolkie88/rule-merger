@@ -32,6 +32,25 @@ class WorkflowTests(unittest.TestCase):
         self.assertIn('elif [ "$remote_status" -eq 2 ]', script)
         self.assertIn('exit "$remote_status"', script)
 
+    def test_manual_run_can_approve_only_named_output_growth(self) -> None:
+        workflow_path = (
+            Path(__file__).parents[1] / ".github" / "workflows" / "resolve.yml"
+        )
+        workflow = workflow_path.read_text(encoding="utf-8")
+        document = yaml.safe_load(workflow)
+        build_step = next(
+            step
+            for step in document["jobs"]["build"]["steps"]
+            if step.get("name") == "Test and build"
+        )
+
+        self.assertEqual(
+            build_step["env"]["ALLOWED_GROWTH_OUTPUTS"],
+            "${{ inputs.allowed_growth_outputs }}",
+        )
+        self.assertIn('growth_args+=(--allow-growth "$output")', build_step["run"])
+        self.assertIn('"${growth_args[@]}"', build_step["run"])
+
 
 if __name__ == "__main__":
     unittest.main()

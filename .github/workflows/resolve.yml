@@ -7,6 +7,11 @@ on:
   schedule:
     - cron: '0 */12 * * *'
   workflow_dispatch:
+    inputs:
+      allowed_growth_outputs:
+        description: 'Comma-separated output paths whose baseline growth is approved'
+        required: false
+        type: string
 
 permissions:
   contents: write
@@ -59,11 +64,24 @@ jobs:
           sing-box version
 
       - name: Test and build
+        env:
+          ALLOWED_GROWTH_OUTPUTS: ${{ inputs.allowed_growth_outputs }}
         run: |
           set -euo pipefail
           python -m unittest discover -s tests -v
           baseline_args=()
           legacy_args=()
+          growth_args=()
+          if [ -n "$ALLOWED_GROWTH_OUTPUTS" ]; then
+            IFS=',' read -ra approved_outputs <<< "$ALLOWED_GROWTH_OUTPUTS"
+            for output in "${approved_outputs[@]}"; do
+              output="${output#"${output%%[![:space:]]*}"}"
+              output="${output%"${output##*[![:space:]]}"}"
+              if [ -n "$output" ]; then
+                growth_args+=(--allow-growth "$output")
+              fi
+            done
+          fi
           set +e
           git ls-remote --exit-code --heads origin release >/dev/null 2>&1
           remote_status=$?
@@ -87,7 +105,8 @@ jobs:
             --output release-build \
             --report build-report.json \
             "${baseline_args[@]}" \
-            "${legacy_args[@]}"
+            "${legacy_args[@]}" \
+            "${growth_args[@]}"
           status=$?
           set -e
           if [ "$status" -ne 0 ]; then

@@ -23,6 +23,16 @@ def make_parser() -> argparse.ArgumentParser:
     build_parser.add_argument("--mihomo-path", default="mihomo")
     build_parser.add_argument("--sing-box-path", default="sing-box")
     build_parser.add_argument("--include-legacy", action="store_true")
+    build_parser.add_argument(
+        "--allow-growth",
+        action="append",
+        default=[],
+        metavar="OUTPUT",
+        help=(
+            "approve baseline growth for one exact output path or one path without "
+            "its yaml/json/srs/mrs extension; may be repeated"
+        ),
+    )
     return parser
 
 
@@ -39,6 +49,7 @@ def main(argv: list[str] | None = None) -> int:
             mihomo_path=args.mihomo_path,
             sing_box_path=args.sing_box_path,
             include_legacy=args.include_legacy,
+            allowed_growth_outputs=tuple(args.allow_growth),
         )
     )
     print(json.dumps(report.as_dict(), ensure_ascii=False, indent=2, sort_keys=True))

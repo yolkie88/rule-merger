@@ -97,6 +97,8 @@ source 默认 `redistributable: false`；只有完成许可证/再分发审查�
 `critical_rules` 可使用无扩展名规则集路径（如 `categories/private-ip`），一次覆盖 YAML、JSON、SRS、MRS 的同一规则集。
 已有产物默认不允许从基线中消失。计划下线时必须在 `quality.allowed_removed_outputs` 中显式列出无扩展名路径；清单只授权对应路径的 YAML、JSON、SRS、MRS 删除，其他意外删除仍会 fail closed。完成一次成功发布后应移除已消费的清单项。
 
+确认上游数据的预期增长后，可手动运行工作流并在 `allowed_growth_outputs` 中填写逗号分隔的产物路径（可省略 `.yaml`、`.json`、`.srs`、`.mrs` 扩展名）。该授权仅跳过所列产物的增长门槛；下降、删除和其他产物的异常增长仍会 fail closed，并在构建报告中记录 `approved-growth`。
+
 输出格式：
 
 - YAML：Mihomo classical `payload`，保留 `PROCESS-NAME`、`DOMAIN-WILDCARD`、`IP-ASN` 等 Mihomo 原生规则。

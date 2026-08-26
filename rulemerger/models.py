@@ -79,6 +79,7 @@ class BuildRequest:
     mihomo_path: str = "mihomo"
     sing_box_path: str = "sing-box"
     include_legacy: bool = False
+    allowed_growth_outputs: tuple[str, ...] = ()
     source_adapter: Any | None = None
     tool_adapter: Any | None = None
 
@@ -89,6 +90,9 @@ class BuildRequest:
             object.__setattr__(self, "baseline_manifest", Path(self.baseline_manifest))
         if self.report_path is not None:
             object.__setattr__(self, "report_path", Path(self.report_path))
+        object.__setattr__(
+            self, "allowed_growth_outputs", tuple(self.allowed_growth_outputs)
+        )
 
 
 @dataclass

@@ -1083,6 +1083,89 @@ class BuildBehaviorTests(unittest.TestCase):
                 (output / "sentinel.txt").read_text(encoding="utf-8"), "keep"
             )
 
+    def test_named_baseline_growth_can_be_approved_without_disabling_other_gates(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            config = write_project(
+                root,
+                source_text="DOMAIN,example.com\nDOMAIN,second.example\n",
+                sources={
+                    "source": {
+                        "type": "file",
+                        "path": "source.txt",
+                        "format": "text",
+                        "behavior": "classical",
+                    }
+                },
+                categories={
+                    "direct": {
+                        "family": "domain",
+                        "sources": ["source"],
+                        "formats": ["yaml"],
+                    }
+                },
+                actions={"direct-domain": ["direct"]},
+                formats=["yaml"],
+            )
+            baseline = root / "baseline.json"
+            baseline.write_text(
+                json.dumps(
+                    {
+                        "outputs": {
+                            "categories/direct.yaml": {"rules": 1},
+                            "profiles/default/direct-domain.yaml": {"rules": 1},
+                        }
+                    }
+                ),
+                encoding="utf-8",
+            )
+
+            blocked = build(
+                BuildRequest(
+                    config,
+                    root / "blocked",
+                    baseline_manifest=baseline,
+                    allowed_growth_outputs=("categories/direct",),
+                )
+            )
+
+            self.assertFalse(blocked.publishable)
+            self.assertTrue(
+                any(
+                    error.startswith(
+                        "profiles/default/direct-domain.yaml grew from 1 to 2"
+                    )
+                    for error in blocked.errors
+                ),
+                blocked.errors,
+            )
+
+            report = build(
+                BuildRequest(
+                    config,
+                    root / "published",
+                    baseline_manifest=baseline,
+                    allowed_growth_outputs=(
+                        "categories/direct",
+                        "profiles/default/direct-domain",
+                    ),
+                )
+            )
+
+            self.assertTrue(report.publishable, report.errors)
+            self.assertEqual(report.status, "degraded")
+            self.assertEqual(
+                report.baseline["approved_growth"],
+                [
+                    "categories/direct.yaml",
+                    "profiles/default/direct-domain.yaml",
+                ],
+            )
+            self.assertEqual(
+                report.baseline["changes"]["categories/direct.yaml"]["status"],
+                "approved-growth",
+            )
+
 
 if __name__ == "__main__":
     unittest.main()

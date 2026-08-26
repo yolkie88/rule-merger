@@ -560,11 +560,22 @@ def _apply_baseline(
         return
     previous = baseline["outputs"]
     errors: list[str] = []
+    approved_growth: list[str] = []
     changes: dict[str, dict[str, object]] = {}
     default_max_growth_ratio = float(config.quality["max_growth_ratio"])
     max_growth_ratio_overrides = config.quality.get(
         "max_growth_ratio_overrides", {}
     )
+    allowed_growth = set(request.allowed_growth_outputs)
+
+    def growth_is_allowed(name: str) -> bool:
+        base, dot, extension = name.rpartition(".")
+        return name in allowed_growth or (
+            bool(dot)
+            and extension in {"yaml", "json", "srs", "mrs"}
+            and base in allowed_growth
+        )
+
     for name, rules in logical_rules.items():
         old = previous.get(name)
         old_count = old.get("rules") if isinstance(old, dict) else None
@@ -595,7 +606,16 @@ def _apply_baseline(
             int(config.quality["small_output_limit"]),
         )
         if error:
-            errors.append(error)
+            if (
+                isinstance(old_count, int)
+                and not isinstance(old_count, bool)
+                and current_count > old_count
+                and growth_is_allowed(name)
+            ):
+                change["status"] = "approved-growth"
+                approved_growth.append(name)
+            else:
+                errors.append(error)
     allowed_removed = set(config.quality.get("allowed_removed_outputs", ()))
     removable_extensions = {"yaml", "json", "srs", "mrs"}
 
@@ -642,7 +662,13 @@ def _apply_baseline(
         "checked": True,
         "changes": changes,
         "errors": errors,
+        "approved_growth": sorted(approved_growth),
     }
+    if approved_growth:
+        report.warnings.append(
+            "baseline growth explicitly approved for: "
+            + ", ".join(sorted(approved_growth))
+        )
     report.errors.extend(errors)
 
 
