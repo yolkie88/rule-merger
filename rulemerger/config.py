@@ -37,6 +37,7 @@ TOP_LEVEL_FIELDS = {
 QUALITY_FIELDS = {
     "max_drop_ratio",
     "max_growth_ratio",
+    "max_growth_ratio_overrides",
     "small_output_limit",
     "min_rules",
     "critical_rules",
@@ -298,6 +299,7 @@ def _validate_quality(value: Any) -> dict[str, Any]:
     result: dict[str, Any] = {
         "max_drop_ratio": 0.15,
         "max_growth_ratio": 0.50,
+        "max_growth_ratio_overrides": {},
         "small_output_limit": 100,
         "min_rules": {},
         "critical_rules": {},
@@ -315,6 +317,25 @@ def _validate_quality(value: Any) -> dict[str, Any]:
             if key == "max_drop_ratio" and value_number >= 1:
                 raise ConfigError("quality.max_drop_ratio must be less than 1")
             result[key] = float(value_number)
+    if "max_growth_ratio_overrides" in item:
+        overrides = item["max_growth_ratio_overrides"]
+        if not isinstance(overrides, dict):
+            raise ConfigError("quality.max_growth_ratio_overrides must be a mapping")
+        normalized: dict[str, float] = {}
+        for output_name, value_number in overrides.items():
+            if (
+                not isinstance(output_name, str)
+                or not output_name
+                or not isinstance(value_number, (int, float))
+                or isinstance(value_number, bool)
+                or value_number < 0
+            ):
+                raise ConfigError(
+                    "quality.max_growth_ratio_overrides must map output names "
+                    "to non-negative numbers"
+                )
+            normalized[output_name] = float(value_number)
+        result["max_growth_ratio_overrides"] = normalized
     if "small_output_limit" in item:
         limit = item["small_output_limit"]
         if not isinstance(limit, int) or isinstance(limit, bool) or limit < 0:

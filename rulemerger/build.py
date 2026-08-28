@@ -18,6 +18,7 @@ from .quality import (
     critical_rules_for,
     duplicate_category_conflicts,
     find_segment_conflicts,
+    max_growth_ratio_for,
 )
 from .rules import RuleError, dedupe, family_of
 from .sources import SourceAdapter, SourceError, SourceResult
@@ -560,6 +561,10 @@ def _apply_baseline(
     previous = baseline["outputs"]
     errors: list[str] = []
     changes: dict[str, dict[str, object]] = {}
+    default_max_growth_ratio = float(config.quality["max_growth_ratio"])
+    max_growth_ratio_overrides = config.quality.get(
+        "max_growth_ratio_overrides", {}
+    )
     for name, rules in logical_rules.items():
         old = previous.get(name)
         old_count = old.get("rules") if isinstance(old, dict) else None
@@ -582,7 +587,11 @@ def _apply_baseline(
             if isinstance(old_count, int) and not isinstance(old_count, bool)
             else None,
             float(config.quality["max_drop_ratio"]),
-            float(config.quality["max_growth_ratio"]),
+            max_growth_ratio_for(
+                name,
+                max_growth_ratio_overrides,
+                default_max_growth_ratio,
+            ),
             int(config.quality["small_output_limit"]),
         )
         if error:

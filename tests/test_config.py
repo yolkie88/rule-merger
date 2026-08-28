@@ -114,6 +114,13 @@ profiles: {}
                 "categories/custom-proxy-domain",
             },
         )
+        self.assertEqual(
+            config.quality["max_growth_ratio_overrides"],
+            {
+                "categories/cn-ip": 1.1,
+                "profiles/default/direct-ip": 1.1,
+            },
+        )
         self.assertIn("local_ai_general", config.categories["ai-domain"].sources)
 
         coding = yaml.safe_load(

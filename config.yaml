@@ -176,6 +176,11 @@ quality:
   max_drop_ratio: 0.15
   # Reviewed 2026-08-27: skk_china_ipv6 grew from 1,235 to 3,429 rules.
   max_growth_ratio: 0.55
+  # Reviewed 2026-08-28: geoip_cn grew from 5,384 to 9,651 rules; keep the
+  # wider allowance limited to the derived IP outputs.
+  max_growth_ratio_overrides:
+    categories/cn-ip: 1.10
+    profiles/default/direct-ip: 1.10
   small_output_limit: 100
   min_rules: {}
   critical_rules:

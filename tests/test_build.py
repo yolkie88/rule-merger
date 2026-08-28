@@ -169,6 +169,65 @@ class BuildBehaviorTests(unittest.TestCase):
                 (output / "sentinel.txt").read_text(encoding="utf-8"), "keep"
             )
 
+    def test_output_specific_growth_override_uses_extension_free_key(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            config = write_project(
+                root,
+                source_text=(
+                    "DOMAIN,one.example\n"
+                    "DOMAIN,two.example\n"
+                    "DOMAIN,three.example\n"
+                    "DOMAIN,four.example\n"
+                    "DOMAIN,five.example\n"
+                    "DOMAIN,six.example\n"
+                ),
+                sources={
+                    "source": {
+                        "type": "file",
+                        "path": "source.txt",
+                        "format": "text",
+                        "behavior": "classical",
+                    }
+                },
+                categories={
+                    "direct": {
+                        "family": "domain",
+                        "sources": ["source"],
+                        "formats": ["yaml"],
+                    }
+                },
+                actions={"direct-domain": ["direct"]},
+                formats=["yaml"],
+                quality={
+                    "max_drop_ratio": 0.15,
+                    "max_growth_ratio": 0.50,
+                    "max_growth_ratio_overrides": {
+                        "categories/direct": 1.0,
+                        "profiles/default/direct-domain": 1.0,
+                    },
+                    "small_output_limit": 0,
+                    "critical_rules": {},
+                },
+            )
+            baseline = root / "baseline.json"
+            baseline.write_text(
+                json.dumps(
+                    {
+                        "outputs": {
+                            "categories/direct.yaml": {"rules": 3},
+                            "profiles/default/direct-domain.yaml": {"rules": 3},
+                        }
+                    }
+                ),
+                encoding="utf-8",
+            )
+
+            report = build(BuildRequest(config, root / "published", baseline_manifest=baseline))
+
+            self.assertTrue(report.publishable, report.errors)
+            self.assertEqual(report.baseline["errors"], [])
+
     def test_extension_free_output_removal_only_allows_supported_formats(self) -> None:
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)

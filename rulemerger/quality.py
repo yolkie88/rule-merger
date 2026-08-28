@@ -269,6 +269,22 @@ def compare_count(
     return None
 
 
+def max_growth_ratio_for(
+    output_name: str,
+    overrides: Mapping[str, float],
+    default: float,
+) -> float:
+    """Resolve an output-specific growth limit, including extension-free keys."""
+
+    configured = overrides.get(output_name)
+    if configured is None:
+        base, dot, _extension = output_name.rpartition(".")
+        configured = overrides.get(base if dot else output_name)
+    if isinstance(configured, (int, float)) and not isinstance(configured, bool):
+        return float(configured)
+    return default
+
+
 def critical_rule_errors(
     outputs: Mapping[str, Iterable[Rule]],
     critical_rules: Mapping[str, Iterable[str]],

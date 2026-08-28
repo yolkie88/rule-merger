@@ -13,6 +13,7 @@ class WorkflowTests(unittest.TestCase):
         )
         workflow = workflow_path.read_text(encoding="utf-8")
         document = yaml.safe_load(workflow)
+        self.assertIn("  push:\n    branches:\n      - master", workflow)
         build_step = next(
             step
             for step in document["jobs"]["build"]["steps"]
