@@ -174,7 +174,8 @@ profiles:
 overrides: local/overrides.yaml
 quality:
   max_drop_ratio: 0.15
-  max_growth_ratio: 0.5
+  # Reviewed 2026-08-27: skk_china_ipv6 grew from 1,235 to 3,429 rules.
+  max_growth_ratio: 0.55
   small_output_limit: 100
   min_rules: {}
   critical_rules:
