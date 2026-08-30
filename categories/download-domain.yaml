@@ -1629,6 +1629,7 @@ payload:
 - DOMAIN,redstone-launcher.mojang.com
 - DOMAIN,softwareupdate.pilotmoon.com
 - DOMAIN,update.code.visualstudio.com
+- DOMAIN,assets-tcpviewer.proxyman.com
 - DOMAIN,centos-stream.ip-connect.info
 - DOMAIN-SUFFIX,cos.ap-singapore.myqcloud.com
 - DOMAIN-SUFFIX,cos.eu-frankfurt.myqcloud.com

@@ -1020,6 +1020,7 @@ payload:
 - DOMAIN,r2cdn.c7d.dev
 - DOMAIN-SUFFIX,randomuser.me
 - DOMAIN-SUFFIX,rawgithub.com
+- DOMAIN-SUFFIX,rcsobjects.it
 - DOMAIN,rdr.windy.com
 - DOMAIN-SUFFIX,runkitcdn.com
 - DOMAIN-SUFFIX,s-nbcnews.com
@@ -2572,6 +2573,7 @@ payload:
 - DOMAIN,files.gempages.net
 - DOMAIN,flows.trysavvy.com
 - DOMAIN,fonts.codeberg.org
+- DOMAIN-SUFFIX,gazzettaobjects.it
 - DOMAIN,genesis-cdn.ff.com
 - DOMAIN,global.divhunt.com
 - DOMAIN,graph.facebook.com
@@ -2909,6 +2911,7 @@ payload:
 - DOMAIN,event.ithome.com.tw
 - DOMAIN-SUFFIX,events.backtrace.io
 - DOMAIN,favicons.nextdns.io
+- DOMAIN,files.blocktempo.ai
 - DOMAIN,files.namecheap.com
 - DOMAIN-SUFFIX,files.wordpress.com
 - DOMAIN,geoserveis.icgc.cat
@@ -3201,6 +3204,7 @@ payload:
 - DOMAIN,hubspotonwebflow.com
 - DOMAIN,icons.duckduckgo.com
 - DOMAIN,image-us.samsung.com
+- DOMAIN,image.blocktempo.com
 - DOMAIN,imageproxy.ifunny.co
 - DOMAIN,images.anandtech.com
 - DOMAIN,images.blockscan.com
@@ -3347,6 +3351,7 @@ payload:
 - DOMAIN,variations.brave.com
 - DOMAIN,vice-prod.sdiapi.com
 - DOMAIN,video-meta.humix.com
+- DOMAIN,video.giroditalia.it
 - DOMAIN-SUFFIX,vodvideo.cbsnews.com
 - DOMAIN,vpncdn.protonweb.com
 - DOMAIN,wandi-6402.kxcdn.com
@@ -3771,6 +3776,7 @@ payload:
 - DOMAIN,static.tryprofound.com
 - DOMAIN,static.underhentai.net
 - DOMAIN,static.webclicks24.com
+- DOMAIN,static2.giroditalia.it
 - DOMAIN-SUFFIX,static2cdn.hubspot.com
 - DOMAIN,statics.streamable.com
 - DOMAIN-SUFFIX,storage.googleapis.com
@@ -4021,6 +4027,7 @@ payload:
 - DOMAIN,conf.config-security.com
 - DOMAIN,cookie-cdn.cookiepro.com
 - DOMAIN,css.blackmagicdesign.com
+- DOMAIN,delivery.twentythree.com
 - DOMAIN,detectportal.firefox.com
 - DOMAIN,dynamic-cdn.cms.ayoba.me
 - DOMAIN,ecn.dev.virtualearth.net

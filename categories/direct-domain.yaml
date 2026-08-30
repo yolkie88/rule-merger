@@ -168,6 +168,7 @@ payload:
 - DOMAIN-SUFFIX,blackwell-synergy.com
 - DOMAIN,injections.adguard.org
 - DOMAIN-SUFFIX,lcdn-locator.apple.com
+- DOMAIN,mirrorlist.cdn.skk.moe
 - DOMAIN-SUFFIX,classix-unlimited.co.uk
 - DOMAIN,instant.arubanetworks.com
 - DOMAIN,setmeup.arubanetworks.com
