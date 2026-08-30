@@ -401,7 +401,6 @@ payload:
 - DOMAIN-SUFFIX,feizhu.com
 - DOMAIN-SUFFIX,fliggy.com
 - DOMAIN-SUFFIX,futunn.com
-- DOMAIN-SUFFIX,gdtimg.com
 - DOMAIN-SUFFIX,guancha.cn
 - DOMAIN-SUFFIX,hao123.com
 - DOMAIN-SUFFIX,haosou.com
@@ -4641,7 +4640,6 @@ payload:
 - DOMAIN-SUFFIX,starlakelab.com
 - DOMAIN-SUFFIX,startssl.com
 - DOMAIN-SUFFIX,starworldgames.com
-- DOMAIN-SUFFIX,staticfile.net
 - DOMAIN-SUFFIX,staticfile.org
 - DOMAIN-SUFFIX,statickksmg.com
 - DOMAIN-SUFFIX,stcn.com
@@ -5268,6 +5266,7 @@ payload:
 - DOMAIN-SUFFIX,xcz.im
 - DOMAIN-SUFFIX,xczim.com
 - DOMAIN-SUFFIX,xdqtech.com
+- DOMAIN-SUFFIX,xdrig.com
 - DOMAIN-SUFFIX,xdrtc.com
 - DOMAIN-SUFFIX,xdtool.com
 - DOMAIN-SUFFIX,xdwan.com
