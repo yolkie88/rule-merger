@@ -1011,6 +1011,7 @@ payload:
 - DOMAIN-SUFFIX,360jq.com
 - DOMAIN-SUFFIX,360kan.com
 - DOMAIN-SUFFIX,360qhcdn.com
+- DOMAIN-SUFFIX,360scdn.com
 - DOMAIN-SUFFIX,360shouji.com
 - DOMAIN-SUFFIX,360so.com
 - DOMAIN-SUFFIX,360sou.com
@@ -2213,6 +2214,7 @@ payload:
 - DOMAIN-SUFFIX,deepin.org
 - DOMAIN-SUFFIX,deepinos.org
 - DOMAIN-SUFFIX,deepseek.com
+- DOMAIN-SUFFIX,deepseeksvc.com
 - DOMAIN-SUFFIX,dengguobi.com
 - DOMAIN-SUFFIX,deppon.com
 - DOMAIN-SUFFIX,develenv.com
@@ -4798,6 +4800,7 @@ payload:
 - DOMAIN-SUFFIX,tcloudscdn.net
 - DOMAIN-SUFFIX,tcltech.com
 - DOMAIN-SUFFIX,tcp5.com
+- DOMAIN-SUFFIX,tctpwebankcdn.net
 - DOMAIN-SUFFIX,tcwqqdy.guru
 - DOMAIN-SUFFIX,tdnsx1.com
 - DOMAIN-SUFFIX,te5.com
@@ -5178,6 +5181,7 @@ payload:
 - DOMAIN-SUFFIX,warmheart.top
 - DOMAIN-SUFFIX,wasu.tv
 - DOMAIN-SUFFIX,wbimg.com
+- DOMAIN-SUFFIX,wbweilicai.com
 - DOMAIN-SUFFIX,wcbygame.com
 - DOMAIN-SUFFIX,wch-ic.com
 - DOMAIN-SUFFIX,wdfok.com
