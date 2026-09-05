@@ -317,6 +317,7 @@ payload:
 - DOMAIN-SUFFIX,odycdn.com
 - DOMAIN,p.sda1.dev
 - DOMAIN-SUFFIX,pagecdn.io
+- DOMAIN-SUFFIX,pgimgs.com
 - DOMAIN-SUFFIX,phncdn.com
 - DOMAIN-SUFFIX,pinimg.com
 - DOMAIN-SUFFIX,pixhost.to
@@ -2389,6 +2390,7 @@ payload:
 - DOMAIN,st.deviantart.net
 - DOMAIN,static-id.fc2.com
 - DOMAIN,static-sv.fc2.com
+- DOMAIN-SUFFIX,static-upwork.com
 - DOMAIN,static.ahrefs.com
 - DOMAIN,static.anysex.com
 - DOMAIN,static.bbci.co.uk
@@ -3576,6 +3578,7 @@ payload:
 - DOMAIN,static.chessarena.com
 - DOMAIN,static.clips4sale.com
 - DOMAIN,static.getpostman.com
+- DOMAIN,static.idp.sph.com.sg
 - DOMAIN,static.mytonwallet.io
 - DOMAIN,static.openreplay.com
 - DOMAIN,static.pfrt.yna.co.kr
@@ -4011,7 +4014,6 @@ payload:
 - DOMAIN,assets.geeksforgeeks.org
 - DOMAIN,assets.nationbuilder.com
 - DOMAIN,assets.prowritingaid.com
-- DOMAIN,assets.static-upwork.com
 - DOMAIN,assets.trainingpeaks.com
 - DOMAIN,assets10.lottiefiles.com
 - DOMAIN,atl-global.atlassian.com
