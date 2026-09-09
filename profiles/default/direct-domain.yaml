@@ -110,6 +110,7 @@ payload:
 - DOMAIN-SUFFIX,166.net
 - DOMAIN-SUFFIX,178.com
 - DOMAIN-SUFFIX,188.com
+- DOMAIN-SUFFIX,2144.cn
 - DOMAIN-SUFFIX,263.net
 - DOMAIN-SUFFIX,360.com
 - DOMAIN-SUFFIX,360.net
@@ -264,6 +265,7 @@ payload:
 - DOMAIN-SUFFIX,docin.com
 - DOMAIN-SUFFIX,douban.fm
 - DOMAIN-SUFFIX,douyu.com
+- DOMAIN-SUFFIX,eatuo.com
 - DOMAIN-SUFFIX,eudic.net
 - DOMAIN-SUFFIX,feishu.cn
 - DOMAIN-SUFFIX,flyme.com
@@ -4933,7 +4935,6 @@ payload:
 - DOMAIN-SUFFIX,tol.vip
 - DOMAIN-SUFFIX,tom.com
 - DOMAIN-SUFFIX,tongfangpc.com
-- DOMAIN-SUFFIX,tongji.linezing.com
 - DOMAIN-SUFFIX,tongkask.com
 - DOMAIN-SUFFIX,tongtaiamc.com
 - DOMAIN-SUFFIX,tongxianghuicn.com
