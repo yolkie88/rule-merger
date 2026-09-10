@@ -110,7 +110,6 @@ payload:
 - DOMAIN-SUFFIX,166.net
 - DOMAIN-SUFFIX,178.com
 - DOMAIN-SUFFIX,188.com
-- DOMAIN-SUFFIX,2144.cn
 - DOMAIN-SUFFIX,263.net
 - DOMAIN-SUFFIX,360.com
 - DOMAIN-SUFFIX,360.net
@@ -402,6 +401,7 @@ payload:
 - DOMAIN-SUFFIX,feizhu.com
 - DOMAIN-SUFFIX,fliggy.com
 - DOMAIN-SUFFIX,futunn.com
+- DOMAIN-SUFFIX,gdtimg.com
 - DOMAIN-SUFFIX,guancha.cn
 - DOMAIN-SUFFIX,hao123.com
 - DOMAIN-SUFFIX,haosou.com
