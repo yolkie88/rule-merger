@@ -282,7 +282,6 @@ payload:
 - DOMAIN-SUFFIX,uplynk.com
 - DOMAIN-SUFFIX,aiv-cdn.net
 - DOMAIN-SUFFIX,amebame.com
-- DOMAIN-SUFFIX,bamgrid.com
 - DOMAIN-SUFFIX,foxplus.com
 - DOMAIN-SUFFIX,hayabusa.io
 - DOMAIN-SUFFIX,hboasia.com
@@ -365,7 +364,6 @@ payload:
 - DOMAIN,www.tubitv.com
 - DOMAIN-SUFFIX,amazonvideo.com
 - DOMAIN-SUFFIX,amebaowndme.com
-- DOMAIN-SUFFIX,byteoversea.com
 - DOMAIN-SUFFIX,disney-plus.net
 - DOMAIN-SUFFIX,googlevideo.com
 - DOMAIN-SUFFIX,kkbox-prime.com
@@ -652,7 +650,6 @@ payload:
 - DOMAIN-SUFFIX,adguard-vpn.com
 - DOMAIN-SUFFIX,zozotown.com
 - DOMAIN-SUFFIX,zorrovpn.com
-- DOMAIN-SUFFIX,ads-twitter.com
 - DOMAIN-SUFFIX,adult-sex-games.com
 - DOMAIN-SUFFIX,zophar.net
 - DOMAIN-SUFFIX,advanscene.com
@@ -886,7 +883,6 @@ payload:
 - DOMAIN-SUFFIX,bb-chat.tv
 - DOMAIN-SUFFIX,z-lib.org
 - DOMAIN-SUFFIX,bbc.com
-- DOMAIN-SUFFIX,z-lib.io
 - DOMAIN-SUFFIX,bbcchinese.com
 - DOMAIN-SUFFIX,bbchat.tv
 - DOMAIN-SUFFIX,z-lib.gl
@@ -4967,7 +4963,6 @@ payload:
 - DOMAIN-SUFFIX,fide.com
 - DOMAIN-SUFFIX,grep.app
 - DOMAIN-SUFFIX,gvt0.com
-- DOMAIN-SUFFIX,gvt2.com
 - DOMAIN-SUFFIX,gvt5.com
 - DOMAIN-SUFFIX,gvt6.com
 - DOMAIN-SUFFIX,gvt7.com
