@@ -589,6 +589,7 @@ payload:
 - DOMAIN,aimg.fc2.com
 - DOMAIN,ajax.cat.net
 - DOMAIN-SUFFIX,apperoni.top
+- DOMAIN-SUFFIX,axiom-cdn.io
 - DOMAIN-SUFFIX,axis-cdn.net
 - DOMAIN,b.peatio.com
 - DOMAIN,b.sf-syn.com
@@ -1049,6 +1050,7 @@ payload:
 - DOMAIN,static.dw.com
 - DOMAIN,static.ffx.io
 - DOMAIN,static.iyf.tv
+- DOMAIN,static.jup.ag
 - DOMAIN,static.k2s.cc
 - DOMAIN,static.nrk.no
 - DOMAIN,static.ui.com
@@ -3068,6 +3070,7 @@ payload:
 - DOMAIN,tag.unifyintent.com
 - DOMAIN,tags.nationwide.com
 - DOMAIN,thumb.wikimedia.org
+- DOMAIN,thumbnails.padre.gg
 - DOMAIN,thumbs.onlyfans.com
 - DOMAIN,thumbs2.sendvid.com
 - DOMAIN,tile2.intervals.icu
@@ -4118,6 +4121,7 @@ payload:
 - DOMAIN,tools-static.wmflabs.org
 - DOMAIN,typescript.azureedge.net
 - DOMAIN,ubistatic2-a.ubisoft.com
+- DOMAIN,ugc.production.linktr.ee
 - DOMAIN,viu-static.akamaized.net
 - DOMAIN,web-assets.zendesk.co.jp
 - DOMAIN,wl-apps.yourwebsite.life
@@ -4141,6 +4145,7 @@ payload:
 - DOMAIN,cdn.registerdisney.go.com
 - DOMAIN,changelog-widget.canny.io
 - DOMAIN,chunk-composing.canva.com
+- DOMAIN,coin-images.coingecko.com
 - DOMAIN,components.justanswer.com
 - DOMAIN,cors-proxy.htmldriven.com
 - DOMAIN-SUFFIX,crashlytics2.l.google.com
@@ -4313,6 +4318,7 @@ payload:
 - DOMAIN,app-static-prod.posthog.com
 - DOMAIN,article-image-ix.nikkei.com
 - DOMAIN,assets.braintreegateway.com
+- DOMAIN,assets.production.linktr.ee
 - DOMAIN,assets.weather-forecast.com
 - DOMAIN-SUFFIX,cdn-lfs-us-1.huggingface.co
 - DOMAIN,cdn-live.foreignaffairs.com
