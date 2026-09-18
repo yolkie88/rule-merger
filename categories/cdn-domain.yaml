@@ -344,6 +344,7 @@ payload:
 - DOMAIN-SUFFIX,sc-cdn.com
 - DOMAIN-SUFFIX,scene7.com
 - DOMAIN-SUFFIX,seecdn.com
+- DOMAIN-SUFFIX,seecdn.net
 - DOMAIN-SUFFIX,sftcdn.net
 - DOMAIN-SUFFIX,shgcdn.com
 - DOMAIN-SUFFIX,shields.io
@@ -561,7 +562,6 @@ payload:
 - DOMAIN,tile.osm.be
 - DOMAIN-SUFFIX,tile.osm.ch
 - DOMAIN,tn.vjav.com
-- DOMAIN-SUFFIX,tripcdn.com
 - DOMAIN-SUFFIX,ttcache.com
 - DOMAIN,turbo.build
 - DOMAIN-SUFFIX,tutu1.space
@@ -1361,6 +1361,7 @@ payload:
 - DOMAIN,static.itch.io
 - DOMAIN,static.j51.net
 - DOMAIN,static.lwn.net
+- DOMAIN,static.okou.io
 - DOMAIN,static.okx.cab
 - DOMAIN,static.okx.com
 - DOMAIN,static.reo.dev
@@ -1808,6 +1809,7 @@ payload:
 - DOMAIN-SUFFIX,cdn.easyling.com
 - DOMAIN,cdn.ecomm.ui.com
 - DOMAIN,cdn.equalweb.com
+- DOMAIN,cdn.eye-able.com
 - DOMAIN,cdn.firebase.com
 - DOMAIN,cdn.foxycart.com
 - DOMAIN,cdn.getkoala.com
@@ -3707,6 +3709,7 @@ payload:
 - DOMAIN,images.contentstack.io
 - DOMAIN,images.hothardware.com
 - DOMAIN,images.newrepublic.com
+- DOMAIN,images.radio-canada.ca
 - DOMAIN,images.socialblade.com
 - DOMAIN,images.wsjcommerce.net
 - DOMAIN,images.wurstclient.net

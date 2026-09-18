@@ -216,6 +216,7 @@ payload:
 - DOMAIN,mirrors.up.pt
 - DOMAIN-SUFFIX,ossplanet.org
 - DOMAIN-SUFFIX,packagist.org
+- DOMAIN,repo.xtom.com
 - DOMAIN,repository.su
 - DOMAIN-SUFFIX,s3.yandex.net
 - DOMAIN,sft.if.usp.br
