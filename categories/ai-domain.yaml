@@ -130,6 +130,7 @@ payload:
 - DOMAIN-SUFFIX,events.statsigapi.net
 - DOMAIN-SUFFIX,featuregates.org
 - DOMAIN-SUFFIX,flow.google
+- DOMAIN-SUFFIX,flow.google.com
 - DOMAIN-SUFFIX,gateway.ai.cloudflare.com
 - DOMAIN-SUFFIX,gemini.gstatic.com
 - DOMAIN-SUFFIX,githubcopilot.com
@@ -165,6 +166,7 @@ payload:
 - DOMAIN-SUFFIX,mistral.ai
 - DOMAIN-SUFFIX,moonshot.ai
 - DOMAIN-SUFFIX,mozilla.ai
+- DOMAIN-SUFFIX,notebook.google
 - DOMAIN-SUFFIX,notebook.google.com
 - DOMAIN-SUFFIX,notegpt.io
 - DOMAIN-SUFFIX,novelai.net
