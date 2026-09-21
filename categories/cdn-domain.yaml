@@ -1917,6 +1917,7 @@ payload:
 - DOMAIN,images.axios.com
 - DOMAIN,images.bfmtv.com
 - DOMAIN,images.drata.com
+- DOMAIN,images.hibob.com
 - DOMAIN,images.nebula.tv
 - DOMAIN,images.pling.com
 - DOMAIN,images.plurk.com
@@ -3938,6 +3939,7 @@ payload:
 - DOMAIN,media-cdn.atlassian.com
 - DOMAIN,media-cdn.epicgames.com
 - DOMAIN,media-cms.onesignal.com
+- DOMAIN,media-process.hibob.com
 - DOMAIN,media.contentapi.ea.com
 - DOMAIN,media.geeksforgeeks.org
 - DOMAIN,media.nbclosangeles.com
