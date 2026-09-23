@@ -865,7 +865,7 @@ payload:
 - DOMAIN,cdnstatic.tencentcs.com
 - DOMAIN-SUFFIX,kingsoft-office-service.com
 - DOMAIN-SUFFIX,dl.delivery.mp.microsoft.com
-- DOMAIN-WILDCARD,*.qhimgs?.com
+- DOMAIN-WILDCARD,qhimgs?.com
 - DOMAIN,analytics.strava.com
 - DOMAIN,api.blipsandchitz.me
 - DOMAIN,cdn.angruo.com
@@ -4648,6 +4648,7 @@ payload:
 - DOMAIN-SUFFIX,sinopecgroup.com
 - DOMAIN-SUFFIX,sinopecsales.com
 - DOMAIN-SUFFIX,sipeed.com
+- DOMAIN-SUFFIX,sjfls6.com
 - DOMAIN-SUFFIX,sjwyx.com
 - DOMAIN-SUFFIX,skimit.net
 - DOMAIN-SUFFIX,sksight.com
