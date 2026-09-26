@@ -1197,6 +1197,7 @@ payload:
 - DOMAIN,d.newsweek.com
 - DOMAIN,dc-cdn.cdw.com
 - DOMAIN-SUFFIX,descopecdn.com
+- DOMAIN,dma.canyon.com
 - DOMAIN-SUFFIX,doppiocdn.live
 - DOMAIN-SUFFIX,dummyimage.com
 - DOMAIN-SUFFIX,ebaystatic.com
@@ -2323,7 +2324,6 @@ payload:
 - DOMAIN,img4.airdroid.com
 - DOMAIN,img6.airdroid.com
 - DOMAIN,imgcdn.cna.com.tw
-- DOMAIN-SUFFIX,ipfs.ecolatam.com
 - DOMAIN,js.chilipiper.com
 - DOMAIN,js.convertflow.co
 - DOMAIN,js1.chargebee.com
@@ -2987,6 +2987,7 @@ payload:
 - DOMAIN,media.breitbart.com
 - DOMAIN,media.crazyshit.com
 - DOMAIN,media.glassdoor.com
+- DOMAIN,media.karousell.com
 - DOMAIN,media.newyorker.com
 - DOMAIN,media.shopimind.com
 - DOMAIN-SUFFIX,media.strapiapp.com
