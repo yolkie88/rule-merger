@@ -1,5 +1,6 @@
 {
   "baseline": {
+    "approved_growth": [],
     "changes": {
       "categories/ai-cn-domain.json": {
         "baseline": 115,
@@ -530,28 +531,28 @@
         "ratio": 0.0
       },
       "categories/reject-domain.json": {
-        "baseline": 223514,
+        "baseline": 223700,
         "current": 223700,
-        "delta": 186,
-        "ratio": 0.0008321626385819232
+        "delta": 0,
+        "ratio": 0.0
       },
       "categories/reject-domain.mrs": {
-        "baseline": 223471,
+        "baseline": 223657,
         "current": 223700,
-        "delta": 229,
-        "ratio": 0.0010247414653355468
+        "delta": 43,
+        "ratio": 0.00019225868182082384
       },
       "categories/reject-domain.srs": {
-        "baseline": 223514,
+        "baseline": 223700,
         "current": 223700,
-        "delta": 186,
-        "ratio": 0.0008321626385819232
+        "delta": 0,
+        "ratio": 0.0
       },
       "categories/reject-domain.yaml": {
-        "baseline": 223514,
+        "baseline": 223700,
         "current": 223700,
-        "delta": 186,
-        "ratio": 0.0008321626385819232
+        "delta": 0,
+        "ratio": 0.0
       },
       "categories/reject-ip.json": {
         "baseline": 763,
@@ -794,28 +795,28 @@
         "ratio": 0.0
       },
       "profiles/default/reject-domain.json": {
-        "baseline": 223514,
+        "baseline": 223700,
         "current": 223700,
-        "delta": 186,
-        "ratio": 0.0008321626385819232
+        "delta": 0,
+        "ratio": 0.0
       },
       "profiles/default/reject-domain.mrs": {
-        "baseline": 223471,
+        "baseline": 223657,
         "current": 223700,
-        "delta": 229,
-        "ratio": 0.0010247414653355468
+        "delta": 43,
+        "ratio": 0.00019225868182082384
       },
       "profiles/default/reject-domain.srs": {
-        "baseline": 223514,
+        "baseline": 223700,
         "current": 223700,
-        "delta": 186,
-        "ratio": 0.0008321626385819232
+        "delta": 0,
+        "ratio": 0.0
       },
       "profiles/default/reject-domain.yaml": {
-        "baseline": 223514,
+        "baseline": 223700,
         "current": 223700,
-        "delta": 186,
-        "ratio": 0.0008321626385819232
+        "delta": 0,
+        "ratio": 0.0
       },
       "profiles/default/reject-ip.json": {
         "baseline": 763,
