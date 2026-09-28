@@ -19,6 +19,7 @@
 | `microsoft@cn.yaml` | `DOMAIN,edge.microsoft.com` | Microsoft Edge | [Microsoft Edge enterprise documentation](https://learn.microsoft.com/en-us/deployedge/) | 官方域名 |
 | `ai-general.yaml` | `DOMAIN-SUFFIX,copilot.com` | Microsoft Copilot | [Microsoft Copilot network requirements](https://learn.microsoft.com/en-us/copilot/manage) | 官方端点 |
 | `ai-general.yaml` | `DOMAIN-SUFFIX,copilot.microsoft.com` | Microsoft Copilot | [Microsoft Copilot network requirements](https://learn.microsoft.com/en-us/copilot/manage) | 官方端点 |
+| `ai-general.yaml` | `DOMAIN-SUFFIX,meta.ai` | Meta AI | [Meta AI official announcement](https://about.fb.com/news/2026/04/introducing-muse-spark-meta-superintelligence-labs/)（核对：2026-09-28） | 官方域名 |
 | `ai-general.yaml` | `DOMAIN-SUFFIX,muse.ai` | Meta Muse personal AI agent | [Meta Muse announcement](https://about.fb.com/news/2026/09/introducing-muse-personal-ai-agent/)（核对：2026-09-28） | 官方域名 |
 | `ai-coding.yaml` | `DOMAIN-SUFFIX,pi.dev` | Pi coding agent | [Pi](https://pi.dev/) | 官方域名 |
 | `ai-coding.yaml` | `DOMAIN-SUFFIX,ampcode.com` | Amp | [Amp](https://ampcode.com/) | 官方域名 |

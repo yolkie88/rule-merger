@@ -171,28 +171,28 @@
         "ratio": 0.0
       },
       "categories/cdn-domain.json": {
-        "baseline": 4758,
+        "baseline": 4759,
         "current": 4759,
-        "delta": 1,
-        "ratio": 0.0002101723413198823
+        "delta": 0,
+        "ratio": 0.0
       },
       "categories/cdn-domain.mrs": {
-        "baseline": 4680,
+        "baseline": 4681,
         "current": 4759,
-        "delta": 79,
-        "ratio": 0.01688034188034188
+        "delta": 78,
+        "ratio": 0.01666310617389447
       },
       "categories/cdn-domain.srs": {
-        "baseline": 4758,
+        "baseline": 4759,
         "current": 4759,
-        "delta": 1,
-        "ratio": 0.0002101723413198823
+        "delta": 0,
+        "ratio": 0.0
       },
       "categories/cdn-domain.yaml": {
-        "baseline": 4758,
+        "baseline": 4759,
         "current": 4759,
-        "delta": 1,
-        "ratio": 0.0002101723413198823
+        "delta": 0,
+        "ratio": 0.0
       },
       "categories/cdn-ip.json": {
         "baseline": 3,
@@ -865,7 +865,7 @@
       }
     },
     "ai-domain": {
-      "duplicates": 107,
+      "duplicates": 108,
       "family": "domain",
       "rules": 219,
       "sources": {
@@ -873,7 +873,7 @@
         "DustinWin_ai": 189,
         "local_ai_coding": 30,
         "local_ai_gateway": 5,
-        "local_ai_general": 3,
+        "local_ai_general": 4,
         "skk_ai": 50
       }
     },
@@ -106546,15 +106546,15 @@
     "local_ai_general": {
       "attempts": 1,
       "behavior": "classical",
-      "bytes": 105,
+      "bytes": 131,
       "etag": null,
       "format": "yaml",
       "last_modified": null,
       "path": "local/ai-general.yaml",
       "redistributable": true,
       "required": true,
-      "rules": 3,
-      "sha256": "a7ed2c7b0857001e24c6550e797fb3c706aef20db0da2fa0ebb33e75e267ee42",
+      "rules": 4,
+      "sha256": "1de7265d66b209ee338a0ded985664910ec7429cb9de0352c3ad2e833a2998ba",
       "status": "ok",
       "type": "file",
       "url": null
