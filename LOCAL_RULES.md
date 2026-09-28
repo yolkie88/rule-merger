@@ -1,11 +1,12 @@
 # Local rule provenance
 
-本文件逐项记录 `local/*.yaml` 中人工维护规则的用途和依据，核对日期为 2026-08-12。
+本文件逐项记录 `local/*.yaml` 中人工维护规则的用途和依据，初始核对日期为 2026-08-12；后续条目的核对日期见各行。
 
 依据强度分为：
 
 - `官方端点`：官方网络、接入或 API 文档明确给出该主机。
 - `官方域名`：产品官网或官方文档使用同一注册域名；`DOMAIN-SUFFIX` 是本项目为覆盖产品子域作出的策略选择。
+- `官方代码`：官方公开前端代码明确引用该主机；不代表已验证所有用户流程都会使用。
 - `运行观察`：客户端实际使用或历史规则观察，尚无公开官方端点清单；此类规则需要在产品网络行为变化时优先复核。
 - `维护者例外`：本 fork 所有者明确指定的本地策略，不主张为公共产品端点。
 
@@ -21,6 +22,10 @@
 | `ai-general.yaml` | `DOMAIN-SUFFIX,copilot.microsoft.com` | Microsoft Copilot | [Microsoft Copilot network requirements](https://learn.microsoft.com/en-us/copilot/manage) | 官方端点 |
 | `ai-general.yaml` | `DOMAIN-SUFFIX,meta.ai` | Meta AI | [Meta AI official announcement](https://about.fb.com/news/2026/04/introducing-muse-spark-meta-superintelligence-labs/)（核对：2026-09-28） | 官方域名 |
 | `ai-general.yaml` | `DOMAIN-SUFFIX,muse.ai` | Meta Muse personal AI agent | [Meta Muse announcement](https://about.fb.com/news/2026/09/introducing-muse-personal-ai-agent/)（核对：2026-09-28） | 官方域名 |
+| `ai-general.yaml` | `DOMAIN,auth.meta.com` | Meta account OIDC（共享登录主机） | [Muse authentication code](https://muse.ai/_next/static/chunks/18sj5t_gn8_oc.js)（核对：2026-09-28） | 官方代码 |
+| `ai-general.yaml` | `DOMAIN,production.museai.com` | Muse SSO 允许的生产站点别名（实际使用未验证） | [Muse SSO host code](https://muse.ai/_next/static/chunks/1hn21hzv_3twd.js)（核对：2026-09-28） | 官方代码 |
+| `ai-general.yaml` | `DOMAIN,meta-ohttp-config-prod.fastly-edge.com` | Muse 前端列出的 OHTTP 配置地址（实际使用未验证） | [Muse OHTTP code](https://muse.ai/_next/static/chunks/3cw38b7jaka0l.js)（核对：2026-09-28） | 官方代码 |
+| `ai-general.yaml` | `DOMAIN,meta-ohttp-relay-prod.fastly-edge.com` | Muse 前端列出的 OHTTP relay 地址（实际使用未验证） | [Muse OHTTP code](https://muse.ai/_next/static/chunks/3cw38b7jaka0l.js)（核对：2026-09-28） | 官方代码 |
 | `ai-coding.yaml` | `DOMAIN-SUFFIX,pi.dev` | Pi coding agent | [Pi](https://pi.dev/) | 官方域名 |
 | `ai-coding.yaml` | `DOMAIN-SUFFIX,ampcode.com` | Amp | [Amp](https://ampcode.com/) | 官方域名 |
 | `ai-coding.yaml` | `DOMAIN-SUFFIX,ampworkers.com` | Amp worker service | [Amp manual](https://ampcode.com/manual) | 运行观察 |
