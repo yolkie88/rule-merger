@@ -52,27 +52,27 @@
       },
       "categories/ai-domain.json": {
         "baseline": 219,
-        "current": 219,
-        "delta": 0,
-        "ratio": 0.0
+        "current": 223,
+        "delta": 4,
+        "ratio": 0.0182648401826484
       },
       "categories/ai-domain.mrs": {
         "baseline": 215,
-        "current": 219,
-        "delta": 4,
-        "ratio": 0.018604651162790697
+        "current": 223,
+        "delta": 8,
+        "ratio": 0.037209302325581395
       },
       "categories/ai-domain.srs": {
         "baseline": 219,
-        "current": 219,
-        "delta": 0,
-        "ratio": 0.0
+        "current": 223,
+        "delta": 4,
+        "ratio": 0.0182648401826484
       },
       "categories/ai-domain.yaml": {
         "baseline": 219,
-        "current": 219,
-        "delta": 0,
-        "ratio": 0.0
+        "current": 223,
+        "delta": 4,
+        "ratio": 0.0182648401826484
       },
       "categories/ai-gateway-domain.json": {
         "baseline": 5,
@@ -748,27 +748,27 @@
       },
       "profiles/default/proxy-domain.json": {
         "baseline": 5602,
-        "current": 5602,
-        "delta": 0,
-        "ratio": 0.0
+        "current": 5606,
+        "delta": 4,
+        "ratio": 0.0007140307033202428
       },
       "profiles/default/proxy-domain.mrs": {
         "baseline": 5561,
-        "current": 5602,
-        "delta": 41,
-        "ratio": 0.007372774680812803
+        "current": 5606,
+        "delta": 45,
+        "ratio": 0.008092069771623809
       },
       "profiles/default/proxy-domain.srs": {
         "baseline": 5602,
-        "current": 5602,
-        "delta": 0,
-        "ratio": 0.0
+        "current": 5606,
+        "delta": 4,
+        "ratio": 0.0007140307033202428
       },
       "profiles/default/proxy-domain.yaml": {
         "baseline": 5602,
-        "current": 5602,
-        "delta": 0,
-        "ratio": 0.0
+        "current": 5606,
+        "delta": 4,
+        "ratio": 0.0007140307033202428
       },
       "profiles/default/proxy-ip.json": {
         "baseline": 33,
@@ -867,13 +867,13 @@
     "ai-domain": {
       "duplicates": 108,
       "family": "domain",
-      "rules": 219,
+      "rules": 223,
       "sources": {
         "ACL4SSR_ai": 49,
         "DustinWin_ai": 189,
         "local_ai_coding": 30,
         "local_ai_gateway": 5,
-        "local_ai_general": 4,
+        "local_ai_general": 8,
         "skk_ai": 50
       }
     },
@@ -2592,6 +2592,14 @@
           },
           {
             "authorized": false,
+            "left": "ai-domain",
+            "other": "domain_suffix:meta.com",
+            "relation": "parent-child",
+            "right": "gfw-domain",
+            "rule": "domain:auth.meta.com"
+          },
+          {
+            "authorized": false,
             "left": "gfw-domain",
             "other": "domain_suffix:oaiusercontent.com",
             "relation": "parent-child",
@@ -2615,7 +2623,7 @@
             "rule": "domain_suffix:backend-v2.crixet.com"
           }
         ],
-        "total": 78
+        "total": 79
       },
       "ai-domain:global-domain": {
         "items": [
@@ -2754,9 +2762,33 @@
             "relation": "parent-child",
             "right": "global-domain",
             "rule": "domain:api.githubcopilot.com"
+          },
+          {
+            "authorized": false,
+            "left": "ai-domain",
+            "other": "domain_suffix:meta.com",
+            "relation": "parent-child",
+            "right": "global-domain",
+            "rule": "domain:auth.meta.com"
+          },
+          {
+            "authorized": false,
+            "left": "ai-domain",
+            "other": "domain_suffix:fastly-edge.com",
+            "relation": "parent-child",
+            "right": "global-domain",
+            "rule": "domain:meta-ohttp-config-prod.fastly-edge.com"
+          },
+          {
+            "authorized": false,
+            "left": "ai-domain",
+            "other": "domain_suffix:fastly-edge.com",
+            "relation": "parent-child",
+            "right": "global-domain",
+            "rule": "domain:meta-ohttp-relay-prod.fastly-edge.com"
           }
         ],
-        "total": 17
+        "total": 20
       },
       "ai-gateway-domain:ai-domain": {
         "items": [
@@ -105270,7 +105302,7 @@
             "rule": "domain_suffix:nicovideo.jp"
           }
         ],
-        "total": 728
+        "total": 732
       },
       "proxy-ip": {
         "items": [],
@@ -105344,35 +105376,35 @@
       "sha256": "4989eb276fd88ae93108f908fef742cac555611a1b7dfa47478bf0da4abc0f9d"
     },
     "categories/ai-domain.json": {
-      "bytes": 6311,
+      "bytes": 6468,
       "family": "domain",
       "format": "json",
-      "rules": 219,
-      "sha256": "a3a3677f8d1070c751f645b04f2697b9c872f945acd254949f64e3daffac35ec"
+      "rules": 223,
+      "sha256": "e642fba7a7ff6c7d3c9445533b25af4a1b5865269441b13ea9d7037e5a89418f"
     },
     "categories/ai-domain.mrs": {
-      "bytes": 2107,
+      "bytes": 2160,
       "family": "domain",
       "format": "mrs",
       "omitted_kinds": [
         "domain_keyword"
       ],
-      "rules": 215,
-      "sha256": "f9b37963d22293e408dd2a52d67a3c37ec71741b1b46575fdf80ccbea6bc5e54"
+      "rules": 219,
+      "sha256": "ae572b38359a6540701080312f24ae6bae2515f3bd206fe07a63709c87ec6679"
     },
     "categories/ai-domain.srs": {
-      "bytes": 2142,
+      "bytes": 2213,
       "family": "domain",
       "format": "srs",
-      "rules": 219,
-      "sha256": "cb05cbec6958049f2ef477973cab1ca2338e3e8e32d053262f3adf3367ebb3ee"
+      "rules": 223,
+      "sha256": "87ac85da36d22e68d9dd9fffef14c2c6bf0f3334f677e683ed3a559e669da64c"
     },
     "categories/ai-domain.yaml": {
-      "bytes": 6960,
+      "bytes": 7109,
       "family": "domain",
       "format": "yaml",
-      "rules": 219,
-      "sha256": "e4f63ec4fdc13a6e90e61d6226e6d8ce3e2498f6b98b0195befdd49a22f30e6c"
+      "rules": 223,
+      "sha256": "fe76cc51f26d1f14b3df6c16bdf3add1a51c6205bbafd6e5243e2db3a8e3ea9f"
     },
     "categories/ai-gateway-domain.json": {
       "bytes": 262,
@@ -106204,36 +106236,36 @@
       "sha256": "d61658ef25844f3c76624cace2834649ce55fb0af07967c351f5e36b3f47600e"
     },
     "profiles/default/proxy-domain.json": {
-      "bytes": 137465,
+      "bytes": 137622,
       "family": "domain",
       "format": "json",
-      "rules": 5602,
-      "sha256": "ec292cb02c1f4ef9fc89369a11713f4ba2534b3228c8da8f86f3d3530d05dd82"
+      "rules": 5606,
+      "sha256": "3cd9ceb0c04c5d93c871754c31a2db12f699fbac0d064aa400b452037cfa4ae4"
     },
     "profiles/default/proxy-domain.mrs": {
-      "bytes": 42793,
+      "bytes": 42660,
       "family": "domain",
       "format": "mrs",
       "omitted_kinds": [
         "domain_keyword",
         "process_name"
       ],
-      "rules": 5561,
-      "sha256": "206cc191dcdbf9ac43c77dbb0727243a1191522b20e4493caba128414877c397"
+      "rules": 5565,
+      "sha256": "89c2eee7828bc8de670d11b4bbe009a06a4a8c423637a804daafeaa2122d18d2"
     },
     "profiles/default/proxy-domain.srs": {
-      "bytes": 35872,
+      "bytes": 35940,
       "family": "domain",
       "format": "srs",
-      "rules": 5602,
-      "sha256": "3b9be10760bc606855737a2cd211d379826d8b74e78e62ec9fe5c53be92364be"
+      "rules": 5606,
+      "sha256": "5042953c7ba7fea1f8bb370277a5085de52cd474bc876cb091481f2b59941338"
     },
     "profiles/default/proxy-domain.yaml": {
-      "bytes": 164483,
+      "bytes": 164632,
       "family": "domain",
       "format": "yaml",
-      "rules": 5602,
-      "sha256": "6308a5cf0b2a7cf62c936be9932c7783e7ff8a8fbdfa2c3e8bccaff4be9e59c9"
+      "rules": 5606,
+      "sha256": "cad00a4d5b99eff147a501fc74b3a9818b128f9b5a28d0a4186802a1c2be60bc"
     },
     "profiles/default/proxy-ip.json": {
       "bytes": 963,
@@ -106546,15 +106578,15 @@
     "local_ai_general": {
       "attempts": 1,
       "behavior": "classical",
-      "bytes": 131,
+      "bytes": 288,
       "etag": null,
       "format": "yaml",
       "last_modified": null,
       "path": "local/ai-general.yaml",
       "redistributable": true,
       "required": true,
-      "rules": 4,
-      "sha256": "1de7265d66b209ee338a0ded985664910ec7429cb9de0352c3ad2e833a2998ba",
+      "rules": 8,
+      "sha256": "b6656d546d1f92fbea39fe33e720b46f03bae992fac19a3519f6a64172c25783",
       "status": "ok",
       "type": "file",
       "url": null

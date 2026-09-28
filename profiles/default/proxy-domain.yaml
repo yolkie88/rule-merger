@@ -208,6 +208,10 @@ payload:
 - DOMAIN,generativelanguage.googleapis.com
 - DOMAIN,notebooklm.google.com
 - DOMAIN-SUFFIX,muse.ai
+- DOMAIN,auth.meta.com
+- DOMAIN,production.museai.com
+- DOMAIN,meta-ohttp-config-prod.fastly-edge.com
+- DOMAIN,meta-ohttp-relay-prod.fastly-edge.com
 - DOMAIN-SUFFIX,pi.dev
 - DOMAIN-SUFFIX,ampcode.com
 - DOMAIN-SUFFIX,ampworkers.com
