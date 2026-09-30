@@ -3918,6 +3918,7 @@ payload:
 - DOMAIN,imagecdn.clips4sale.com
 - DOMAIN,imagizer.imageshack.com
 - DOMAIN,img.api.tryprofound.com
+- DOMAIN,img.helpnetsecurity.com
 - DOMAIN,img0.socialshopwave.com
 - DOMAIN,img1.ak.crunchyroll.com
 - DOMAIN,img1.socialshopwave.com
@@ -4086,6 +4087,7 @@ payload:
 - DOMAIN,images.indianexpress.com
 - DOMAIN,images.purevpn-tools.com
 - DOMAIN,images.spectrumnews1.com
+- DOMAIN,img2.helpnetsecurity.com
 - DOMAIN,integrations.gitbook.com
 - DOMAIN-SUFFIX,ipfs0.sjc.cloudsigma.com
 - DOMAIN,keyframe-cdn.abcnews.com

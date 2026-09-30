@@ -850,6 +850,7 @@ payload:
 - DOMAIN-SUFFIX,dl.pinyuncloud.com
 - DOMAIN-SUFFIX,heytapdownload.com
 - DOMAIN-SUFFIX,samsungcloudcn.com
+- DOMAIN,time.xtracloud.net
 - DOMAIN-SUFFIX,alibabachengdun.com
 - DOMAIN-SUFFIX,anticheatexpert.com
 - DOMAIN,assets1.xboxlive.cn
@@ -882,7 +883,6 @@ payload:
 - DOMAIN,origin-a.akamaihd.ne
 - DOMAIN,sms.imagetasks.com
 - DOMAIN,time.izatcloud.net
-- DOMAIN,time.xtracloud.net
 - DOMAIN,weixin.com
 - DOMAIN,www.yxssp.com
 - DOMAIN,xtratime.qcomgeo2.com
