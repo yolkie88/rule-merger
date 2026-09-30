@@ -57,6 +57,8 @@ payload:
 - DOMAIN,copilot-proxy.githubusercontent.com
 - DOMAIN,copilot-workspace.githubnext.com
 - DOMAIN,copilotprodattachments.blob.core.windows.net
+- DOMAIN,geminiweb-pa.clients.google.com
+- DOMAIN,geminiweb-pa.clients6.google.com
 - DOMAIN,notebooklm-pa.googleapis.com
 - DOMAIN,notebooklm.googleapis.com
 - DOMAIN,openaiassets.blob.core.windows.net
@@ -150,6 +152,7 @@ payload:
 - DOMAIN-SUFFIX,kiro.dev
 - DOMAIN-SUFFIX,labs.google
 - DOMAIN-SUFFIX,labs.google.com
+- DOMAIN-SUFFIX,labstailwind.pa.googleapis.com
 - DOMAIN-SUFFIX,langchain.com
 - DOMAIN-SUFFIX,liveperson.net
 - DOMAIN-SUFFIX,lmstudio.ai
@@ -158,11 +161,13 @@ payload:
 - DOMAIN-SUFFIX,manus.im
 - DOMAIN-SUFFIX,manuscdn.com
 - DOMAIN-SUFFIX,marscode.com
+- DOMAIN-SUFFIX,metaaivm.com
 - DOMAIN-SUFFIX,midjourney.com
 - DOMAIN-SUFFIX,minimax.io
 - DOMAIN-SUFFIX,mistral.ai
 - DOMAIN-SUFFIX,moonshot.ai
 - DOMAIN-SUFFIX,mozilla.ai
+- DOMAIN-SUFFIX,muse.ai
 - DOMAIN-SUFFIX,notebook.google
 - DOMAIN-SUFFIX,notebook.google.com
 - DOMAIN-SUFFIX,notegpt.io
@@ -176,6 +181,7 @@ payload:
 - DOMAIN-SUFFIX,openai.com.cdn.cloudflare.net
 - DOMAIN-SUFFIX,openaiapi-site.azureedge.net
 - DOMAIN-SUFFIX,openclaw.ai
+- DOMAIN-SUFFIX,opencode.ai
 - DOMAIN-SUFFIX,openrouter.ai
 - DOMAIN-SUFFIX,openspec.dev
 - DOMAIN-SUFFIX,oystermercury.top
@@ -207,7 +213,6 @@ payload:
 - DOMAIN,gemini.google.com
 - DOMAIN,generativelanguage.googleapis.com
 - DOMAIN,notebooklm.google.com
-- DOMAIN-SUFFIX,muse.ai
 - DOMAIN,auth.meta.com
 - DOMAIN,production.museai.com
 - DOMAIN,meta-ohttp-config-prod.fastly-edge.com
@@ -215,7 +220,6 @@ payload:
 - DOMAIN-SUFFIX,pi.dev
 - DOMAIN-SUFFIX,ampcode.com
 - DOMAIN-SUFFIX,ampworkers.com
-- DOMAIN-SUFFIX,opencode.ai
 - DOMAIN-SUFFIX,cline.bot
 - DOMAIN-SUFFIX,vercel.ai
 - DOMAIN-SUFFIX,ai-gateway.vercel.sh
