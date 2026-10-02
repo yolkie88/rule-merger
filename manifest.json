@@ -243,28 +243,28 @@
         "ratio": 0.0
       },
       "categories/cn-ip.json": {
-        "baseline": 12007,
-        "current": 11992,
-        "delta": -15,
-        "ratio": -0.001249271258432581
+        "baseline": 11992,
+        "current": 11996,
+        "delta": 4,
+        "ratio": 0.000333555703802535
       },
       "categories/cn-ip.mrs": {
-        "baseline": 12007,
-        "current": 11992,
-        "delta": -15,
-        "ratio": -0.001249271258432581
+        "baseline": 11992,
+        "current": 11996,
+        "delta": 4,
+        "ratio": 0.000333555703802535
       },
       "categories/cn-ip.srs": {
-        "baseline": 12007,
-        "current": 11992,
-        "delta": -15,
-        "ratio": -0.001249271258432581
+        "baseline": 11992,
+        "current": 11996,
+        "delta": 4,
+        "ratio": 0.000333555703802535
       },
       "categories/cn-ip.yaml": {
-        "baseline": 12007,
-        "current": 11992,
-        "delta": -15,
-        "ratio": -0.001249271258432581
+        "baseline": 11992,
+        "current": 11996,
+        "delta": 4,
+        "ratio": 0.000333555703802535
       },
       "categories/direct-domain.json": {
         "baseline": 218,
@@ -339,28 +339,28 @@
         "ratio": 0.0
       },
       "categories/gfw-domain.json": {
-        "baseline": 4372,
+        "baseline": 4373,
         "current": 4373,
-        "delta": 1,
-        "ratio": 0.00022872827081427266
+        "delta": 0,
+        "ratio": 0.0
       },
       "categories/gfw-domain.mrs": {
-        "baseline": 4372,
+        "baseline": 4373,
         "current": 4373,
-        "delta": 1,
-        "ratio": 0.00022872827081427266
+        "delta": 0,
+        "ratio": 0.0
       },
       "categories/gfw-domain.srs": {
-        "baseline": 4372,
+        "baseline": 4373,
         "current": 4373,
-        "delta": 1,
-        "ratio": 0.00022872827081427266
+        "delta": 0,
+        "ratio": 0.0
       },
       "categories/gfw-domain.yaml": {
-        "baseline": 4372,
+        "baseline": 4373,
         "current": 4373,
-        "delta": 1,
-        "ratio": 0.00022872827081427266
+        "delta": 0,
+        "ratio": 0.0
       },
       "categories/global-domain.json": {
         "baseline": 1270,
@@ -531,28 +531,28 @@
         "ratio": 0.0
       },
       "categories/reject-domain.json": {
-        "baseline": 222843,
-        "current": 223019,
-        "delta": 176,
-        "ratio": 0.000789793711267574
+        "baseline": 223019,
+        "current": 223163,
+        "delta": 144,
+        "ratio": 0.0006456848968025146
       },
       "categories/reject-domain.mrs": {
-        "baseline": 222800,
-        "current": 223019,
-        "delta": 219,
-        "ratio": 0.0009829443447037702
+        "baseline": 222976,
+        "current": 223163,
+        "delta": 187,
+        "ratio": 0.0008386552812858783
       },
       "categories/reject-domain.srs": {
-        "baseline": 222843,
-        "current": 223019,
-        "delta": 176,
-        "ratio": 0.000789793711267574
+        "baseline": 223019,
+        "current": 223163,
+        "delta": 144,
+        "ratio": 0.0006456848968025146
       },
       "categories/reject-domain.yaml": {
-        "baseline": 222843,
-        "current": 223019,
-        "delta": 176,
-        "ratio": 0.000789793711267574
+        "baseline": 223019,
+        "current": 223163,
+        "delta": 144,
+        "ratio": 0.0006456848968025146
       },
       "categories/reject-ip.json": {
         "baseline": 763,
@@ -723,52 +723,52 @@
         "ratio": 0.0
       },
       "profiles/default/direct-ip.json": {
-        "baseline": 12025,
-        "current": 12010,
-        "delta": -15,
-        "ratio": -0.0012474012474012475
+        "baseline": 12010,
+        "current": 12014,
+        "delta": 4,
+        "ratio": 0.00033305578684429644
       },
       "profiles/default/direct-ip.mrs": {
-        "baseline": 12025,
-        "current": 12010,
-        "delta": -15,
-        "ratio": -0.0012474012474012475
+        "baseline": 12010,
+        "current": 12014,
+        "delta": 4,
+        "ratio": 0.00033305578684429644
       },
       "profiles/default/direct-ip.srs": {
-        "baseline": 12025,
-        "current": 12010,
-        "delta": -15,
-        "ratio": -0.0012474012474012475
+        "baseline": 12010,
+        "current": 12014,
+        "delta": 4,
+        "ratio": 0.00033305578684429644
       },
       "profiles/default/direct-ip.yaml": {
-        "baseline": 12025,
-        "current": 12010,
-        "delta": -15,
-        "ratio": -0.0012474012474012475
+        "baseline": 12010,
+        "current": 12014,
+        "delta": 4,
+        "ratio": 0.00033305578684429644
       },
       "profiles/default/proxy-domain.json": {
-        "baseline": 5612,
+        "baseline": 5613,
         "current": 5613,
-        "delta": 1,
-        "ratio": 0.0001781895937277263
+        "delta": 0,
+        "ratio": 0.0
       },
       "profiles/default/proxy-domain.mrs": {
-        "baseline": 5571,
+        "baseline": 5572,
         "current": 5613,
-        "delta": 42,
-        "ratio": 0.007539041464728056
+        "delta": 41,
+        "ratio": 0.007358219669777458
       },
       "profiles/default/proxy-domain.srs": {
-        "baseline": 5612,
+        "baseline": 5613,
         "current": 5613,
-        "delta": 1,
-        "ratio": 0.0001781895937277263
+        "delta": 0,
+        "ratio": 0.0
       },
       "profiles/default/proxy-domain.yaml": {
-        "baseline": 5612,
+        "baseline": 5613,
         "current": 5613,
-        "delta": 1,
-        "ratio": 0.0001781895937277263
+        "delta": 0,
+        "ratio": 0.0
       },
       "profiles/default/proxy-ip.json": {
         "baseline": 33,
@@ -795,28 +795,28 @@
         "ratio": 0.0
       },
       "profiles/default/reject-domain.json": {
-        "baseline": 222843,
-        "current": 223019,
-        "delta": 176,
-        "ratio": 0.000789793711267574
+        "baseline": 223019,
+        "current": 223163,
+        "delta": 144,
+        "ratio": 0.0006456848968025146
       },
       "profiles/default/reject-domain.mrs": {
-        "baseline": 222800,
-        "current": 223019,
-        "delta": 219,
-        "ratio": 0.0009829443447037702
+        "baseline": 222976,
+        "current": 223163,
+        "delta": 187,
+        "ratio": 0.0008386552812858783
       },
       "profiles/default/reject-domain.srs": {
-        "baseline": 222843,
-        "current": 223019,
-        "delta": 176,
-        "ratio": 0.000789793711267574
+        "baseline": 223019,
+        "current": 223163,
+        "delta": 144,
+        "ratio": 0.0006456848968025146
       },
       "profiles/default/reject-domain.yaml": {
-        "baseline": 222843,
-        "current": 223019,
-        "delta": 176,
-        "ratio": 0.000789793711267574
+        "baseline": 223019,
+        "current": 223163,
+        "delta": 144,
+        "ratio": 0.0006456848968025146
       },
       "profiles/default/reject-ip.json": {
         "baseline": 763,
@@ -942,13 +942,13 @@
       }
     },
     "cn-ip": {
-      "duplicates": 5000,
+      "duplicates": 4999,
       "family": "ipcidr",
-      "rules": 11992,
+      "rules": 11996,
       "sources": {
         "geoip_cn": 9648,
-        "skk_china_ip": 3900,
-        "skk_china_ipv6": 3442,
+        "skk_china_ip": 3902,
+        "skk_china_ipv6": 3443,
         "skk_domestic_ip": 2
       }
     },
@@ -1046,9 +1046,9 @@
     "reject-domain": {
       "duplicates": 0,
       "family": "domain",
-      "rules": 223019,
+      "rules": 223163,
       "sources": {
-        "xndeye_reject": 223019
+        "xndeye_reject": 223163
       }
     },
     "reject-ip": {
@@ -105705,32 +105705,32 @@
       "sha256": "f693579f30e74cf82754221ec12e38f2bb74a6fc1787dc59d69bf5408f710545"
     },
     "categories/cn-ip.json": {
-      "bytes": 322668,
+      "bytes": 322778,
       "family": "ipcidr",
       "format": "json",
-      "rules": 11992,
-      "sha256": "42e28793ef277e1a29db6805ad9444e8caae6824b7d61d272f791c18497319cb"
+      "rules": 11996,
+      "sha256": "aca00f6575b3a771c8ad27acb4edb90df38648ea856bdffb4da70b4e329f6ea1"
     },
     "categories/cn-ip.mrs": {
-      "bytes": 38098,
+      "bytes": 38079,
       "family": "ipcidr",
       "format": "mrs",
-      "rules": 11992,
-      "sha256": "b70f432d68d4e7aed89069530fd2a0ae7cea37bf90d702d0ba1dfc0bff662e14"
+      "rules": 11996,
+      "sha256": "ca7738d63cb1f3b9e3d869d47b6d66456256cb96f272052d9b0f984a94125049"
     },
     "categories/cn-ip.srs": {
       "bytes": 36887,
       "family": "ipcidr",
       "format": "srs",
-      "rules": 11992,
-      "sha256": "557e43c4f9d2292a92f3f3deed1104d6b1615a4fd392b7bbbc145f5f8ed669ce"
+      "rules": 11996,
+      "sha256": "1bd0392f55aba6c944f82e0bc9816790d521e0bfe3dfa5491dea787be5317d0a"
     },
     "categories/cn-ip.yaml": {
-      "bytes": 314052,
+      "bytes": 314159,
       "family": "ipcidr",
       "format": "yaml",
-      "rules": 11992,
-      "sha256": "c0a312592d65889c9f1dabc391e34b60ee790bb65ffd1bc9f754de1459e3607e"
+      "rules": 11996,
+      "sha256": "ead63a042b60e7163f2bbfe425c5486796c7f851e5665058a86be02c4321cde4"
     },
     "categories/direct-domain.json": {
       "bytes": 5493,
@@ -106051,35 +106051,35 @@
       "sha256": "7288399539bf80805d613a5191068f76ced906ea6445c99aaf5d7404901a1293"
     },
     "categories/reject-domain.json": {
-      "bytes": 7125769,
+      "bytes": 7130110,
       "family": "domain",
       "format": "json",
-      "rules": 223019,
-      "sha256": "5fa82fb7f0bf69587cb8bdb592f6abc4c8314d266ee510b709e88225d0475d4b"
+      "rules": 223163,
+      "sha256": "3be7beab3dac97dce5fd17b8fdbbcf9e9c01e9f13a8b55cff852e1eadc404d0b"
     },
     "categories/reject-domain.mrs": {
-      "bytes": 2055147,
+      "bytes": 2055717,
       "family": "domain",
       "format": "mrs",
       "omitted_kinds": [
         "domain_regex"
       ],
-      "rules": 222976,
-      "sha256": "5efd14cfe9ae610a090c98d4dec37fa943b99245c5e5b038bc1abecfb9486bfa"
+      "rules": 223120,
+      "sha256": "b7b605fb639dd9fce1b6dcd39ed79cefdd8708d18e3cbaa4883e8d2c6c914898"
     },
     "categories/reject-domain.srs": {
-      "bytes": 1863629,
+      "bytes": 1864533,
       "family": "domain",
       "format": "srs",
-      "rules": 223019,
-      "sha256": "0a877f1d687adc7107156f0ec3c82eceb3f296907e91c0d25f136f3eef6f1826"
+      "rules": 223163,
+      "sha256": "49aedcf6d02a781bf51dc41c905798b223749d78546473e2b218dc75432a1d34"
     },
     "categories/reject-domain.yaml": {
-      "bytes": 8240472,
+      "bytes": 8245533,
       "family": "domain",
       "format": "yaml",
-      "rules": 223019,
-      "sha256": "d529a6af9421caec23791636e6b645320557a9bf9a9f9d3d290632df8943ec66"
+      "rules": 223163,
+      "sha256": "38b60ab629315cf4e93c7c90ee3f8ee5dc8d77fe9f703bf216cd644719ee7e2f"
     },
     "categories/reject-ip.json": {
       "bytes": 21673,
@@ -106296,32 +106296,32 @@
       "sha256": "28d5376dbe4d58b3f79dba064877fe388470630b5999174453f18d1688a6310f"
     },
     "profiles/default/direct-ip.json": {
-      "bytes": 323090,
+      "bytes": 323200,
       "family": "ipcidr",
       "format": "json",
-      "rules": 12010,
-      "sha256": "27ca0bcbecc0fc3be1a365f7f7a2c5a777b81b4a4af11f3488d942fe6e7566f4"
+      "rules": 12014,
+      "sha256": "b2b3b318cd6e6cffe8b28e6227772dcf554d6bc34370ad162bc0e0b44ea78403"
     },
     "profiles/default/direct-ip.mrs": {
-      "bytes": 38435,
+      "bytes": 38411,
       "family": "ipcidr",
       "format": "mrs",
-      "rules": 12010,
-      "sha256": "717dda89b26e33ce31693f33a81a90ef01d84475bb9791b9e90a98a4d0b69a01"
+      "rules": 12014,
+      "sha256": "0a4ab5ef8c470fbfa37fdee8bf88ff0a5a852ae03925878073decfbd82172467"
     },
     "profiles/default/direct-ip.srs": {
       "bytes": 36988,
       "family": "ipcidr",
       "format": "srs",
-      "rules": 12010,
-      "sha256": "e26f7ae38ff7d6b5526c4484f26b665c4adc13f744ebdcb975553fb681ce2319"
+      "rules": 12014,
+      "sha256": "44cac39d4db8cf6623be9d7b70d9c48505b499636ad0e74347431b63ba6304d4"
     },
     "profiles/default/direct-ip.yaml": {
-      "bytes": 314460,
+      "bytes": 314567,
       "family": "ipcidr",
       "format": "yaml",
-      "rules": 12010,
-      "sha256": "cd802d1db761478ef85396a45dc87ed51681f31418984defa3f27b8278c6dbc8"
+      "rules": 12014,
+      "sha256": "51c31d6baa8ead99e0b600d1cc547160eb34dd8fee2975c41e207419b427ceac"
     },
     "profiles/default/proxy-domain.json": {
       "bytes": 137844,
@@ -106384,35 +106384,35 @@
       "sha256": "00e29a763a6d55b1cd3db9f8fcf8198383fc8137486fe516a6af081b0b7d26af"
     },
     "profiles/default/reject-domain.json": {
-      "bytes": 7125769,
+      "bytes": 7130110,
       "family": "domain",
       "format": "json",
-      "rules": 223019,
-      "sha256": "5fa82fb7f0bf69587cb8bdb592f6abc4c8314d266ee510b709e88225d0475d4b"
+      "rules": 223163,
+      "sha256": "3be7beab3dac97dce5fd17b8fdbbcf9e9c01e9f13a8b55cff852e1eadc404d0b"
     },
     "profiles/default/reject-domain.mrs": {
-      "bytes": 2055147,
+      "bytes": 2055717,
       "family": "domain",
       "format": "mrs",
       "omitted_kinds": [
         "domain_regex"
       ],
-      "rules": 222976,
-      "sha256": "5efd14cfe9ae610a090c98d4dec37fa943b99245c5e5b038bc1abecfb9486bfa"
+      "rules": 223120,
+      "sha256": "b7b605fb639dd9fce1b6dcd39ed79cefdd8708d18e3cbaa4883e8d2c6c914898"
     },
     "profiles/default/reject-domain.srs": {
-      "bytes": 1863629,
+      "bytes": 1864533,
       "family": "domain",
       "format": "srs",
-      "rules": 223019,
-      "sha256": "0a877f1d687adc7107156f0ec3c82eceb3f296907e91c0d25f136f3eef6f1826"
+      "rules": 223163,
+      "sha256": "49aedcf6d02a781bf51dc41c905798b223749d78546473e2b218dc75432a1d34"
     },
     "profiles/default/reject-domain.yaml": {
-      "bytes": 8240472,
+      "bytes": 8245533,
       "family": "domain",
       "format": "yaml",
-      "rules": 223019,
-      "sha256": "d529a6af9421caec23791636e6b645320557a9bf9a9f9d3d290632df8943ec66"
+      "rules": 223163,
+      "sha256": "38b60ab629315cf4e93c7c90ee3f8ee5dc8d77fe9f703bf216cd644719ee7e2f"
     },
     "profiles/default/reject-ip.json": {
       "bytes": 21673,
@@ -106890,15 +106890,15 @@
     "skk_china_ip": {
       "attempts": 1,
       "behavior": "ipcidr",
-      "bytes": 61144,
-      "etag": "W/\"877041f398af5d6ce7bae29eb2c8e452\"",
+      "bytes": 61178,
+      "etag": "W/\"a02fe90b0c257ef4e343b4294ca6f818\"",
       "format": "text",
       "last_modified": null,
       "path": null,
       "redistributable": true,
       "required": true,
-      "rules": 3900,
-      "sha256": "eddf583f4205eeb5b3a4d4f45f906de954a2420c3a6401fda574f2ff9e3fb42d",
+      "rules": 3902,
+      "sha256": "3a1dd8fa8b73f0a190ee92121385fad18b69b93cb5847df0ff1ebe2fc8b1644d",
       "status": "ok",
       "type": "http",
       "url": "https://ruleset.skk.moe/Clash/ip/china_ip.txt"
@@ -106906,15 +106906,15 @@
     "skk_china_ipv6": {
       "attempts": 1,
       "behavior": "ipcidr",
-      "bytes": 57836,
-      "etag": "W/\"b5b80df0f3d45a03cc57f92487983061\"",
+      "bytes": 57853,
+      "etag": "W/\"c8a550604ebe47015a79d9b569f3b330\"",
       "format": "text",
       "last_modified": null,
       "path": null,
       "redistributable": true,
       "required": true,
-      "rules": 3442,
-      "sha256": "304ceb3c8a5a6cc7a8bca0348263a6742157734d16bb1982f9979135adb70c01",
+      "rules": 3443,
+      "sha256": "054cc54c5df301b1d1ae198d76989ff31199fe2a4f64294f4bb8b50653824d60",
       "status": "ok",
       "type": "http",
       "url": "https://ruleset.skk.moe/Clash/ip/china_ip_ipv6.txt"
@@ -107146,15 +107146,15 @@
     "xndeye_reject": {
       "attempts": 1,
       "behavior": "domain",
-      "bytes": 6455929,
-      "etag": "W/\"9fb5668b582094b18839fa295250ae4d9ba89987bc3f61e69a185ace315d4a52\"",
+      "bytes": 6459837,
+      "etag": "W/\"1d8bfff831ea0ba9f838514f5789e139e8e9be793a7100e9abcf3547e77cbf41\"",
       "format": "yaml",
       "last_modified": null,
       "path": null,
       "redistributable": true,
       "required": true,
-      "rules": 223019,
-      "sha256": "3ca3f7ab187e748d54e624cc2137879d75ddcaa76565d8ca9cae9548a1eee3e3",
+      "rules": 223163,
+      "sha256": "146d1b46b1cee59b7996c8b472ce7f50c5916e036ec3c24f2e0964e8b47e57ea",
       "status": "ok",
       "type": "http",
       "url": "https://raw.githubusercontent.com/xndeye/adblock_list/refs/heads/release/clash.yaml"
