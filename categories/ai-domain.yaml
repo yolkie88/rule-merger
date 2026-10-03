@@ -2,6 +2,7 @@ payload:
 - DOMAIN-SUFFIX,g.ai
 - DOMAIN-SUFFIX,x.ai
 - DOMAIN-SUFFIX,ai.com
+- DOMAIN-SUFFIX,clau.de
 - DOMAIN-SUFFIX,dify.ai
 - DOMAIN-SUFFIX,meta.ai
 - DOMAIN-SUFFIX,poe.com
@@ -91,7 +92,6 @@ payload:
 - DOMAIN-SUFFIX,cici.com
 - DOMAIN-SUFFIX,ciciai.com
 - DOMAIN-SUFFIX,ciciaicdn.com
-- DOMAIN-SUFFIX,clau.de
 - DOMAIN-SUFFIX,claude.dev
 - DOMAIN-SUFFIX,claudemcpclient.com
 - DOMAIN-SUFFIX,claudemcpcontent.com
