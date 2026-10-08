@@ -1777,6 +1777,7 @@ payload:
 - DOMAIN,assets.toot.cafe
 - DOMAIN,assets.twitch.tv
 - DOMAIN,assets.upload.io
+- DOMAIN,assets.vanta.com
 - DOMAIN,assets.vogue.com
 - DOMAIN,assets.volvo.com
 - DOMAIN,assets.xmind.net
@@ -2348,6 +2349,7 @@ payload:
 - DOMAIN-SUFFIX,media.zestyio.com
 - DOMAIN-SUFFIX,mediadelivery.net
 - DOMAIN-SUFFIX,monitor.azure.com
+- DOMAIN,n.approveit.today
 - DOMAIN,netlify.apollo.io
 - DOMAIN-SUFFIX,notion-static.com
 - DOMAIN,ocsp.comodoca.com
@@ -4388,6 +4390,7 @@ payload:
 - DOMAIN,prego-cache.prod.sketch.com
 - DOMAIN,public-pages.cbinsights.com
 - DOMAIN,resources-live.sketch.cloud
+- DOMAIN,rum-ingest.us1.signalfx.com
 - DOMAIN,safebrowsing.googleapis.com
 - DOMAIN,sessions-bugsnag.docker.com
 - DOMAIN-SUFFIX,siteintercept.qualtrics.com
@@ -4397,6 +4400,7 @@ payload:
 - DOMAIN,static-mh.content.disney.io
 - DOMAIN,static-production.npmjs.com
 - DOMAIN,static-webfonts.myfonts.com
+- DOMAIN,static.acm.account.sony.com
 - DOMAIN,static.captcha-delivery.com
 - DOMAIN,sts.online.visualstudio.com
 - DOMAIN,tvdownloaddw-a.akamaihd.net
@@ -4762,3 +4766,4 @@ payload:
 - DOMAIN-WILDCARD,cdn*.porn87.com
 - DOMAIN-WILDCARD,cdn*.pornhost.com
 - DOMAIN-WILDCARD,cdn*.boysfood.com
+- DOMAIN-WILDCARD,rum-ingest.*.signalfx.com

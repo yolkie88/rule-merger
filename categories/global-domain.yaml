@@ -406,6 +406,7 @@ payload:
 - DOMAIN-SUFFIX,upjav.org
 - DOMAIN-SUFFIX,v2fly.org
 - DOMAIN-SUFFIX,v2ray.com
+- DOMAIN-SUFFIX,vanta.com
 - DOMAIN-SUFFIX,viber.com
 - DOMAIN-SUFFIX,vimeo.com
 - DOMAIN-SUFFIX,waymo.com
@@ -1067,6 +1068,7 @@ payload:
 - DOMAIN-SUFFIX,wikisource.org
 - DOMAIN-SUFFIX,wikivoyage.org
 - DOMAIN-SUFFIX,wiktionary.org
+- DOMAIN-SUFFIX,approveit.today
 - DOMAIN,ccmdl.adobe.com
 - DOMAIN-SUFFIX,cosplay-jav.com
 - DOMAIN-SUFFIX,crashlytics.com
@@ -1161,6 +1163,7 @@ payload:
 - DOMAIN-SUFFIX,shutterstock.com
 - DOMAIN-SUFFIX,spankingtube.com
 - DOMAIN-SUFFIX,surfsharkdns.com
+- DOMAIN-SUFFIX,surveymonkey.com
 - DOMAIN-SUFFIX,thepiratebay.org
 - DOMAIN-SUFFIX,tokto-motion.net
 - DOMAIN-SUFFIX,vesselfinder.com
