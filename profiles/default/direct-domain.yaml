@@ -5832,7 +5832,6 @@ payload:
 - DOMAIN,res.cdn.office.net
 - DOMAIN,res-1.cdn.office.net
 - DOMAIN,res-2.cdn.office.net
-- DOMAIN-SUFFIX,download.microsoft.com
 - DOMAIN-SUFFIX,b.c2r.ts.cdn.office.net
 - DOMAIN-SUFFIX,ctldl.windowsupdate.com
 - DOMAIN-SUFFIX,f.c2r.ts.cdn.office.net
