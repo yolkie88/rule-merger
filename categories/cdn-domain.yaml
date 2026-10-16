@@ -3573,6 +3573,7 @@ payload:
 - DOMAIN,services.linkfire.com
 - DOMAIN,sig.grumpybumpers.com
 - DOMAIN,siloh-ns1.plutotv.net
+- DOMAIN,sl3-cdn.karousell.com
 - DOMAIN,speedmedia2.jfrog.com
 - DOMAIN-SUFFIX,ssl-images-amazon.com
 - DOMAIN,st3.depositphotos.com
@@ -3755,6 +3756,7 @@ payload:
 - DOMAIN,megapx-assets.dcard.tw
 - DOMAIN-SUFFIX,misskeyusercontent.com
 - DOMAIN,moderate.cleantalk.org
+- DOMAIN,mweb-cdn.karousell.com
 - DOMAIN-SUFFIX,nel.measure.office.net
 - DOMAIN,newassets.hcaptcha.com
 - DOMAIN,nodeassets.nbcnews.com
