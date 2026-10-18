@@ -121,6 +121,7 @@ payload:
 - DOMAIN-SUFFIX,cursor-cdn.com
 - DOMAIN-SUFFIX,cursor.com
 - DOMAIN-SUFFIX,cursorapi.com
+- DOMAIN-SUFFIX,cursorvm.com
 - DOMAIN-SUFFIX,deepwiki.com
 - DOMAIN-SUFFIX,deepwiki.org
 - DOMAIN-SUFFIX,devin.ai
@@ -185,6 +186,7 @@ payload:
 - DOMAIN-SUFFIX,opal.google.com
 - DOMAIN-SUFFIX,openai.com
 - DOMAIN-SUFFIX,openai.com.cdn.cloudflare.net
+- DOMAIN-SUFFIX,openai.org
 - DOMAIN-SUFFIX,openaiapi-site.azureedge.net
 - DOMAIN-SUFFIX,openclaw.ai
 - DOMAIN-SUFFIX,opencode.ai
@@ -207,6 +209,7 @@ payload:
 - DOMAIN-SUFFIX,trae.ai
 - DOMAIN-SUFFIX,tripo3d.ai
 - DOMAIN-SUFFIX,turn.livekit.cloud
+- DOMAIN-SUFFIX,typesafe.ai
 - DOMAIN-SUFFIX,windsurf.build
 - DOMAIN-SUFFIX,windsurf.com
 - DOMAIN-SUFFIX,youmind.ai
