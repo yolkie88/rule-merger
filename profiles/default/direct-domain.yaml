@@ -232,6 +232,7 @@ payload:
 - DOMAIN-SUFFIX,95588.com
 - DOMAIN-SUFFIX,aicdn.com
 - DOMAIN-SUFFIX,alipay.cn
+- DOMAIN-SUFFIX,amemv.com
 - DOMAIN-SUFFIX,awtmt.com
 - DOMAIN-SUFFIX,baidu.com
 - DOMAIN-SUFFIX,baike.com
@@ -1350,7 +1351,6 @@ payload:
 - DOMAIN-SUFFIX,aloys233.top
 - DOMAIN-SUFFIX,alphassl.com
 - DOMAIN-SUFFIX,amapauto.com
-- DOMAIN-SUFFIX,amemv.com
 - DOMAIN-SUFFIX,amemv.net
 - DOMAIN-SUFFIX,amzndns-cn.biz
 - DOMAIN-SUFFIX,amzndns-cn.com

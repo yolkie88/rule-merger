@@ -1015,7 +1015,6 @@ payload:
 - DOMAIN,pubmirror.plutex.de
 - DOMAIN,release.runcloud.io
 - DOMAIN,releases.claude.com
-- DOMAIN,releases.openai.com
 - DOMAIN,replicate.npmjs.com
 - DOMAIN,repo.extreme-ix.org
 - DOMAIN-SUFFIX,s3-website.cloud.ru
