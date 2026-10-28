@@ -96,6 +96,7 @@ payload:
 - DOMAIN-SUFFIX,antspace.dev
 - DOMAIN-SUFFIX,anythingllm.com
 - DOMAIN-SUFFIX,arena.ai
+- DOMAIN-SUFFIX,artificialanalysis.ai
 - DOMAIN-SUFFIX,auth0.com
 - DOMAIN-SUFFIX,cerebras.ai
 - DOMAIN-SUFFIX,chatbotclaude.com
@@ -116,6 +117,7 @@ payload:
 - DOMAIN-SUFFIX,claudeusercontent.com
 - DOMAIN-SUFFIX,clawhub.ai
 - DOMAIN-SUFFIX,client-api.arkoselabs.com
+- DOMAIN-SUFFIX,cline.bot
 - DOMAIN-SUFFIX,codeium.com
 - DOMAIN-SUFFIX,codeiumdata.com
 - DOMAIN-SUFFIX,coderabbit.ai
@@ -125,6 +127,8 @@ payload:
 - DOMAIN-SUFFIX,comfy.org
 - DOMAIN-SUFFIX,comfyci.org
 - DOMAIN-SUFFIX,comfyregistry.org
+- DOMAIN-SUFFIX,commandcode.ai
+- DOMAIN-SUFFIX,context7.com
 - DOMAIN-SUFFIX,copilot-stg.com
 - DOMAIN-SUFFIX,copilot.cloud.microsoft
 - DOMAIN-SUFFIX,copilot.com
@@ -185,6 +189,7 @@ payload:
 - DOMAIN-SUFFIX,manus.im
 - DOMAIN-SUFFIX,manuscdn.com
 - DOMAIN-SUFFIX,marscode.com
+- DOMAIN-SUFFIX,metaaiusercontent.com
 - DOMAIN-SUFFIX,metaaivm.com
 - DOMAIN-SUFFIX,midjourney.com
 - DOMAIN-SUFFIX,minimax.io
@@ -195,6 +200,7 @@ payload:
 - DOMAIN-SUFFIX,notebook.google
 - DOMAIN-SUFFIX,notebook.google.com
 - DOMAIN-SUFFIX,notegpt.io
+- DOMAIN-SUFFIX,nousresearch.com
 - DOMAIN-SUFFIX,novelai.net
 - DOMAIN-SUFFIX,oaistatsig.com
 - DOMAIN-SUFFIX,oaiusercontent.com
@@ -247,6 +253,5 @@ payload:
 - DOMAIN-SUFFIX,pi.dev
 - DOMAIN-SUFFIX,ampcode.com
 - DOMAIN-SUFFIX,ampworkers.com
-- DOMAIN-SUFFIX,cline.bot
 - DOMAIN-SUFFIX,vercel.ai
 - DOMAIN-SUFFIX,ai-gateway.vercel.sh
