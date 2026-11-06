@@ -84,6 +84,63 @@ class ConfigTests(unittest.TestCase):
             with self.assertRaisesRegex(ConfigError, "only valid for http"):
                 load_config(path)
 
+    def test_reviewed_drop_floor_must_not_exceed_its_baseline(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            (root / "source.txt").write_text("DOMAIN,example.com\n", encoding="utf-8")
+            (root / "overrides.yaml").write_text(
+                yaml.safe_dump(
+                    {
+                        "schema_version": 1,
+                        "force_direct": [],
+                        "force_reject": [],
+                        "force_proxy": [],
+                    }
+                ),
+                encoding="utf-8",
+            )
+            config = {
+                "schema_version": 2,
+                "sources": {
+                    "source": {
+                        "type": "file",
+                        "path": "source.txt",
+                        "format": "text",
+                        "behavior": "classical",
+                        "redistributable": True,
+                    }
+                },
+                "categories": {
+                    "direct": {
+                        "family": "domain",
+                        "sources": ["source"],
+                        "formats": ["yaml"],
+                    }
+                },
+                "profiles": {
+                    "default": {
+                        "actions": {"direct-domain": ["direct"]},
+                        "formats": ["yaml"],
+                    }
+                },
+                "overrides": "overrides.yaml",
+                "quality": {
+                    "small_output_limit": 0,
+                    "reviewed_drops": {
+                        "categories/direct": {
+                            "baseline_at_least": 1,
+                            "current_at_least": 2,
+                        }
+                    },
+                },
+                "legacy": {"enabled": False, "aliases": {}},
+            }
+            path = root / "config.yaml"
+            path.write_text(yaml.safe_dump(config), encoding="utf-8")
+
+            with self.assertRaisesRegex(ConfigError, "current_at_least"):
+                load_config(path)
+
     def test_duplicate_yaml_key_is_rejected(self) -> None:
         with tempfile.TemporaryDirectory() as directory:
             path = Path(directory) / "config.yaml"
@@ -119,6 +176,19 @@ profiles: {}
             {
                 "categories/cn-ip": 1.1,
                 "profiles/default/direct-ip": 1.1,
+            },
+        )
+        self.assertEqual(
+            config.quality["reviewed_drops"],
+            {
+                "categories/reject-domain": {
+                    "baseline_at_least": 236697,
+                    "current_at_least": 100000,
+                },
+                "profiles/default/reject-domain": {
+                    "baseline_at_least": 236697,
+                    "current_at_least": 100000,
+                },
             },
         )
         self.assertIn("local_ai_general", config.categories["ai-domain"].sources)

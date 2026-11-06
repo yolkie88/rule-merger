@@ -1166,6 +1166,178 @@ class BuildBehaviorTests(unittest.TestCase):
                 "approved-growth",
             )
 
+    def test_reviewed_drop_allows_only_named_outputs_above_the_reviewed_floor(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            source_text = "DOMAIN,example.com\nDOMAIN,second.example\n"
+            reviewed = {
+                "baseline_at_least": 10,
+                "current_at_least": 2,
+            }
+            config = write_project(
+                root,
+                source_text=source_text,
+                sources={
+                    "source": {
+                        "type": "file",
+                        "path": "source.txt",
+                        "format": "text",
+                        "behavior": "classical",
+                    }
+                },
+                categories={
+                    "direct": {
+                        "family": "domain",
+                        "sources": ["source"],
+                        "formats": ["yaml"],
+                    }
+                },
+                actions={"direct-domain": ["direct"]},
+                formats=["yaml"],
+                quality={
+                    "max_drop_ratio": 0.15,
+                    "small_output_limit": 0,
+                    "reviewed_drops": {"categories/direct": reviewed},
+                },
+            )
+            baseline = root / "baseline.json"
+            baseline.write_text(
+                json.dumps(
+                    {
+                        "outputs": {
+                            "categories/direct.yaml": {"rules": 10},
+                            "profiles/default/direct-domain.yaml": {"rules": 10},
+                        }
+                    }
+                ),
+                encoding="utf-8",
+            )
+
+            blocked = build(
+                BuildRequest(config, root / "blocked", baseline_manifest=baseline)
+            )
+
+            self.assertFalse(blocked.publishable)
+            self.assertTrue(
+                any(
+                    error.startswith(
+                        "profiles/default/direct-domain.yaml dropped from 10 to 2"
+                    )
+                    for error in blocked.errors
+                ),
+                blocked.errors,
+            )
+            self.assertNotIn(
+                "categories/direct.yaml",
+                " ".join(blocked.errors),
+            )
+            self.assertEqual(
+                blocked.baseline["changes"]["categories/direct.yaml"]["status"],
+                "approved-drop",
+            )
+
+            approved = write_project(
+                root,
+                source_text=source_text,
+                sources={
+                    "source": {
+                        "type": "file",
+                        "path": "source.txt",
+                        "format": "text",
+                        "behavior": "classical",
+                    }
+                },
+                categories={
+                    "direct": {
+                        "family": "domain",
+                        "sources": ["source"],
+                        "formats": ["yaml"],
+                    }
+                },
+                actions={"direct-domain": ["direct"]},
+                formats=["yaml"],
+                quality={
+                    "max_drop_ratio": 0.15,
+                    "small_output_limit": 0,
+                    "reviewed_drops": {
+                        "categories/direct": reviewed,
+                        "profiles/default/direct-domain": reviewed,
+                    },
+                },
+            )
+            report = build(
+                BuildRequest(approved, root / "published", baseline_manifest=baseline)
+            )
+
+            self.assertTrue(report.publishable, report.errors)
+            self.assertEqual(
+                report.baseline["approved_drops"],
+                [
+                    "categories/direct.yaml",
+                    "profiles/default/direct-domain.yaml",
+                ],
+            )
+
+            below_floor = write_project(
+                root,
+                source_text=source_text,
+                sources={
+                    "source": {
+                        "type": "file",
+                        "path": "source.txt",
+                        "format": "text",
+                        "behavior": "classical",
+                    }
+                },
+                categories={
+                    "direct": {
+                        "family": "domain",
+                        "sources": ["source"],
+                        "formats": ["yaml"],
+                    }
+                },
+                actions={"direct-domain": ["direct"]},
+                formats=["yaml"],
+                quality={
+                    "max_drop_ratio": 0.15,
+                    "small_output_limit": 0,
+                    "reviewed_drops": {
+                        "categories/direct": {
+                            "baseline_at_least": 10,
+                            "current_at_least": 3,
+                        }
+                    },
+                },
+            )
+            too_small = build(
+                BuildRequest(
+                    below_floor, root / "too-small", baseline_manifest=baseline
+                )
+            )
+            self.assertTrue(
+                any(
+                    error.startswith("categories/direct.yaml dropped from 10 to 2")
+                    for error in too_small.errors
+                ),
+                too_small.errors,
+            )
+
+            reset_baseline = root / "reset-baseline.json"
+            reset_baseline.write_text(
+                json.dumps({"outputs": {"categories/direct.yaml": {"rules": 4}}}),
+                encoding="utf-8",
+            )
+            after_reset = build(
+                BuildRequest(config, root / "after-reset", baseline_manifest=reset_baseline)
+            )
+            self.assertTrue(
+                any(
+                    error.startswith("categories/direct.yaml dropped from 4 to 2")
+                    for error in after_reset.errors
+                ),
+                after_reset.errors,
+            )
+
 
 if __name__ == "__main__":
     unittest.main()

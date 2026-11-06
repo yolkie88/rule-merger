@@ -42,6 +42,7 @@ QUALITY_FIELDS = {
     "min_rules",
     "critical_rules",
     "allowed_removed_outputs",
+    "reviewed_drops",
 }
 LEGACY_FIELDS = {"enabled", "aliases"}
 
@@ -304,6 +305,7 @@ def _validate_quality(value: Any) -> dict[str, Any]:
         "min_rules": {},
         "critical_rules": {},
         "allowed_removed_outputs": (),
+        "reviewed_drops": {},
     }
     for key in ("max_drop_ratio", "max_growth_ratio"):
         if key in item:
@@ -376,7 +378,41 @@ def _validate_quality(value: Any) -> dict[str, Any]:
             item["allowed_removed_outputs"],
             "quality.allowed_removed_outputs",
         )
+    if "reviewed_drops" in item:
+        result["reviewed_drops"] = _validate_reviewed_drops(item["reviewed_drops"])
     return result
+
+
+def _validate_reviewed_drops(value: Any) -> dict[str, dict[str, int]]:
+    if not isinstance(value, dict):
+        raise ConfigError("quality.reviewed_drops must be a mapping")
+    normalized: dict[str, dict[str, int]] = {}
+    for output_name, spec in value.items():
+        if not isinstance(output_name, str) or not output_name:
+            raise ConfigError("quality.reviewed_drops keys must be output names")
+        if not isinstance(spec, dict):
+            raise ConfigError(
+                f"quality.reviewed_drops.{output_name} must be a mapping"
+            )
+        _allowed(
+            spec,
+            {"baseline_at_least", "current_at_least"},
+            f"quality.reviewed_drops.{output_name}",
+        )
+        bounds: dict[str, int] = {}
+        for key in ("baseline_at_least", "current_at_least"):
+            number = spec.get(key)
+            if not isinstance(number, int) or isinstance(number, bool) or number < 0:
+                raise ConfigError(
+                    f"quality.reviewed_drops.{output_name}.{key} must be a non-negative integer"
+                )
+            bounds[key] = number
+        if bounds["current_at_least"] > bounds["baseline_at_least"]:
+            raise ConfigError(
+                f"quality.reviewed_drops.{output_name}.current_at_least must not exceed baseline_at_least"
+            )
+        normalized[output_name] = bounds
+    return normalized
 
 
 def _validate_legacy(value: Any) -> dict[str, Any]:

@@ -269,6 +269,28 @@ def compare_count(
     return None
 
 
+def reviewed_drop_allows(
+    name: str,
+    current: int,
+    baseline: int,
+    reviewed_drops: Mapping[str, Mapping[str, int]],
+) -> bool:
+    """Allow one reviewed shrink while the published baseline is still pre-reset."""
+
+    spec = reviewed_drops.get(name)
+    if spec is None:
+        base, dot, extension = name.rpartition(".")
+        if dot and extension in {"yaml", "json", "srs", "mrs"}:
+            spec = reviewed_drops.get(base)
+    if spec is None:
+        return False
+    return (
+        current < baseline
+        and baseline >= spec["baseline_at_least"]
+        and current >= spec["current_at_least"]
+    )
+
+
 def max_growth_ratio_for(
     output_name: str,
     overrides: Mapping[str, float],

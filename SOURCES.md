@@ -8,9 +8,11 @@
 | MetaCubeX rule data | [MetaCubeX/meta-rules-dat](https://github.com/MetaCubeX/meta-rules-dat) | private, China IP, Cloudflare CN, AI-CN, GFW and Bytedance categories | GPL-3.0；保留来源与许可证 | Approved 2026-08-12 |
 | DustinWin domain lists | [DustinWin/domain-list-custom](https://github.com/DustinWin/domain-list-custom) | China, Microsoft, Apple, AI provider/base and Google-CN categories | MIT；保留版权与许可声明 | Approved 2026-08-12 |
 | blackmatrix7 Steam CN | [blackmatrix7/ios_rule_script](https://github.com/blackmatrix7/ios_rule_script) | Steam CN category | GPL-2.0，并保留仓库特别声明与来源链 | Approved 2026-08-12 |
-| xndeye adblock list | [xndeye/adblock_list](https://github.com/xndeye/adblock_list) | reject domain category | 外层仓库 MIT；该产物聚合多个上游，保留上游清单链接并在聚合来源变化时重审 | Approved 2026-08-12 |
+| xndeye adblock list | [xndeye/adblock_list](https://github.com/xndeye/adblock_list) | reject domain category | 外层仓库 MIT；该产物聚合多个上游，保留上游清单链接并在聚合来源变化时重审 | Approved 2026-08-12；聚合来源于 2026-11-06 重审 |
 | ACL4SSR | [ACL4SSR/ACL4SSR](https://github.com/ACL4SSR/ACL4SSR) | supplemental AI provider/base category | CC BY-SA 4.0；保留署名、许可证及相同方式共享要求 | Approved 2026-08-12 |
 | Local files | [`local/*.yaml`](LOCAL_RULES.md) | owner-maintained direct/proxy/Microsoft exceptions, general AI, coding agent and gateway subsets | 本 fork 维护；逐项依据与核对强度见 `LOCAL_RULES.md` | Approved 2026-08-12 |
+
+2026-11-06 重审了 xndeye 聚合来源：上游改为 AdGuard optimized 过滤器，停用防跟踪、cjxlist、EasyList China+EasyList、uBlock privacy 和 1Hosts Lite，并加入 HaGeZi Pro++ Mini。外层许可证仍是 MIT，`reject-domain` 从约 23.7 万条降到约 12.3 万条，这次缩水已接受。
 
 AI provider/base 上游本身是宽口径 AI 列表，可能包含 coding agent 或 gateway 域名；`ai-coding-domain` 与 `ai-gateway-domain` 是额外维护的语义子集，因此 AI 子分类允许重叠。`ai-domain` 负责完整海外 AI 聚合，不以互斥为目标。`copilot.com` 与 `copilot.microsoft.com` 属于 Microsoft 通用 Copilot，只进入 `ai-domain`，不进入 `ai-coding-domain`。
 
