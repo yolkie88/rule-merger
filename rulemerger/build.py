@@ -19,6 +19,7 @@ from .quality import (
     duplicate_category_conflicts,
     find_segment_conflicts,
     max_growth_ratio_for,
+    reviewed_drop_allows,
 )
 from .rules import RuleError, dedupe, family_of
 from .sources import SourceAdapter, SourceError, SourceResult
@@ -561,12 +562,14 @@ def _apply_baseline(
     previous = baseline["outputs"]
     errors: list[str] = []
     approved_growth: list[str] = []
+    approved_drops: list[str] = []
     changes: dict[str, dict[str, object]] = {}
     default_max_growth_ratio = float(config.quality["max_growth_ratio"])
     max_growth_ratio_overrides = config.quality.get(
         "max_growth_ratio_overrides", {}
     )
     allowed_growth = set(request.allowed_growth_outputs)
+    reviewed_drops = config.quality.get("reviewed_drops", {})
 
     def growth_is_allowed(name: str) -> bool:
         base, dot, extension = name.rpartition(".")
@@ -614,6 +617,15 @@ def _apply_baseline(
             ):
                 change["status"] = "approved-growth"
                 approved_growth.append(name)
+            elif (
+                isinstance(old_count, int)
+                and not isinstance(old_count, bool)
+                and reviewed_drop_allows(
+                    name, current_count, old_count, reviewed_drops
+                )
+            ):
+                change["status"] = "approved-drop"
+                approved_drops.append(name)
             else:
                 errors.append(error)
     allowed_removed = set(config.quality.get("allowed_removed_outputs", ()))
@@ -663,11 +675,17 @@ def _apply_baseline(
         "changes": changes,
         "errors": errors,
         "approved_growth": sorted(approved_growth),
+        "approved_drops": sorted(approved_drops),
     }
     if approved_growth:
         report.warnings.append(
             "baseline growth explicitly approved for: "
             + ", ".join(sorted(approved_growth))
+        )
+    if approved_drops:
+        report.warnings.append(
+            "baseline drop explicitly approved for: "
+            + ", ".join(sorted(approved_drops))
         )
     report.errors.extend(errors)
 

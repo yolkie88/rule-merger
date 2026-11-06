@@ -99,6 +99,8 @@ source 默认 `redistributable: false`；只有完成许可证/再分发审查�
 
 确认上游数据的预期增长后，可手动运行工作流并在 `allowed_growth_outputs` 中填写逗号分隔的产物路径（可省略 `.yaml`、`.json`、`.srs`、`.mrs` 扩展名）。该授权仅跳过所列产物的增长门槛；下降、删除和其他产物的异常增长仍会 fail closed，并在构建报告中记录 `approved-growth`。
 
+已审查的大幅缩水写入 `quality.reviewed_drops`。每项用无扩展名产物路径声明 `baseline_at_least` 和 `current_at_least`：只有发布基线仍不低于前者、且当前条数不低于后者时，才跳过该规则集 YAML、JSON、SRS、MRS 的跌幅门槛。基线更新到新数量后，条件不再成立，15% 跌幅门禁恢复。其它产物和更低的条数仍会 fail closed，并在构建报告中记录 `approved-drop`。
+
 输出格式：
 
 - YAML：Mihomo classical `payload`，保留 `PROCESS-NAME`、`DOMAIN-WILDCARD`、`IP-ASN` 等 Mihomo 原生规则。
