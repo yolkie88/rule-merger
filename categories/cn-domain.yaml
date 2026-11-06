@@ -613,6 +613,7 @@ payload:
 - DOMAIN-SUFFIX,dcarlive.com
 - DOMAIN-SUFFIX,dianping.com
 - DOMAIN-SUFFIX,dingtalk.com
+- DOMAIN-SUFFIX,dittocdn.com
 - DOMAIN-SUFFIX,dizzylab.net
 - DOMAIN-SUFFIX,doubanio.com
 - DOMAIN-SUFFIX,douyucdn2.cn
@@ -1545,7 +1546,6 @@ payload:
 - DOMAIN-SUFFIX,biji.com
 - DOMAIN-SUFFIX,bilibili.cc
 - DOMAIN-SUFFIX,bilibili.net
-- DOMAIN-SUFFIX,bilibili.tv
 - DOMAIN-SUFFIX,bilibiligame.co
 - DOMAIN-SUFFIX,bilibiligame.net
 - DOMAIN-SUFFIX,bilibilipay.com
