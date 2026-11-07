@@ -83,6 +83,8 @@ private → override-direct / override-reject / override-proxy
 
 父子域名和 CIDR 包含关系可同时存在于不同动作产物中，并由上述匹配顺序决定：较具体的 `reject` 规则会先于包含它的 `direct` / `proxy` 规则匹配。这些关系会写入构建报告的 `ordered_containment`，但不会阻止发布。精确重复规则则按 `reject > direct > proxy` 的动作优先级解析。[`local/overrides.yaml`](local/overrides.yaml) 仅用于把本地例外提前输出为 `override-*` 产物。
 
+`notifications.googleapis.com` 已设为代理例外：默认 profile（含 legacy `reject`）移除同名后缀拒绝项，普通 proxy 的 `googleapis.com` 后缀仍覆盖它。使用原始 `categories/reject-domain` 的客户端需在拒绝规则之前加载 `profiles/default/override-proxy-domain`，DNS 拦截规则也应采用同一例外顺序。
+
 ## 使用
 
 ```text

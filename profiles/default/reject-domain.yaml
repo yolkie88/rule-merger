@@ -57106,7 +57106,6 @@ payload:
 - DOMAIN-SUFFIX,googleads.googleapis.com
 - DOMAIN-SUFFIX,growth-pa.googleapis.com
 - DOMAIN-SUFFIX,infinitedata-pa.googleapis.com
-- DOMAIN-SUFFIX,notifications.googleapis.com
 - DOMAIN-SUFFIX,performanceparameters.googleapis.com
 - DOMAIN-SUFFIX,searchlabspartnerservice-pa.googleapis.com
 - DOMAIN-SUFFIX,telemetry.googleapis.com
