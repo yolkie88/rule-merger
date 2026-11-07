@@ -191,6 +191,7 @@ quality:
   small_output_limit: 100
   min_rules: {}
   critical_rules:
+    profiles/default/override-proxy-domain: ['DOMAIN-SUFFIX,notifications.googleapis.com']
     categories/private-domain: ['DOMAIN-SUFFIX,lan']
     categories/private-ip: ['IP-CIDR,10.0.0.0/8']
     categories/steam-cn-domain: ['DOMAIN,csgo.wmsj.cn']

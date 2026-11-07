@@ -4,4 +4,7 @@ schema_version: 1
 # ordinary profile sets and emitted as an early override artifact.
 force_direct: []
 force_reject: []
-force_proxy: []
+# Google notification links must remain reachable (reviewed 2026-11-07).
+# Match the upstream suffix rule so it is removed from normal reject profiles.
+force_proxy:
+  - DOMAIN-SUFFIX,notifications.googleapis.com

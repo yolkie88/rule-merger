@@ -16,6 +16,7 @@
 | --- | --- | --- | --- | --- |
 | `direct.yaml` | `DOMAIN,www.cycani.org` | 本地直连例外 | 仓库维护者策略 | 维护者例外 |
 | `proxy.yaml` | `DOMAIN-SUFFIX,steam-chat.com` | Steam Chat 本地代理例外 | 仓库维护者策略 | 维护者例外 |
+| `overrides.yaml` | `DOMAIN-SUFFIX,notifications.googleapis.com` | Google 通知链接代理例外；从默认 reject profile 移除上游同名拒绝项 | 2026-11-07 用户报障；上游及已发布 reject 列表命中，Google / Cloudflare DoH 均正常解析；维护者确认放行 | 维护者例外 |
 | `microsoft@cn.yaml` | `DOMAIN,ntp.msn.com` | Microsoft NTP | [Microsoft 365 endpoint guidance](https://learn.microsoft.com/en-us/microsoft-365/enterprise/urls-and-ip-address-ranges) | 运行观察 |
 | `microsoft@cn.yaml` | `DOMAIN,edge.microsoft.com` | Microsoft Edge | [Microsoft Edge enterprise documentation](https://learn.microsoft.com/en-us/deployedge/) | 官方域名 |
 | `ai-general.yaml` | `DOMAIN-SUFFIX,copilot.com` | Microsoft Copilot | [Microsoft Copilot network requirements](https://learn.microsoft.com/en-us/copilot/manage) | 官方端点 |
