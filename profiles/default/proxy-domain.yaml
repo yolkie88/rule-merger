@@ -68,14 +68,17 @@ payload:
 - DOMAIN,copilotprodattachments.blob.core.windows.net
 - DOMAIN,geminiweb-pa.clients.google.com
 - DOMAIN,geminiweb-pa.clients6.google.com
+- DOMAIN,http-intake.logs.us5.datadoghq.com
 - DOMAIN,notebooklm-pa.googleapis.com
 - DOMAIN,notebooklm.googleapis.com
+- DOMAIN,o1158394.ingest.us.sentry.io
 - DOMAIN,openaiassets.blob.core.windows.net
 - DOMAIN,openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net
 - DOMAIN,openaicom.imgix.net
 - DOMAIN,openaicomproductionae4b.blob.core.windows.net
 - DOMAIN,ppl-ai-file-upload.s3.amazonaws.com
 - DOMAIN,pplx-res.cloudinary.com
+- DOMAIN,production-copilot-host-westus.webpubsub.azure.com
 - DOMAIN,production-openaicom-storage.azureedge.net
 - DOMAIN,servd-anthropic-website.b-cdn.net
 - DOMAIN,sydney.bing.com
@@ -162,6 +165,7 @@ payload:
 - DOMAIN-SUFFIX,grazie.ai
 - DOMAIN-SUFFIX,grazie.aws.intellij.net
 - DOMAIN-SUFFIX,grok.x.com
+- DOMAIN-SUFFIX,grokbot.com
 - DOMAIN-SUFFIX,grokipedia.com
 - DOMAIN-SUFFIX,h2o.ai
 - DOMAIN-SUFFIX,hf.co
@@ -328,7 +332,6 @@ payload:
 - DOMAIN-SUFFIX,hayabusa.io
 - DOMAIN-SUFFIX,hboasia.com
 - DOMAIN-SUFFIX,ipstatp.com
-- DOMAIN-SUFFIX,isnssdk.com
 - DOMAIN-SUFFIX,kktv.com.tw
 - DOMAIN-SUFFIX,mangafox.me
 - DOMAIN-SUFFIX,netflix.com
@@ -1625,6 +1628,7 @@ payload:
 - DOMAIN-SUFFIX,dw-world.de
 - DOMAIN-SUFFIX,dw.com
 - DOMAIN-SUFFIX,dw.de
+- DOMAIN-SUFFIX,dweb.link
 - DOMAIN-SUFFIX,dwnews.com
 - DOMAIN-SUFFIX,dwnews.net
 - DOMAIN-SUFFIX,dynawebinc.com
@@ -2434,7 +2438,6 @@ payload:
 - DOMAIN-SUFFIX,hmvdigital.ca
 - DOMAIN-SUFFIX,hmvdigital.com
 - DOMAIN-SUFFIX,hnjhj.com
-- DOMAIN-SUFFIX,watchmygf.net
 - DOMAIN-SUFFIX,hola.com
 - DOMAIN-SUFFIX,hola.org
 - DOMAIN-SUFFIX,watchinese.com
@@ -2605,7 +2608,6 @@ payload:
 - DOMAIN-SUFFIX,ipac.global
 - DOMAIN-SUFFIX,ipdefenseforum.com
 - DOMAIN-SUFFIX,ipfire.org
-- DOMAIN-SUFFIX,w3s.link
 - DOMAIN-SUFFIX,ipfs.io
 - DOMAIN-SUFFIX,iphone4hongkong.com
 - DOMAIN-SUFFIX,iphonetaiwan.org
@@ -3036,7 +3038,6 @@ payload:
 - DOMAIN-SUFFIX,vnet.link
 - DOMAIN-SUFFIX,mlc.ai
 - DOMAIN-SUFFIX,mlzs.work
-- DOMAIN-SUFFIX,mmaaxx.com
 - DOMAIN-SUFFIX,vmpsoft.com
 - DOMAIN-SUFFIX,mobatek.net
 - DOMAIN-SUFFIX,mobile01.com
@@ -3560,6 +3561,7 @@ payload:
 - DOMAIN-SUFFIX,quran.com
 - DOMAIN-SUFFIX,qz.com
 - DOMAIN-SUFFIX,r-pool.net
+- DOMAIN-SUFFIX,r0.ru
 - DOMAIN-SUFFIX,r10s.jp
 - DOMAIN-SUFFIX,r18.com
 - DOMAIN-SUFFIX,radiko.jp
@@ -5049,7 +5051,6 @@ payload:
 - DOMAIN-SUFFIX,kagi.com
 - DOMAIN-SUFFIX,kali.org
 - DOMAIN-SUFFIX,kick.com
-- DOMAIN-SUFFIX,kwai.com
 - DOMAIN-SUFFIX,laby.net
 - DOMAIN-SUFFIX,line.biz
 - DOMAIN-SUFFIX,logto.io
@@ -5107,7 +5108,6 @@ payload:
 - DOMAIN-SUFFIX,ifttt.com
 - DOMAIN-SUFFIX,infoq.com
 - DOMAIN-SUFFIX,intel.com
-- DOMAIN-SUFFIX,javhd.com
 - DOMAIN-SUFFIX,jsbin.com
 - DOMAIN-SUFFIX,kinja.com
 - DOMAIN-SUFFIX,knock.app
@@ -5227,7 +5227,6 @@ payload:
 - DOMAIN-SUFFIX,vikacg.com
 - DOMAIN-SUFFIX,vmware.com
 - DOMAIN-SUFFIX,xbooru.com
-- DOMAIN-SUFFIX,xhlive.org
 - DOMAIN-SUFFIX,yandex.com
 - DOMAIN-SUFFIX,yandex.net
 - DOMAIN-SUFFIX,zbporn.com
@@ -5241,7 +5240,6 @@ payload:
 - DOMAIN-SUFFIX,bikaios.xyz
 - DOMAIN-SUFFIX,camsoda.com
 - DOMAIN-SUFFIX,cbsnews.com
-- DOMAIN-SUFFIX,cf-ipfs.com
 - DOMAIN-SUFFIX,cloudns.net
 - DOMAIN-SUFFIX,corecode.io
 - DOMAIN-SUFFIX,detnews.com
@@ -5401,7 +5399,6 @@ payload:
 - DOMAIN-SUFFIX,1password.com
 - DOMAIN-SUFFIX,activated.win
 - DOMAIN-SUFFIX,amazonaws.com
-- DOMAIN-SUFFIX,amplience.com
 - DOMAIN-SUFFIX,animes.garden
 - DOMAIN-SUFFIX,askubuntu.com
 - DOMAIN-SUFFIX,atlassian.com
