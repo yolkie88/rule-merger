@@ -3476,6 +3476,7 @@ payload:
 - DOMAIN-SUFFIX,uyghurtribunal.com
 - DOMAIN-SUFFIX,potato.im
 - DOMAIN-SUFFIX,potatso.com
+- DOMAIN-SUFFIX,potvpn.com
 - DOMAIN-SUFFIX,pourquoi.tw
 - DOMAIN-SUFFIX,power.com
 - DOMAIN-SUFFIX,powerapple.com
@@ -3561,7 +3562,6 @@ payload:
 - DOMAIN-SUFFIX,quran.com
 - DOMAIN-SUFFIX,qz.com
 - DOMAIN-SUFFIX,r-pool.net
-- DOMAIN-SUFFIX,r0.ru
 - DOMAIN-SUFFIX,r10s.jp
 - DOMAIN-SUFFIX,r18.com
 - DOMAIN-SUFFIX,radiko.jp

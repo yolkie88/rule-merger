@@ -2974,7 +2974,6 @@ payload:
 - DOMAIN-SUFFIX,huaweicloud-smn.com
 - DOMAIN-SUFFIX,huaweicloud-smn.net
 - DOMAIN-SUFFIX,huaweicloud.com
-- DOMAIN-SUFFIX,huaweicloudapis.com
 - DOMAIN-SUFFIX,huaweicloudlive.com
 - DOMAIN-SUFFIX,huaweiief.com
 - DOMAIN-SUFFIX,huaweimarketplace.com
@@ -6476,6 +6475,7 @@ payload:
 - DOMAIN-SUFFIX,happyhorse.cn
 - DOMAIN-SUFFIX,happyshrimp.cn
 - DOMAIN-SUFFIX,sleeplesshorizon.cn
+- DOMAIN-SUFFIX,picpic-ai.cn
 - DOMAIN-SUFFIX,dumate.cn
 - DOMAIN-SUFFIX,miaoda.cn
 - DOMAIN-SUFFIX,tiangong.cn
@@ -6485,7 +6485,6 @@ payload:
 - DOMAIN-SUFFIX,moonshot.cn
 - DOMAIN-SUFFIX,codebuddy.cn
 - DOMAIN-SUFFIX,workbuddy.cn
-- DOMAIN-SUFFIX,yoma.cn
 - DOMAIN-SUFFIX,cueme.cn
 - DOMAIN-SUFFIX,n.cn
 - DOMAIN-SUFFIX,metaso.cn
@@ -6494,6 +6493,11 @@ payload:
 - DOMAIN-SUFFIX,sensecore.cn
 - DOMAIN-SUFFIX,sensefoundry.cn
 - DOMAIN-SUFFIX,sensenova.cn
+- DOMAIN-SUFFIX,marscode.cn
+- DOMAIN-SUFFIX,mcprev.cn
+- DOMAIN-SUFFIX,trae.cn
+- DOMAIN-SUFFIX,yoma.cn
+- DOMAIN-SUFFIX,hi-butterfly.cn
 - DOMAIN-SUFFIX,butterfly-static.cn
 - DOMAIN-SUFFIX,butterflyai.cn
 - DOMAIN-SUFFIX,cozebaas.cn
@@ -6502,15 +6506,10 @@ payload:
 - DOMAIN-SUFFIX,cozetest.cn
 - DOMAIN-SUFFIX,cozetest2.cn
 - DOMAIN-SUFFIX,cozetest3.cn
-- DOMAIN-SUFFIX,hi-butterfly.cn
-- DOMAIN-SUFFIX,picpic-ai.cn
-- DOMAIN-SUFFIX,marscode.cn
-- DOMAIN-SUFFIX,mcprev.cn
-- DOMAIN-SUFFIX,trae.cn
+- DOMAIN-SUFFIX,trae.com.cn
+- DOMAIN-SUFFIX,marscode.com.cn
 - DOMAIN-SUFFIX,yuanqi.tencent.com
 - DOMAIN-SUFFIX,yuanbao.tencent.com
-- DOMAIN-SUFFIX,marscode.com.cn
-- DOMAIN-SUFFIX,trae.com.cn
 - DOMAIN-SUFFIX,hunyuan.tencent.com
 - DOMAIN-SUFFIX,xinghuo.xfyun.cn
 - DOMAIN-SUFFIX,yiyan.baidu.com
