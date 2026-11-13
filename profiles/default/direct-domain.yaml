@@ -858,6 +858,7 @@ payload:
 - DOMAIN-SUFFIX,tencent-cloud.com
 - DOMAIN-SUFFIX,tencent-cloud.net
 - DOMAIN-SUFFIX,toutiaostatic.com
+- DOMAIN,app.jianguoyun.com
 - DOMAIN-SUFFIX,chinanetcenter.com
 - DOMAIN-SUFFIX,dl.pinyuncloud.com
 - DOMAIN-SUFFIX,heytapdownload.com
@@ -870,6 +871,7 @@ payload:
 - DOMAIN-SUFFIX,cm.steampowered.com
 - DOMAIN-SUFFIX,luckincoffeecdn.com
 - DOMAIN,ocsp.globalsign.com
+- DOMAIN,comet.jianguoyun.com
 - DOMAIN,ocsp2.globalsign.com
 - DOMAIN-SUFFIX,alibabausercontent.com
 - DOMAIN,cn.download.nvidia.com
