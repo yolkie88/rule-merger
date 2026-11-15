@@ -21,6 +21,7 @@ payload:
 - DOMAIN-SUFFIX,deepmind.com
 - DOMAIN,ai.google.dev
 - DOMAIN-SUFFIX,anthropic.com
+- DOMAIN,cloud.zed.dev
 - DOMAIN-SUFFIX,gemini.google
 - DOMAIN-SUFFIX,oaistatic.com
 - DOMAIN,openrouter.ai
@@ -37,6 +38,7 @@ payload:
 - DOMAIN,aida.googleapis.com
 - DOMAIN-SUFFIX,aistudio.google.com
 - DOMAIN-SUFFIX,generativeai.google
+- DOMAIN,aicode.googleapis.com
 - DOMAIN,inference.codeium.com
 - DOMAIN-SUFFIX,makersuite.google.com
 - DOMAIN-SUFFIX,notebooklm.google.com
@@ -51,6 +53,7 @@ payload:
 - DOMAIN,daily-cloudcode-pa.googleapis.com
 - DOMAIN-SUFFIX,generativelanguage.googleapis.com
 - DOMAIN-SUFFIX,proactivebackend-pa.googleapis.com
+- DOMAIN,daily-cloudcode-pa.sandbox.googleapis.com
 - DOMAIN-KEYWORD,openai
 - DOMAIN-KEYWORD,alkalimakersuite-pa.clients6.google.com
 - DOMAIN,alkalimakersuite-pa.clients6.google.com
