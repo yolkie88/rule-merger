@@ -208,7 +208,6 @@ payload:
 - DOMAIN-SUFFIX,notegpt.io
 - DOMAIN-SUFFIX,nousresearch.com
 - DOMAIN-SUFFIX,novelai.net
-- DOMAIN-SUFFIX,oaistatsig.com
 - DOMAIN-SUFFIX,oaiusercontent.com
 - DOMAIN-SUFFIX,ollama.com
 - DOMAIN-SUFFIX,opal.google
@@ -334,7 +333,6 @@ payload:
 - DOMAIN-SUFFIX,foxplus.com
 - DOMAIN-SUFFIX,hayabusa.io
 - DOMAIN-SUFFIX,hboasia.com
-- DOMAIN-SUFFIX,ipstatp.com
 - DOMAIN-SUFFIX,kktv.com.tw
 - DOMAIN-SUFFIX,mangafox.me
 - DOMAIN-SUFFIX,netflix.com
