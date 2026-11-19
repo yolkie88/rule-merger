@@ -53,27 +53,27 @@
       },
       "categories/ai-domain.json": {
         "baseline": 264,
-        "current": 264,
-        "delta": 0,
-        "ratio": 0.0
+        "current": 266,
+        "delta": 2,
+        "ratio": 0.007575757575757576
       },
       "categories/ai-domain.mrs": {
         "baseline": 260,
-        "current": 264,
-        "delta": 4,
-        "ratio": 0.015384615384615385
+        "current": 266,
+        "delta": 6,
+        "ratio": 0.023076923076923078
       },
       "categories/ai-domain.srs": {
         "baseline": 264,
-        "current": 264,
-        "delta": 0,
-        "ratio": 0.0
+        "current": 266,
+        "delta": 2,
+        "ratio": 0.007575757575757576
       },
       "categories/ai-domain.yaml": {
         "baseline": 264,
-        "current": 264,
-        "delta": 0,
-        "ratio": 0.0
+        "current": 266,
+        "delta": 2,
+        "ratio": 0.007575757575757576
       },
       "categories/ai-gateway-domain.json": {
         "baseline": 5,
@@ -101,27 +101,27 @@
       },
       "categories/ai-provider-domain.json": {
         "baseline": 255,
-        "current": 255,
-        "delta": 0,
-        "ratio": 0.0
+        "current": 257,
+        "delta": 2,
+        "ratio": 0.00784313725490196
       },
       "categories/ai-provider-domain.mrs": {
         "baseline": 251,
-        "current": 255,
-        "delta": 4,
-        "ratio": 0.01593625498007968
+        "current": 257,
+        "delta": 6,
+        "ratio": 0.02390438247011952
       },
       "categories/ai-provider-domain.srs": {
         "baseline": 255,
-        "current": 255,
-        "delta": 0,
-        "ratio": 0.0
+        "current": 257,
+        "delta": 2,
+        "ratio": 0.00784313725490196
       },
       "categories/ai-provider-domain.yaml": {
         "baseline": 255,
-        "current": 255,
-        "delta": 0,
-        "ratio": 0.0
+        "current": 257,
+        "delta": 2,
+        "ratio": 0.00784313725490196
       },
       "categories/apple-cn-domain.json": {
         "baseline": 278,
@@ -173,27 +173,27 @@
       },
       "categories/cdn-domain.json": {
         "baseline": 4787,
-        "current": 4787,
-        "delta": 0,
-        "ratio": 0.0
+        "current": 4790,
+        "delta": 3,
+        "ratio": 0.0006266973052015876
       },
       "categories/cdn-domain.mrs": {
         "baseline": 4707,
-        "current": 4787,
-        "delta": 80,
-        "ratio": 0.016995963458678563
+        "current": 4790,
+        "delta": 83,
+        "ratio": 0.01763331208837901
       },
       "categories/cdn-domain.srs": {
         "baseline": 4787,
-        "current": 4787,
-        "delta": 0,
-        "ratio": 0.0
+        "current": 4790,
+        "delta": 3,
+        "ratio": 0.0006266973052015876
       },
       "categories/cdn-domain.yaml": {
         "baseline": 4787,
-        "current": 4787,
-        "delta": 0,
-        "ratio": 0.0
+        "current": 4790,
+        "delta": 3,
+        "ratio": 0.0006266973052015876
       },
       "categories/cdn-ip.json": {
         "baseline": 3,
@@ -220,52 +220,52 @@
         "ratio": 0.0
       },
       "categories/cn-domain.json": {
-        "baseline": 5980,
+        "baseline": 5990,
         "current": 5990,
-        "delta": 10,
-        "ratio": 0.0016722408026755853
+        "delta": 0,
+        "ratio": 0.0
       },
       "categories/cn-domain.mrs": {
-        "baseline": 5970,
+        "baseline": 5980,
         "current": 5990,
-        "delta": 20,
-        "ratio": 0.0033500837520938024
+        "delta": 10,
+        "ratio": 0.0016722408026755853
       },
       "categories/cn-domain.srs": {
-        "baseline": 5980,
+        "baseline": 5990,
         "current": 5990,
-        "delta": 10,
-        "ratio": 0.0016722408026755853
+        "delta": 0,
+        "ratio": 0.0
       },
       "categories/cn-domain.yaml": {
-        "baseline": 5980,
+        "baseline": 5990,
         "current": 5990,
-        "delta": 10,
-        "ratio": 0.0016722408026755853
+        "delta": 0,
+        "ratio": 0.0
       },
       "categories/cn-ip.json": {
-        "baseline": 12031,
-        "current": 12021,
-        "delta": -10,
-        "ratio": -0.0008311861025683651
+        "baseline": 12021,
+        "current": 12029,
+        "delta": 8,
+        "ratio": 0.0006655020380999917
       },
       "categories/cn-ip.mrs": {
-        "baseline": 12031,
-        "current": 12021,
-        "delta": -10,
-        "ratio": -0.0008311861025683651
+        "baseline": 12021,
+        "current": 12029,
+        "delta": 8,
+        "ratio": 0.0006655020380999917
       },
       "categories/cn-ip.srs": {
-        "baseline": 12031,
-        "current": 12021,
-        "delta": -10,
-        "ratio": -0.0008311861025683651
+        "baseline": 12021,
+        "current": 12029,
+        "delta": 8,
+        "ratio": 0.0006655020380999917
       },
       "categories/cn-ip.yaml": {
-        "baseline": 12031,
-        "current": 12021,
-        "delta": -10,
-        "ratio": -0.0008311861025683651
+        "baseline": 12021,
+        "current": 12029,
+        "delta": 8,
+        "ratio": 0.0006655020380999917
       },
       "categories/direct-domain.json": {
         "baseline": 218,
@@ -532,52 +532,52 @@
         "ratio": 0.0
       },
       "categories/reject-domain.json": {
-        "baseline": 125728,
-        "current": 123941,
-        "delta": -1787,
-        "ratio": -0.01421322219394248
+        "baseline": 123941,
+        "current": 124954,
+        "delta": 1013,
+        "ratio": 0.00817324372080264
       },
       "categories/reject-domain.mrs": {
-        "baseline": 125728,
-        "current": 123941,
-        "delta": -1787,
-        "ratio": -0.01421322219394248
+        "baseline": 123941,
+        "current": 124954,
+        "delta": 1013,
+        "ratio": 0.00817324372080264
       },
       "categories/reject-domain.srs": {
-        "baseline": 125728,
-        "current": 123941,
-        "delta": -1787,
-        "ratio": -0.01421322219394248
+        "baseline": 123941,
+        "current": 124954,
+        "delta": 1013,
+        "ratio": 0.00817324372080264
       },
       "categories/reject-domain.yaml": {
-        "baseline": 125728,
-        "current": 123941,
-        "delta": -1787,
-        "ratio": -0.01421322219394248
+        "baseline": 123941,
+        "current": 124954,
+        "delta": 1013,
+        "ratio": 0.00817324372080264
       },
       "categories/reject-ip.json": {
         "baseline": 768,
-        "current": 783,
-        "delta": 15,
-        "ratio": 0.01953125
+        "current": 782,
+        "delta": 14,
+        "ratio": 0.018229166666666668
       },
       "categories/reject-ip.mrs": {
         "baseline": 768,
-        "current": 783,
-        "delta": 15,
-        "ratio": 0.01953125
+        "current": 782,
+        "delta": 14,
+        "ratio": 0.018229166666666668
       },
       "categories/reject-ip.srs": {
         "baseline": 768,
-        "current": 783,
-        "delta": 15,
-        "ratio": 0.01953125
+        "current": 782,
+        "delta": 14,
+        "ratio": 0.018229166666666668
       },
       "categories/reject-ip.yaml": {
         "baseline": 783,
-        "current": 783,
-        "delta": 0,
-        "ratio": 0.0
+        "current": 782,
+        "delta": -1,
+        "ratio": -0.001277139208173691
       },
       "categories/steam-cn-domain.json": {
         "baseline": 17,
@@ -700,52 +700,52 @@
         "ratio": 0.0
       },
       "profiles/default/direct-domain.json": {
-        "baseline": 6660,
+        "baseline": 6670,
         "current": 6670,
-        "delta": 10,
-        "ratio": 0.0015015015015015015
+        "delta": 0,
+        "ratio": 0.0
       },
       "profiles/default/direct-domain.mrs": {
-        "baseline": 6597,
+        "baseline": 6607,
         "current": 6670,
-        "delta": 73,
-        "ratio": 0.011065635895103836
+        "delta": 63,
+        "ratio": 0.009535341304676858
       },
       "profiles/default/direct-domain.srs": {
-        "baseline": 6660,
+        "baseline": 6670,
         "current": 6670,
-        "delta": 10,
-        "ratio": 0.0015015015015015015
+        "delta": 0,
+        "ratio": 0.0
       },
       "profiles/default/direct-domain.yaml": {
-        "baseline": 6660,
+        "baseline": 6670,
         "current": 6670,
-        "delta": 10,
-        "ratio": 0.0015015015015015015
+        "delta": 0,
+        "ratio": 0.0
       },
       "profiles/default/direct-ip.json": {
-        "baseline": 12059,
-        "current": 12049,
-        "delta": -10,
-        "ratio": -0.0008292561572269675
+        "baseline": 12049,
+        "current": 12057,
+        "delta": 8,
+        "ratio": 0.0006639555149804963
       },
       "profiles/default/direct-ip.mrs": {
-        "baseline": 12059,
-        "current": 12049,
-        "delta": -10,
-        "ratio": -0.0008292561572269675
+        "baseline": 12049,
+        "current": 12057,
+        "delta": 8,
+        "ratio": 0.0006639555149804963
       },
       "profiles/default/direct-ip.srs": {
-        "baseline": 12059,
-        "current": 12049,
-        "delta": -10,
-        "ratio": -0.0008292561572269675
+        "baseline": 12049,
+        "current": 12057,
+        "delta": 8,
+        "ratio": 0.0006639555149804963
       },
       "profiles/default/direct-ip.yaml": {
-        "baseline": 12059,
-        "current": 12049,
-        "delta": -10,
-        "ratio": -0.0008292561572269675
+        "baseline": 12049,
+        "current": 12057,
+        "delta": 8,
+        "ratio": 0.0006639555149804963
       },
       "profiles/default/override-proxy-domain.json": {
         "baseline": 1,
@@ -773,27 +773,27 @@
       },
       "profiles/default/proxy-domain.json": {
         "baseline": 5664,
-        "current": 5664,
-        "delta": 0,
-        "ratio": 0.0
+        "current": 5663,
+        "delta": -1,
+        "ratio": -0.00017655367231638418
       },
       "profiles/default/proxy-domain.mrs": {
         "baseline": 5623,
-        "current": 5664,
-        "delta": 41,
-        "ratio": 0.00729148141561444
+        "current": 5663,
+        "delta": 40,
+        "ratio": 0.007113640405477503
       },
       "profiles/default/proxy-domain.srs": {
         "baseline": 5664,
-        "current": 5664,
-        "delta": 0,
-        "ratio": 0.0
+        "current": 5663,
+        "delta": -1,
+        "ratio": -0.00017655367231638418
       },
       "profiles/default/proxy-domain.yaml": {
         "baseline": 5664,
-        "current": 5664,
-        "delta": 0,
-        "ratio": 0.0
+        "current": 5663,
+        "delta": -1,
+        "ratio": -0.00017655367231638418
       },
       "profiles/default/proxy-ip.json": {
         "baseline": 33,
@@ -820,52 +820,52 @@
         "ratio": 0.0
       },
       "profiles/default/reject-domain.json": {
-        "baseline": 125727,
-        "current": 123940,
-        "delta": -1787,
-        "ratio": -0.014213335242231184
+        "baseline": 123940,
+        "current": 124953,
+        "delta": 1013,
+        "ratio": 0.008173309665967403
       },
       "profiles/default/reject-domain.mrs": {
-        "baseline": 125727,
-        "current": 123940,
-        "delta": -1787,
-        "ratio": -0.014213335242231184
+        "baseline": 123940,
+        "current": 124953,
+        "delta": 1013,
+        "ratio": 0.008173309665967403
       },
       "profiles/default/reject-domain.srs": {
-        "baseline": 125727,
-        "current": 123940,
-        "delta": -1787,
-        "ratio": -0.014213335242231184
+        "baseline": 123940,
+        "current": 124953,
+        "delta": 1013,
+        "ratio": 0.008173309665967403
       },
       "profiles/default/reject-domain.yaml": {
-        "baseline": 125727,
-        "current": 123940,
-        "delta": -1787,
-        "ratio": -0.014213335242231184
+        "baseline": 123940,
+        "current": 124953,
+        "delta": 1013,
+        "ratio": 0.008173309665967403
       },
       "profiles/default/reject-ip.json": {
         "baseline": 768,
-        "current": 783,
-        "delta": 15,
-        "ratio": 0.01953125
+        "current": 782,
+        "delta": 14,
+        "ratio": 0.018229166666666668
       },
       "profiles/default/reject-ip.mrs": {
         "baseline": 768,
-        "current": 783,
-        "delta": 15,
-        "ratio": 0.01953125
+        "current": 782,
+        "delta": 14,
+        "ratio": 0.018229166666666668
       },
       "profiles/default/reject-ip.srs": {
         "baseline": 768,
-        "current": 783,
-        "delta": 15,
-        "ratio": 0.01953125
+        "current": 782,
+        "delta": 14,
+        "ratio": 0.018229166666666668
       },
       "profiles/default/reject-ip.yaml": {
         "baseline": 783,
-        "current": 783,
-        "delta": 0,
-        "ratio": 0.0
+        "current": 782,
+        "delta": -1,
+        "ratio": -0.001277139208173691
       }
     },
     "checked": true,
@@ -892,14 +892,14 @@
     "ai-domain": {
       "duplicates": 112,
       "family": "domain",
-      "rules": 264,
+      "rules": 266,
       "sources": {
         "ACL4SSR_ai": 49,
         "DustinWin_ai": 227,
         "local_ai_coding": 30,
         "local_ai_gateway": 5,
         "local_ai_general": 8,
-        "skk_ai": 57
+        "skk_ai": 59
       }
     },
     "ai-gateway-domain": {
@@ -913,11 +913,11 @@
     "ai-provider-domain": {
       "duplicates": 78,
       "family": "domain",
-      "rules": 255,
+      "rules": 257,
       "sources": {
         "ACL4SSR_ai": 49,
         "DustinWin_ai": 227,
-        "skk_ai": 57
+        "skk_ai": 59
       }
     },
     "apple-cn-domain": {
@@ -942,10 +942,10 @@
     "cdn-domain": {
       "duplicates": 0,
       "family": "domain",
-      "rules": 4787,
+      "rules": 4790,
       "sources": {
         "skk_cdn": 85,
-        "skk_cdn_domainset": 4702
+        "skk_cdn_domainset": 4705
       }
     },
     "cdn-ip": {
@@ -967,13 +967,13 @@
       }
     },
     "cn-ip": {
-      "duplicates": 4990,
+      "duplicates": 4984,
       "family": "ipcidr",
-      "rules": 12021,
+      "rules": 12029,
       "sources": {
         "geoip_cn": 9665,
         "skk_china_ip": 3900,
-        "skk_china_ipv6": 3444,
+        "skk_china_ipv6": 3446,
         "skk_domestic_ip": 2
       }
     },
@@ -1071,17 +1071,17 @@
     "reject-domain": {
       "duplicates": 0,
       "family": "domain",
-      "rules": 123941,
+      "rules": 124954,
       "sources": {
-        "xndeye_reject": 123941
+        "xndeye_reject": 124954
       }
     },
     "reject-ip": {
       "duplicates": 0,
       "family": "ipcidr",
-      "rules": 783,
+      "rules": 782,
       "sources": {
-        "skk_reject_ip": 783
+        "skk_reject_ip": 782
       }
     },
     "steam-cn-domain": {
@@ -1664,14 +1664,6 @@
           {
             "authorized": false,
             "left": "ai-domain",
-            "other": "domain_suffix:claudeusercontent.com",
-            "relation": "exact",
-            "right": "cdn-domain",
-            "rule": "domain_suffix:claudeusercontent.com"
-          },
-          {
-            "authorized": false,
-            "left": "ai-domain",
             "other": "domain_suffix:vsassets.io",
             "relation": "parent-child",
             "right": "cdn-domain",
@@ -1968,6 +1960,38 @@
           {
             "authorized": false,
             "left": "cdn-domain",
+            "other": "domain_suffix:claudeusercontent.com",
+            "relation": "parent-child",
+            "right": "ai-domain",
+            "rule": "domain_suffix:frame.claudeusercontent.com"
+          },
+          {
+            "authorized": false,
+            "left": "cdn-domain",
+            "other": "domain_suffix:claudeusercontent.com",
+            "relation": "parent-child",
+            "right": "ai-domain",
+            "rule": "domain:assets.claudeusercontent.com"
+          },
+          {
+            "authorized": false,
+            "left": "cdn-domain",
+            "other": "domain_suffix:claudeusercontent.com",
+            "relation": "parent-child",
+            "right": "ai-domain",
+            "rule": "domain:static.claudeusercontent.com"
+          },
+          {
+            "authorized": false,
+            "left": "cdn-domain",
+            "other": "domain_suffix:claudeusercontent.com",
+            "relation": "parent-child",
+            "right": "ai-domain",
+            "rule": "domain:upload.claudeusercontent.com"
+          },
+          {
+            "authorized": false,
+            "left": "cdn-domain",
             "other": "domain_suffix:githubcopilot.com",
             "relation": "parent-child",
             "right": "ai-domain",
@@ -1990,7 +2014,7 @@
             "rule": "domain:telemetry.individual.githubcopilot.com"
           }
         ],
-        "total": 48
+        "total": 51
       },
       "ai-domain:download-domain": {
         "items": [
@@ -2310,6 +2334,14 @@
             "relation": "parent-child",
             "right": "gfw-domain",
             "rule": "domain_suffix:cloudcode-pa.googleapis.com"
+          },
+          {
+            "authorized": false,
+            "left": "ai-domain",
+            "other": "domain_suffix:claudeusercontent.com",
+            "relation": "parent-child",
+            "right": "gfw-domain",
+            "rule": "domain:bridge.claudeusercontent.com"
           },
           {
             "authorized": false,
@@ -2864,7 +2896,7 @@
             "rule": "domain_suffix:backend-v2.crixet.com"
           }
         ],
-        "total": 97
+        "total": 98
       },
       "ai-domain:global-domain": {
         "items": [
@@ -3539,6 +3571,22 @@
           {
             "authorized": false,
             "left": "ai-provider-domain",
+            "other": "domain:claude.site",
+            "relation": "exact",
+            "right": "ai-domain",
+            "rule": "domain:claude.site"
+          },
+          {
+            "authorized": false,
+            "left": "ai-provider-domain",
+            "other": "domain_suffix:claude.site",
+            "relation": "parent-child",
+            "right": "ai-domain",
+            "rule": "domain:claude.site"
+          },
+          {
+            "authorized": false,
+            "left": "ai-provider-domain",
             "other": "domain_suffix:clipdrop.co",
             "relation": "exact",
             "right": "ai-domain",
@@ -3875,6 +3923,22 @@
           {
             "authorized": false,
             "left": "ai-provider-domain",
+            "other": "domain:bridge.claudeusercontent.com",
+            "relation": "exact",
+            "right": "ai-domain",
+            "rule": "domain:bridge.claudeusercontent.com"
+          },
+          {
+            "authorized": false,
+            "left": "ai-provider-domain",
+            "other": "domain_suffix:claudeusercontent.com",
+            "relation": "parent-child",
+            "right": "ai-domain",
+            "rule": "domain:bridge.claudeusercontent.com"
+          },
+          {
+            "authorized": false,
+            "left": "ai-provider-domain",
             "other": "domain:server.self-serve.windsurf.com",
             "relation": "exact",
             "right": "ai-domain",
@@ -4167,41 +4231,9 @@
             "relation": "exact",
             "right": "ai-domain",
             "rule": "domain:ppl-ai-file-upload.s3.amazonaws.com"
-          },
-          {
-            "authorized": false,
-            "left": "ai-provider-domain",
-            "other": "domain:pplx-res.cloudinary.com",
-            "relation": "exact",
-            "right": "ai-domain",
-            "rule": "domain:pplx-res.cloudinary.com"
-          },
-          {
-            "authorized": false,
-            "left": "ai-provider-domain",
-            "other": "domain:production-copilot-host-westus.webpubsub.azure.com",
-            "relation": "exact",
-            "right": "ai-domain",
-            "rule": "domain:production-copilot-host-westus.webpubsub.azure.com"
-          },
-          {
-            "authorized": false,
-            "left": "ai-provider-domain",
-            "other": "domain:production-openaicom-storage.azureedge.net",
-            "relation": "exact",
-            "right": "ai-domain",
-            "rule": "domain:production-openaicom-storage.azureedge.net"
-          },
-          {
-            "authorized": false,
-            "left": "ai-provider-domain",
-            "other": "domain:servd-anthropic-website.b-cdn.net",
-            "relation": "exact",
-            "right": "ai-domain",
-            "rule": "domain:servd-anthropic-website.b-cdn.net"
           }
         ],
-        "total": 299
+        "total": 305
       },
       "ai-provider-domain:ai-gateway-domain": {
         "items": [
@@ -4366,14 +4398,6 @@
             "relation": "exact",
             "right": "cdn-domain",
             "rule": "domain:pplx-res.cloudinary.com"
-          },
-          {
-            "authorized": false,
-            "left": "ai-provider-domain",
-            "other": "domain_suffix:claudeusercontent.com",
-            "relation": "exact",
-            "right": "cdn-domain",
-            "rule": "domain_suffix:claudeusercontent.com"
           },
           {
             "authorized": false,
@@ -4666,6 +4690,38 @@
           {
             "authorized": false,
             "left": "cdn-domain",
+            "other": "domain_suffix:claudeusercontent.com",
+            "relation": "parent-child",
+            "right": "ai-provider-domain",
+            "rule": "domain_suffix:frame.claudeusercontent.com"
+          },
+          {
+            "authorized": false,
+            "left": "cdn-domain",
+            "other": "domain_suffix:claudeusercontent.com",
+            "relation": "parent-child",
+            "right": "ai-provider-domain",
+            "rule": "domain:assets.claudeusercontent.com"
+          },
+          {
+            "authorized": false,
+            "left": "cdn-domain",
+            "other": "domain_suffix:claudeusercontent.com",
+            "relation": "parent-child",
+            "right": "ai-provider-domain",
+            "rule": "domain:static.claudeusercontent.com"
+          },
+          {
+            "authorized": false,
+            "left": "cdn-domain",
+            "other": "domain_suffix:claudeusercontent.com",
+            "relation": "parent-child",
+            "right": "ai-provider-domain",
+            "rule": "domain:upload.claudeusercontent.com"
+          },
+          {
+            "authorized": false,
+            "left": "cdn-domain",
             "other": "domain_suffix:githubcopilot.com",
             "relation": "parent-child",
             "right": "ai-provider-domain",
@@ -4688,7 +4744,7 @@
             "rule": "domain:telemetry.individual.githubcopilot.com"
           }
         ],
-        "total": 47
+        "total": 50
       },
       "ai-provider-domain:download-domain": {
         "items": [
@@ -5008,6 +5064,14 @@
             "relation": "parent-child",
             "right": "gfw-domain",
             "rule": "domain_suffix:cloudcode-pa.googleapis.com"
+          },
+          {
+            "authorized": false,
+            "left": "ai-provider-domain",
+            "other": "domain_suffix:claudeusercontent.com",
+            "relation": "parent-child",
+            "right": "gfw-domain",
+            "rule": "domain:bridge.claudeusercontent.com"
           },
           {
             "authorized": false,
@@ -5554,7 +5618,7 @@
             "rule": "domain_suffix:backend-v2.crixet.com"
           }
         ],
-        "total": 96
+        "total": 97
       },
       "ai-provider-domain:global-domain": {
         "items": [
@@ -7177,7 +7241,7 @@
             "rule": "domain:img.windy.com"
           }
         ],
-        "total": 654
+        "total": 657
       },
       "cdn-domain:global-domain": {
         "items": [
@@ -15339,6 +15403,14 @@
           {
             "authorized": false,
             "left": "reject-domain",
+            "other": "domain_suffix:chatgpt.com",
+            "relation": "parent-child",
+            "right": "ai-domain",
+            "rule": "domain_suffix:ads.chatgpt.com"
+          },
+          {
+            "authorized": false,
+            "left": "reject-domain",
             "other": "domain_suffix:cline.bot",
             "relation": "parent-child",
             "right": "ai-domain",
@@ -15569,7 +15641,7 @@
             "rule": "domain_suffix:events.statsigapi.net"
           }
         ],
-        "total": 35
+        "total": 36
       },
       "reject-domain:ai-provider-domain": {
         "items": [
@@ -15624,6 +15696,14 @@
           {
             "authorized": false,
             "left": "reject-domain",
+            "other": "domain_suffix:chatgpt.com",
+            "relation": "parent-child",
+            "right": "ai-provider-domain",
+            "rule": "domain_suffix:ads.chatgpt.com"
+          },
+          {
+            "authorized": false,
+            "left": "reject-domain",
             "other": "domain_suffix:cline.bot",
             "relation": "parent-child",
             "right": "ai-provider-domain",
@@ -15854,7 +15934,7 @@
             "rule": "domain_suffix:events.statsigapi.net"
           }
         ],
-        "total": 35
+        "total": 36
       },
       "reject-domain:apple-cn-domain": {
         "items": [
@@ -18037,7 +18117,7 @@
             "rule": "domain_suffix:d12zgccgt6pwjz.cloudfront.net"
           }
         ],
-        "total": 2722
+        "total": 2716
       },
       "reject-domain:cn-domain": {
         "items": [
@@ -18842,7 +18922,7 @@
             "rule": "domain_suffix:www5.oss-cn-hangzhou.aliyuncs.com"
           }
         ],
-        "total": 3473
+        "total": 3489
       },
       "reject-domain:direct-domain": {
         "items": [
@@ -19812,7 +19892,7 @@
             "rule": "domain_suffix:vn-adtech-beta-us-east-1-ad-quality.s3.eu-west-1.amazonaws.com"
           }
         ],
-        "total": 310
+        "total": 308
       },
       "reject-domain:gfw-domain": {
         "items": [
@@ -20617,7 +20697,7 @@
             "rule": "domain_suffix:sub.powerapple.com"
           }
         ],
-        "total": 1891
+        "total": 1887
       },
       "reject-domain:global-domain": {
         "items": [
@@ -21422,7 +21502,7 @@
             "rule": "domain_suffix:gvt2.com"
           }
         ],
-        "total": 3828
+        "total": 3820
       },
       "reject-domain:google-cn-domain": {
         "items": [
@@ -33700,14 +33780,6 @@
             "other": "domain_suffix:360.cn",
             "relation": "parent-child",
             "right": "direct",
-            "rule": "domain_suffix:cm.dmp.360.cn"
-          },
-          {
-            "authorized": false,
-            "left": "reject",
-            "other": "domain_suffix:360.cn",
-            "relation": "parent-child",
-            "right": "direct",
             "rule": "domain_suffix:socm.dmp.360.cn"
           },
           {
@@ -34588,6 +34660,14 @@
             "other": "domain_suffix:alicdn.com",
             "relation": "parent-child",
             "right": "direct",
+            "rule": "domain_suffix:g01.a.alicdn.com"
+          },
+          {
+            "authorized": false,
+            "left": "reject",
+            "other": "domain_suffix:alicdn.com",
+            "relation": "parent-child",
+            "right": "direct",
             "rule": "domain_suffix:umc.danuoyi.alicdn.com"
           },
           {
@@ -34713,6 +34793,14 @@
           {
             "authorized": false,
             "left": "reject",
+            "other": "domain_suffix:aligames.com",
+            "relation": "parent-child",
+            "right": "direct",
+            "rule": "domain_suffix:member-log.aligames.com"
+          },
+          {
+            "authorized": false,
+            "left": "reject",
             "other": "domain_suffix:alikunlun.com",
             "relation": "parent-child",
             "right": "direct",
@@ -34773,6 +34861,14 @@
             "relation": "parent-child",
             "right": "direct",
             "rule": "domain_suffix:loggw-exsdk.alipay.com"
+          },
+          {
+            "authorized": false,
+            "left": "reject",
+            "other": "domain_suffix:alipay.com",
+            "relation": "parent-child",
+            "right": "direct",
+            "rule": "domain_suffix:seccliprod.alipay.com"
           },
           {
             "authorized": false,
@@ -36484,6 +36580,14 @@
             "other": "domain_suffix:bdstatic.com",
             "relation": "parent-child",
             "right": "direct",
+            "rule": "domain_suffix:dss2.bdstatic.com"
+          },
+          {
+            "authorized": false,
+            "left": "reject",
+            "other": "domain_suffix:bdstatic.com",
+            "relation": "parent-child",
+            "right": "direct",
             "rule": "domain_suffix:fex.bdstatic.com"
           },
           {
@@ -36741,6 +36845,14 @@
             "relation": "parent-child",
             "right": "direct",
             "rule": "domain_suffix:matomo.broadcasthe.net"
+          },
+          {
+            "authorized": false,
+            "left": "reject",
+            "other": "domain_suffix:bytecdn.cn",
+            "relation": "parent-child",
+            "right": "direct",
+            "rule": "domain_suffix:s3.bytecdn.cn"
           },
           {
             "authorized": false,
@@ -38540,6 +38652,14 @@
             "other": "domain_suffix:com.cn",
             "relation": "parent-child",
             "right": "direct",
+            "rule": "domain_suffix:dynamic.zol.com.cn"
+          },
+          {
+            "authorized": false,
+            "left": "reject",
+            "other": "domain_suffix:com.cn",
+            "relation": "parent-child",
+            "right": "direct",
             "rule": "domain_suffix:js.zol.com.cn"
           },
           {
@@ -38572,6 +38692,14 @@
             "other": "domain_suffix:com.cn",
             "relation": "parent-child",
             "right": "direct",
+            "rule": "domain_suffix:0512pifa.com.cn"
+          },
+          {
+            "authorized": false,
+            "left": "reject",
+            "other": "domain_suffix:com.cn",
+            "relation": "parent-child",
+            "right": "direct",
             "rule": "domain_suffix:10jqka-jq.com.cn"
           },
           {
@@ -38597,6 +38725,14 @@
             "relation": "parent-child",
             "right": "direct",
             "rule": "domain_suffix:adn-plus.com.cn"
+          },
+          {
+            "authorized": false,
+            "left": "reject",
+            "other": "domain_suffix:com.cn",
+            "relation": "parent-child",
+            "right": "direct",
+            "rule": "domain_suffix:aegt.com.cn"
           },
           {
             "authorized": false,
@@ -38772,6 +38908,14 @@
             "other": "domain_suffix:com.cn",
             "relation": "parent-child",
             "right": "direct",
+            "rule": "domain_suffix:lulumao.com.cn"
+          },
+          {
+            "authorized": false,
+            "left": "reject",
+            "other": "domain_suffix:com.cn",
+            "relation": "parent-child",
+            "right": "direct",
             "rule": "domain_suffix:nuffnang.com.cn"
           },
           {
@@ -38853,6 +38997,14 @@
             "relation": "parent-child",
             "right": "direct",
             "rule": "domain_suffix:quanrunze.com.cn"
+          },
+          {
+            "authorized": false,
+            "left": "reject",
+            "other": "domain_suffix:com.cn",
+            "relation": "parent-child",
+            "right": "direct",
+            "rule": "domain_suffix:sdyongyan.com.cn"
           },
           {
             "authorized": false,
@@ -41332,6 +41484,14 @@
             "other": "domain_suffix:ifeng.com",
             "relation": "parent-child",
             "right": "direct",
+            "rule": "domain_suffix:bdmap1.ifeng.com"
+          },
+          {
+            "authorized": false,
+            "left": "reject",
+            "other": "domain_suffix:ifeng.com",
+            "relation": "parent-child",
+            "right": "direct",
             "rule": "domain_suffix:stadig.ifeng.com"
           },
           {
@@ -42721,6 +42881,14 @@
           {
             "authorized": false,
             "left": "reject",
+            "other": "domain_suffix:leju.com",
+            "relation": "parent-child",
+            "right": "direct",
+            "rule": "domain_suffix:src.leju.com"
+          },
+          {
+            "authorized": false,
+            "left": "reject",
             "other": "domain_suffix:lenovo.com",
             "relation": "parent-child",
             "right": "direct",
@@ -43189,6 +43357,14 @@
             "relation": "parent-child",
             "right": "direct",
             "rule": "domain_suffix:credits.bz.mgtv.com"
+          },
+          {
+            "authorized": false,
+            "left": "reject",
+            "other": "domain_suffix:mgtv.com",
+            "relation": "parent-child",
+            "right": "direct",
+            "rule": "domain_suffix:encounter.bz.mgtv.com"
           },
           {
             "authorized": false,
@@ -44244,6 +44420,14 @@
             "other": "domain_suffix:mmstat.com",
             "relation": "parent-child",
             "right": "direct",
+            "rule": "domain_suffix:oneid.mmstat.com"
+          },
+          {
+            "authorized": false,
+            "left": "reject",
+            "other": "domain_suffix:mmstat.com",
+            "relation": "parent-child",
+            "right": "direct",
             "rule": "domain_suffix:perf.mmstat.com"
           },
           {
@@ -44469,6 +44653,14 @@
             "relation": "parent-child",
             "right": "direct",
             "rule": "domain_suffix:sqdd.myapp.com"
+          },
+          {
+            "authorized": false,
+            "left": "reject",
+            "other": "domain_suffix:mydrivers.com",
+            "relation": "parent-child",
+            "right": "direct",
+            "rule": "domain_suffix:icons.mydrivers.com"
           },
           {
             "authorized": false,
@@ -44773,6 +44965,14 @@
             "relation": "parent-child",
             "right": "direct",
             "rule": "domain_suffix:cnnic.net.cn"
+          },
+          {
+            "authorized": false,
+            "left": "reject",
+            "other": "domain_suffix:net.cn",
+            "relation": "parent-child",
+            "right": "direct",
+            "rule": "domain_suffix:jrds.net.cn"
           },
           {
             "authorized": false,
@@ -45537,14 +45737,6 @@
           {
             "authorized": false,
             "left": "reject",
-            "other": "domain_suffix:qiumibao.com",
-            "relation": "parent-child",
-            "right": "direct",
-            "rule": "domain_suffix:up.qiumibao.com"
-          },
-          {
-            "authorized": false,
-            "left": "reject",
             "other": "domain_suffix:qiyi.com",
             "relation": "parent-child",
             "right": "direct",
@@ -45709,6 +45901,14 @@
             "relation": "parent-child",
             "right": "direct",
             "rule": "domain_suffix:cgi.connect.qq.com"
+          },
+          {
+            "authorized": false,
+            "left": "reject",
+            "other": "domain_suffix:qq.com",
+            "relation": "parent-child",
+            "right": "direct",
+            "rule": "domain_suffix:master.etl.desktop.qq.com"
           },
           {
             "authorized": false,
@@ -48076,6 +48276,14 @@
             "other": "domain_suffix:sohucs.com",
             "relation": "parent-child",
             "right": "direct",
+            "rule": "domain_suffix:590233ee4fbb3.cdn.sohucs.com"
+          },
+          {
+            "authorized": false,
+            "left": "reject",
+            "other": "domain_suffix:sohucs.com",
+            "relation": "parent-child",
+            "right": "direct",
             "rule": "domain_suffix:e8aeb8bbdbbd7.cdn.sohucs.com"
           },
           {
@@ -48101,14 +48309,6 @@
             "relation": "parent-child",
             "right": "direct",
             "rule": "domain_suffix:data-collector.soulapp.cn"
-          },
-          {
-            "authorized": false,
-            "left": "reject",
-            "other": "domain_suffix:soulapp.cn",
-            "relation": "parent-child",
-            "right": "direct",
-            "rule": "domain_suffix:soul-ad.soulapp.cn"
           },
           {
             "authorized": false,
@@ -48157,6 +48357,14 @@
             "relation": "parent-child",
             "right": "direct",
             "rule": "domain_suffix:dcbpm.suning.cn"
+          },
+          {
+            "authorized": false,
+            "left": "reject",
+            "other": "domain_suffix:suning.cn",
+            "relation": "parent-child",
+            "right": "direct",
+            "rule": "domain_suffix:sa.suning.cn"
           },
           {
             "authorized": false,
@@ -49437,14 +49645,6 @@
             "relation": "parent-child",
             "right": "direct",
             "rule": "domain_suffix:ad.uni-bielefeld.de"
-          },
-          {
-            "authorized": false,
-            "left": "reject",
-            "other": "domain_suffix:vip.com",
-            "relation": "parent-child",
-            "right": "direct",
-            "rule": "domain_suffix:mar.vip.com"
           },
           {
             "authorized": false,
@@ -50785,6 +50985,14 @@
           {
             "authorized": false,
             "left": "reject",
+            "other": "domain_suffix:xiaopeng.com",
+            "relation": "parent-child",
+            "right": "direct",
+            "rule": "domain_suffix:collect.xiaopeng.com"
+          },
+          {
+            "authorized": false,
+            "left": "reject",
             "other": "domain_suffix:xiaoyuzhoufm.com",
             "relation": "parent-child",
             "right": "direct",
@@ -51077,6 +51285,14 @@
             "relation": "parent-child",
             "right": "direct",
             "rule": "domain_suffix:img-nos.yiyouliao.com"
+          },
+          {
+            "authorized": false,
+            "left": "reject",
+            "other": "domain_suffix:ykimg.com",
+            "relation": "parent-child",
+            "right": "direct",
+            "rule": "domain_suffix:g3.ykimg.com"
           },
           {
             "authorized": false,
@@ -51509,14 +51725,6 @@
             "relation": "parent-child",
             "right": "direct",
             "rule": "domain_suffix:sys.zhangyue.com"
-          },
-          {
-            "authorized": false,
-            "left": "reject",
-            "other": "domain_suffix:zhaopin.com",
-            "relation": "parent-child",
-            "right": "direct",
-            "rule": "domain_suffix:sentry.zhaopin.com"
           },
           {
             "authorized": false,
@@ -58084,6 +58292,14 @@
             "other": "domain_suffix:cloudfront.net",
             "relation": "parent-child",
             "right": "proxy",
+            "rule": "domain_suffix:dv5vwlgir0hsc.cloudfront.net"
+          },
+          {
+            "authorized": false,
+            "left": "reject",
+            "other": "domain_suffix:cloudfront.net",
+            "relation": "parent-child",
+            "right": "proxy",
             "rule": "domain_suffix:dvc8653ec6uyk.cloudfront.net"
           },
           {
@@ -59429,14 +59645,6 @@
             "relation": "parent-child",
             "right": "proxy",
             "rule": "domain_suffix:tide-marble-cdn-66.workers.dev"
-          },
-          {
-            "authorized": false,
-            "left": "reject",
-            "other": "domain_suffix:cloudfront.net",
-            "relation": "parent-child",
-            "right": "proxy",
-            "rule": "domain_suffix:dv5vwlgir0hsc.cloudfront.net"
           },
           {
             "authorized": false,
@@ -60828,6 +61036,14 @@
             "other": "domain_suffix:amazonaws.com",
             "relation": "parent-child",
             "right": "proxy",
+            "rule": "domain_suffix:dataplane.rum.ap-south-2.amazonaws.com"
+          },
+          {
+            "authorized": false,
+            "left": "reject",
+            "other": "domain_suffix:amazonaws.com",
+            "relation": "parent-child",
+            "right": "proxy",
             "rule": "domain_suffix:ieluqbvv.telemetry.connect.ap-southeast-1.amazonaws.com"
           },
           {
@@ -62013,6 +62229,14 @@
             "relation": "parent-child",
             "right": "proxy",
             "rule": "domain_suffix:eu-countly-elb-1457848585.eu-west-1.elb.amazonaws.com"
+          },
+          {
+            "authorized": false,
+            "left": "reject",
+            "other": "domain_suffix:amazonaws.com",
+            "relation": "parent-child",
+            "right": "proxy",
+            "rule": "domain_suffix:gtm-sst-external-production-alb-933915895.eu-west-1.elb.amazonaws.com"
           },
           {
             "authorized": false,
@@ -64948,14 +65172,6 @@
             "other": "domain_suffix:amazonaws.com",
             "relation": "parent-child",
             "right": "proxy",
-            "rule": "domain_suffix:nanit-raw-videos-analytics.s3.amazonaws.com"
-          },
-          {
-            "authorized": false,
-            "left": "reject",
-            "other": "domain_suffix:amazonaws.com",
-            "relation": "parent-child",
-            "right": "proxy",
             "rule": "domain_suffix:nitrous-analytics.s3.amazonaws.com"
           },
           {
@@ -65029,14 +65245,6 @@
             "relation": "parent-child",
             "right": "proxy",
             "rule": "domain_suffix:simple-cdn.s3.amazonaws.com"
-          },
-          {
-            "authorized": false,
-            "left": "reject",
-            "other": "domain_suffix:amazonaws.com",
-            "relation": "parent-child",
-            "right": "proxy",
-            "rule": "domain_suffix:skyprep-filepicker-uploads.s3.amazonaws.com"
           },
           {
             "authorized": false,
@@ -65916,6 +66124,14 @@
             "other": "domain_suffix:amazonaws.com",
             "relation": "parent-child",
             "right": "proxy",
+            "rule": "domain_suffix:hb-rollcall.s3.us-east-2.amazonaws.com"
+          },
+          {
+            "authorized": false,
+            "left": "reject",
+            "other": "domain_suffix:amazonaws.com",
+            "relation": "parent-child",
+            "right": "proxy",
             "rule": "domain_suffix:hb-scribd.s3.us-east-2.amazonaws.com"
           },
           {
@@ -66508,14 +66724,6 @@
             "other": "domain_suffix:appspot.com",
             "relation": "parent-child",
             "right": "proxy",
-            "rule": "domain_suffix:gtm-t9m23dk-mta4z.uc.r.appspot.com"
-          },
-          {
-            "authorized": false,
-            "left": "reject",
-            "other": "domain_suffix:appspot.com",
-            "relation": "parent-child",
-            "right": "proxy",
             "rule": "domain_suffix:gtm-tcm4sq2-yjdmm.uc.r.appspot.com"
           },
           {
@@ -66549,6 +66757,14 @@
             "relation": "parent-child",
             "right": "proxy",
             "rule": "domain_suffix:gtm-wfr7fd3-odzjn.uc.r.appspot.com"
+          },
+          {
+            "authorized": false,
+            "left": "reject",
+            "other": "domain_suffix:appspot.com",
+            "relation": "parent-child",
+            "right": "proxy",
+            "rule": "domain_suffix:gtm-wgq9r67-ztk4m.uc.r.appspot.com"
           },
           {
             "authorized": false,
@@ -67020,6 +67236,14 @@
             "other": "domain_suffix:aws.dev",
             "relation": "parent-child",
             "right": "proxy",
+            "rule": "domain_suffix:insights.builderprofile.aws.dev"
+          },
+          {
+            "authorized": false,
+            "left": "reject",
+            "other": "domain_suffix:aws.dev",
+            "relation": "parent-child",
+            "right": "proxy",
             "rule": "domain_suffix:ide-telemetry.cloudformation.aws.dev"
           },
           {
@@ -67341,14 +67565,6 @@
             "relation": "parent-child",
             "right": "proxy",
             "rule": "domain_suffix:cookietracking.azurewebsites.net"
-          },
-          {
-            "authorized": false,
-            "left": "reject",
-            "other": "domain_suffix:azurewebsites.net",
-            "relation": "parent-child",
-            "right": "proxy",
-            "rule": "domain_suffix:ctrwow-prod-analytics-socketserver.azurewebsites.net"
           },
           {
             "authorized": false,
@@ -67948,6 +68164,14 @@
             "other": "domain_suffix:bittorrent.com",
             "relation": "parent-child",
             "right": "proxy",
+            "rule": "domain_suffix:ads.bittorrent.com"
+          },
+          {
+            "authorized": false,
+            "left": "reject",
+            "other": "domain_suffix:bittorrent.com",
+            "relation": "parent-child",
+            "right": "proxy",
             "rule": "domain_suffix:btbench.bittorrent.com"
           },
           {
@@ -68389,6 +68613,14 @@
             "relation": "parent-child",
             "right": "proxy",
             "rule": "domain_suffix:events.character.ai"
+          },
+          {
+            "authorized": false,
+            "left": "reject",
+            "other": "domain_suffix:chatgpt.com",
+            "relation": "parent-child",
+            "right": "proxy",
+            "rule": "domain_suffix:ads.chatgpt.com"
           },
           {
             "authorized": false,
@@ -69653,14 +69885,6 @@
             "relation": "parent-child",
             "right": "proxy",
             "rule": "domain_suffix:d2t953dxm5i0o5.cloudfront.net"
-          },
-          {
-            "authorized": false,
-            "left": "reject",
-            "other": "domain_suffix:cloudfront.net",
-            "relation": "parent-child",
-            "right": "proxy",
-            "rule": "domain_suffix:d2te5kruq0pvbl.cloudfront.net"
           },
           {
             "authorized": false,
@@ -71001,14 +71225,6 @@
           {
             "authorized": false,
             "left": "reject",
-            "other": "domain_suffix:cloudfront.net",
-            "relation": "parent-child",
-            "right": "proxy",
-            "rule": "domain_suffix:dzvdhp56mgzue.cloudfront.net"
-          },
-          {
-            "authorized": false,
-            "left": "reject",
             "other": "domain_suffix:cloudfunctions.net",
             "relation": "parent-child",
             "right": "proxy",
@@ -71085,6 +71301,14 @@
             "relation": "parent-child",
             "right": "proxy",
             "rule": "domain_suffix:europe-west3-mir-telemetry.cloudfunctions.net"
+          },
+          {
+            "authorized": false,
+            "left": "reject",
+            "other": "domain_suffix:cloudfunctions.net",
+            "relation": "parent-child",
+            "right": "proxy",
+            "rule": "domain_suffix:europe-west4-analytics-pixel-production.cloudfunctions.net"
           },
           {
             "authorized": false,
@@ -71493,14 +71717,6 @@
             "relation": "parent-child",
             "right": "proxy",
             "rule": "domain_suffix:adservice.google.co.id"
-          },
-          {
-            "authorized": false,
-            "left": "reject",
-            "other": "domain_suffix:google.co.il",
-            "relation": "parent-child",
-            "right": "proxy",
-            "rule": "domain_suffix:adservice.google.co.il"
           },
           {
             "authorized": false,
@@ -72637,6 +72853,14 @@
             "relation": "parent-child",
             "right": "proxy",
             "rule": "domain_suffix:commons.dw.com"
+          },
+          {
+            "authorized": false,
+            "left": "reject",
+            "other": "domain_suffix:dweb.link",
+            "relation": "parent-child",
+            "right": "proxy",
+            "rule": "domain_suffix:en-wikipedia--on--ipfs-org.ipns.dweb.link"
           },
           {
             "authorized": false,
@@ -76740,6 +76964,14 @@
             "other": "domain_suffix:moomoo.com",
             "relation": "parent-child",
             "right": "proxy",
+            "rule": "domain_suffix:collect.ca.moomoo.com"
+          },
+          {
+            "authorized": false,
+            "left": "reject",
+            "other": "domain_suffix:moomoo.com",
+            "relation": "parent-child",
+            "right": "proxy",
             "rule": "domain_suffix:collect.us.moomoo.com"
           },
           {
@@ -77108,14 +77340,6 @@
             "other": "domain_suffix:naver.com",
             "relation": "parent-child",
             "right": "proxy",
-            "rule": "domain_suffix:sentry-apollo-fe.naver.com"
-          },
-          {
-            "authorized": false,
-            "left": "reject",
-            "other": "domain_suffix:naver.com",
-            "relation": "parent-child",
-            "right": "proxy",
             "rule": "domain_suffix:sentry-fin.naver.com"
           },
           {
@@ -77445,6 +77669,14 @@
             "relation": "parent-child",
             "right": "proxy",
             "rule": "domain_suffix:sentry-testrtc.netlify.app"
+          },
+          {
+            "authorized": false,
+            "left": "reject",
+            "other": "domain_suffix:netlify.app",
+            "relation": "parent-child",
+            "right": "proxy",
+            "rule": "domain_suffix:trek-pixel.netlify.app"
           },
           {
             "authorized": false,
@@ -78052,14 +78284,6 @@
             "other": "domain_suffix:pages.dev",
             "relation": "parent-child",
             "right": "proxy",
-            "rule": "domain_suffix:868d6-z09x0-qjay-p2d-d456h.pages.dev"
-          },
-          {
-            "authorized": false,
-            "left": "reject",
-            "other": "domain_suffix:pages.dev",
-            "relation": "parent-child",
-            "right": "proxy",
             "rule": "domain_suffix:95dm-5yn-bm6a-5bmc1-d0qto.pages.dev"
           },
           {
@@ -78412,14 +78636,6 @@
             "other": "domain_suffix:pages.dev",
             "relation": "parent-child",
             "right": "proxy",
-            "rule": "domain_suffix:sp11ct-ravnor-biz8-kelsik-domvek.pages.dev"
-          },
-          {
-            "authorized": false,
-            "left": "reject",
-            "other": "domain_suffix:pages.dev",
-            "relation": "parent-child",
-            "right": "proxy",
             "rule": "domain_suffix:sp11ct-torzan-biz8-felkor-drunel.pages.dev"
           },
           {
@@ -78445,14 +78661,6 @@
             "relation": "parent-child",
             "right": "proxy",
             "rule": "domain_suffix:sp19ct7-lurev-biz-sanek-domir.pages.dev"
-          },
-          {
-            "authorized": false,
-            "left": "reject",
-            "other": "domain_suffix:pages.dev",
-            "relation": "parent-child",
-            "right": "proxy",
-            "rule": "domain_suffix:sp19ct7-sarek-biz-lurem-fodis.pages.dev"
           },
           {
             "authorized": false,
@@ -79453,6 +79661,14 @@
             "relation": "parent-child",
             "right": "proxy",
             "rule": "domain_suffix:tracing.roblox.com"
+          },
+          {
+            "authorized": false,
+            "left": "reject",
+            "other": "domain_suffix:rtings.com",
+            "relation": "parent-child",
+            "right": "proxy",
+            "rule": "domain_suffix:sentry.staging.rtings.com"
           },
           {
             "authorized": false,
@@ -81988,6 +82204,14 @@
             "other": "domain_suffix:run.app",
             "relation": "parent-child",
             "right": "proxy",
+            "rule": "domain_suffix:server-side-tagging-ryog4j7mcq-uc.a.run.app"
+          },
+          {
+            "authorized": false,
+            "left": "reject",
+            "other": "domain_suffix:run.app",
+            "relation": "parent-child",
+            "right": "proxy",
             "rule": "domain_suffix:server-side-tagging-s4pjfcxhta-uc.a.run.app"
           },
           {
@@ -82724,14 +82948,6 @@
             "other": "domain_suffix:run.app",
             "relation": "parent-child",
             "right": "proxy",
-            "rule": "domain_suffix:sgtm-tires-easy-p4d6w5vuea-uc.a.run.app"
-          },
-          {
-            "authorized": false,
-            "left": "reject",
-            "other": "domain_suffix:run.app",
-            "relation": "parent-child",
-            "right": "proxy",
             "rule": "domain_suffix:snowplow-collector-prod-v2-xouiquacpq-an.a.run.app"
           },
           {
@@ -83069,6 +83285,14 @@
             "relation": "parent-child",
             "right": "proxy",
             "rule": "domain_suffix:gtm-monitor-738280375046.europe-west4.run.app"
+          },
+          {
+            "authorized": false,
+            "left": "reject",
+            "other": "domain_suffix:run.app",
+            "relation": "parent-child",
+            "right": "proxy",
+            "rule": "domain_suffix:gtm-server-prod-648189615882.europe-west4.run.app"
           },
           {
             "authorized": false,
@@ -83637,6 +83861,14 @@
             "relation": "parent-child",
             "right": "proxy",
             "rule": "domain_suffix:track.shiksha.com"
+          },
+          {
+            "authorized": false,
+            "left": "reject",
+            "other": "domain_suffix:shodan.io",
+            "relation": "parent-child",
+            "right": "proxy",
+            "rule": "domain_suffix:battery.census.shodan.io"
           },
           {
             "authorized": false,
@@ -84525,14 +84757,6 @@
             "relation": "parent-child",
             "right": "proxy",
             "rule": "domain_suffix:syndication.theguardian.com"
-          },
-          {
-            "authorized": false,
-            "left": "reject",
-            "other": "domain_suffix:theweek.com",
-            "relation": "parent-child",
-            "right": "proxy",
-            "rule": "domain_suffix:u989.theweek.com"
           },
           {
             "authorized": false,
@@ -88044,14 +88268,6 @@
             "other": "domain_suffix:vercel.app",
             "relation": "parent-child",
             "right": "proxy",
-            "rule": "domain_suffix:recargasjogoff.vercel.app"
-          },
-          {
-            "authorized": false,
-            "left": "reject",
-            "other": "domain_suffix:vercel.app",
-            "relation": "parent-child",
-            "right": "proxy",
             "rule": "domain_suffix:rusa-inion24-novst.vercel.app"
           },
           {
@@ -88460,14 +88676,6 @@
             "other": "domain_suffix:vimeocdn.com",
             "relation": "parent-child",
             "right": "proxy",
-            "rule": "domain_suffix:b.vimeocdn.com"
-          },
-          {
-            "authorized": false,
-            "left": "reject",
-            "other": "domain_suffix:vimeocdn.com",
-            "relation": "parent-child",
-            "right": "proxy",
             "rule": "domain_suffix:fresnel.vimeocdn.com"
           },
           {
@@ -88653,14 +88861,6 @@
             "relation": "parent-child",
             "right": "proxy",
             "rule": "domain_suffix:2436453.weebly.com"
-          },
-          {
-            "authorized": false,
-            "left": "reject",
-            "other": "domain_suffix:weebly.com",
-            "relation": "parent-child",
-            "right": "proxy",
-            "rule": "domain_suffix:273-open-21-web-mail-12.weebly.com"
           },
           {
             "authorized": false,
@@ -88972,14 +89172,6 @@
             "other": "domain_suffix:weebly.com",
             "relation": "parent-child",
             "right": "proxy",
-            "rule": "domain_suffix:ibmc-up3.weebly.com"
-          },
-          {
-            "authorized": false,
-            "left": "reject",
-            "other": "domain_suffix:weebly.com",
-            "relation": "parent-child",
-            "right": "proxy",
             "rule": "domain_suffix:iiinnet.weebly.com"
           },
           {
@@ -89109,14 +89301,6 @@
             "relation": "parent-child",
             "right": "proxy",
             "rule": "domain_suffix:mcnedraca-cpsessere.weebly.com"
-          },
-          {
-            "authorized": false,
-            "left": "reject",
-            "other": "domain_suffix:weebly.com",
-            "relation": "parent-child",
-            "right": "proxy",
-            "rule": "domain_suffix:mmeeds.weebly.com"
           },
           {
             "authorized": false,
@@ -89428,14 +89612,6 @@
             "other": "domain_suffix:weebly.com",
             "relation": "parent-child",
             "right": "proxy",
-            "rule": "domain_suffix:videotroy.weebly.com"
-          },
-          {
-            "authorized": false,
-            "left": "reject",
-            "other": "domain_suffix:weebly.com",
-            "relation": "parent-child",
-            "right": "proxy",
             "rule": "domain_suffix:wacolred.weebly.com"
           },
           {
@@ -89469,14 +89645,6 @@
             "relation": "parent-child",
             "right": "proxy",
             "rule": "domain_suffix:web-westnetmail.weebly.com"
-          },
-          {
-            "authorized": false,
-            "left": "reject",
-            "other": "domain_suffix:weebly.com",
-            "relation": "parent-child",
-            "right": "proxy",
-            "rule": "domain_suffix:webdded.weebly.com"
           },
           {
             "authorized": false,
@@ -89613,14 +89781,6 @@
             "relation": "parent-child",
             "right": "proxy",
             "rule": "domain_suffix:zim-veri.weebly.com"
-          },
-          {
-            "authorized": false,
-            "left": "reject",
-            "other": "domain_suffix:weebly.com",
-            "relation": "parent-child",
-            "right": "proxy",
-            "rule": "domain_suffix:zimbraa-web.weebly.com"
           },
           {
             "authorized": false,
@@ -89837,6 +89997,14 @@
             "relation": "parent-child",
             "right": "proxy",
             "rule": "domain_suffix:vsblobprodscussu5shard66.blob.core.windows.net"
+          },
+          {
+            "authorized": false,
+            "left": "reject",
+            "other": "domain_suffix:windows.net",
+            "relation": "parent-child",
+            "right": "proxy",
+            "rule": "domain_suffix:analytics-dev-lleap-events.servicebus.windows.net"
           },
           {
             "authorized": false,
@@ -90252,14 +90420,6 @@
             "other": "domain_suffix:workers.dev",
             "relation": "parent-child",
             "right": "proxy",
-            "rule": "domain_suffix:formulario-cita-digital-rgbsha-2026.cr-web.workers.dev"
-          },
-          {
-            "authorized": false,
-            "left": "reject",
-            "other": "domain_suffix:workers.dev",
-            "relation": "parent-child",
-            "right": "proxy",
             "rule": "domain_suffix:twinbit-analytics.cto-twinbit-dev.workers.dev"
           },
           {
@@ -90668,14 +90828,6 @@
             "other": "domain_suffix:workers.dev",
             "relation": "parent-child",
             "right": "proxy",
-            "rule": "domain_suffix:fetch.streaming-1.workers.dev"
-          },
-          {
-            "authorized": false,
-            "left": "reject",
-            "other": "domain_suffix:workers.dev",
-            "relation": "parent-child",
-            "right": "proxy",
             "rule": "domain_suffix:detail-analytics.subtlesignals-studio.workers.dev"
           },
           {
@@ -90873,6 +91025,14 @@
           {
             "authorized": false,
             "left": "reject",
+            "other": "domain_suffix:wunderground.com",
+            "relation": "parent-child",
+            "right": "proxy",
+            "rule": "domain_suffix:banners.wunderground.com"
+          },
+          {
+            "authorized": false,
+            "left": "reject",
             "other": "domain_suffix:x.com",
             "relation": "parent-child",
             "right": "proxy",
@@ -90981,6 +91141,14 @@
             "relation": "parent-child",
             "right": "proxy",
             "rule": "domain_suffix:collector.xhamster.com"
+          },
+          {
+            "authorized": false,
+            "left": "reject",
+            "other": "domain_suffix:xhamster.com",
+            "relation": "parent-child",
+            "right": "proxy",
+            "rule": "domain_suffix:sentry.xhamster.com"
           },
           {
             "authorized": false,
@@ -91133,14 +91301,6 @@
             "relation": "parent-child",
             "right": "proxy",
             "rule": "domain_suffix:difw.yahoo.com"
-          },
-          {
-            "authorized": false,
-            "left": "reject",
-            "other": "domain_suffix:yahoo.com",
-            "relation": "parent-child",
-            "right": "proxy",
-            "rule": "domain_suffix:fp.yahoo.com"
           },
           {
             "authorized": false,
@@ -91437,14 +91597,6 @@
             "relation": "parent-child",
             "right": "proxy",
             "rule": "domain_suffix:metrics.yandex.net"
-          },
-          {
-            "authorized": false,
-            "left": "reject",
-            "other": "domain_suffix:yandex.com",
-            "relation": "parent-child",
-            "right": "proxy",
-            "rule": "domain_suffix:metrika.yandex.com"
           },
           {
             "authorized": false,
@@ -93651,6 +93803,14 @@
           {
             "authorized": true,
             "left": "reject",
+            "other": "domain_suffix:0rz.tw",
+            "relation": "exact",
+            "right": "proxy",
+            "rule": "domain_suffix:0rz.tw"
+          },
+          {
+            "authorized": true,
+            "left": "reject",
             "other": "domain_suffix:12bet.com",
             "relation": "exact",
             "right": "proxy",
@@ -93867,6 +94027,14 @@
           {
             "authorized": true,
             "left": "reject",
+            "other": "domain_suffix:htl.li",
+            "relation": "exact",
+            "right": "proxy",
+            "rule": "domain_suffix:htl.li"
+          },
+          {
+            "authorized": true,
+            "left": "reject",
             "other": "domain_suffix:ipstatp.com",
             "relation": "exact",
             "right": "proxy",
@@ -93927,6 +94095,14 @@
             "relation": "exact",
             "right": "proxy",
             "rule": "domain_suffix:oaistatsig.com"
+          },
+          {
+            "authorized": true,
+            "left": "reject",
+            "other": "domain_suffix:owl.li",
+            "relation": "exact",
+            "right": "proxy",
+            "rule": "domain_suffix:owl.li"
           },
           {
             "authorized": true,
@@ -94105,7 +94281,7 @@
             "rule": "domain_suffix:z-lib.io"
           }
         ],
-        "total": 8187
+        "total": 8196
       },
       "ipcidr": {
         "ordered_containment": [
@@ -97196,7 +97372,7 @@
             "rule": "domain_suffix:spotify.com"
           }
         ],
-        "total": 764
+        "total": 765
       },
       "proxy-ip": {
         "items": [],
@@ -97270,35 +97446,35 @@
       "sha256": "4989eb276fd88ae93108f908fef742cac555611a1b7dfa47478bf0da4abc0f9d"
     },
     "categories/ai-domain.json": {
-      "bytes": 7827,
+      "bytes": 7890,
       "family": "domain",
       "format": "json",
-      "rules": 264,
-      "sha256": "ed0e19713d07c47601b91e91124f249a2a66aaf69d5590cd26364a98bdf810f3"
+      "rules": 266,
+      "sha256": "585576bbc6123f50d413ff670a6aeacf0d73e865c133497f94989626b82a8d7c"
     },
     "categories/ai-domain.mrs": {
-      "bytes": 2629,
+      "bytes": 2631,
       "family": "domain",
       "format": "mrs",
       "omitted_kinds": [
         "domain_keyword"
       ],
-      "rules": 260,
-      "sha256": "1c4fcaf287c5a7ee9370009defbe4aefce6cb30f4d60e35405a834c5b5f2bf9c"
+      "rules": 262,
+      "sha256": "d13b1a8c52b184b04b8423e92d4bbed2b4a91a8943ddf1e4f0a56456a4fe44e9"
     },
     "categories/ai-domain.srs": {
-      "bytes": 2659,
+      "bytes": 2678,
       "family": "domain",
       "format": "srs",
-      "rules": 264,
-      "sha256": "19ddb96097e7e6c1adad052cd22ee0760690fc6e36b0903f17d6cf4b18afa495"
+      "rules": 266,
+      "sha256": "a924814e040c08d8df59cfd59241a9449c0838fa134a27ec6a1736d26f1249e2"
     },
     "categories/ai-domain.yaml": {
-      "bytes": 8561,
+      "bytes": 8620,
       "family": "domain",
       "format": "yaml",
-      "rules": 264,
-      "sha256": "f116c94e5217f668b8d9a4cadb2a5cf8a1263c849206cad45bd3c7afa36c822e"
+      "rules": 266,
+      "sha256": "de1ec942497a44bad0aabf216a3031466214805ce886faa7b0778a49a4d5ff0b"
     },
     "categories/ai-gateway-domain.json": {
       "bytes": 262,
@@ -97329,35 +97505,35 @@
       "sha256": "d4c755df469a08fd873a9b504754a059d6d10e4607b560ad5fabb4e2cae79ed4"
     },
     "categories/ai-provider-domain.json": {
-      "bytes": 7550,
+      "bytes": 7613,
       "family": "domain",
       "format": "json",
-      "rules": 255,
-      "sha256": "4a3af8563116909ea5f360a00090bbb00c424083735a4cadf2b8572220ccf2f2"
+      "rules": 257,
+      "sha256": "61c16f638ddfd55f81ead4943e36b45ebcdaee455afb1dad2a2b50ecaa8aa35e"
     },
     "categories/ai-provider-domain.mrs": {
-      "bytes": 2535,
+      "bytes": 2542,
       "family": "domain",
       "format": "mrs",
       "omitted_kinds": [
         "domain_keyword"
       ],
-      "rules": 251,
-      "sha256": "174fde48348117ac7325776f4b93ad7e1c1292026a75e5505044e8b76f8b91dc"
+      "rules": 253,
+      "sha256": "560fde898ee47d7353206d07f715f6a7954d3ed7995291445f64becf9f5dc48c"
     },
     "categories/ai-provider-domain.srs": {
-      "bytes": 2561,
+      "bytes": 2583,
       "family": "domain",
       "format": "srs",
-      "rules": 255,
-      "sha256": "e2326b72c46051124a0de294e3dd25245041c92adefe031143ede3658264cccb"
+      "rules": 257,
+      "sha256": "29ed0bea97153c98f98557adb5391749f03ddee3e5106d60199b7060cc50c47d"
     },
     "categories/ai-provider-domain.yaml": {
-      "bytes": 8267,
+      "bytes": 8326,
       "family": "domain",
       "format": "yaml",
-      "rules": 255,
-      "sha256": "23895fe245573341629734604dbc53f1c6f6e4be4e276ff4dfbf67fb80a1ca48"
+      "rules": 257,
+      "sha256": "fd38a84170d79fda2d17ecdf30d3b9f0ab119711da7877eef5494e7ffb972e35"
     },
     "categories/apple-cn-domain.json": {
       "bytes": 9203,
@@ -97419,36 +97595,36 @@
       "sha256": "84d6c843c083dcd602eb5dd7b22bfe8a7a238f913d3f620248beb877398b06d5"
     },
     "categories/cdn-domain.json": {
-      "bytes": 143590,
+      "bytes": 143716,
       "family": "domain",
       "format": "json",
-      "rules": 4787,
-      "sha256": "1ece84e74360a0cc7f1d85c5336c4b6ce388d045607c9cb19a3405e2991fb6c4"
+      "rules": 4790,
+      "sha256": "68b6c58a73264c9227a3823ceb95ab09685dc2860c15c492d4ba89ba259b4e71"
     },
     "categories/cdn-domain.mrs": {
-      "bytes": 42229,
+      "bytes": 42228,
       "family": "domain",
       "format": "mrs",
       "omitted_kinds": [
         "domain_keyword",
         "domain_wildcard"
       ],
-      "rules": 4707,
-      "sha256": "6f3a1bc9ee062098b1c1cdeffedaadffcfe268031108b5e071597697bbafc10b"
+      "rules": 4710,
+      "sha256": "b8a2751e130d31f8b10c537ee3a6499b2e08895e7db19a8829c2d280d07ab9fa"
     },
     "categories/cdn-domain.srs": {
-      "bytes": 40846,
+      "bytes": 40810,
       "family": "domain",
       "format": "srs",
-      "rules": 4787,
-      "sha256": "e24a0b8b1303444418bf396a30e0c224cfeb72b25330b120f31c5a7120f9af2a"
+      "rules": 4790,
+      "sha256": "2b502932aa9bf8b0f5dcac405d52d168823890f4952e12ff0fcc6654f3fc80f0"
     },
     "categories/cdn-domain.yaml": {
-      "bytes": 142655,
+      "bytes": 142775,
       "family": "domain",
       "format": "yaml",
-      "rules": 4787,
-      "sha256": "f6e55d29d0165500a6d0060ad9f28cfdf9088f7ad2c677e68b5c3b61d164b37d"
+      "rules": 4790,
+      "sha256": "ca0c7f9bc5da80e77595ccce3d8e925e33b14b3c061c2bfce49aa960a2e10e97"
     },
     "categories/cdn-ip.json": {
       "bytes": 161,
@@ -97511,32 +97687,32 @@
       "sha256": "103874bf2706d99e86ed98a380b3312a4206ae3f398c691070cb312311784780"
     },
     "categories/cn-ip.json": {
-      "bytes": 323483,
+      "bytes": 323723,
       "family": "ipcidr",
       "format": "json",
-      "rules": 12021,
-      "sha256": "d44f2f05683a2d8450b984276c01b5d5924fa5033b73a72a1f30768485690140"
+      "rules": 12029,
+      "sha256": "024361739c01c910059e8643b75f9164b36bba8912403ffc9b950c7fa091fee9"
     },
     "categories/cn-ip.mrs": {
-      "bytes": 38282,
+      "bytes": 38300,
       "family": "ipcidr",
       "format": "mrs",
-      "rules": 12021,
-      "sha256": "da8a95bfa8b022285e3147502ba2b99dd876e6e6894b3514a8236d14c9823d1e"
+      "rules": 12029,
+      "sha256": "1218afb0fb7e703d97f45f1a4bac38037142f99137339ca66a5ec702fba69272"
     },
     "categories/cn-ip.srs": {
-      "bytes": 37018,
+      "bytes": 37020,
       "family": "ipcidr",
       "format": "srs",
-      "rules": 12021,
-      "sha256": "648e038fe85e03589d05d5892c74fd55a766d55cebe5e156692c75bfc30845ab"
+      "rules": 12029,
+      "sha256": "ade4f9dbaedca5274d78350013146d0c321b715ea5748d523ca46f60e601e547"
     },
     "categories/cn-ip.yaml": {
-      "bytes": 314840,
+      "bytes": 315080,
       "family": "ipcidr",
       "format": "yaml",
-      "rules": 12021,
-      "sha256": "4828f71bebf7ee1ee92a5eec13e272710f9c5843edacee22b4ad64e7dc471ee0"
+      "rules": 12029,
+      "sha256": "fb15fb42e2208caf560b8305a30c854eec2d211e11719f9ac0bb00172eb78700"
     },
     "categories/direct-domain.json": {
       "bytes": 5493,
@@ -97857,69 +98033,69 @@
       "sha256": "42f8635262080336d889294b6e0a4515852109a34e8e7aea3774aeaf809ca8ec"
     },
     "categories/reject-domain.json": {
-      "bytes": 3847630,
+      "bytes": 3874018,
       "family": "domain",
       "format": "json",
-      "rules": 123941,
-      "sha256": "0fe85d6935b1438481e9111b47c9942b207660334b21b91ab6db838061d55b43"
+      "rules": 124954,
+      "sha256": "fc64f2768c805c6750981e4206002b989c9e05eaa29fbb52fc628097c83ee3df"
     },
     "categories/reject-domain.mrs": {
-      "bytes": 1102532,
+      "bytes": 1110288,
       "family": "domain",
       "format": "mrs",
-      "rules": 123941,
-      "sha256": "6a4dace5a8922093846835bf8d9e2f04cffc5d48da8f5bb97721f973a0c91416"
+      "rules": 124954,
+      "sha256": "4779d7fe494227c92a90915e17194885b229b352e43ee2dd26bf8a0ed29ca73e"
     },
     "categories/reject-domain.srs": {
-      "bytes": 990205,
+      "bytes": 996446,
       "family": "domain",
       "format": "srs",
-      "rules": 123941,
-      "sha256": "b59f8396e956a106afffc9554217ee69bab1fd401ce7bb12445d46aa541ba0b7"
+      "rules": 124954,
+      "sha256": "2e3f9cf50741554020df1dc333c5b3854510177f8ddd6e0c01c1059aacd24685"
     },
     "categories/reject-domain.yaml": {
-      "bytes": 4467263,
+      "bytes": 4498716,
       "family": "domain",
       "format": "yaml",
-      "rules": 123941,
-      "sha256": "7f6fd980575c39c44ab708aef69928d7dca572c5e08fde2838f02abdf1937376"
+      "rules": 124954,
+      "sha256": "84686537127a975fee9208807abde80db459cb1f1986ef9da67a5ef14ab0dc6d"
     },
     "categories/reject-ip.json": {
-      "bytes": 21814,
+      "bytes": 21787,
       "family": "ipcidr",
       "format": "json",
       "omitted_kinds": [
         "ip_asn"
       ],
-      "rules": 768,
-      "sha256": "0a120c2123cbaf7f03f927548c3647952c398ee1ef71e2aea09fbae24cdedfa3"
+      "rules": 767,
+      "sha256": "c8e565363d94f66cfd7de1253a3320ffe6a550935eb24861bde116b125176ed8"
     },
     "categories/reject-ip.mrs": {
-      "bytes": 2578,
+      "bytes": 2577,
       "family": "ipcidr",
       "format": "mrs",
       "omitted_kinds": [
         "ip_asn"
       ],
-      "rules": 768,
-      "sha256": "bb298fb4c3fa7673b396c21eb595c5bc667d8655948ab224a557db9ecc4e7554"
+      "rules": 767,
+      "sha256": "ddb822be33b4f60a290ab435e7c9b921f8914e8e45e5989367001960f0dcc1f9"
     },
     "categories/reject-ip.srs": {
-      "bytes": 2914,
+      "bytes": 2911,
       "family": "ipcidr",
       "format": "srs",
       "omitted_kinds": [
         "ip_asn"
       ],
-      "rules": 768,
-      "sha256": "17ec7c656a44a05c2169f1f25277de0e882972cb246847408006702fb7383348"
+      "rules": 767,
+      "sha256": "c7abd25ce211fe25e545f0079cdda1f26963908f70789f85ab62f38bad0d76bf"
     },
     "categories/reject-ip.yaml": {
-      "bytes": 21201,
+      "bytes": 21175,
       "family": "ipcidr",
       "format": "yaml",
-      "rules": 783,
-      "sha256": "932c5120bc1491597dece47349b1d9a7bda7fc322bf16e08606e457de1e4cb30"
+      "rules": 782,
+      "sha256": "297703246d65787fc923fc926f334e0e4d6aeaf1e9222d52d7cc770b0d42be10"
     },
     "categories/steam-cn-domain.json": {
       "bytes": 644,
@@ -98099,32 +98275,32 @@
       "sha256": "e755f66642b906c7d048b30de8c63ade354b427a39ddaa1b3f971b8f7a3fef15"
     },
     "profiles/default/direct-ip.json": {
-      "bytes": 324146,
+      "bytes": 324386,
       "family": "ipcidr",
       "format": "json",
-      "rules": 12049,
-      "sha256": "51ce60a020546d22316ca6c5459614acd54c86106029dcfa7317abc22cf6894b"
+      "rules": 12057,
+      "sha256": "d87f61e5904bc570ec6e4d8572ed9368ec07c6b9d5fbe6855c12eba5270e6463"
     },
     "profiles/default/direct-ip.mrs": {
-      "bytes": 38630,
+      "bytes": 38633,
       "family": "ipcidr",
       "format": "mrs",
-      "rules": 12049,
-      "sha256": "3e6a11a2ef14a3a0c319d1dde03071f8d2a3f5defb56df32be397d468dbb8b53"
+      "rules": 12057,
+      "sha256": "87e9e863e0edc0979745acdaaf72e460500029cdbc84f844a035025662422601"
     },
     "profiles/default/direct-ip.srs": {
-      "bytes": 37199,
+      "bytes": 37201,
       "family": "ipcidr",
       "format": "srs",
-      "rules": 12049,
-      "sha256": "7e61d54ed7f56ca71ed46d9eaeafd7774a176e2eae34fba0be3c14b2ba8cd5d4"
+      "rules": 12057,
+      "sha256": "86dea2d71f3d6a24c7059b976c93060ac158936afcb278819a9920df4df6e568"
     },
     "profiles/default/direct-ip.yaml": {
-      "bytes": 315487,
+      "bytes": 315727,
       "family": "ipcidr",
       "format": "yaml",
-      "rules": 12049,
-      "sha256": "dc03e0bedd0be6d84d0eaff1cda4b849cddeb0d68fbc399f1ff0835416b9bf44"
+      "rules": 12057,
+      "sha256": "ea4d873bcf5956065681349839b066b9b5b0a3eaec3379e4236f3fedcc88f1ca"
     },
     "profiles/default/override-proxy-domain.json": {
       "bytes": 121,
@@ -98155,36 +98331,36 @@
       "sha256": "41138249eed7ffb4863d309d28eb0df9e81924d6acbcc9a53d54bce6fbc1ee57"
     },
     "profiles/default/proxy-domain.json": {
-      "bytes": 139430,
+      "bytes": 139439,
       "family": "domain",
       "format": "json",
-      "rules": 5664,
-      "sha256": "326f2a2b6e11968fbddf3b793c3931be31d8bce046ea2327f0383b3f8b90526b"
+      "rules": 5663,
+      "sha256": "a9e2f1ce2e30e7d522b73ba57bcccfa4ddc357d20a093003192b7c03ff5cddba"
     },
     "profiles/default/proxy-domain.mrs": {
-      "bytes": 43151,
+      "bytes": 43300,
       "family": "domain",
       "format": "mrs",
       "omitted_kinds": [
         "domain_keyword",
         "process_name"
       ],
-      "rules": 5623,
-      "sha256": "4f90c15030f2c8ff2edfc778fd56528434738f29d078e2b684ae75dcb51342a5"
+      "rules": 5622,
+      "sha256": "bd7e8e5e43b790fd60243f87f0432a66e329d03a3507546090d6e242551d7bef"
     },
     "profiles/default/proxy-domain.srs": {
-      "bytes": 36433,
+      "bytes": 36457,
       "family": "domain",
       "format": "srs",
-      "rules": 5664,
-      "sha256": "8764d24286c66e18749d961ad9e1745974cad9984f83fed21174d2817a7c96f9"
+      "rules": 5663,
+      "sha256": "7393f90b23ef67d631924db9f607d928f7117b64d880c3aeaf874ebb3ee87003"
     },
     "profiles/default/proxy-domain.yaml": {
-      "bytes": 166618,
+      "bytes": 166608,
       "family": "domain",
       "format": "yaml",
-      "rules": 5664,
-      "sha256": "5f6667b262398cde1bff81f420be42f48eee1e34f79b1b844dcec29e47fe1159"
+      "rules": 5663,
+      "sha256": "6ae8d9f7c3d5020f85164068a31fffec93e3cb67102968218ab6d45e0e54abd6"
     },
     "profiles/default/proxy-ip.json": {
       "bytes": 963,
@@ -98215,69 +98391,69 @@
       "sha256": "00e29a763a6d55b1cd3db9f8fcf8198383fc8137486fe516a6af081b0b7d26af"
     },
     "profiles/default/reject-domain.json": {
-      "bytes": 3847590,
+      "bytes": 3873978,
       "family": "domain",
       "format": "json",
-      "rules": 123940,
-      "sha256": "41263c21bf1bbcd6f32081336a44fd26fedfb9a4820b815927355efe78cb3e58"
+      "rules": 124953,
+      "sha256": "de1955ea9e9bfeb49af419437136c7ac1c029925d572abdab63cc1c068b65f33"
     },
     "profiles/default/reject-domain.mrs": {
-      "bytes": 1102403,
+      "bytes": 1110211,
       "family": "domain",
       "format": "mrs",
-      "rules": 123940,
-      "sha256": "ca065f6ffe5b8686765a665a8788cf91e67e64b30658cb2c58d0d5564a044905"
+      "rules": 124953,
+      "sha256": "8d0eee7bae9084e0080a6d3b6675409d484d3d3f1bab39d59c64b9694a13ce7c"
     },
     "profiles/default/reject-domain.srs": {
-      "bytes": 990174,
+      "bytes": 996509,
       "family": "domain",
       "format": "srs",
-      "rules": 123940,
-      "sha256": "0aa69df5dd0efea05991363c83f8d15417bbb7ca5dff1cb43f0ffb273e230a22"
+      "rules": 124953,
+      "sha256": "53439fb8ab6ed68957ba964cfbc5c4d033b2ced8acf7c688018e89cae7aa5aab"
     },
     "profiles/default/reject-domain.yaml": {
-      "bytes": 4467218,
+      "bytes": 4498671,
       "family": "domain",
       "format": "yaml",
-      "rules": 123940,
-      "sha256": "3cc035b67f4acadc8057d022c2d4092b3dd7c2bdc030c0251bbc9aeca4a47d77"
+      "rules": 124953,
+      "sha256": "32a54b491f606ee8f35383fd9ce1852deb5b5250e61576faa2d96cb30e9dcada"
     },
     "profiles/default/reject-ip.json": {
-      "bytes": 21814,
+      "bytes": 21787,
       "family": "ipcidr",
       "format": "json",
       "omitted_kinds": [
         "ip_asn"
       ],
-      "rules": 768,
-      "sha256": "0a120c2123cbaf7f03f927548c3647952c398ee1ef71e2aea09fbae24cdedfa3"
+      "rules": 767,
+      "sha256": "c8e565363d94f66cfd7de1253a3320ffe6a550935eb24861bde116b125176ed8"
     },
     "profiles/default/reject-ip.mrs": {
-      "bytes": 2578,
+      "bytes": 2577,
       "family": "ipcidr",
       "format": "mrs",
       "omitted_kinds": [
         "ip_asn"
       ],
-      "rules": 768,
-      "sha256": "bb298fb4c3fa7673b396c21eb595c5bc667d8655948ab224a557db9ecc4e7554"
+      "rules": 767,
+      "sha256": "ddb822be33b4f60a290ab435e7c9b921f8914e8e45e5989367001960f0dcc1f9"
     },
     "profiles/default/reject-ip.srs": {
-      "bytes": 2914,
+      "bytes": 2911,
       "family": "ipcidr",
       "format": "srs",
       "omitted_kinds": [
         "ip_asn"
       ],
-      "rules": 768,
-      "sha256": "17ec7c656a44a05c2169f1f25277de0e882972cb246847408006702fb7383348"
+      "rules": 767,
+      "sha256": "c7abd25ce211fe25e545f0079cdda1f26963908f70789f85ab62f38bad0d76bf"
     },
     "profiles/default/reject-ip.yaml": {
-      "bytes": 21201,
+      "bytes": 21175,
       "family": "ipcidr",
       "format": "yaml",
-      "rules": 783,
-      "sha256": "932c5120bc1491597dece47349b1d9a7bda7fc322bf16e08606e457de1e4cb30"
+      "rules": 782,
+      "sha256": "297703246d65787fc923fc926f334e0e4d6aeaf1e9222d52d7cc770b0d42be10"
     }
   },
   "publishable": true,
@@ -98590,15 +98766,15 @@
     "skk_ai": {
       "attempts": 1,
       "behavior": "classical",
-      "bytes": 2148,
-      "etag": "W/\"41b65572de9f887b4d1fdc51b7923e19\"",
+      "bytes": 2203,
+      "etag": "W/\"cc9b8405e6eba6d6720f6153ec3be9a2\"",
       "format": "text",
       "last_modified": null,
       "path": null,
       "redistributable": true,
       "required": true,
-      "rules": 57,
-      "sha256": "88c7531fd4a2338559c05b424fdf94371765e4220ef410d816fda10163261938",
+      "rules": 59,
+      "sha256": "715e26395174b08c1140e0ebcd640ce1dbe7c140dfa052317f7d0e1cf957f1b4",
       "status": "ok",
       "type": "http",
       "url": "https://ruleset.skk.moe/Clash/non_ip/ai.txt"
@@ -98686,15 +98862,15 @@
     "skk_cdn_domainset": {
       "attempts": 1,
       "behavior": "domain",
-      "bytes": 91438,
-      "etag": "W/\"899f4728323cb27fa8a8d6484c30e9cc\"",
+      "bytes": 91531,
+      "etag": "W/\"c08f0cadb07b27592e618fa3cc49f26b\"",
       "format": "text",
       "last_modified": null,
       "path": null,
       "redistributable": true,
       "required": true,
-      "rules": 4702,
-      "sha256": "54fbfcba606d87242dce6320e60dd5d9fffe7fc4d80f78a4d62113d3018e3322",
+      "rules": 4705,
+      "sha256": "839f85d3f1e52343ab5cf909538f3f31fb3fa0b6f6d6e5109c88ad915daa38f8",
       "status": "ok",
       "type": "http",
       "url": "https://ruleset.skk.moe/Clash/domainset/cdn.txt"
@@ -98734,15 +98910,15 @@
     "skk_china_ipv6": {
       "attempts": 1,
       "behavior": "ipcidr",
-      "bytes": 57894,
-      "etag": "W/\"fffddfd4ba22e3b0d534f4034d2ce8d8\"",
+      "bytes": 57934,
+      "etag": "W/\"442be8fd9d5f8b965fbb518a7d8410d8\"",
       "format": "text",
       "last_modified": null,
       "path": null,
       "redistributable": true,
       "required": true,
-      "rules": 3444,
-      "sha256": "9c4bbc2759885181ac13f3d8c5a7a1deb64e8d64844b91da832db0731a98cc1f",
+      "rules": 3446,
+      "sha256": "7a07fdf86d7686e5474b27ee34bf89c41e966bd16376cdb5c82c5c63f4f9b1d7",
       "status": "ok",
       "type": "http",
       "url": "https://ruleset.skk.moe/Clash/ip/china_ip_ipv6.txt"
@@ -98894,15 +99070,15 @@
     "skk_reject_ip": {
       "attempts": 1,
       "behavior": "classical",
-      "bytes": 22393,
-      "etag": "W/\"c32ae846fa1db75c174445e9a44fecdf\"",
+      "bytes": 22369,
+      "etag": "W/\"a3812a0dda1c4c7347c38603e6f93a8f\"",
       "format": "text",
       "last_modified": null,
       "path": null,
       "redistributable": true,
       "required": true,
-      "rules": 783,
-      "sha256": "4df0edb8e635aeeaf34976e5e238b1bf6bffb4bc2cbf9425839e5e71355a5ad5",
+      "rules": 782,
+      "sha256": "99809ef57bb04640d2690f198c7ab16484945e6aad0f9eca9a02e9a0d60658b2",
       "status": "ok",
       "type": "http",
       "url": "https://ruleset.skk.moe/Clash/ip/reject.txt"
@@ -98974,15 +99150,15 @@
     "xndeye_reject": {
       "attempts": 1,
       "behavior": "domain",
-      "bytes": 3475964,
-      "etag": "W/\"516adaa23a5ad91012782fdda0d80631c56ece1ae87f60340181069c0093c7a8\"",
+      "bytes": 3499313,
+      "etag": "W/\"27d01636e2573099f21edb078459576fb5875f18c538ff9151a2502ee69ba0a4\"",
       "format": "yaml",
       "last_modified": null,
       "path": null,
       "redistributable": true,
       "required": true,
-      "rules": 123941,
-      "sha256": "3157961e43d396048dc7a211b3a84c30b3ea436845069d26b16763f22f90346f",
+      "rules": 124954,
+      "sha256": "05b7ad9ee11a25547dc70d3a4980b3fd378d4831f7bff4ab003873b1ca3b7df7",
       "status": "ok",
       "type": "http",
       "url": "https://raw.githubusercontent.com/xndeye/adblock_list/refs/heads/release/clash.yaml"

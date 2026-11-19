@@ -200,6 +200,7 @@
     },
     {
       "domain": [
+        "claude.site",
         "ai.google.dev",
         "cloud.zed.dev",
         "openrouter.ai",
@@ -214,6 +215,7 @@
         "antigravity-unleash.goog",
         "gateway.ai.cloudflare.com",
         "aisandbox-pa.googleapis.com",
+        "bridge.claudeusercontent.com",
         "server.self-serve.windsurf.com",
         "robinfrontend-pa.googleapis.com",
         "alkalicore-pa.clients6.google.com",

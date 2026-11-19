@@ -16,6 +16,7 @@ payload:
 - DOMAIN-SUFFIX,claude.com
 - DOMAIN-SUFFIX,openart.ai
 - DOMAIN-SUFFIX,chatgpt.com
+- DOMAIN,claude.site
 - DOMAIN-SUFFIX,clipdrop.co
 - DOMAIN-SUFFIX,chatgpt.site
 - DOMAIN-SUFFIX,deepmind.com
@@ -46,6 +47,7 @@ payload:
 - DOMAIN,gateway.ai.cloudflare.com
 - DOMAIN,aisandbox-pa.googleapis.com
 - DOMAIN-SUFFIX,cloudcode-pa.googleapis.com
+- DOMAIN,bridge.claudeusercontent.com
 - DOMAIN,server.self-serve.windsurf.com
 - DOMAIN,robinfrontend-pa.googleapis.com
 - DOMAIN,alkalicore-pa.clients6.google.com
@@ -2478,7 +2480,6 @@ payload:
 - DOMAIN-SUFFIX,warroom.org
 - DOMAIN-SUFFIX,ht.ly
 - DOMAIN-SUFFIX,htkou.net
-- DOMAIN-SUFFIX,htl.li
 - DOMAIN-SUFFIX,html5rocks.com
 - DOMAIN-SUFFIX,htx.com
 - DOMAIN-SUFFIX,huaglad.com
@@ -2734,7 +2735,6 @@ payload:
 - DOMAIN-SUFFIX,kenengba.com
 - DOMAIN-SUFFIX,kepard.com
 - DOMAIN-SUFFIX,isgreat.org
-- DOMAIN-SUFFIX,0rz.tw
 - DOMAIN-SUFFIX,vpnreviewz.com
 - DOMAIN-SUFFIX,khatrimaza.org
 - DOMAIN-SUFFIX,vpnreactor.com
@@ -3334,7 +3334,6 @@ payload:
 - DOMAIN-SUFFIX,vansky.com
 - DOMAIN-SUFFIX,ovpn.com
 - DOMAIN-SUFFIX,ow.ly
-- DOMAIN-SUFFIX,owl.li
 - DOMAIN-SUFFIX,owltail.com
 - DOMAIN-SUFFIX,oxfordscholarship.com
 - DOMAIN-SUFFIX,ozvoice.org
