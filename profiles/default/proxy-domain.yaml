@@ -1364,7 +1364,6 @@ payload:
 - DOMAIN-SUFFIX,xt.pub
 - DOMAIN-SUFFIX,xt.com
 - DOMAIN-SUFFIX,cloudflare-dns.com
-- DOMAIN-SUFFIX,cloudflare-ipfs.com
 - DOMAIN-SUFFIX,cloudflarestatus.com
 - DOMAIN-SUFFIX,cloudfunctions.net
 - DOMAIN-SUFFIX,club1069.com
