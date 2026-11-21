@@ -276,7 +276,8 @@
         "openai",
         "alkalimakersuite-pa.clients6.google.com",
         "anthropic",
-        "claude"
+        "claude",
+        "antigravity"
       ]
     }
   ]

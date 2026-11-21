@@ -245,6 +245,7 @@ payload:
 - DOMAIN-SUFFIX,youmind.ai
 - DOMAIN-SUFFIX,youmind.com
 - DOMAIN-SUFFIX,youmind.site
+- DOMAIN-KEYWORD,antigravity
 - DOMAIN,aistudio.google.com
 - DOMAIN,api.githubcopilot.com
 - DOMAIN,api.groq.com
