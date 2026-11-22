@@ -89,6 +89,7 @@ payload:
 - DOMAIN,sydney.bing.com
 - DOMAIN,webchannel-alkalimakersuite-pa.clients6.google.com
 - DOMAIN-KEYWORD,anthropic
+- DOMAIN-KEYWORD,antigravity
 - DOMAIN-KEYWORD,claude
 - DOMAIN-SUFFIX,agentclientprotocol.com
 - DOMAIN-SUFFIX,ai.azure.com
@@ -245,7 +246,6 @@ payload:
 - DOMAIN-SUFFIX,youmind.ai
 - DOMAIN-SUFFIX,youmind.com
 - DOMAIN-SUFFIX,youmind.site
-- DOMAIN-KEYWORD,antigravity
 - DOMAIN,aistudio.google.com
 - DOMAIN,api.githubcopilot.com
 - DOMAIN,api.groq.com
@@ -5465,7 +5465,6 @@ payload:
 - DOMAIN-SUFFIX,opentable.com
 - DOMAIN-SUFFIX,peeringdb.com
 - DOMAIN-SUFFIX,picacomic.xyz
-- DOMAIN-SUFFIX,pixelscan.net
 - DOMAIN-SUFFIX,prometheus.io
 - DOMAIN-SUFFIX,protonweb.com
 - DOMAIN-SUFFIX,speedtest.net
