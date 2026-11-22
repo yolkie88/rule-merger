@@ -1130,6 +1130,7 @@ payload:
 - DOMAIN-SUFFIX,56che.com
 - DOMAIN-SUFFIX,56img.com
 - DOMAIN-SUFFIX,56laile.com
+- DOMAIN-SUFFIX,56tvc.com
 - DOMAIN-SUFFIX,56xiniao.com
 - DOMAIN-SUFFIX,5858.com
 - DOMAIN-SUFFIX,58antenna.com
@@ -2455,7 +2456,6 @@ payload:
 - DOMAIN-SUFFIX,ezviz.com
 - DOMAIN-SUFFIX,f.cx
 - DOMAIN-SUFFIX,fa-part.com
-- DOMAIN-SUFFIX,faceid.com
 - DOMAIN-SUFFIX,faceu.com
 - DOMAIN-SUFFIX,faceu.mobi
 - DOMAIN-SUFFIX,fadfunds.com
