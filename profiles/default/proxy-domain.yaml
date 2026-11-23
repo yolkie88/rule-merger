@@ -350,6 +350,7 @@ payload:
 - DOMAIN-SUFFIX,pornhub.com
 - DOMAIN-SUFFIX,spotify.com
 - DOMAIN-SUFFIX,tiktokv.com
+- DOMAIN-SUFFIX,tiktokw.com
 - DOMAIN-SUFFIX,viblast.com
 - DOMAIN-SUFFIX,viu.now.com
 - DOMAIN,www.tubi.tv
@@ -2488,6 +2489,7 @@ payload:
 - DOMAIN-SUFFIX,wanz-factory.com
 - DOMAIN-SUFFIX,ht.ly
 - DOMAIN-SUFFIX,htkou.net
+- DOMAIN-SUFFIX,htl.li
 - DOMAIN-SUFFIX,html5rocks.com
 - DOMAIN-SUFFIX,htx.com
 - DOMAIN-SUFFIX,huaglad.com
@@ -2749,6 +2751,7 @@ payload:
 - DOMAIN-SUFFIX,khatrimaza.org
 - DOMAIN-SUFFIX,vpnreactor.com
 - DOMAIN-SUFFIX,404museum.com
+- DOMAIN-SUFFIX,0rz.tw
 - DOMAIN-SUFFIX,scribd.com
 - DOMAIN-SUFFIX,kimootoko.net
 - DOMAIN-SUFFIX,kindle4rss.com
@@ -3350,6 +3353,7 @@ payload:
 - DOMAIN-SUFFIX,v2ray.com
 - DOMAIN-SUFFIX,ovpn.com
 - DOMAIN-SUFFIX,ow.ly
+- DOMAIN-SUFFIX,owl.li
 - DOMAIN-SUFFIX,owltail.com
 - DOMAIN-SUFFIX,oxfordscholarship.com
 - DOMAIN-SUFFIX,ozvoice.org
@@ -5465,6 +5469,7 @@ payload:
 - DOMAIN-SUFFIX,opentable.com
 - DOMAIN-SUFFIX,peeringdb.com
 - DOMAIN-SUFFIX,picacomic.xyz
+- DOMAIN-SUFFIX,pixelscan.net
 - DOMAIN-SUFFIX,prometheus.io
 - DOMAIN-SUFFIX,protonweb.com
 - DOMAIN-SUFFIX,speedtest.net

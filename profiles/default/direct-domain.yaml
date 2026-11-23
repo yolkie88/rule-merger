@@ -155,8 +155,8 @@ payload:
 - DOMAIN-SUFFIX,3322.org
 - DOMAIN-SUFFIX,36kr.com
 - DOMAIN-SUFFIX,4399.com
+- DOMAIN-SUFFIX,6600.org
 - DOMAIN-SUFFIX,66law.cn
-- DOMAIN-SUFFIX,8800.org
 - DOMAIN-SUFFIX,8866.org
 - DOMAIN-SUFFIX,9966.org
 - DOMAIN-SUFFIX,9game.cn
@@ -258,6 +258,7 @@ payload:
 - DOMAIN-SUFFIX,docin.com
 - DOMAIN-SUFFIX,douban.fm
 - DOMAIN-SUFFIX,douyu.com
+- DOMAIN-SUFFIX,eatuo.com
 - DOMAIN-SUFFIX,eudic.net
 - DOMAIN-SUFFIX,feishu.cn
 - DOMAIN-SUFFIX,flyme.com
@@ -536,6 +537,7 @@ payload:
 - DOMAIN,dl.ubnt.com
 - DOMAIN-SUFFIX,douyucdn.cn
 - DOMAIN-SUFFIX,douyutv.com
+- DOMAIN-SUFFIX,feelgood.cn
 - DOMAIN-SUFFIX,feiliao.com
 - DOMAIN-SUFFIX,fqnovel.com
 - DOMAIN-SUFFIX,geetest.com
@@ -1122,6 +1124,7 @@ payload:
 - DOMAIN-SUFFIX,52muban.com
 - DOMAIN-SUFFIX,52ppt.com
 - DOMAIN-SUFFIX,52youzai.com
+- DOMAIN-SUFFIX,52z.com
 - DOMAIN-SUFFIX,55.com
 - DOMAIN-SUFFIX,55555.ink
 - DOMAIN-SUFFIX,5566ua.com
@@ -3099,6 +3102,7 @@ payload:
 - DOMAIN-SUFFIX,icbcthai.com
 - DOMAIN-SUFFIX,icbkfs.com
 - DOMAIN-SUFFIX,icbkus.com
+- DOMAIN-SUFFIX,icc.link
 - DOMAIN-SUFFIX,icedropper.com
 - DOMAIN-SUFFIX,icetorrent.org
 - DOMAIN-SUFFIX,ichangtou.com
@@ -3321,6 +3325,7 @@ payload:
 - DOMAIN-SUFFIX,jdcloudvideo.net
 - DOMAIN-SUFFIX,jdcloudwaf.com
 - DOMAIN-SUFFIX,jddapeigou.com
+- DOMAIN-SUFFIX,jddebug.com
 - DOMAIN-SUFFIX,jddglobal.com
 - DOMAIN-SUFFIX,jdemall.com
 - DOMAIN-SUFFIX,jdfw1.com
@@ -5016,6 +5021,7 @@ payload:
 - DOMAIN-SUFFIX,tuniu.com
 - DOMAIN-SUFFIX,tuniu.net
 - DOMAIN-SUFFIX,tuniucdn.com
+- DOMAIN-SUFFIX,tutuapp.com
 - DOMAIN-SUFFIX,tuwan.com
 - DOMAIN-SUFFIX,tuwanjun.com
 - DOMAIN-SUFFIX,tuxi.com
@@ -5831,6 +5837,7 @@ payload:
 - DOMAIN-SUFFIX,ztoyh.com
 - DOMAIN-SUFFIX,zuche.com
 - DOMAIN-SUFFIX,zuchecdn.com
+- DOMAIN-SUFFIX,zuhaowan.com
 - DOMAIN-SUFFIX,zuidaima.com
 - DOMAIN-SUFFIX,zuihuimai.com
 - DOMAIN-SUFFIX,zuiyou.tv
@@ -6482,10 +6489,12 @@ payload:
 - DOMAIN,cueme-api.quark.cn
 - DOMAIN,ai.zhaomi.cn
 - DOMAIN-SUFFIX,rwkv.cn
+- DOMAIN-SUFFIX,yoma.cn
 - DOMAIN-SUFFIX,skillhub.cn
 - DOMAIN-SUFFIX,happyhorse.cn
 - DOMAIN-SUFFIX,happyshrimp.cn
 - DOMAIN-SUFFIX,sleeplesshorizon.cn
+- DOMAIN-SUFFIX,trae.cn
 - DOMAIN-SUFFIX,dumate.cn
 - DOMAIN-SUFFIX,miaoda.cn
 - DOMAIN-SUFFIX,tiangong.cn
@@ -6493,10 +6502,9 @@ payload:
 - DOMAIN-SUFFIX,chatglm.cn
 - DOMAIN-SUFFIX,zhipuai.cn
 - DOMAIN-SUFFIX,moonshot.cn
-- DOMAIN-SUFFIX,yoma.cn
 - DOMAIN-SUFFIX,codebuddy.cn
 - DOMAIN-SUFFIX,workbuddy.cn
-- DOMAIN-SUFFIX,trae.cn
+- DOMAIN-SUFFIX,mcprev.cn
 - DOMAIN-SUFFIX,cueme.cn
 - DOMAIN-SUFFIX,n.cn
 - DOMAIN-SUFFIX,metaso.cn
@@ -6517,16 +6525,15 @@ payload:
 - DOMAIN-SUFFIX,hi-butterfly.cn
 - DOMAIN-SUFFIX,picpic-ai.cn
 - DOMAIN-SUFFIX,marscode.cn
-- DOMAIN-SUFFIX,mcprev.cn
 - DOMAIN-SUFFIX,yuanqi.tencent.com
 - DOMAIN-SUFFIX,yuanbao.tencent.com
 - DOMAIN-SUFFIX,hunyuan.tencent.com
 - DOMAIN-SUFFIX,xinghuo.xfyun.cn
-- DOMAIN-SUFFIX,marscode.com.cn
-- DOMAIN-SUFFIX,trae.com.cn
 - DOMAIN-SUFFIX,yiyan.baidu.com
 - DOMAIN-SUFFIX,tongyi.aliyun.com
 - DOMAIN-SUFFIX,qianwen.aliyun.com
+- DOMAIN-SUFFIX,marscode.com.cn
+- DOMAIN-SUFFIX,trae.com.cn
 - DOMAIN-SUFFIX,m2m
 - DOMAIN-SUFFIX,bogon
 - DOMAIN-SUFFIX,msg.vg
