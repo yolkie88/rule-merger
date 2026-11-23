@@ -2983,7 +2983,6 @@ payload:
 - DOMAIN-SUFFIX,huaweicloud-smn.com
 - DOMAIN-SUFFIX,huaweicloud-smn.net
 - DOMAIN-SUFFIX,huaweicloud.com
-- DOMAIN-SUFFIX,huaweicloudapis.com
 - DOMAIN-SUFFIX,huaweicloudlive.com
 - DOMAIN-SUFFIX,huaweiief.com
 - DOMAIN-SUFFIX,huaweimarketplace.com
@@ -4420,6 +4419,7 @@ payload:
 - DOMAIN-SUFFIX,qschou.com
 - DOMAIN-SUFFIX,qtlcdn.com
 - DOMAIN-SUFFIX,qtlcdn.net
+- DOMAIN-SUFFIX,qtmojo.com
 - DOMAIN-SUFFIX,qudian.com
 - DOMAIN-SUFFIX,qudong.com
 - DOMAIN-SUFFIX,quehu.com
