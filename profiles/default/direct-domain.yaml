@@ -258,7 +258,6 @@ payload:
 - DOMAIN-SUFFIX,docin.com
 - DOMAIN-SUFFIX,douban.fm
 - DOMAIN-SUFFIX,douyu.com
-- DOMAIN-SUFFIX,eatuo.com
 - DOMAIN-SUFFIX,eudic.net
 - DOMAIN-SUFFIX,feishu.cn
 - DOMAIN-SUFFIX,flyme.com
@@ -1857,6 +1856,7 @@ payload:
 - DOMAIN-SUFFIX,chujingapp.com
 - DOMAIN-SUFFIX,chunbo.com
 - DOMAIN-SUFFIX,chunboimg.com
+- DOMAIN-SUFFIX,chunithm.wahlap.com
 - DOMAIN-SUFFIX,chunyuyisheng.com
 - DOMAIN-SUFFIX,chushi.cool
 - DOMAIN-SUFFIX,chuyu.me
@@ -3876,6 +3876,7 @@ payload:
 - DOMAIN-SUFFIX,mai.tn
 - DOMAIN-SUFFIX,maiche.com
 - DOMAIN-SUFFIX,mail4399.com
+- DOMAIN-SUFFIX,maimai.wahlap.com
 - DOMAIN-SUFFIX,maimemo.com
 - DOMAIN-SUFFIX,maimemostatus.com
 - DOMAIN-SUFFIX,maindown4399.com
@@ -4883,6 +4884,7 @@ payload:
 - DOMAIN-SUFFIX,tfzq.com
 - DOMAIN-SUFFIX,tgbus.com
 - DOMAIN-SUFFIX,tggfl.com
+- DOMAIN-SUFFIX,tgk-wcaime.wahlap.com
 - DOMAIN-SUFFIX,tgovcloud.com
 - DOMAIN-SUFFIX,tgpro.top
 - DOMAIN-SUFFIX,tgprocs.net
@@ -5174,6 +5176,7 @@ payload:
 - DOMAIN-SUFFIX,vxhcm.com
 - DOMAIN-SUFFIX,vxo7tu.com
 - DOMAIN-SUFFIX,vzuu.com
+- DOMAIN-SUFFIX,wahlap.net
 - DOMAIN-SUFFIX,waifushangcheng.com
 - DOMAIN-SUFFIX,wallstcn.com
 - DOMAIN-SUFFIX,wamawama.com
@@ -6489,12 +6492,10 @@ payload:
 - DOMAIN,cueme-api.quark.cn
 - DOMAIN,ai.zhaomi.cn
 - DOMAIN-SUFFIX,rwkv.cn
-- DOMAIN-SUFFIX,yoma.cn
 - DOMAIN-SUFFIX,skillhub.cn
 - DOMAIN-SUFFIX,happyhorse.cn
 - DOMAIN-SUFFIX,happyshrimp.cn
 - DOMAIN-SUFFIX,sleeplesshorizon.cn
-- DOMAIN-SUFFIX,trae.cn
 - DOMAIN-SUFFIX,dumate.cn
 - DOMAIN-SUFFIX,miaoda.cn
 - DOMAIN-SUFFIX,tiangong.cn
@@ -6502,9 +6503,10 @@ payload:
 - DOMAIN-SUFFIX,chatglm.cn
 - DOMAIN-SUFFIX,zhipuai.cn
 - DOMAIN-SUFFIX,moonshot.cn
+- DOMAIN-SUFFIX,yoma.cn
 - DOMAIN-SUFFIX,codebuddy.cn
 - DOMAIN-SUFFIX,workbuddy.cn
-- DOMAIN-SUFFIX,mcprev.cn
+- DOMAIN-SUFFIX,trae.cn
 - DOMAIN-SUFFIX,cueme.cn
 - DOMAIN-SUFFIX,n.cn
 - DOMAIN-SUFFIX,metaso.cn
@@ -6525,15 +6527,16 @@ payload:
 - DOMAIN-SUFFIX,hi-butterfly.cn
 - DOMAIN-SUFFIX,picpic-ai.cn
 - DOMAIN-SUFFIX,marscode.cn
+- DOMAIN-SUFFIX,mcprev.cn
 - DOMAIN-SUFFIX,yuanqi.tencent.com
 - DOMAIN-SUFFIX,yuanbao.tencent.com
 - DOMAIN-SUFFIX,hunyuan.tencent.com
 - DOMAIN-SUFFIX,xinghuo.xfyun.cn
+- DOMAIN-SUFFIX,marscode.com.cn
+- DOMAIN-SUFFIX,trae.com.cn
 - DOMAIN-SUFFIX,yiyan.baidu.com
 - DOMAIN-SUFFIX,tongyi.aliyun.com
 - DOMAIN-SUFFIX,qianwen.aliyun.com
-- DOMAIN-SUFFIX,marscode.com.cn
-- DOMAIN-SUFFIX,trae.com.cn
 - DOMAIN-SUFFIX,m2m
 - DOMAIN-SUFFIX,bogon
 - DOMAIN-SUFFIX,msg.vg

@@ -169,6 +169,7 @@ payload:
 - DOMAIN-SUFFIX,flow.google.com
 - DOMAIN-SUFFIX,gateway.ai.cloudflare.com
 - DOMAIN-SUFFIX,gemini.gstatic.com
+- DOMAIN-SUFFIX,gemma.ai
 - DOMAIN-SUFFIX,githubcopilot.com
 - DOMAIN-SUFFIX,grazie.ai
 - DOMAIN-SUFFIX,grazie.aws.intellij.net
