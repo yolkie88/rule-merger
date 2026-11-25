@@ -244,28 +244,28 @@
         "ratio": 0.0
       },
       "categories/cn-ip.json": {
-        "baseline": 12025,
-        "current": 12020,
-        "delta": -5,
-        "ratio": -0.0004158004158004158
+        "baseline": 12020,
+        "current": 12093,
+        "delta": 73,
+        "ratio": 0.0060732113144758735
       },
       "categories/cn-ip.mrs": {
-        "baseline": 12025,
-        "current": 12020,
-        "delta": -5,
-        "ratio": -0.0004158004158004158
+        "baseline": 12020,
+        "current": 12093,
+        "delta": 73,
+        "ratio": 0.0060732113144758735
       },
       "categories/cn-ip.srs": {
-        "baseline": 12025,
-        "current": 12020,
-        "delta": -5,
-        "ratio": -0.0004158004158004158
+        "baseline": 12020,
+        "current": 12093,
+        "delta": 73,
+        "ratio": 0.0060732113144758735
       },
       "categories/cn-ip.yaml": {
-        "baseline": 12025,
-        "current": 12020,
-        "delta": -5,
-        "ratio": -0.0004158004158004158
+        "baseline": 12020,
+        "current": 12093,
+        "delta": 73,
+        "ratio": 0.0060732113144758735
       },
       "categories/direct-domain.json": {
         "baseline": 218,
@@ -532,28 +532,28 @@
         "ratio": 0.0
       },
       "categories/reject-domain.json": {
-        "baseline": 124763,
-        "current": 124881,
-        "delta": 118,
-        "ratio": 0.0009457932239526142
+        "baseline": 124881,
+        "current": 125283,
+        "delta": 402,
+        "ratio": 0.0032190645494510773
       },
       "categories/reject-domain.mrs": {
-        "baseline": 124763,
-        "current": 124881,
-        "delta": 118,
-        "ratio": 0.0009457932239526142
+        "baseline": 124881,
+        "current": 125283,
+        "delta": 402,
+        "ratio": 0.0032190645494510773
       },
       "categories/reject-domain.srs": {
-        "baseline": 124763,
-        "current": 124881,
-        "delta": 118,
-        "ratio": 0.0009457932239526142
+        "baseline": 124881,
+        "current": 125283,
+        "delta": 402,
+        "ratio": 0.0032190645494510773
       },
       "categories/reject-domain.yaml": {
-        "baseline": 124763,
-        "current": 124881,
-        "delta": 118,
-        "ratio": 0.0009457932239526142
+        "baseline": 124881,
+        "current": 125283,
+        "delta": 402,
+        "ratio": 0.0032190645494510773
       },
       "categories/reject-ip.json": {
         "baseline": 767,
@@ -724,28 +724,28 @@
         "ratio": 0.0
       },
       "profiles/default/direct-ip.json": {
-        "baseline": 12053,
-        "current": 12048,
-        "delta": -5,
-        "ratio": -0.0004148344810420642
+        "baseline": 12048,
+        "current": 12121,
+        "delta": 73,
+        "ratio": 0.006059096945551129
       },
       "profiles/default/direct-ip.mrs": {
-        "baseline": 12053,
-        "current": 12048,
-        "delta": -5,
-        "ratio": -0.0004148344810420642
+        "baseline": 12048,
+        "current": 12121,
+        "delta": 73,
+        "ratio": 0.006059096945551129
       },
       "profiles/default/direct-ip.srs": {
-        "baseline": 12053,
-        "current": 12048,
-        "delta": -5,
-        "ratio": -0.0004148344810420642
+        "baseline": 12048,
+        "current": 12121,
+        "delta": 73,
+        "ratio": 0.006059096945551129
       },
       "profiles/default/direct-ip.yaml": {
-        "baseline": 12053,
-        "current": 12048,
-        "delta": -5,
-        "ratio": -0.0004148344810420642
+        "baseline": 12048,
+        "current": 12121,
+        "delta": 73,
+        "ratio": 0.006059096945551129
       },
       "profiles/default/override-proxy-domain.json": {
         "baseline": 1,
@@ -773,27 +773,27 @@
       },
       "profiles/default/proxy-domain.json": {
         "baseline": 5673,
-        "current": 5673,
-        "delta": 0,
-        "ratio": 0.0
+        "current": 5672,
+        "delta": -1,
+        "ratio": -0.00017627357659086903
       },
       "profiles/default/proxy-domain.mrs": {
         "baseline": 5631,
-        "current": 5673,
-        "delta": 42,
-        "ratio": 0.007458710708577517
+        "current": 5672,
+        "delta": 41,
+        "ratio": 0.00728112235837329
       },
       "profiles/default/proxy-domain.srs": {
         "baseline": 5673,
-        "current": 5673,
-        "delta": 0,
-        "ratio": 0.0
+        "current": 5672,
+        "delta": -1,
+        "ratio": -0.00017627357659086903
       },
       "profiles/default/proxy-domain.yaml": {
         "baseline": 5673,
-        "current": 5673,
-        "delta": 0,
-        "ratio": 0.0
+        "current": 5672,
+        "delta": -1,
+        "ratio": -0.00017627357659086903
       },
       "profiles/default/proxy-ip.json": {
         "baseline": 33,
@@ -820,28 +820,28 @@
         "ratio": 0.0
       },
       "profiles/default/reject-domain.json": {
-        "baseline": 124762,
-        "current": 124880,
-        "delta": 118,
-        "ratio": 0.0009458008047322101
+        "baseline": 124880,
+        "current": 125282,
+        "delta": 402,
+        "ratio": 0.0032190903267136453
       },
       "profiles/default/reject-domain.mrs": {
-        "baseline": 124762,
-        "current": 124880,
-        "delta": 118,
-        "ratio": 0.0009458008047322101
+        "baseline": 124880,
+        "current": 125282,
+        "delta": 402,
+        "ratio": 0.0032190903267136453
       },
       "profiles/default/reject-domain.srs": {
-        "baseline": 124762,
-        "current": 124880,
-        "delta": 118,
-        "ratio": 0.0009458008047322101
+        "baseline": 124880,
+        "current": 125282,
+        "delta": 402,
+        "ratio": 0.0032190903267136453
       },
       "profiles/default/reject-domain.yaml": {
-        "baseline": 124762,
-        "current": 124880,
-        "delta": 118,
-        "ratio": 0.0009458008047322101
+        "baseline": 124880,
+        "current": 125282,
+        "delta": 402,
+        "ratio": 0.0032190903267136453
       },
       "profiles/default/reject-ip.json": {
         "baseline": 767,
@@ -967,13 +967,13 @@
       }
     },
     "cn-ip": {
-      "duplicates": 4984,
+      "duplicates": 4955,
       "family": "ipcidr",
-      "rules": 12020,
+      "rules": 12093,
       "sources": {
         "geoip_cn": 9665,
-        "skk_china_ip": 3890,
-        "skk_china_ipv6": 3447,
+        "skk_china_ip": 3888,
+        "skk_china_ipv6": 3493,
         "skk_domestic_ip": 2
       }
     },
@@ -1071,9 +1071,9 @@
     "reject-domain": {
       "duplicates": 0,
       "family": "domain",
-      "rules": 124881,
+      "rules": 125283,
       "sources": {
-        "xndeye_reject": 124881
+        "xndeye_reject": 125283
       }
     },
     "reject-ip": {
@@ -17320,7 +17320,7 @@
             "rule": "domain_suffix:v38-perf.tiktokcdn.com"
           }
         ],
-        "total": 405
+        "total": 406
       },
       "reject-domain:cdn-domain": {
         "items": [
@@ -18125,7 +18125,7 @@
             "rule": "domain_suffix:d140sbu1b1m3h0.cloudfront.net"
           }
         ],
-        "total": 2711
+        "total": 2698
       },
       "reject-domain:cn-domain": {
         "items": [
@@ -18930,7 +18930,7 @@
             "rule": "domain_suffix:www5.oss-cn-hangzhou.aliyuncs.com"
           }
         ],
-        "total": 3504
+        "total": 3491
       },
       "reject-domain:direct-domain": {
         "items": [
@@ -19454,6 +19454,14 @@
           {
             "authorized": false,
             "left": "reject-domain",
+            "other": "domain_suffix:oss-ap-southeast-7.aliyuncs.com",
+            "relation": "parent-child",
+            "right": "download-domain",
+            "rule": "domain_suffix:imagefiles-backup.oss-ap-southeast-7.aliyuncs.com"
+          },
+          {
+            "authorized": false,
+            "left": "reject-domain",
             "other": "domain_suffix:oss-cn-hongkong.aliyuncs.com",
             "relation": "parent-child",
             "right": "download-domain",
@@ -19890,17 +19898,9 @@
             "relation": "parent-child",
             "right": "download-domain",
             "rule": "domain_suffix:prod-eu-sb-affiliate-tracking-conversion-data.s3.eu-west-1.amazonaws.com"
-          },
-          {
-            "authorized": false,
-            "left": "reject-domain",
-            "other": "domain_suffix:s3.eu-west-1.amazonaws.com",
-            "relation": "parent-child",
-            "right": "download-domain",
-            "rule": "domain_suffix:prod-eu-theymes-collector-collectorfilesv2bucket56-s1xrrtxnrbec.s3.eu-west-1.amazonaws.com"
           }
         ],
-        "total": 315
+        "total": 316
       },
       "reject-domain:gfw-domain": {
         "items": [
@@ -20705,7 +20705,7 @@
             "rule": "domain_suffix:ssp.hinet.net"
           }
         ],
-        "total": 1918
+        "total": 1925
       },
       "reject-domain:global-domain": {
         "items": [
@@ -21510,7 +21510,7 @@
             "rule": "domain_suffix:c2shb.pubgw.yahoo.com"
           }
         ],
-        "total": 3824
+        "total": 3830
       },
       "reject-domain:google-cn-domain": {
         "items": [
@@ -22957,7 +22957,7 @@
             "rule": "domain_suffix:telemetry.api.bbci.co.uk"
           }
         ],
-        "total": 448
+        "total": 449
       },
       "reject-domain:telegram-domain": {
         "items": [
@@ -33636,6 +33636,14 @@
             "other": "domain_suffix:163.com",
             "relation": "parent-child",
             "right": "direct",
+            "rule": "domain_suffix:adgeo.163.com"
+          },
+          {
+            "authorized": false,
+            "left": "reject",
+            "other": "domain_suffix:163.com",
+            "relation": "parent-child",
+            "right": "direct",
             "rule": "domain_suffix:analytics.163.com"
           },
           {
@@ -33645,6 +33653,14 @@
             "relation": "parent-child",
             "right": "direct",
             "rule": "domain_suffix:crash.163.com"
+          },
+          {
+            "authorized": false,
+            "left": "reject",
+            "other": "domain_suffix:163.com",
+            "relation": "parent-child",
+            "right": "direct",
+            "rule": "domain_suffix:fa.163.com"
           },
           {
             "authorized": false,
@@ -33773,14 +33789,6 @@
             "relation": "parent-child",
             "right": "direct",
             "rule": "domain_suffix:socm.dmp.360.cn"
-          },
-          {
-            "authorized": false,
-            "left": "reject",
-            "other": "domain_suffix:360.cn",
-            "relation": "parent-child",
-            "right": "direct",
-            "rule": "domain_suffix:u.api.look.360.cn"
           },
           {
             "authorized": false,
@@ -34948,14 +34956,6 @@
             "other": "domain_suffix:aliyuncs.com",
             "relation": "parent-child",
             "right": "direct",
-            "rule": "domain_suffix:metric-service.httpdns.aliyuncs.com"
-          },
-          {
-            "authorized": false,
-            "left": "reject",
-            "other": "domain_suffix:aliyuncs.com",
-            "relation": "parent-child",
-            "right": "direct",
             "rule": "domain_suffix:log-cfg.oss-accelerate.aliyuncs.com"
           },
           {
@@ -34997,6 +34997,14 @@
             "relation": "parent-child",
             "right": "direct",
             "rule": "domain_suffix:kp-ads.oss-ap-southeast-5.aliyuncs.com"
+          },
+          {
+            "authorized": false,
+            "left": "reject",
+            "other": "domain_suffix:aliyuncs.com",
+            "relation": "parent-child",
+            "right": "direct",
+            "rule": "domain_suffix:imagefiles-backup.oss-ap-southeast-7.aliyuncs.com"
           },
           {
             "authorized": false,
@@ -35325,14 +35333,6 @@
             "relation": "parent-child",
             "right": "direct",
             "rule": "domain_suffix:mon11-misc-lf.amemv.com"
-          },
-          {
-            "authorized": false,
-            "left": "reject",
-            "other": "domain_suffix:amemv.com",
-            "relation": "parent-child",
-            "right": "direct",
-            "rule": "domain_suffix:mon11-misc-lq.amemv.com"
           },
           {
             "authorized": false,
@@ -36492,14 +36492,6 @@
             "other": "domain_suffix:baidubce.com",
             "relation": "parent-child",
             "right": "direct",
-            "rule": "domain_suffix:lss-user.baidubce.com"
-          },
-          {
-            "authorized": false,
-            "left": "reject",
-            "other": "domain_suffix:baidubce.com",
-            "relation": "parent-child",
-            "right": "direct",
             "rule": "domain_suffix:verify.baidubce.com"
           },
           {
@@ -36645,14 +36637,6 @@
             "relation": "parent-child",
             "right": "direct",
             "rule": "domain_suffix:code.bdstatic.com"
-          },
-          {
-            "authorized": false,
-            "left": "reject",
-            "other": "domain_suffix:bdstatic.com",
-            "relation": "parent-child",
-            "right": "direct",
-            "rule": "domain_suffix:dss2.bdstatic.com"
           },
           {
             "authorized": false,
@@ -36821,14 +36805,6 @@
             "relation": "parent-child",
             "right": "direct",
             "rule": "domain_suffix:l13-prod-all-log-ghost-sgp.bilibiligame.net"
-          },
-          {
-            "authorized": false,
-            "left": "reject",
-            "other": "domain_suffix:bilibiligame.net",
-            "relation": "parent-child",
-            "right": "direct",
-            "rule": "domain_suffix:l16-dev-all-sentry-ghost-sgp.bilibiligame.net"
           },
           {
             "authorized": false,
@@ -38356,7 +38332,7 @@
             "other": "domain_suffix:com.cn",
             "relation": "parent-child",
             "right": "direct",
-            "rule": "domain_suffix:ads3.cj.sina.com.cn"
+            "rule": "domain_suffix:img.adbox.sina.com.cn"
           },
           {
             "authorized": false,
@@ -38525,6 +38501,14 @@
             "relation": "parent-child",
             "right": "direct",
             "rule": "domain_suffix:sbeacon.sina.com.cn"
+          },
+          {
+            "authorized": false,
+            "left": "reject",
+            "other": "domain_suffix:com.cn",
+            "relation": "parent-child",
+            "right": "direct",
+            "rule": "domain_suffix:slog.sina.com.cn"
           },
           {
             "authorized": false,
@@ -39268,14 +39252,6 @@
             "other": "domain_suffix:ddxq.mobi",
             "relation": "parent-child",
             "right": "direct",
-            "rule": "domain_suffix:ad.ddxq.mobi"
-          },
-          {
-            "authorized": false,
-            "left": "reject",
-            "other": "domain_suffix:ddxq.mobi",
-            "relation": "parent-child",
-            "right": "direct",
             "rule": "domain_suffix:trackercollect.ddxq.mobi"
           },
           {
@@ -39341,14 +39317,6 @@
             "relation": "parent-child",
             "right": "direct",
             "rule": "domain_suffix:catfront.dianping.com"
-          },
-          {
-            "authorized": false,
-            "left": "reject",
-            "other": "domain_suffix:dianping.com",
-            "relation": "parent-child",
-            "right": "direct",
-            "rule": "domain_suffix:mlog.dianping.com"
           },
           {
             "authorized": false,
@@ -39657,6 +39625,14 @@
           {
             "authorized": false,
             "left": "reject",
+            "other": "domain_suffix:douyucdn.cn",
+            "relation": "parent-child",
+            "right": "direct",
+            "rule": "domain_suffix:stun.douyucdn.cn"
+          },
+          {
+            "authorized": false,
+            "left": "reject",
             "other": "domain_suffix:duokanbox.com",
             "relation": "parent-child",
             "right": "direct",
@@ -39957,14 +39933,6 @@
             "relation": "parent-child",
             "right": "direct",
             "rule": "domain_suffix:h-adashx.ut.fliggy.com"
-          },
-          {
-            "authorized": false,
-            "left": "reject",
-            "other": "domain_suffix:fliggy.com",
-            "relation": "parent-child",
-            "right": "direct",
-            "rule": "domain_suffix:ad-track.fliggy.com"
           },
           {
             "authorized": false,
@@ -40412,6 +40380,14 @@
             "other": "domain_suffix:gov.cn",
             "relation": "parent-child",
             "right": "direct",
+            "rule": "domain_suffix:stat.shanghai.gov.cn"
+          },
+          {
+            "authorized": false,
+            "left": "reject",
+            "other": "domain_suffix:gov.cn",
+            "relation": "parent-child",
+            "right": "direct",
             "rule": "domain_suffix:counsellor.gov.cn"
           },
           {
@@ -40429,6 +40405,14 @@
             "relation": "parent-child",
             "right": "direct",
             "rule": "domain_suffix:tianshu.gtimg.cn"
+          },
+          {
+            "authorized": false,
+            "left": "reject",
+            "other": "domain_suffix:gtimg.com",
+            "relation": "parent-child",
+            "right": "direct",
+            "rule": "domain_suffix:tui.gtimg.com"
           },
           {
             "authorized": false,
@@ -41564,14 +41548,6 @@
             "other": "domain_suffix:ifeng.com",
             "relation": "parent-child",
             "right": "direct",
-            "rule": "domain_suffix:bdmap1.ifeng.com"
-          },
-          {
-            "authorized": false,
-            "left": "reject",
-            "other": "domain_suffix:ifeng.com",
-            "relation": "parent-child",
-            "right": "direct",
             "rule": "domain_suffix:stadig.ifeng.com"
           },
           {
@@ -42045,6 +42021,14 @@
             "relation": "parent-child",
             "right": "direct",
             "rule": "domain_suffix:cactus.jd.com"
+          },
+          {
+            "authorized": false,
+            "left": "reject",
+            "other": "domain_suffix:jd.com",
+            "relation": "parent-child",
+            "right": "direct",
+            "rule": "domain_suffix:cm.jd.com"
           },
           {
             "authorized": false,
@@ -43137,14 +43121,6 @@
           {
             "authorized": false,
             "left": "reject",
-            "other": "domain_suffix:lkcoffee.com",
-            "relation": "parent-child",
-            "right": "direct",
-            "rule": "domain_suffix:sentry.lkcoffee.com"
-          },
-          {
-            "authorized": false,
-            "left": "reject",
             "other": "domain_suffix:lofter.com",
             "relation": "parent-child",
             "right": "direct",
@@ -43221,14 +43197,6 @@
             "relation": "parent-child",
             "right": "direct",
             "rule": "domain_suffix:analytics.meituan.net"
-          },
-          {
-            "authorized": false,
-            "left": "reject",
-            "other": "domain_suffix:meituan.com",
-            "relation": "parent-child",
-            "right": "direct",
-            "rule": "domain_suffix:creditpay.meituan.com"
           },
           {
             "authorized": false,
@@ -43412,14 +43380,6 @@
             "other": "domain_suffix:mgtv.com",
             "relation": "parent-child",
             "right": "direct",
-            "rule": "domain_suffix:audit.aaa.mgtv.com"
-          },
-          {
-            "authorized": false,
-            "left": "reject",
-            "other": "domain_suffix:mgtv.com",
-            "relation": "parent-child",
-            "right": "direct",
             "rule": "domain_suffix:credits.bz.mgtv.com"
           },
           {
@@ -43428,31 +43388,7 @@
             "other": "domain_suffix:mgtv.com",
             "relation": "parent-child",
             "right": "direct",
-            "rule": "domain_suffix:encounter.bz.mgtv.com"
-          },
-          {
-            "authorized": false,
-            "left": "reject",
-            "other": "domain_suffix:mgtv.com",
-            "relation": "parent-child",
-            "right": "direct",
-            "rule": "domain_suffix:galaxy.bz.mgtv.com"
-          },
-          {
-            "authorized": false,
-            "left": "reject",
-            "other": "domain_suffix:mgtv.com",
-            "relation": "parent-child",
-            "right": "direct",
             "rule": "domain_suffix:layer.bz.mgtv.com"
-          },
-          {
-            "authorized": false,
-            "left": "reject",
-            "other": "domain_suffix:mgtv.com",
-            "relation": "parent-child",
-            "right": "direct",
-            "rule": "domain_suffix:vod-box.bz.mgtv.com"
           },
           {
             "authorized": false,
@@ -44932,14 +44868,6 @@
             "other": "domain_suffix:myqcloud.com",
             "relation": "parent-child",
             "right": "direct",
-            "rule": "domain_suffix:crashsight-logs-1258344700.cos.ap-shanghai.myqcloud.com"
-          },
-          {
-            "authorized": false,
-            "left": "reject",
-            "other": "domain_suffix:myqcloud.com",
-            "relation": "parent-child",
-            "right": "direct",
             "rule": "domain_suffix:qdzip-1476850762.cos.ap-singapore.myqcloud.com"
           },
           {
@@ -45540,14 +45468,6 @@
             "other": "domain_suffix:pstatp.com",
             "relation": "parent-child",
             "right": "direct",
-            "rule": "domain_suffix:sf1-pitaya-tos.pstatp.com"
-          },
-          {
-            "authorized": false,
-            "left": "reject",
-            "other": "domain_suffix:pstatp.com",
-            "relation": "parent-child",
-            "right": "direct",
             "rule": "domain_suffix:sf1-scmcdn-tos.pstatp.com"
           },
           {
@@ -45812,6 +45732,14 @@
             "other": "domain_suffix:qiyi.com",
             "relation": "parent-child",
             "right": "direct",
+            "rule": "domain_suffix:data.video.qiyi.com"
+          },
+          {
+            "authorized": false,
+            "left": "reject",
+            "other": "domain_suffix:qiyi.com",
+            "relation": "parent-child",
+            "right": "direct",
             "rule": "domain_suffix:static.qiyi.com"
           },
           {
@@ -45909,14 +45837,6 @@
             "relation": "parent-child",
             "right": "direct",
             "rule": "domain_suffix:qappcenterv6.3g.qq.com"
-          },
-          {
-            "authorized": false,
-            "left": "reject",
-            "other": "domain_suffix:qq.com",
-            "relation": "parent-child",
-            "right": "direct",
-            "rule": "domain_suffix:softfile.3g.qq.com"
           },
           {
             "authorized": false,
@@ -47580,14 +47500,6 @@
             "other": "domain_suffix:sandai.net",
             "relation": "parent-child",
             "right": "direct",
-            "rule": "domain_suffix:hub5btmain.v6.shub.sandai.net"
-          },
-          {
-            "authorized": false,
-            "left": "reject",
-            "other": "domain_suffix:sandai.net",
-            "relation": "parent-child",
-            "right": "direct",
             "rule": "domain_suffix:hub5idx.v6.shub.sandai.net"
           },
           {
@@ -48476,14 +48388,6 @@
             "other": "domain_suffix:tantanapp.com",
             "relation": "parent-child",
             "right": "direct",
-            "rule": "domain_suffix:autoupdate.tantanapp.com"
-          },
-          {
-            "authorized": false,
-            "left": "reject",
-            "other": "domain_suffix:tantanapp.com",
-            "relation": "parent-child",
-            "right": "direct",
             "rule": "domain_suffix:client-monitor.tantanapp.com"
           },
           {
@@ -48977,6 +48881,14 @@
           {
             "authorized": false,
             "left": "reject",
+            "other": "domain_suffix:taobao.com",
+            "relation": "parent-child",
+            "right": "direct",
+            "rule": "domain_suffix:tui.taobao.com"
+          },
+          {
+            "authorized": false,
+            "left": "reject",
             "other": "domain_suffix:taou.com",
             "relation": "parent-child",
             "right": "direct",
@@ -49013,14 +48925,6 @@
             "relation": "parent-child",
             "right": "direct",
             "rule": "domain_suffix:error.tmall.com.danuoyi.tbcache.com"
-          },
-          {
-            "authorized": false,
-            "left": "reject",
-            "other": "domain_suffix:tcdnos.com",
-            "relation": "parent-child",
-            "right": "direct",
-            "rule": "domain_suffix:dlied6.yz.tcdnos.com"
           },
           {
             "authorized": false,
@@ -50265,14 +50169,6 @@
           {
             "authorized": false,
             "left": "reject",
-            "other": "domain_suffix:wtzw.com",
-            "relation": "parent-child",
-            "right": "direct",
-            "rule": "domain_suffix:cdn-new-ad.wtzw.com"
-          },
-          {
-            "authorized": false,
-            "left": "reject",
             "other": "domain_suffix:xbext.com",
             "relation": "parent-child",
             "right": "direct",
@@ -51457,6 +51353,14 @@
           {
             "authorized": false,
             "left": "reject",
+            "other": "domain_suffix:ykimg.com",
+            "relation": "parent-child",
+            "right": "direct",
+            "rule": "domain_suffix:g3.ykimg.com"
+          },
+          {
+            "authorized": false,
+            "left": "reject",
             "other": "domain_suffix:youdao.com",
             "relation": "parent-child",
             "right": "direct",
@@ -51869,14 +51773,6 @@
             "relation": "parent-child",
             "right": "direct",
             "rule": "domain_suffix:sys.zhangyue.com"
-          },
-          {
-            "authorized": false,
-            "left": "reject",
-            "other": "domain_suffix:zhaopin.com",
-            "relation": "parent-child",
-            "right": "direct",
-            "rule": "domain_suffix:sentry.zhaopin.com"
           },
           {
             "authorized": false,
@@ -61180,7 +61076,7 @@
             "other": "domain_suffix:amazonaws.com",
             "relation": "parent-child",
             "right": "proxy",
-            "rule": "domain_suffix:telemetry.connect.ap-southeast-1.amazonaws.com"
+            "rule": "domain_suffix:ieluqbvv.telemetry.connect.ap-southeast-1.amazonaws.com"
           },
           {
             "authorized": false,
@@ -62373,14 +62269,6 @@
             "relation": "parent-child",
             "right": "proxy",
             "rule": "domain_suffix:eu-countly-elb-1457848585.eu-west-1.elb.amazonaws.com"
-          },
-          {
-            "authorized": false,
-            "left": "reject",
-            "other": "domain_suffix:amazonaws.com",
-            "relation": "parent-child",
-            "right": "proxy",
-            "rule": "domain_suffix:gtm-sst-external-production-alb-933915895.eu-west-1.elb.amazonaws.com"
           },
           {
             "authorized": false,
@@ -65180,6 +65068,14 @@
             "other": "domain_suffix:amazonaws.com",
             "relation": "parent-child",
             "right": "proxy",
+            "rule": "domain_suffix:appdatas.s3.amazonaws.com"
+          },
+          {
+            "authorized": false,
+            "left": "reject",
+            "other": "domain_suffix:amazonaws.com",
+            "relation": "parent-child",
+            "right": "proxy",
             "rule": "domain_suffix:babes-mansion.s3.amazonaws.com"
           },
           {
@@ -65525,14 +65421,6 @@
             "relation": "parent-child",
             "right": "proxy",
             "rule": "domain_suffix:simple-cdn.s3.amazonaws.com"
-          },
-          {
-            "authorized": false,
-            "left": "reject",
-            "other": "domain_suffix:amazonaws.com",
-            "relation": "parent-child",
-            "right": "proxy",
-            "rule": "domain_suffix:skyprep-filepicker-uploads.s3.amazonaws.com"
           },
           {
             "authorized": false,
@@ -66932,6 +66820,14 @@
             "other": "domain_suffix:appspot.com",
             "relation": "parent-child",
             "right": "proxy",
+            "rule": "domain_suffix:gtm-m5ktpc5-ywjio.uc.r.appspot.com"
+          },
+          {
+            "authorized": false,
+            "left": "reject",
+            "other": "domain_suffix:appspot.com",
+            "relation": "parent-child",
+            "right": "proxy",
             "rule": "domain_suffix:gtm-n9ntwbf-mgqwy.uc.r.appspot.com"
           },
           {
@@ -66941,14 +66837,6 @@
             "relation": "parent-child",
             "right": "proxy",
             "rule": "domain_suffix:gtm-nbbsrpj-nmzim.uc.r.appspot.com"
-          },
-          {
-            "authorized": false,
-            "left": "reject",
-            "other": "domain_suffix:appspot.com",
-            "relation": "parent-child",
-            "right": "proxy",
-            "rule": "domain_suffix:gtm-npwscvr-nzljn.uc.r.appspot.com"
           },
           {
             "authorized": false,
@@ -66988,6 +66876,14 @@
             "other": "domain_suffix:appspot.com",
             "relation": "parent-child",
             "right": "proxy",
+            "rule": "domain_suffix:gtm-pxdh67v-zgqyz.uc.r.appspot.com"
+          },
+          {
+            "authorized": false,
+            "left": "reject",
+            "other": "domain_suffix:appspot.com",
+            "relation": "parent-child",
+            "right": "proxy",
             "rule": "domain_suffix:gtm-t9m23dk-mta4z.uc.r.appspot.com"
           },
           {
@@ -67013,6 +66909,14 @@
             "relation": "parent-child",
             "right": "proxy",
             "rule": "domain_suffix:gtm-tsxlxjl-owy5z.uc.r.appspot.com"
+          },
+          {
+            "authorized": false,
+            "left": "reject",
+            "other": "domain_suffix:appspot.com",
+            "relation": "parent-child",
+            "right": "proxy",
+            "rule": "domain_suffix:gtm-wdlfsd4-nwewz.uc.r.appspot.com"
           },
           {
             "authorized": false,
@@ -67109,6 +67013,14 @@
             "relation": "parent-child",
             "right": "proxy",
             "rule": "domain_suffix:event-tracking-dot-videoads.appspot.com"
+          },
+          {
+            "authorized": false,
+            "left": "reject",
+            "other": "domain_suffix:appspot.com",
+            "relation": "parent-child",
+            "right": "proxy",
+            "rule": "domain_suffix:facebook-web-clients.appspot.com"
           },
           {
             "authorized": false,
@@ -67373,6 +67285,14 @@
             "relation": "parent-child",
             "right": "proxy",
             "rule": "domain_suffix:web-security-reports.services.atlassian.com"
+          },
+          {
+            "authorized": false,
+            "left": "reject",
+            "other": "domain_suffix:atlassian.com",
+            "relation": "parent-child",
+            "right": "proxy",
+            "rule": "domain_suffix:pages.atlassian.com"
           },
           {
             "authorized": false,
@@ -68052,6 +67972,14 @@
             "other": "domain_suffix:azurewebsites.net",
             "relation": "parent-child",
             "right": "proxy",
+            "rule": "domain_suffix:m365-visitor-stats.azurewebsites.net"
+          },
+          {
+            "authorized": false,
+            "left": "reject",
+            "other": "domain_suffix:azurewebsites.net",
+            "relation": "parent-child",
+            "right": "proxy",
             "rule": "domain_suffix:matomo.azurewebsites.net"
           },
           {
@@ -68173,6 +68101,14 @@
             "relation": "parent-child",
             "right": "proxy",
             "rule": "domain_suffix:sis-analytics-web-prod-eastus2-app.azurewebsites.net"
+          },
+          {
+            "authorized": false,
+            "left": "reject",
+            "other": "domain_suffix:azurewebsites.net",
+            "relation": "parent-child",
+            "right": "proxy",
+            "rule": "domain_suffix:ssgtm-fazer-tagging-server.azurewebsites.net"
           },
           {
             "authorized": false,
@@ -69332,14 +69268,6 @@
             "other": "domain_suffix:cloudfront.net",
             "relation": "parent-child",
             "right": "proxy",
-            "rule": "domain_suffix:d1aqhv4sn5kxtx.cloudfront.net"
-          },
-          {
-            "authorized": false,
-            "left": "reject",
-            "other": "domain_suffix:cloudfront.net",
-            "relation": "parent-child",
-            "right": "proxy",
             "rule": "domain_suffix:d1b3llzbo1rqxo.cloudfront.net"
           },
           {
@@ -69845,6 +69773,14 @@
             "relation": "parent-child",
             "right": "proxy",
             "rule": "domain_suffix:d28y1vh96kr872.cloudfront.net"
+          },
+          {
+            "authorized": false,
+            "left": "reject",
+            "other": "domain_suffix:cloudfront.net",
+            "relation": "parent-child",
+            "right": "proxy",
+            "rule": "domain_suffix:d29xw0ra2h4o4u.cloudfront.net"
           },
           {
             "authorized": false,
@@ -70948,6 +70884,14 @@
             "other": "domain_suffix:cloudfront.net",
             "relation": "parent-child",
             "right": "proxy",
+            "rule": "domain_suffix:d88f3ym7dkyv7.cloudfront.net"
+          },
+          {
+            "authorized": false,
+            "left": "reject",
+            "other": "domain_suffix:cloudfront.net",
+            "relation": "parent-child",
+            "right": "proxy",
             "rule": "domain_suffix:d8ghbpr3r4dzt.cloudfront.net"
           },
           {
@@ -71469,6 +71413,14 @@
             "relation": "parent-child",
             "right": "proxy",
             "rule": "domain_suffix:dxzc1o98vrjl6.cloudfront.net"
+          },
+          {
+            "authorized": false,
+            "left": "reject",
+            "other": "domain_suffix:cloudfront.net",
+            "relation": "parent-child",
+            "right": "proxy",
+            "rule": "domain_suffix:dzvdhp56mgzue.cloudfront.net"
           },
           {
             "authorized": false,
@@ -72276,7 +72228,15 @@
             "other": "domain_suffix:coinbase.com",
             "relation": "parent-child",
             "right": "proxy",
-            "rule": "domain_suffix:analytics.custody.coinbase.com"
+            "rule": "domain_suffix:ad.coinbase.com"
+          },
+          {
+            "authorized": false,
+            "left": "reject",
+            "other": "domain_suffix:coinbase.com",
+            "relation": "parent-child",
+            "right": "proxy",
+            "rule": "domain_suffix:ads.coinbase.com"
           },
           {
             "authorized": false,
@@ -73525,6 +73485,14 @@
             "relation": "parent-child",
             "right": "proxy",
             "rule": "domain_suffix:analytic.mathcode.eu.org"
+          },
+          {
+            "authorized": false,
+            "left": "reject",
+            "other": "domain_suffix:eu.org",
+            "relation": "parent-child",
+            "right": "proxy",
+            "rule": "domain_suffix:armorrush.eu.org"
           },
           {
             "authorized": false,
@@ -75625,6 +75593,14 @@
           {
             "authorized": false,
             "left": "reject",
+            "other": "domain_suffix:grindr.com",
+            "relation": "parent-child",
+            "right": "proxy",
+            "rule": "domain_suffix:advertising.web.grindr.com"
+          },
+          {
+            "authorized": false,
+            "left": "reject",
             "other": "domain_suffix:ground.news",
             "relation": "parent-child",
             "right": "proxy",
@@ -76077,6 +76053,14 @@
             "relation": "parent-child",
             "right": "proxy",
             "rule": "domain_suffix:vortex-dual.hulu.com"
+          },
+          {
+            "authorized": false,
+            "left": "reject",
+            "other": "domain_suffix:ibm.com",
+            "relation": "parent-child",
+            "right": "proxy",
+            "rule": "domain_suffix:logs.cloud.ibm.com"
           },
           {
             "authorized": false,
@@ -78741,14 +78725,6 @@
             "relation": "parent-child",
             "right": "proxy",
             "rule": "domain_suffix:dfdghfhddhdhfhdfhdfyhdfdfh.pages.dev"
-          },
-          {
-            "authorized": false,
-            "left": "reject",
-            "other": "domain_suffix:pages.dev",
-            "relation": "parent-child",
-            "right": "proxy",
-            "rule": "domain_suffix:dravora-gld-felquna-r5x4fw97-3fw.pages.dev"
           },
           {
             "authorized": false,
@@ -81460,6 +81436,14 @@
             "other": "domain_suffix:run.app",
             "relation": "parent-child",
             "right": "proxy",
+            "rule": "domain_suffix:server-side-tagging-fscftnai2a-uc.a.run.app"
+          },
+          {
+            "authorized": false,
+            "left": "reject",
+            "other": "domain_suffix:run.app",
+            "relation": "parent-child",
+            "right": "proxy",
             "rule": "domain_suffix:server-side-tagging-fsfp5hnnjq-uc.a.run.app"
           },
           {
@@ -83580,14 +83564,6 @@
             "other": "domain_suffix:run.app",
             "relation": "parent-child",
             "right": "proxy",
-            "rule": "domain_suffix:sheko-sgtm-prod-635040323043.europe-west1.run.app"
-          },
-          {
-            "authorized": false,
-            "left": "reject",
-            "other": "domain_suffix:run.app",
-            "relation": "parent-child",
-            "right": "proxy",
             "rule": "domain_suffix:telemetry-collector-407171380839.europe-west1.run.app"
           },
           {
@@ -83621,6 +83597,14 @@
             "relation": "parent-child",
             "right": "proxy",
             "rule": "domain_suffix:edurino-analytics-api-522779989257.europe-west3.run.app"
+          },
+          {
+            "authorized": false,
+            "left": "reject",
+            "other": "domain_suffix:run.app",
+            "relation": "parent-child",
+            "right": "proxy",
+            "rule": "domain_suffix:server-side-tagging-693379370523.europe-west3.run.app"
           },
           {
             "authorized": false,
@@ -83980,14 +83964,6 @@
             "other": "domain_suffix:run.app",
             "relation": "parent-child",
             "right": "proxy",
-            "rule": "domain_suffix:server-side-tagging-582660599531.us-central1.run.app"
-          },
-          {
-            "authorized": false,
-            "left": "reject",
-            "other": "domain_suffix:run.app",
-            "relation": "parent-child",
-            "right": "proxy",
             "rule": "domain_suffix:server-side-tagging-633178361708.us-central1.run.app"
           },
           {
@@ -84077,14 +84053,6 @@
             "relation": "parent-child",
             "right": "proxy",
             "rule": "domain_suffix:tapcart-analytics-ingestion-service-783621981726.us-central1.run.app"
-          },
-          {
-            "authorized": false,
-            "left": "reject",
-            "other": "domain_suffix:run.app",
-            "relation": "parent-child",
-            "right": "proxy",
-            "rule": "domain_suffix:telemetry-ingest-896661558063.us-central1.run.app"
           },
           {
             "authorized": false,
@@ -85821,6 +85789,14 @@
             "relation": "parent-child",
             "right": "proxy",
             "rule": "domain_suffix:frontier-va.tiktokv.com"
+          },
+          {
+            "authorized": false,
+            "left": "reject",
+            "other": "domain_suffix:tiktokv.com",
+            "relation": "parent-child",
+            "right": "proxy",
+            "rule": "domain_suffix:frontier16-normal-alisg.tiktokv.com"
           },
           {
             "authorized": false,
@@ -90972,14 +90948,6 @@
             "other": "domain_suffix:workers.dev",
             "relation": "parent-child",
             "right": "proxy",
-            "rule": "domain_suffix:webstat-backend.mgr-9c1.workers.dev"
-          },
-          {
-            "authorized": false,
-            "left": "reject",
-            "other": "domain_suffix:workers.dev",
-            "relation": "parent-child",
-            "right": "proxy",
             "rule": "domain_suffix:fnrh-v92w.mileyjimena72123.workers.dev"
           },
           {
@@ -91261,14 +91229,6 @@
             "relation": "parent-child",
             "right": "proxy",
             "rule": "domain_suffix:lingering-cloud-8a93.zinhoooo.workers.dev"
-          },
-          {
-            "authorized": false,
-            "left": "reject",
-            "other": "domain_suffix:workers.dev",
-            "relation": "parent-child",
-            "right": "proxy",
-            "rule": "domain_suffix:ad-network-admin.workers.dev"
           },
           {
             "authorized": false,
@@ -92029,14 +91989,6 @@
             "relation": "parent-child",
             "right": "proxy",
             "rule": "domain_suffix:analytics.zendesk.com"
-          },
-          {
-            "authorized": false,
-            "left": "reject",
-            "other": "domain_suffix:zendesk.com",
-            "relation": "parent-child",
-            "right": "proxy",
-            "rule": "domain_suffix:pixel-by-labcorp.zendesk.com"
           },
           {
             "authorized": false,
@@ -94475,6 +94427,14 @@
           {
             "authorized": true,
             "left": "reject",
+            "other": "domain_suffix:onion.city",
+            "relation": "exact",
+            "right": "proxy",
+            "rule": "domain_suffix:onion.city"
+          },
+          {
+            "authorized": true,
+            "left": "reject",
             "other": "domain_suffix:owl.li",
             "relation": "exact",
             "right": "proxy",
@@ -94745,7 +94705,7 @@
             "rule": "domain_suffix:z-lib.io"
           }
         ],
-        "total": 8237
+        "total": 8231
       },
       "ipcidr": {
         "ordered_containment": [
@@ -98151,32 +98111,32 @@
       "sha256": "97084855ba8623c8344ba0625cb13bb9fee17f43040307b6823fa79102380fff"
     },
     "categories/cn-ip.json": {
-      "bytes": 323472,
+      "bytes": 325601,
       "family": "ipcidr",
       "format": "json",
-      "rules": 12020,
-      "sha256": "2b04fc58f2de9751500b71180f4d47ca4deb10fee9a84cd03a64d67eac31eaa4"
+      "rules": 12093,
+      "sha256": "ea969fc988e1e2a183c14b27e52c2d2964b24ba9ab979c564959cf75ddea4dd4"
     },
     "categories/cn-ip.mrs": {
-      "bytes": 38293,
+      "bytes": 38646,
       "family": "ipcidr",
       "format": "mrs",
-      "rules": 12020,
-      "sha256": "0d07c744dd27d2fbf613a3baba925da77e6bc91c335c532588f9ac093265b141"
+      "rules": 12093,
+      "sha256": "441c8d66fd47031953c9f03cf1f0ba844c806636701d06d1c940411fd7e7aa80"
     },
     "categories/cn-ip.srs": {
-      "bytes": 37015,
+      "bytes": 37347,
       "family": "ipcidr",
       "format": "srs",
-      "rules": 12020,
-      "sha256": "1a998cc0f3849869ab73b2588c5ca0953b861b19523beaf5a741305e7412defd"
+      "rules": 12093,
+      "sha256": "4e030f93ab80ba3060c419d77c1ff64f64b869b5740cebc23df3b25d6945658e"
     },
     "categories/cn-ip.yaml": {
-      "bytes": 314839,
+      "bytes": 316969,
       "family": "ipcidr",
       "format": "yaml",
-      "rules": 12020,
-      "sha256": "031afa6a30b963a74c26a288ea62a11eacb3140f6d05ca9373a02b13a1f84387"
+      "rules": 12093,
+      "sha256": "6f4161c49d2acb9d9d8c0e42beee89510bba6913dd656f0d605d133ec7b33a9f"
     },
     "categories/direct-domain.json": {
       "bytes": 5493,
@@ -98497,32 +98457,32 @@
       "sha256": "42f8635262080336d889294b6e0a4515852109a34e8e7aea3774aeaf809ca8ec"
     },
     "categories/reject-domain.json": {
-      "bytes": 3888946,
+      "bytes": 3907732,
       "family": "domain",
       "format": "json",
-      "rules": 124881,
-      "sha256": "e2cf2e62f0f1c7060c7cbf5a14b2c38dd3215ab47f865b22b23e4b5cbe39649b"
+      "rules": 125283,
+      "sha256": "13484311178ab31aa8bf7403031e4f55d5e70b836a158efa463d22a91fb51e4d"
     },
     "categories/reject-domain.mrs": {
-      "bytes": 1117243,
+      "bytes": 1122440,
       "family": "domain",
       "format": "mrs",
-      "rules": 124881,
-      "sha256": "9c33b7be858ea679ca234ac7b71cfa95d39d2cd0b668d7ea8314ce7c2cc3702d"
+      "rules": 125283,
+      "sha256": "a7f6e40d5dbe8b92701921fb7e4a25fb5c12984b7922cb8ac236c8c80c5234aa"
     },
     "categories/reject-domain.srs": {
-      "bytes": 1002334,
+      "bytes": 1006427,
       "family": "domain",
       "format": "srs",
-      "rules": 124881,
-      "sha256": "077063b8ef7e4502b2b26a5772e5cad7d55fcf9163d048adeebee7cc21e0079e"
+      "rules": 125283,
+      "sha256": "fe354d933f60019526a915280a70bcf46ad83a317da65be513f797c0694e4ac7"
     },
     "categories/reject-domain.yaml": {
-      "bytes": 4513279,
+      "bytes": 4534075,
       "family": "domain",
       "format": "yaml",
-      "rules": 124881,
-      "sha256": "177fee3100b10e42c24bfae5c189363f9672acae0ffb32be8b5dc819cb08a070"
+      "rules": 125283,
+      "sha256": "c019a9bf57c8a6e65ccc3a74a80a3b7d76208cbdf7c6b8268d736ddc505bf967"
     },
     "categories/reject-ip.json": {
       "bytes": 21787,
@@ -98739,32 +98699,32 @@
       "sha256": "70e79df47a821783c00f8acaacd1475d911dcdb79fd34dd541102fb1e78e07d0"
     },
     "profiles/default/direct-ip.json": {
-      "bytes": 324135,
+      "bytes": 326264,
       "family": "ipcidr",
       "format": "json",
-      "rules": 12048,
-      "sha256": "4663dda9c80d9b0bd0b868d8e20defc474c96fa709f7a2b95c75e3342f435abd"
+      "rules": 12121,
+      "sha256": "8d8857de99ee9e97e95d0fe789f6dc4bf55dd8a9a7a6e9b8de40cc0c166bd132"
     },
     "profiles/default/direct-ip.mrs": {
-      "bytes": 38615,
+      "bytes": 39026,
       "family": "ipcidr",
       "format": "mrs",
-      "rules": 12048,
-      "sha256": "68eb4e010f68d5f67ecd75ce17d9ae2d25774a6d1f3e7154bf8642131b37fc46"
+      "rules": 12121,
+      "sha256": "9e580f743b0820bfbf98e002d8066ea1c516b0efc0400b9956cf119892e9d062"
     },
     "profiles/default/direct-ip.srs": {
-      "bytes": 37199,
+      "bytes": 37528,
       "family": "ipcidr",
       "format": "srs",
-      "rules": 12048,
-      "sha256": "eb4d0b18f3ecc26823283bc0f2cc8ef8a30dd249f56d27164ec5960a01631eed"
+      "rules": 12121,
+      "sha256": "fdd05fd63a6a1fe6bd223bfc1275297ba663b12857e1cbce703c5dceb6218c7d"
     },
     "profiles/default/direct-ip.yaml": {
-      "bytes": 315486,
+      "bytes": 317616,
       "family": "ipcidr",
       "format": "yaml",
-      "rules": 12048,
-      "sha256": "08b1a15d75145c87f08b498efcc573aec67879e82038e7c503f1fb753abf61a3"
+      "rules": 12121,
+      "sha256": "775f56689600c492735ed6c265009303f1997cfa4703e1ba12d462f9b033a11c"
     },
     "profiles/default/override-proxy-domain.json": {
       "bytes": 121,
@@ -98795,36 +98755,36 @@
       "sha256": "41138249eed7ffb4863d309d28eb0df9e81924d6acbcc9a53d54bce6fbc1ee57"
     },
     "profiles/default/proxy-domain.json": {
-      "bytes": 139720,
+      "bytes": 139698,
       "family": "domain",
       "format": "json",
-      "rules": 5673,
-      "sha256": "695d9d5724b701317aaace60688f978d7beedc780bfe632c0461d92f4324912a"
+      "rules": 5672,
+      "sha256": "2651aa9a15f3f9e5f0196acf981dccdb1401afdaa14e889a4cd2d4bf7fd7307b"
     },
     "profiles/default/proxy-domain.mrs": {
-      "bytes": 43494,
+      "bytes": 43358,
       "family": "domain",
       "format": "mrs",
       "omitted_kinds": [
         "domain_keyword",
         "process_name"
       ],
-      "rules": 5631,
-      "sha256": "70cfbc8d25e329a443378df60cc78846ae1f29634073c0d89fb10d990642396d"
+      "rules": 5630,
+      "sha256": "8625386796491057b53028b6b29c000197eb1d71e02ee976dedb964ecbc39546"
     },
     "profiles/default/proxy-domain.srs": {
-      "bytes": 36533,
+      "bytes": 36536,
       "family": "domain",
       "format": "srs",
-      "rules": 5673,
-      "sha256": "65595d4b5c50447318697dff2cb96d94b014d61ee5a31c1187a973f74c92596f"
+      "rules": 5672,
+      "sha256": "8eace765156777a9424c8d4084a69143f5358de644a26cfa35ae050e373fe8e6"
     },
     "profiles/default/proxy-domain.yaml": {
-      "bytes": 166940,
+      "bytes": 166913,
       "family": "domain",
       "format": "yaml",
-      "rules": 5673,
-      "sha256": "0d0a15227722e54379b9edefb116f3b48e1c84ce5e9ce7434afe8ae087dfb3b9"
+      "rules": 5672,
+      "sha256": "d1eaf27989108352af8c67f8b68b5ca1e9356615bdae76c892b8181031fdf033"
     },
     "profiles/default/proxy-ip.json": {
       "bytes": 963,
@@ -98855,32 +98815,32 @@
       "sha256": "00e29a763a6d55b1cd3db9f8fcf8198383fc8137486fe516a6af081b0b7d26af"
     },
     "profiles/default/reject-domain.json": {
-      "bytes": 3888906,
+      "bytes": 3907692,
       "family": "domain",
       "format": "json",
-      "rules": 124880,
-      "sha256": "59a4a3e79a216b55b2323d1de9adcbaac586ced22263eeee5c2a825b0e27d0be"
+      "rules": 125282,
+      "sha256": "777684aa1bb504e2c96a3ddfd89e15e2c9b53c5f67f4a4edd27c9c275e4c0838"
     },
     "profiles/default/reject-domain.mrs": {
-      "bytes": 1117220,
+      "bytes": 1122417,
       "family": "domain",
       "format": "mrs",
-      "rules": 124880,
-      "sha256": "0d5657497a4a0e1a7c9ef20a6c4d1cea14c17fe638ad117a15c842257be58be9"
+      "rules": 125282,
+      "sha256": "554a306630c2fa98a1f02b28b2db350bbd0fae5bd78f6b2427e07c78b4e82a84"
     },
     "profiles/default/reject-domain.srs": {
-      "bytes": 1002445,
+      "bytes": 1006391,
       "family": "domain",
       "format": "srs",
-      "rules": 124880,
-      "sha256": "0ce6c42ad0952c019aea7b68325e73aa3016a3403630938665a92a20583d38b0"
+      "rules": 125282,
+      "sha256": "059cf52e48a60c697f8a30ca0a7f227f929a26506cbe0966919001bd1afc0ce3"
     },
     "profiles/default/reject-domain.yaml": {
-      "bytes": 4513234,
+      "bytes": 4534030,
       "family": "domain",
       "format": "yaml",
-      "rules": 124880,
-      "sha256": "810338499fd610ed7aa1afb9cb0295a57410ae1e057e33e8ecb66b8979b09333"
+      "rules": 125282,
+      "sha256": "0c3ebaf76ae12873db4d8e25a1fa1d65c739778e4d94cdee069d16d08579d2e7"
     },
     "profiles/default/reject-ip.json": {
       "bytes": 21787,
@@ -99358,15 +99318,15 @@
     "skk_china_ip": {
       "attempts": 1,
       "behavior": "ipcidr",
-      "bytes": 60939,
-      "etag": "W/\"946936ab07aa75de888aa6573ea805fb\"",
+      "bytes": 60909,
+      "etag": "W/\"679c683bec03bb3b37a4eadbb6f281f0\"",
       "format": "text",
       "last_modified": null,
       "path": null,
       "redistributable": true,
       "required": true,
-      "rules": 3890,
-      "sha256": "d9c927b4620533d4dc2e20aba392e24ceb7fe66eee60eb26bc6b311bb0e27a67",
+      "rules": 3888,
+      "sha256": "5c000e2c450aabf3a17d92e29d16272b8af0551a268b21255bbe06b6c6b11100",
       "status": "ok",
       "type": "http",
       "url": "https://ruleset.skk.moe/Clash/ip/china_ip.txt"
@@ -99374,15 +99334,15 @@
     "skk_china_ipv6": {
       "attempts": 1,
       "behavior": "ipcidr",
-      "bytes": 57950,
-      "etag": "W/\"d91b50e710bbc18a2a4f3c21f8838658\"",
+      "bytes": 58788,
+      "etag": "W/\"513c918bbd14d9fed09d42ae99064d19\"",
       "format": "text",
       "last_modified": null,
       "path": null,
       "redistributable": true,
       "required": true,
-      "rules": 3447,
-      "sha256": "99146fce9ac5dd71cba52c18857d722e9b818a75232ca86b3ae5d21993367da6",
+      "rules": 3493,
+      "sha256": "a2a649ab2319e94cc28f01a478a8e68594f433db88778597067e3b7128a56280",
       "status": "ok",
       "type": "http",
       "url": "https://ruleset.skk.moe/Clash/ip/china_ip_ipv6.txt"
@@ -99614,15 +99574,15 @@
     "xndeye_reject": {
       "attempts": 1,
       "behavior": "domain",
-      "bytes": 3514460,
-      "etag": "W/\"837220749f8f497ed4a8a40a245c84d6092eb6aba69446b1486ae68969e9df54\"",
+      "bytes": 3532040,
+      "etag": "W/\"146ed316f15f6e94c2c2a069e30b3ffc6e6c97f0bba02436328f67556de6d3e0\"",
       "format": "yaml",
       "last_modified": null,
       "path": null,
       "redistributable": true,
       "required": true,
-      "rules": 124881,
-      "sha256": "5c1dc0d45bc989fc1bfac8472064fe5c856c0a412932a0a1aa274a35b6b99c68",
+      "rules": 125283,
+      "sha256": "17e02d725a476719eb7af1f8823c1c4fa617f23414070dbdd3f1112fb3288848",
       "status": "ok",
       "type": "http",
       "url": "https://raw.githubusercontent.com/xndeye/adblock_list/refs/heads/release/clash.yaml"
