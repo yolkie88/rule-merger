@@ -2985,7 +2985,6 @@ payload:
 - DOMAIN-SUFFIX,huaweicloud-smn.com
 - DOMAIN-SUFFIX,huaweicloud-smn.net
 - DOMAIN-SUFFIX,huaweicloud.com
-- DOMAIN-SUFFIX,huaweicloudapis.com
 - DOMAIN-SUFFIX,huaweicloudlive.com
 - DOMAIN-SUFFIX,huaweiief.com
 - DOMAIN-SUFFIX,huaweimarketplace.com
@@ -6449,7 +6448,6 @@ payload:
 - DOMAIN-SUFFIX,googleapps-cn.com
 - DOMAIN-SUFFIX,googlecnapps.cn
 - DOMAIN-SUFFIX,googleoptimize-cn.com
-- DOMAIN-SUFFIX,googletraveladservices-cn.com
 - DOMAIN-SUFFIX,gstatic-cn.com
 - DOMAIN-SUFFIX,gstatic.cn
 - DOMAIN-SUFFIX,gstaticadssl.l.google.com
